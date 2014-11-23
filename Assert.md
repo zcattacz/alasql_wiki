@@ -1,4 +1,4 @@
-# ASSERT statement
+# ASSERT
 
 Now you can use Alasql ASSERT operator to test results of previous operation:
 ```sql
@@ -14,3 +14,5 @@ For example:
     SELECT * FROM one ORDER BY a DESC;
     ASSERT [{a:3},{a:2},{a:1}];
 ```
+
+ASSERT statement uses regular JSON notation for the object.
