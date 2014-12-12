@@ -2,8 +2,8 @@
 
 * [ASSERT](Assert)
 * [ATTACH](Attach)
-* [ALTER TABLE](sql/alter-table.md)
- * [ALTER TABLE ADD COLUMN](sql/add-column.md)
+* [ALTER TABLE](Alter Table)
+ * [ALTER TABLE ADD COLUMN](Add Column)
  * [ALTER TABLE MODIFY COLUMN](sql/modify-column.md)
  * [ALTER TABLE DROP COLUMN](sql/drop-column.md)
  * [ALTER TABLE RENAME TABLE](sql/rename-table.md)
