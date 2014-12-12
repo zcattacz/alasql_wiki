@@ -1,14 +1,17 @@
 Welcome to the Alasql wiki!
 
 ## Alasql Documentation
-* [Alasql Installation](Installation)
-* [Alasql JavaScript API](Api)
-* [Alasql supported SQL](Sql)
-* [Alasql options](Options)
+* [Installation](Installation)
+* [JavaScript API](Api)
+* [Supported SQL](Sql)
+* [Options](Options)
 
-## Alasql utilities
+## Alasql Utilities
 * [Alacon](Alacon) - command-line utility for text and data files processing with SQL
 * [Alaserver](Alaserver) - simple SQL server based on Alasql
+
+## Alasql Usage
+* [ETL with Alasql](Etl) - prepare data with Alasql
 
 Also, you can try all Alasql SQL functionality in sandbpx console:
 
