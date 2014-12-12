@@ -1,6 +1,7 @@
 # SQL Statements Supported by Alasql
 
 * [ASSERT](Assert)
+* [ATTACH](Attach)
 * [ALTER TABLE](sql/alter-table.md)
  * [ALTER TABLE ADD COLUMN](sql/add-column.md)
  * [ALTER TABLE MODIFY COLUMN](sql/modify-column.md)
