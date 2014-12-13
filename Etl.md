@@ -15,10 +15,10 @@ You can do the same query with [Alacon](Alacon) command-line utility and prepare
     node alacon "select * from csv('cities.csv',{headers:true}) where population > 100000 order by city" >city.txt
 ```
 
-## Prepare data from Excel file
+## Prepare data from Excel file (see [XLSX()](Xlsx) function):
 ```js
-    alasql('select * from xlsx("cities.xlsx",{headers:true, range:"cities"}) where population > 100000 order by city', [],
-      function(data) {
+    alasql('select * from xlsx("cities.xlsx",{headers:true, range:"A1:E100"})\
+      where population > 100000 order by city', [], function(data) {
          console.log(data);
     });
 ```
