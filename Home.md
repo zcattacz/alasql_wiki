@@ -16,3 +16,7 @@ Welcome to the Alasql wiki!
 Also, you can try all Alasql SQL functionality in sandbpx console:
 
 * [Alasql Console](http://alasql.org/console/alaconsole.html)
+
+## Work with databases
+* [IndexedDB](IndexedDB)
+* [Local Storage](LocalStorage)
