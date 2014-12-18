@@ -9,3 +9,8 @@
 ```
     node alacon '2*2'
 ```
+
+3. Convert XLSX file to JSON
+```
+    node alacon "select * into json('my.json') from xlsx('cities.xlsx',{headers:true})"
+```
