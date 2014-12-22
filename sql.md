@@ -85,6 +85,8 @@
  * [MAX()](Max) 
  * [FIRST()](First 
  * [LAST()](Last) 
+ * [AGGR()](Aggr)
+ * [ARRAY()](Array)
 * Groupping functions
  * [CUBE()](Cube)
  * [ROLLUP()](Rollup)
