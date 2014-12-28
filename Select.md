@@ -13,7 +13,7 @@ Select clauses:
 * [ORDER BY](Order By)
 * [UNION](Union) / [UNION ALL](Union All) /[INTERSECT](Intersect) / [EXCEPT](Except)
 
-Value modifiers
+[Return value modifiers](Modifiers)
 * [VALUE](Value), [COLUMN](Column), [ROW](Row), [MATRIX](Matrix), [INDEX](Index), [TEXT](Text) …
 
 Columns
