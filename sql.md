@@ -1,6 +1,7 @@
 # Alasql SQL Statements
 
 * [Single and multiple SQL statements](Multiple Statements)
+* [Case-sensitive keywords](Case Sensitive)
 
 ## Short list by category
 
