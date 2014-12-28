@@ -11,7 +11,7 @@ There is a CSV file with names and addresses. I need to plot markers on a Google
 You can use Alasql library to load and parse CSV data from server or from desktop.
 
 ***FROM SERVER*** Here is an example of how to load data from CSV and pass it to Google Maps api (the full code and the result [you can see here](http://alasql.org/demo/009geo/)).
-
+```js
     alasql("SELECT * FROM CSV(
       "https://cdn.rawgit.com/albertyw/avenews/master/old/data/average-latitude-longitude-countries.csv",
       {headers:true})', [], function(country){
@@ -30,9 +30,9 @@ You can use Alasql library to load and parse CSV data from server or from deskto
             };
             new google.maps.Circle(opts);
     });
-
+```
 ***FROM DESKTOP*** If you want to upload data from desktop you can use the following code:
-
+```html
      <script src="alasql.min.js"></script>
      <p>Select CSV file to read:</p>
      <input id="readfile" type="file" onchange="loadFile(event)"/>
@@ -43,5 +43,5 @@ You can use Alasql library to load and parse CSV data from server or from deskto
              });
          }
      </script>
-
+```
 The working example how to upload file [is here](http://alasql.org/demo/008file/).
