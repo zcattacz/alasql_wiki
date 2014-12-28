@@ -24,7 +24,7 @@ Data definition
 Database
 
 * [USE DATABASE](Use Database)
-* [CREATE DATABASE(Create Database)
+* [CREATE DATABASE](Create Database)
 * [DROP DATABASE](Drop Database)
 
 External database
@@ -132,7 +132,7 @@ Information
   * IN, NOT IN
   * SOME, ANY
   * ALL
-* Aggregators
+* [Aggregators](Aggregators)
  * [SUM()](Sum) 
  * [COUNT()](Count) 
  * [MIN()](Min) 
