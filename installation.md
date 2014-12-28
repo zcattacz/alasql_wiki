@@ -2,17 +2,16 @@
 
 ### In browser
 
-1. For production: copy file from ```dist``` catalog to your project
+For production: copy file from ```dist``` catalog to your project
 
 * dist/alasql.min.js
 
-2. For debug: copy two files to your porject: 
+For debug: copy two files to your porject: 
 
 * dist/alasql.js
 * dist/alasql.js.map
 
-
-Include file: [alasql.js](./alasql.js) to the page.
+Include file: alasql.js or alasql.min.js to the HTML page:
 
 ```html
   <script src="alasql.js"></script>  
@@ -26,17 +25,16 @@ Include file: [alasql.js](./alasql.js) to the page.
 
 ```
 
-### In browser AMD 
+### In browser with AMD or UMD
 
 You can use alasql.js with define()/require() functions in browser as well, because it supports AMD and UMD:
 
 ```js
-    require(['../../alasql.js'], function(alasql) {
+    require(['alasql.js'], function(alasql) {
         var test1 = [{a:1,b:2,c:3},{a:4,b:5,c:6},{a:7,b:8,c:9}];
-        console.table(alasql('SELECT a, b*c AS bc FROM ? AS t',[test1]));
+        console.log( alasql('SELECT a, b*c AS bc FROM ? AS t',[test1]) );
     });
 ```
-Like in this sample you do not need to CREATE TABLE and INSERTS if you do not need constraints functionality.
 
 ### In Node.js
 
@@ -44,7 +42,7 @@ Use the following command for installation:
 ```
     npm install alasql
 ```
-Then require alasql.js file:
+Then require alasql.js module:
 
 ```js
     var alasql = require('alasql');
