@@ -21,8 +21,9 @@ Examples:
 * ARRAY() – create array of values
 * User-defined aggregators
 
-Examples:
+Example of AGGR() aggregator (here avg1 = avg2)
 ```sql
-    SELECT SUM(a) AS sm, COUNT(*) AS cnt, AGGR(sm/cnt) AS avg1, AVG(a) AS avg2 FROM data
+    SELECT SUM(a) AS sm, COUNT(*) AS cnt, \
+           AGGR(sm/cnt) AS avg1, AVG(a) AS avg2 FROM data
 ```
 
