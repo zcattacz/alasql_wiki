@@ -19,6 +19,7 @@ Cases:
 * [How to Group By and Sum?](How to Group By and Sum)
 * [How to group and sort a JS array?](How to group and sort a JS array)
 * [How to match the sub property in an objects array?](How to match the sub property in an objects array)
+* [How to group complex JSON object by nested properties?](How to group complex JSON object by nested properties)
 * [How to SUM and GROUP BY of JSON data?](How to SUM and GROUP BY of JSON data)
 * [How to unique by multiple properties?](How to unique by multiple properties)
 * [How to use aggregate functions using node-js?](How to use aggregate functions using node-js)
