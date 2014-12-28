@@ -1,4 +1,4 @@
-# How to export JavaScript Array of Filtered HTML Table data to MS Excel or CSV/
+# How to export JavaScript Array of Filtered HTML Table data to MS Excel or CSV?
 
 Source:[StackOverflow.com](http://stackoverflow.com/questions/6846810/export-javascript-array-of-filtered-html-table-data-to-ms-excel-or-csv/27661435#27661435)
 
