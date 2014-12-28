@@ -9,7 +9,7 @@
 * alasql.exec(sql) – execute statement
 * alasql.use(databaseid) – [use database](Use Database)
 * alasql.pretty(sql) – pretty SQL output in HTML and TXT
-* alasql.options - options
+* alasql.options - [options](Alasql Options)
 
 ## alasql() - main function
 ```js
