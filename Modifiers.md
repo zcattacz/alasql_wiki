@@ -4,28 +4,34 @@ Return Value Modifiers use for modification of alasql() function output from arr
 #### SELECT By default
 Returns array of objects:
 ```js
-    [{a:1,b:10},{a:2,b:20}]
+    alasql('SELECT * FROM one');
+    => [{a:1,b:10},{a:2,b:20}]
 ```
 #### SELECT VALUE
 Returns first value of first row:
 ```js
-    1
+    // Return number of all lines in README.md
+    alasql('SELECT VALUE COUNT(*) FROM TXT(‘README.md’)');
+    => 745
 ```
 #### SELECT COLUMN
 Returns first column from all rows:
 ```js
-    [1,2]
+    alasql('SELECT COLUMN a FROM ?',[data]);
+    => [1,2]
 ```
 
 #### SELECT ROW
 Returns values of all columns of first row:
 ```
+    alasql('SELECT ROW a FROM ?',[data]);
     [1,10]
 ```
 #### SELECT MATRIX
 Returns array of arrays
 ```
-    [[1,10],[2,20]]
+    alasql('SELECT MATRIX * FROM ?',[data]);
+    => [[1,10],[2,20]]
 ```
 
 #### SELECT INDEX
@@ -39,13 +45,4 @@ Create text by merging values of arry and joining with '\n'.
 ```js
     "This is a line\nand another line"
 ```
-## Examples
-Return number of all lines in README.md
-```js
-    alasql('SELECT VALUE COUNT(*) FROM TXT(‘README.md’)');
-```
 
-Return array of arrays:
-```js
-    alasql('SELECT MATRIX * FROM one');
-```
