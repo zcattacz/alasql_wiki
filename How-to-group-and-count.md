@@ -24,10 +24,10 @@ What's the elegant way to both group and sum values, resulting into:
 ### Answer
 
 You can do it in elegant way:
-
+```js
     var res = alasql('SELECT dep, SUM(qt) AS qt, SUM(qt*price) AS amt, 
                         AGGR(amt/qt) AS price FROM ? GROUP BY dep',[data]); 
-
+```
 Try this example [at jsFiddle](http://jsfiddle.net/agershun/30to2rh8/1/).
 
 I changed a little bit the algorithm for calculation of average price based on quantity sold.
