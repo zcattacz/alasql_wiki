@@ -18,3 +18,17 @@ Alias
 ```sql
     SELECT City+” “+Country AS LongName
 ```
+
+Select all columns from table
+```sql
+    SELECT *, City.*
+```
+Select columns of arrays
+```sql
+    SELECT [0],[1] 
+```
+Column names with spaces, etc
+```sql
+    SELECT [My Column]   -- SQL Server style
+    SEELCT `My Column`   -- MySQL style
+```
