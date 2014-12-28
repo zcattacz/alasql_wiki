@@ -21,6 +21,7 @@ Cases:
 * [How to group arrays by multiple fields?](How to group arrays by multiple fields)
 * [How to group and sort a JS array?](How to group and sort a JS array)
 * [How to match the sub property in an objects array?](How to match the sub property in an objects array)
+* [How to merge object arrays based on join of a key property in each?](How to merge object arrays based on join of a key property in each)
 * [How to group complex JSON object by nested properties?](How to group complex JSON object by nested properties)
 * [How to SUM and GROUP BY of JSON data?](How to SUM and GROUP BY of JSON data)
 * [How to unique by multiple properties?](How to unique by multiple properties)
