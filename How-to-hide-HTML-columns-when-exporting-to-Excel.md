@@ -18,6 +18,11 @@ You can export table from HTML to Excel and skip some columns with Alasql and [j
 
 To skip unnecessary columns you can use "skipdisplaynone" parameter (like in the example below) or list columns you need in the SELECT statement instead "*".
 
+To skip unnecessary columns you can use "skipdisplaynone" parameter (like in the example below) or list columns you need in the SELECT statement instead "*".
+```js
+    alasql('SELECT * FROM HTML("#table", {headers:true, skipdisplaynone:true})');
+    alasql('SELECT Name FROM HTML("#table", {headers:true})');
+```
 See the working example below with table, where column "Name" is hidden [in jsFiddle](http://jsfiddle.net/agershun/8rdL8m3L/1/):
 ```js
     function exportExcel() {
