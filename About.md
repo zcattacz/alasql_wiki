@@ -1,4 +1,4 @@
-# About
+## About Alasql
 
 Alasql is a JavaScript SQL database library designed for:
 
