@@ -5,6 +5,7 @@ This is a list of cases how Alasql can manipulate JavaScript (or JSON) data.
 Cases:
 * [How to add own keys for grouped output?](How to add own keys for grouped output)
 * [How to create a cleaned up contact object of an array of contact data?](How to create a cleaned up contact object of an array of contact data)
+* [How to count the number of times each value in the array appears in that array?](How to count the number of times each value in the array appears in that array)
 * [How to count total with two criteria?](How to count total with two criteria)
 * [How to joins and aggregates in Javascript arrays?](How to joins and aggregates in Javascript arrays)
 * [How to filter an array using an array?](How to filter an array using an array)
