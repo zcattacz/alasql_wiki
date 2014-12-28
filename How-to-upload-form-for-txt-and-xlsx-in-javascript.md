@@ -11,13 +11,13 @@ I would like to make a form that allow user upload .txt and .xlsx file and write
 You can read CSV or XLSX data with [Alasql][1] library. It uses [js-xlsx] library.
 
 If you read data from server:
-
+```js
     alasql('SELECT * FROM XLSX("data.xlsx", {headers:true})',[],function(data){
         // process data array
     });
-
+```
 If you are reading data from the browser:
-
+```html
     <script src="alasql.min.js"></script>
     <script src="xlsx.core.min.js"></script>
     <p>Select CSV file to read:</p>
@@ -29,6 +29,7 @@ If you are reading data from the browser:
 	        });
          }
     </script>
+```
 
 Alasql automatically recognize file type by file extension.
 
