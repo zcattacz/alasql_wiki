@@ -1,5 +1,5 @@
 # DROP TABLE
 
 ```js
-    DROP TABLE star;
+    alasql('DROP TABLE star');
 ```
