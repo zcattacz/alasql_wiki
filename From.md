@@ -26,7 +26,7 @@ From stdin (for Node.js)
 ```
 
 From SELECT statement
-'''js
+```js
     alasql('SELECT * FROM (SELECT * FROM  (SELECT * FROM City))');
 ```
 
@@ -39,20 +39,23 @@ From SELECT statement
 * HTML()
 
 ## From parameters (? and [?])
+
 * ? – just value
 * [?] – converts array to array of arrays
+
 ```js
     [1,2,3] => [[1],[2],[3]]
 ```
 
 ## Table Alias
 FROM  table alias
+
 ```js
     alasql('SELECT * FROM ? City');
     alasql('SELECT * FROM album AS a');
 ```
 
-
+Examples:
 
 ```js
     alasql('SELECT * FROM cities');
