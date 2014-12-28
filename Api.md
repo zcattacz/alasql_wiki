@@ -29,6 +29,25 @@ WebSQL
     db.exec(‘SELECT * FROM City”);
 ```
 
+## JavaScript classes as SQL data types
+```js
+    alasql.fn.Date = Date;
+    alasql(‘CREATE order (    orderno INT,    orderdate Date)’);
+```
 
+***NB.*** Classes are case-sensitive
 
+## NEW (like JavaScript ‘new’ operator)
+
+Register class as alasql type
+```js
+    alasql.fn.Date = Date;
+```
+Use NEW
+```js
+    alasql(‘SELECT NEW Date(yr,mn-1,dy) FROM orderdates’)
+```
+
+## JSON Objects
+See [JSON Objects](Json Objects)
 
