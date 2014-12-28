@@ -1,5 +1,7 @@
 # Data Manipulation
 
+This is a list of cases how Alasql can manipulate JavaScript (or JSON) data.
+
 Cases:
 * [How to add own keys for grouped output?](How to add own keys for grouped output)
 * [How to create a cleaned up contact object of an array of contact data?](How to create a cleaned up contact object of an array of contact data)
