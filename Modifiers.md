@@ -23,13 +23,13 @@ Returns first column from all rows:
 
 #### SELECT ROW
 Returns values of all columns of first row:
-```
+```js
     alasql('SELECT ROW a FROM ?',[data]);
     [1,10]
 ```
 #### SELECT MATRIX
-Returns array of arrays
-```
+Returns array of arrays:
+```js
     alasql('SELECT MATRIX * FROM ?',[data]);
     => [[1,10],[2,20]]
 ```
