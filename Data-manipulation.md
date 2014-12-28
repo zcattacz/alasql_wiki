@@ -16,6 +16,7 @@ Cases:
 * [How to find a item based on a key?](How to find a item based on a key)
 * [How to find and count unique values in nested JSON objects?](How to find and count unique values in nested JSON objects)
 * [How to group?](How to group)
+* [How to group by array of objects?](How to group by array of objects)
 * [How to group and count?](How to group and count)
 * [How to Group By and Sum?](How to Group By and Sum)
 * [How to group arrays by multiple fields?](How to group arrays by multiple fields)
