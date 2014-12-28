@@ -5,7 +5,7 @@
     alasql(‘SELECT cube(x) FROM ?’,[data]);
 ```
 
-## User-defined functions and compiled statements
+## User-defined functions and [compiled statements](Compilation)
 
 Custom functions:
 ```js
