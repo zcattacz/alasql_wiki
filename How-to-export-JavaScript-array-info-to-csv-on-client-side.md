@@ -1,5 +1,7 @@
 # How to export JavaScript array info to CSV on client side?
 
+Source: [StackOverflow.com](http://stackoverflow.com/questions/14964035/how-to-export-javascript-array-info-to-csv-on-client-side/27661512#27661512)
+
 ### Question
 
 There are the attribute info in array, which looks like this:
@@ -10,7 +12,7 @@ Any idea how I can export this to csv on the client side?
 
 ### Answer
 
-You can use [Alasql.js][1]library to export data locally in CSV (and XLSX as well) file format.
+You can use Alasql.js library to export data locally in CSV (and XLSX as well) file format.
 
 Below you can see a simple working example how to export data to CSV format.
 
