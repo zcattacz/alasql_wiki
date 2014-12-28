@@ -10,5 +10,6 @@ I'm currently looking for a fast and efficient way to import an Excel file into 
 
 Use:
 ```js
-    alasql('SELECT * INTO XLSX("myfile.xlsx",{headers:true}) FROM XLSX("srcfile.xlsx",{headers:true})');
+    alasql('SELECT * INTO XLSX("myfile.xlsx",{headers:true}) \
+                     FROM XLSX("srcfile.xlsx",{headers:true})');
 ```
