@@ -1,6 +1,6 @@
 # How to merge object arrays based on join of a key property in each?
 
-SOurce:[StackOverflow.com](http://stackoverflow.com/questions/6059084/merging-extend-javascript-object-arrays-based-on-join-of-a-key-property-in-each/27618087#27618087)
+Source: [StackOverflow.com](http://stackoverflow.com/questions/6059084/merging-extend-javascript-object-arrays-based-on-join-of-a-key-property-in-each/27618087#27618087)
 
 ### Question
 
