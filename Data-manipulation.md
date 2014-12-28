@@ -9,6 +9,7 @@ Cases:
 * [How to joins and aggregates in Javascript arrays?](How to joins and aggregates in Javascript arrays)
 * [How to filter an array using an array?](How to filter an array using an array)
 * [How to find a item based on a key?](How to find a item based on a key)
+* [How to group?](How to group)
 * [How to group and count?](How to group and count)
 * [How to Group By and Sum?](How to Group By and Sum)
 * [How to group and sort a JS array?](How to group and sort a JS array)
