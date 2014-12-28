@@ -16,14 +16,20 @@ Select clauses:
 [Return value modifiers](Modifiers)
 * [VALUE](Value), [COLUMN](Column), [ROW](Row), [MATRIX](Matrix), [INDEX](Index), [TEXT](Text) …
 
-Columns
-* City.Name, City.*, Population AS p
+[Columns](Select Columns)
+```sql
+    SELECT City.Name, City.*, Population AS p FROM Cities
+```
+[Operators](Operators)
+```sql
+    SELECT w*h+20 FROM ?
+```
 
-Operators
-* w*h+20
-
-Aggregators
-* [SUM()](Sum), [COUNT()](Count),..
-
-Function
-* [LCASE()](Lcase), [LEN()](Len), ..
+[Aggregators](Aggregators)
+```sql
+   SELECT SUM(x), COUNT(*) FROM arr
+```
+[Functions](Functions)
+```sql
+    SELECT LCASE(name), LEN(name) FROM names
+```
