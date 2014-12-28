@@ -1,4 +1,4 @@
-# [How to group and sort a JS array?
+# How to group and sort a JS array?
 
 Source: [StackOverflow.com](http://stackoverflow.com/questions/16164078/grouped-sorting-on-a-js-array/27595866#27595866)
 
@@ -19,9 +19,6 @@ For example I would like the result of the sorting to have the Andy with the mos
 ### Answer
 
 ```js
-    var array = [{"Name":"ANDY", "Hours":40}, {"Name":"ANDY", "Hours":50},
-                 {"Name":"GREG", "Hours":40}];
-
     var res = alasql('SELECT * FROM ? ORDER BY Name, Hours DESC',[array]);
 ```
 Try this example [at jsFiddle](http://jsfiddle.net/agershun/3v1fhybe/2/)
