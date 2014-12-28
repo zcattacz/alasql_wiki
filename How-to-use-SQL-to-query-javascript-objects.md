@@ -1,5 +1,6 @@
 # How to use SQL to query javascript objects?
 
+Source: [StackOverflow.com](http://stackoverflow.com/questions/5327088/use-sql-to-query-javascript-objects?lq=1)
 ### Question
 
 Is there a way to run an SQL query against javascript objects to find data within them? Specifically I'm looking for a way to query a few objects (each representing a table of data) and perform a join on them.
