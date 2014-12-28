@@ -9,6 +9,7 @@ Cases:
 * [How to count matching values in array?](How to count matching values in array)
 * [How to count the number of times each value in the array appears in that array?](How to count the number of times each value in the array appears in that array)
 * [How to count total with two criteria?](How to count total with two criteria)
+* [How to extend and merge two arrays containing objects?](How to extend and merge two arrays containing objects)
 * [How to intersect arrays of objects based on object property value?](How to intersect arrays of objects based on object property value)
 * [How to joins and aggregates in Javascript arrays?](How to joins and aggregates in Javascript arrays)
 * [How to filter an array using an array?](How to filter an array using an array)
