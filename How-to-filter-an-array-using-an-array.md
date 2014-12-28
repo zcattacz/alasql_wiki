@@ -15,7 +15,6 @@ So I want it to cycle through to see every value in arrTwo that has one of the v
 ```
 ### Answer
 
-You can do it with [Alasql][1] JavaScript SQL library:
 ```js
     var res = alasql('SELECT COLUMN _ FROM ? arrTwo WHERE EXISTS( \
           SELECT _ FROM ? arrOne WHERE arrTwo._ LIKE "%"+arrOne._+"%")',
