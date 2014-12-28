@@ -47,6 +47,35 @@ From SELECT statement
     [1,2,3] => [[1],[2],[3]]
 ```
 
+Array of objects
+```js
+     alasql(‘SELECT city.population FROM ? AS city’,[city]);
+```
+Array of arrays
+```ja
+     alasql(‘SELECT [0]+[1]*[2] FROM ?’, [data]);
+```
+Object
+```js
+     alasql(“SELECT [1] FROM ? WHERE [0] = ‘one’”,[{one:1,two:2}])
+```
+String
+```js
+    alasql(“SELECT LEN([0]) FROM ?”,[“Multi \n line \n text”])
+```
+
+## Parameter data type conversion
+String => array of lines
+```js
+    alasql('SELECT * FROM ? WHERE LEN([0]) > 10',[“abc\ncde”])
+    => [[“abc”],[“cde”]]
+```
+
+Objects => array of pairs key-value
+```js
+    {a:1,b:2} => [[“a”,1],[“b”,2]]
+```
+
 ## Table Alias
 FROM  table alias
 
