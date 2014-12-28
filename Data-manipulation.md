@@ -6,6 +6,7 @@ Cases:
 * [How to add own keys for grouped output?](How to add own keys for grouped output)
 * [How to aggregate an array of objects based on object property?](How to aggregate an array of objects based on object property)
 * [How to create a cleaned up contact object of an array of contact data?](How to create a cleaned up contact object of an array of contact data)
+* [How to count matching values in array?](How to count matching values in array)
 * [How to count the number of times each value in the array appears in that array?](How to count the number of times each value in the array appears in that array)
 * [How to count total with two criteria?](How to count total with two criteria)
 * [How to intersect arrays of objects based on object property value?](How to intersect arrays of objects based on object property value)
