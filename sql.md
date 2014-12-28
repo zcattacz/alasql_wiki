@@ -1,6 +1,7 @@
 # Alasql SQL Statements
 
 * [Single and multiple SQL statements](Multiple Statements)
+* [Standard](Standard Interface) and [fluent (like LINQ)](Fluent Interface) interface
 * [Case-sensitive keywords](Case Sensitive)
 
 ## Short list by category
@@ -31,7 +32,7 @@ External database
 * [ATTACH DATABASE](Attach Database)
 * [DETACH DATABASE](Detach Database)
 
-Transactions
+[Transactions](Transactions)
 * [BEGIN](Begin Transaction)
 * [COMMIT](Commit Transaction)
 * [ROLLBACK](Rollback)
