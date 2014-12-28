@@ -17,6 +17,7 @@ Cases:
 * [How to group?](How to group)
 * [How to group and count?](How to group and count)
 * [How to Group By and Sum?](How to Group By and Sum)
+* [How to group arrays by multiple fields?](How to group arrays by multiple fields)
 * [How to group and sort a JS array?](How to group and sort a JS array)
 * [How to match the sub property in an objects array?](How to match the sub property in an objects array)
 * [How to group complex JSON object by nested properties?](How to group complex JSON object by nested properties)
