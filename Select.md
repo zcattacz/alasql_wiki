@@ -14,7 +14,7 @@ Select clauses:
 * [UNION](Union) / [UNION ALL](Union All) /[INTERSECT](Intersect) / [EXCEPT](Except)
 
 Value modifiers
-* [VALUE](Value), [COLUMN](Column), [ROW](Row), [MATRIX](Matrix], [INDEX](Index), [TEXT](Text) …
+* [VALUE](Value), [COLUMN](Column), [ROW](Row), [MATRIX](Matrix), [INDEX](Index), [TEXT](Text) …
 
 Columns
 * City.Name, City.*, Population AS p
