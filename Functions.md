@@ -12,7 +12,8 @@
 
 Samples:
 ```sql
-    ABS(), IIF(), IFNULL(), INSTR(), LOWER(), UPPER(), LCASE(), UCASE(), LEN(), LENGTH()
+    ABS(), IIF(), IFNULL(), INSTR(), LOWER(), 
+    UPPER(), LCASE(), UCASE(), LEN(), LENGTH()
     YEAR(date), DAYOFWEEK(date)
 ```
 
