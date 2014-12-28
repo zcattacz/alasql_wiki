@@ -1,6 +1,7 @@
 # Alasql Wiki
 
-[User Manual](http://www.slideshare.net/AndreyGershun/alasql-manual-141220-1)
+* [About Alasql][About]
+* [User Manual](http://www.slideshare.net/AndreyGershun/alasql-manual-141220-1)
 
 ## Documentation
 * [Installation](Installation)
