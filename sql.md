@@ -1,4 +1,55 @@
-# SQL Statements Supported by Alasql
+# Alasql SQL Statements
+
+## Short list by categories
+
+Data query
+
+* [SELECT](Select)
+
+Data manipulation
+
+* [INSERT](Insert)
+* [UPDATE](Update)
+* [DELETE](Delete)
+
+Data definition
+
+* [CREATE TABLE](Create Table)
+* [ALTER TABLE](Alter Table)
+* [DROP TABLE](Drop Table)
+
+Database
+
+* [USE DATABASE](Use Database)
+* [CREATE DATABASE(Create Database)
+* [DROP DATABASE](Drop Database)
+
+External database
+* [ATTACH DATABASE](Attach Database)
+* [DETACH DATABASE](Detach Database)
+
+Transactions
+* [BEGIN](Begin Transaction)
+* [COMMIT](Commit Transaction)
+* [ROLLBACK](Rollback)
+
+Show
+
+* [SHOW DATABASES](Show Databases)
+* [SHOW TABLES](Show Tables)
+* [SHOW CREATE TABLE](Show Create Table)
+
+Program
+* [SET](Set)
+* [SOURCE](Source)
+
+Debug
+* [ASSERT](Assert)
+
+Information
+* [HELP](Help)
+
+## Full list
 
 * [ASSERT](Assert)
 * [ATTACH](Attach)
