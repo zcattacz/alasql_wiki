@@ -12,6 +12,8 @@ Group JavaScript array by field and count number of records in each group:
 
 #### Sample 2: work with IndexedDB database with SQL 
 
+Attach IndexedDB database, and then complex query on two joined tables and filtering:
+ 
 ```js
     alasql(’ATTACH INDEXEDDB DATABASE MyBase; \ 
             USE MyBase; \
