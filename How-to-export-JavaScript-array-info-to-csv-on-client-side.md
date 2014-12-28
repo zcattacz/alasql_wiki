@@ -14,22 +14,19 @@ You can use [Alasql.js][1]library to export data locally in CSV (and XLSX as wel
 
 Below you can see a simple working example how to export data to CSV format.
 
-<!-- begin snippet: js hide: false -->
-
-<!-- language: lang-html -->
-
+```html
     <script src="http://alasql.org/console/alasql.min.js"></script>
 
     <button onclick="exportData()">Export data to CSV file</button>
-
-<!-- language: lang-js -->
-
+```
+```js
     var data = [["Minsk",100000], ["Riga",200000]];
 
     function exportData() {
         alasql("SELECT * INTO CSV('cities.csv') FROM ?",[data]);
     }
-
+```
+You can try this example [at jsFiddle](http://jsfiddle.net/agershun/g855dn9b/).
 
 
 <!-- end snippet -->
