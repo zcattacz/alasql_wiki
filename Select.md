@@ -1,7 +1,7 @@
 # SELECT
 
 Select clauses:
-* [SELECT](Select Select)
+* [SELECT columns](Select Columns)
 * [TOP](Top) / [LIMIT](Limit) [FETCH](Fetch)
 * [DISTINCT](Distinct)
 * [INTO](Into)
