@@ -115,7 +115,7 @@ Information
 * [UPDATE](Update)
 * [USE DATABASE](Use Database)
 
-* Operators
+* [Operators](Operators)
  * Number
   * + - * / %
  * String 
