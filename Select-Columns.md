@@ -30,5 +30,5 @@ Select columns of arrays
 Column names with spaces, etc
 ```sql
     SELECT [My Column]   -- SQL Server style
-    SEELCT `My Column`   -- MySQL style
+    SELECT `My Column`   -- MySQL style
 ```
