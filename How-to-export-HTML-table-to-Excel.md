@@ -10,6 +10,7 @@ See the working example below or [in jsFiddle](http://jsfiddle.net/agershun/arkf
         alasql('SELECT * INTO XLSX("myinquires.xlsx",{headers:true}) \
                     FROM HTML("#MyInquires",{headers:true})');
     }
+```
 ```html
     <script src="http://alasql.org/console/alasql.min.js"></script>
     <script src="http://alasql.org/console/xlsx.core.min.js"></script>
