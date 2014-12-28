@@ -3,7 +3,7 @@
 Source: [StackOverflow.com](http://stackoverflow.com/questions/27654916/unable-to-read-data-from-csv-in-javascript/27655131#27655131)
 
 ### Question
-The CSV file is as follows : data.csv
+There is a text file representing a wireless signal survey. It consists of lines each composed of a longitude, a latitude and the wireless signal strength in that location. I'm trying to read this file via Javascript then extract locations and mark them on Google Maps. The CSV file is as follows : data.csv
 
     'Chicago', 41.878113, -87.629798, 4
     'New York', 40.714352, -74.005973, 5 
