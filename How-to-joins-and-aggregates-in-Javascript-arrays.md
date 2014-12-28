@@ -25,7 +25,7 @@ I want to get this:
         { id: 9, Name: "Facility 9", Count: 1 },
         { id: 10, Name: "Facility 10", Count: 2 }
     ]
-```;
+```
 How do I do this?
 
 ### Answer
