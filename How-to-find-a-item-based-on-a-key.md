@@ -24,7 +24,7 @@ How can I do something like this:
 
 Is something like that possible with JS?
 
-### Alasql
+### Answer
 
 Alasql library can perform more complex queries with "old good" SQL:
 ```js
