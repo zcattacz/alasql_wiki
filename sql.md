@@ -1,6 +1,8 @@
 # Alasql SQL Statements
 
-## Short list by categories
+* [Single and multiple SQL statements](Multiple Statemants)
+
+## Short list by category
 
 Data query
 
