@@ -2,6 +2,16 @@
 
 ### In browser
 
+1. For production: copy file from ```dist``` catalog to your project
+
+* dist/alasql.min.js
+
+2. For debug: copy two files to your porject: 
+
+* dist/alasql.js
+* dist/alasql.js.map
+
+
 Include file: [alasql.js](./alasql.js) to the page.
 
 ```html
