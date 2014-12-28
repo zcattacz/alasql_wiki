@@ -10,6 +10,7 @@
 * [JavaScript API](Api)
 * [Import and export functions](Import export)
 * [Options](Options)
+* [Internal structure](Internal Structure)
 
 ## Alasql Cookbook (Q&A, examples)
 * [Data manipulation](Data manipulation) - array filtering, grouping, ordering
