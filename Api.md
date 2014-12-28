@@ -1,30 +1,24 @@
 # Alasql JavaScript API
 
-## Alasql object
-
-*alasql* is a main object and function of Alasql library. It can be used in some different ways:  
-
-```html
-    <script src="alasql.js"></script>
-    <script>
-    	alasql('create table capitals (country string, city string, population int)');
-    	alasql('insert into capitals values ("USA", "Washington, D.C.", 646449)');
-    	alasql('insert into capitals values ("France", "Paris", 2211000)');
-    	alasql('insert into capitals values ("Russia", "Moscow", 11500000)');
-    	alasql('insert into capitals values ("Mexica", "Mexico City", 8851000)');
-    	alasql.log('select city,population from capitals order by population desc');
-    </string>
-```
-
-1. Execute SQL statement or set of statements:
+## SQL way
 ```js
-    alasql(sql-statement)
+    alasql(‘CREATE DATABASE test01’);
+    alasql(‘USE test01’);
+    alasql(‘CREATE TABLE one (a INT)’);
+    alasql(‘INSERT INTO one VALUES (10)’):
+    var res = alasql(‘SELECT * FROM one’);
+```
+## JavaScript way
+```js
+    var data = [{a:1}, {a:2}, {a:3}];
+    alasql(‘SELECT * FROM ? WHERE a >= ?’, [data, 2]);
+
+    // or
+    var db = new alasql.Database();
+    db.exec(“select * from one”, function(data) {
+        console.log(data.length);
+    });
 ```
 
-2. Class for a number functions:
-* alasql.exec(sql, params, callback) - execute SQL statement
-* alasql.value(sql, params, callback) - execute SQL statement but return only one value
-* alasql.log(sql, params) - execute SQL statement and log the results to console or into HTML tag
+See [alasql object](Alasql Object)
 
-3. Class for options:
-* alasql.options.logtarget - target for alasql.log() functions. Values can be "console" or HTML tag
