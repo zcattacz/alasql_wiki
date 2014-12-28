@@ -9,7 +9,7 @@
 * [Supported SQL statements](Sql)
 * [JavaScript API](Api)
 * [Import and export functions](Import export)
-* [Options](Options)
+* [Options](Alasql Options)
 * [Internal structure](Internal Structure)
 
 ## Alasql Cookbook (Q&A, examples)
