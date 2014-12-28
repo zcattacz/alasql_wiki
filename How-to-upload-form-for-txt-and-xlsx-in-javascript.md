@@ -1,11 +1,12 @@
 # How to upload form for txt and xlsx in javascript?
 
-Source: [StackOverflow.com](http://stackoverflow.com/questions/19211193/upload-form-for-txt-and-xlsx-in-javascript/27656225#27656225)
+Source: [StackOverflow.com](http://stackoverflow.com/questions/19211193/upload-form-for-txt-and-xlsx-in-javascript/27656225#27656225), [StackOverflow.com](http://stackoverflow.com/questions/5867675/how-can-you-read-excel-2007-file-xlsx-using-javascript-vbscript/27656359#27656359)
 
 ### Question
 
-I would like to make a form that allow user upload .txt and .xlsx file and write this file's contents in a div.I don't know if i should go server side to handle uploaded files.
+1. I would like to make a form that allow user upload .txt and .xlsx file and write this file's contents in a div.I don't know if i should go server side to handle uploaded files.
 
+1. I want to read the file uploaded by users on the client side and then do processing on them, instead of doing it on server-side. Is it possible read files and do manipulation using javascript on client side.
 ### Answer
 
 You can read CSV or XLSX data with Alasql library. It uses [js-xlsx](js-xlsx) library.
