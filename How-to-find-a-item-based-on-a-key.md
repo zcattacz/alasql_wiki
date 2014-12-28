@@ -5,6 +5,7 @@ Source: [StackOverflow.com](http://stackoverflow.com/questions/5672788/given-a-j
 ### Question
 
 Given a JSON object like:
+
 ```js
     var data = {items: [
         {value: "21", name: "Mick Jagger"},
@@ -14,7 +15,7 @@ Given a JSON object like:
         {value: "55", name: "Rudy Hamilton"},
         {value: "79", name: "Michael Jordan"}
     ]};
-
+```
 
 How can I do something like this:
 ```js
