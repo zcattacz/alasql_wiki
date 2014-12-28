@@ -1,7 +1,7 @@
 # Alasql Wiki
 
 * [About Alasql](About)
-* [User Manual](http://www.slideshare.net/AndreyGershun/alasql-manual-141220-1)
+* [User Manual](http://www.slideshare.net/AndreyGershun/alasql-manual-141220-1) - PowerPoint presentation
 
 ## Alasql Documentation
 * [Installation](Installation)
@@ -16,7 +16,7 @@
 * [Data import and export](Data import and export) - TXT, CSV, TSV, XLS, XLSX, HTML, JSON 
 * [JavaScript Frameworks](JavaScript Frameworks) - [Angular.js](Angular.js), [d3.js](d3.js), [Google Maps](Google maps)
 * [SQL database](Sql database) - in-memory database
-* [External databases](External databases) - [IndexedDB](IndexedDB), Local Storage(LocalStorage), and [SQLite](SQLite) support
+* [External databases](External databases) - [IndexedDB](IndexedDB), [Local Storage](LocalStorage), and [SQLite](SQLite) integration
 
 ## Command-Line Utilities
 * [Alacon](Alacon) - command-line utility for text and data files processing with SQL
