@@ -12,9 +12,9 @@
 * [Options](Options)
 
 ## Cookbook
-* [Advanced data manipulation](Data manipulation) - array filtering, grouping, ordering
-* [Import and export data](Etl) - TXT, CSV, TSV, XLS, XLSX, HTML, JSON 
-* [JavaScript Frameworks](Frameworks) - [Angular.js](Angular.js), [d3.js](d3.js), [Google Maps](Google maps)
+* [Data manipulation](Data manipulation) - array filtering, grouping, ordering
+* [Data import and export](Data import and export) - TXT, CSV, TSV, XLS, XLSX, HTML, JSON 
+* [JavaScript Frameworks](JavaScript Frameworks) - [Angular.js](Angular.js), [d3.js](d3.js), [Google Maps](Google maps)
 * [SQL database](Sql database) - in-memory database
 * [External databases](External databases) - [IndexedDB](IndexedDB), Local Storage(LocalStorage), and [SQLite](SQLite) support
 
