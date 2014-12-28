@@ -99,5 +99,17 @@ JSON object
     INSERT INTO one VALUES (1), (‘two’), (@{b:’three’}), @[‘F’,’O’,’U’,’R’]
 ```
 
+## SELECT JSON
+```sql
+    SELECT * FROM one
+    [{a:1}, {b:2}, {a:1,b:2}, 1, ”String”]
+
+    SELECT a FROM one
+    [{a:1}, {a:undefined}, {a:1}, {a:undefined},{a:undefined}]
+
+    SELECT * FROM one WHERE a=1
+    [{a:1},{a:1,b:2}]
+```
+
 
 
