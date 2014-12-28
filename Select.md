@@ -2,7 +2,7 @@
 
 Select clauses:
 * [SELECT](Select Select)
-* [TOP](Top) / [LIMIT] [FETCH]
+* [TOP](Top) / [LIMIT](Limit) [FETCH](Fetch)
 * [DISTINCT](Distinct)
 * [INTO](Into)
 * [FROM](From)
