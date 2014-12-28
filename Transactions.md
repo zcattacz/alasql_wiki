@@ -9,11 +9,13 @@ Begin
 Commit
 ```js
     alasql('COMMIT');
+    alasql('COMMIT TRANSACTION');
 ```
 
 Rollback
 ```js
     alasql('ROLLBACK');
+    alasql('ROLLBACK TRANSACTION');
 ```
 
 #### Transaction realization
