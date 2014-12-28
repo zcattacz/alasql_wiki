@@ -19,6 +19,16 @@
         console.log(data.length);
     });
 ```
-
+## Alasql object
 See [alasql object](Alasql Object)
+
+## exec() function
+WebSQL
+```js
+    var db = new alasql.Database(‘mydb’);
+    db.exec(‘SELECT * FROM City”);
+```
+
+
+
 
