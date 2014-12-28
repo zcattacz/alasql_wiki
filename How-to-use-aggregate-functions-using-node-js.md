@@ -59,7 +59,7 @@ You can group and aggregate data with [Alasql Node.js module](https://www.npmjs.
 ```
 You can try this example (in browser version) [in jsFiddle.](http://jsfiddle.net/agershun/jkxvc615/1/)
 
-To install [Alasql npm package][3] use:
+To install Alasql npm package use:
 ```
     npm install alasql
 ```
