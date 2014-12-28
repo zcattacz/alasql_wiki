@@ -11,3 +11,15 @@ Alasql is a JavaScript SQL database library designed for:
 ## Information about Alasql
 * GitHub - [http://github.com/agershun/alasql](http://github.com/agershun/alasql)
 * Official site - [http://alasql.org](http://alasql.org)
+
+## Why Alasql?
+Alasql can apply SQL on JavaScript arrays and objects, including following operations:
+
+* Can store,
+* retrieve,
+* sort,
+* and iterate through JSON data,
+* with a clean API,
+* supports SQL
+* and many other operations, like support of Local Storage and Indexed DB.
+
