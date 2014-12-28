@@ -8,7 +8,7 @@ I would like to make a form that allow user upload .txt and .xlsx file and write
 
 ### Answer
 
-You can read CSV or XLSX data with [Alasql][1] library. It uses [js-xlsx] library.
+You can read CSV or XLSX data with Alasql library. It uses [js-xlsx](js-xlsx) library.
 
 If you read data from server:
 ```js
