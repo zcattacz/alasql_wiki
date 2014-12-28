@@ -1,5 +1,7 @@
 # Fluent Interface
 
+Alasql supports fluent like LINW interface:
+
 ```js
     var res = alasql(data)
               .Where(function(x){x.Population>1000000})
@@ -8,12 +10,12 @@
 ```
 
 ## Supported functions
-* Select()
-* From()
-* GroupBy()
-* Having()
-* OrderBy()
-* Top()
+* [Select()](Select Fluent)
+* [From()](From Fluent)
+* [GroupBy()](GroupBy Fluent)
+* [Having()](Having Fluent)
+* [OrderBy()](OrderBy Fluent)
+* [Top()](Top Fluent)
 
 
 
