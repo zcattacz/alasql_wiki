@@ -50,9 +50,8 @@ And I want to Group it by `platformId` with sum of `payout` and `numOfPeople`. I
 ### Answer
 
 ```js
-    var res = alasql('SELECT INDEX platformId, \
-            {platformId:platformId, numOfPeople:numOfPeople} \
-        FROM (SELECT platformId, SUM(payout) AS payout, SUM(numOfPeople) AS numOfPeople \
+    var res = alasql('SELECT INDEX platformId, {platformId:platformId, numOfPeople:numOfPeople} \
+         FROM (SELECT platformId, SUM(payout) AS payout, SUM(numOfPeople) AS numOfPeople \
              FROM ? GROUP BY platformId)',[data]);
-```js
+```
 Try this example [at jsFiddle](http://jsfiddle.net/agershun/x110xhfc/3/)
