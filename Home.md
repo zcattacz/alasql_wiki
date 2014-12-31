@@ -1,16 +1,17 @@
 # Alasql Wiki
 
+## Alasql Documentation
 * [About Alasql](About)
 * [User Manual](http://www.slideshare.net/AndreyGershun/alasql-manual-141220-1) - PowerPoint presentation
-
-## Alasql Documentation
 * [Installation](Installation)
 * [Getting started](Getting started)
 * [Supported SQL statements](Sql)
 * [JavaScript API](Api)
+* [LINQ fluent interface](Fluent Interface)
 * [Import and export functions](Import export)
 * [Options](Alasql Options)
 * [Internal structure](Internal Structure)
+* [Performance](Performance)
 
 ## Alasql Cookbook (Q&A, examples)
 * [Data manipulation](Data manipulation) - array filtering, grouping, ordering
