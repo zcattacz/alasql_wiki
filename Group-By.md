@@ -1,8 +1,14 @@
 # SELECT GROUP BY
 
-Grouping
+Grouping by columns:
 ```js
     var res = alasql('SELECT * FROM City GROUP BY Contient, Country');
+```
+
+Grouping by expressions:
+
+```js
+    var res = alasql('SELECT b FROM Nums GROUP BY a%2');
 ```
 
 ## Grouping functions
