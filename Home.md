@@ -16,7 +16,12 @@
 ## Alasql Cookbook (Q&A, examples)
 * [Data manipulation](Data manipulation) - array filtering, grouping, ordering
 * [Data import and export](Data import and export) - TXT, CSV, TSV, XLS, XLSX, HTML, JSON 
-* [JavaScript Frameworks](JavaScript Frameworks) - [Angular.js](Angular.js), [d3.js](d3.js), [Google Maps](Google maps), [Google Docs (Spreadsheets)](Google Spreadsheets)
+* [JavaScript frameworks and libraries](JavaScript Frameworks):
+ * [Angular.js](Angular.js), 
+ * [d3.js](d3.js), 
+ * [Google Maps](Google maps), 
+ * [Google Docs (Spreadsheets)](Google Spreadsheets)
+ * [Numeral.js](Numeral.js)
 * [SQL database](Sql database) - in-memory database
 * [External databases](External databases) - [IndexedDB](IndexedDB), [Local Storage](LocalStorage), and [SQLite](SQLite) integration
 
