@@ -10,4 +10,4 @@ You can use [Numeral.js](http://numeraljs.com/) library to format numbers in Ala
     alasql('SELECT numeral(a)->format("0,0") FROM ?',[data]);
 ```
 
-See the example in jsFiddle](http://jsfiddle.net/agershun/drvga85x/1/).
+See the example [in jsFiddle](http://jsfiddle.net/agershun/drvga85x/1/).
