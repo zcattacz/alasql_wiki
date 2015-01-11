@@ -21,7 +21,7 @@
  * [d3.js](d3.js), 
  * [Google Maps](Google maps), 
  * [Google Docs (Spreadsheets)](Google Spreadsheets)
- * [Numeral.js](Numeral.js), [Moment.js](Moment.js)
+ * Formatting: [Numeral.js](Numeral.js), [Moment.js](Moment.js), [Sprintf.js](Sprintf.hs)}
 * [SQL database](Sql database) - in-memory database
 * [External databases](External databases) - [IndexedDB](IndexedDB), [Local Storage](LocalStorage), and [SQLite](SQLite) integration
 
