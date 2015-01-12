@@ -1,1 +1,1 @@
-(c) 2014, Andrey Gershun
+(c) 2014-2015, Andrey Gershun
