@@ -1,0 +1,1 @@
+[Home](https://github.com/agershun/alasql/wiki)
