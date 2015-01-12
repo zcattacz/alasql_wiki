@@ -16,12 +16,12 @@
 ## Alasql Cookbook (Q&A, examples)
 * [Data manipulation](Data manipulation) - array filtering, grouping, ordering
 * [Data import and export](Data import and export) - TXT, CSV, TSV, XLS, XLSX, HTML, JSON 
-* [JavaScript frameworks and libraries](JavaScript Frameworks):
+* SQL for [JavaScript frameworks and libraries](JavaScript Frameworks):
  * Frameworks: [Angular.js](Angular.js), 
  * Maps and diagrams: [d3.js](d3.js), [Google Maps](Google maps), 
- * Spreadsheets: [Microsoft Excel](XLSX), [Google Docs (Spreadsheets)](Google Spreadsheets) 
+ * Spreadsheets: [Microsoft Excel](XLSX), [Google Docs Spreadsheets](Google Spreadsheets) 
  * Grid: [Handsontable.js](Handsontable.js)
- * Formatting: [Numeral.js](Numeral.js), [Moment.js](Moment.js), [Sprintf.js](Sprintf.hs)}
+ * Formatting: [Numeral.js](Numeral.js), [Moment.js](Moment.js), [Sprintf.js](Sprintf.hs)
 * [SQL database](Sql database) - in-memory database
 * [External databases](External databases) - [IndexedDB](IndexedDB), [Local Storage](LocalStorage), and [SQLite](SQLite) integration
 
