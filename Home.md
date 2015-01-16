@@ -18,7 +18,8 @@
 * [Data import and export](Data import and export) - TXT, CSV, TSV, XLS, XLSX, HTML, JSON 
 * SQL for [JavaScript frameworks and libraries](JavaScript Frameworks):
  * Frameworks: [Angular.js](Angular.js), 
- * Maps and diagrams: [d3.js](d3.js), [Google Maps](Google maps), 
+ * Maps and diagrams: [d3.js](d3.js), [Google Maps](Google maps)
+ * Charts: [Highcharts.js](Highcharts.js) 
  * Spreadsheets: [Microsoft Excel](XLSX), [Google Docs Spreadsheets](Google Spreadsheets) 
  * Grid: [Handsontable.js](Handsontable.js)
  * Formatting: [Numeral.js](Numeral.js), [Moment.js](Moment.js), [Sprintf.js](Sprintf.hs)
