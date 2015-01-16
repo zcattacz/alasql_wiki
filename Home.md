@@ -17,6 +17,7 @@
 * [Data manipulation](Data manipulation) - array filtering, grouping, ordering
 * [Data import and export](Data import and export) - TXT, CSV, TSV, XLS, XLSX, HTML, JSON 
 * SQL for [JavaScript frameworks and libraries](JavaScript Frameworks):
+ * Platforms: [Apache Cordova](Apache Cordova), [Windows 8](Windows 8)
  * Frameworks: [Angular.js](Angular.js), 
  * Maps and diagrams: [d3.js](d3.js), [Google Maps](Google maps)
  * Charts: [Highcharts.js](Highcharts.js) 
