@@ -6,6 +6,7 @@
  * Logical functions
  * Date-time functions
 2. Run-time standard library
+* [COALESCE()](Coalesce)
 3. User-defined functions
 4. Into-functions
 5. From-functions
