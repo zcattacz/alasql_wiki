@@ -7,6 +7,7 @@ Select clauses:
 * [INTO](Into)
 * [FROM](From)
 * [JOIN](Join) [ON](On) / [USING](Using)
+* [APPLY](Apply)
 * [GROUP BY](Group By)
 * [HAVING](Having)
 * [WHERE](Where)
