@@ -27,6 +27,7 @@
  * Grid: [Handsontable.js](Handsontable.js)
  * Formatting: [Numeral.js](Numeral.js), [Moment.js](Moment.js), [Sprintf.js](Sprintf.hs)
 * [SQL database](Sql database) - in-memory database + [Alasql FileStorage](FileStorage) persistence engine
+* [SQL queries](SQL queries)
 * [External databases](External databases) - [IndexedDB](IndexedDB), [Local Storage](LocalStorage), and [SQLite](SQLite) integration
 
 ## Command-Line Utilities
