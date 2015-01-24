@@ -10,6 +10,7 @@
 * [LINQ fluent interface](Fluent Interface)
 * [Import and export functions](Import export)
 * [Options](Alasql Options)
+* [Errors processing](Errors)
 * [Internal structure](Internal Structure)
 * [Performance](Performance)
 
