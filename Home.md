@@ -6,6 +6,7 @@
 * [Installation](Installation)
 * [Getting started](Getting started)
 * [Supported SQL statements](Sql)
+ * [Functions](Functions)
 * [JavaScript API](Api)
 * [LINQ fluent interface](Fluent Interface)
 * [Import and export functions](Import export)
