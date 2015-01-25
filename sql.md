@@ -48,8 +48,8 @@ Show
 Program
 * [DECLARE](Declare)
 * [SET](Set)
-* [IF THEN ELSE](IfThenElse)
-* [BEGIN END](BeginEnd)
+* [IF THEN ELSE](If Then Else)
+* [BEGIN END](Begin End)
 * [WHILE](While)
 * [SOURCE](Source)
 
