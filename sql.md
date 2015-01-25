@@ -33,9 +33,9 @@ External database
 * [DETACH DATABASE](Detach Database)
 
 [Transactions](Transactions)
-* [BEGIN](Begin Transaction)
-* [COMMIT](Commit Transaction)
-* [ROLLBACK](Rollback)
+* [BEGIN TRANSACTION](Begin Transaction)
+* [COMMIT TRANSACTION](Commit Transaction)
+* [ROLLBACK TRANSACTION](Rollback)
 
 Show
 
@@ -44,7 +44,11 @@ Show
 * [SHOW CREATE TABLE](Show Create Table)
 
 Program
+* [DECLARE](Declare)
 * [SET](Set)
+* [IF THEN ELSE](IfThenElse)
+* [BEGIN END](BeginEnd)
+* [WHILE](While)
 * [SOURCE](Source)
 
 Debug
@@ -142,7 +146,7 @@ Information
  * [LAST()](Last) 
  * [AGGR()](Aggr)
  * [ARRAY()](Array)
-* Groupping functions
+* Grouping functions
  * [CUBE()](Cube)
  * [ROLLUP()](Rollup)
  * [GROUPING SETS()](Grouping Sets)
