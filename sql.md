@@ -21,6 +21,8 @@ Data definition
 * [CREATE TABLE](Create Table)
 * [ALTER TABLE](Alter Table)
 * [DROP TABLE](Drop Table)
+* [CREATE VIEW](Create View)
+* [DROP VIEW](Drop View)
 
 Database
 
