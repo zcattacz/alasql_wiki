@@ -58,3 +58,40 @@ Then require alasql.js module:
     console.log(res[0].one);
 
 ```
+
+## Other options
+
+### In browser with multi-line SQL statements
+
+```html
+    <script src="http://alasql.org/console/alasql.min.js"></script>
+    <div id="res"></div>
+    <script type="text/sql" id="sql">
+    CREATE TABLE people (
+        Id INT PRIMARY KEY,
+        FirstName STRING,
+        LastName STRING
+    );
+    
+    INSERT INTO people VALUES 
+        (1,"Peter","Peterson"),
+        (2,"Eric","Ericson"),
+        (3,"John","Johnson");
+
+    IF EXISTS (SELECT * FROM people WHERE Id=2)
+        UPDATE people SET FirstName = "Roll", LastName = "Rolson" WHERE Id=2
+    ELSE
+        INSERT INTO people VALUES (2,"Eric","Rollson");
+
+    IF EXISTS (SELECT * FROM people WHERE Id=4)
+        UPDATE people SET FirstName = "Roll", LastName = "Rolson" WHERE Id=4
+    ELSE
+        INSERT INTO people VALUES (4,"Smith","Smithson");
+
+    SELECT * INTO HTML("#res",{headers:true}) FROM people;
+    </script>
+    <script>
+        alasql('SOURCE "#res"');
+    </script>
+```
+Try this example [in jsFiddle](http://jsfiddle.net/agershun/n4de6433/4/)
