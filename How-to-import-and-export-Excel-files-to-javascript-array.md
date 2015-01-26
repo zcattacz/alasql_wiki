@@ -8,8 +8,24 @@ I'm currently looking for a fast and efficient way to import an Excel file into 
 
 ### Answer
 
-Use:
+For import:
 ```js
-    alasql('SELECT * INTO XLSX("myfile.xlsx",{headers:true}) \
-                     FROM XLSX("srcfile.xlsx",{headers:true})');
+    alasql('SELECT * FROM XLSX("srcfile.xlsx",{headers:true})',[],function(data){
+        console.log(data);
+    });
+```
+For export:
+```js
+    var data = [{a:!,b:10},{a:2,b:20}];
+    alasql('SELECT * INTO XLSX("myfile.xlsx",{headers:true}) FROM ?',[data]);
+```
+Import and export with interim data processing:
+```js
+    alasql('SELECT * \
+                INTO XLSX("myfile.xlsx",{headers:true}) \
+                FROM XLSX("srcfile.xlsx",{headers:true}) \
+                WHERE Age > 20 \
+                GROUP BY LastName \
+                HAVING COUNT(*) > 2 \
+                ORDER BY LastName, FirstName');
 ```
