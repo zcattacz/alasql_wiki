@@ -1,5 +1,11 @@
 # Alasql JavaScript API
 
+## Standard functions:
+
+* alasql()
+* alasql.compile(sql) - [Compile statements](Compile)
+
+
 ## SQL way
 ```js
     alasql(‘CREATE DATABASE test01’);
