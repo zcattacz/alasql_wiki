@@ -23,4 +23,4 @@ Here is the example how to calculate sum of numbers > 2 from [1,2,3,4,5]:
     var res = mysum([data])
 ```
 
-Try this example in [jsFiddle](http://jsfiddle.net/7cn8kp16/)
+Try this example in [jsFiddle](http://jsfiddle.net/7cn8kp16/1/)
