@@ -14,7 +14,13 @@ Second, publish spreadsheet file at Goggle Drive (in case of problem read this [
     var url='https://docs.google.com/spreadsheets/d/12VlQDuE1hgArpsJFBHlVbe4XN3CX5qwHvo-58ClMGzU/pubhtml';
 ```
 
-Third, use TABLETOP from-function like in the example below:
+Third, use TABLETOP() from-function like in the example below:
 ```js
     alasql('SELECT * INTO HTML("#res",{headers:true}) FROM TABLETOP(?)',[url]);
+```
+
+TABLETOP() function has only one parameter: Google Spreadsheet key.
+```sql
+    SELECT * FROM TABLETOP("https://docs.google.com/spreadsheets/d/12VlQDuE1hgArpsJFBHlVbe4XN3CX5qwHvo-58ClMGzU/pubhtml")
+```
 ```
