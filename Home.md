@@ -22,7 +22,7 @@
  * Platforms: [Apache Cordova](Apache Cordova), [Windows 8](Windows 8)
  * Frameworks: [Angular.js](Angular.js), 
  * Maps and diagrams: [d3.js](d3.js), [Google Maps](Google maps)
- * Charts: [Highcharts.js](Highcharts.js) 
+ * Charts: [Highcharts.js](Highcharts.js), [Google Charts](Google Charts) 
  * Spreadsheets: [Microsoft Excel](XLSX), [Google Docs Spreadsheets](Google Spreadsheets) 
  * Grid: [Handsontable.js](Handsontable.js)
  * Formatting: [Numeral.js](Numeral.js), [Moment.js](Moment.js), [Sprintf.js](Sprintf.hs)
