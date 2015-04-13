@@ -1,7 +1,7 @@
-# Alasql Wiki
+# AlaSQL Wiki
 
-## Alasql Documentation
-* [About Alasql](About)
+## AlaSQL Documentation
+* [About AlaSQL](About)
 * [User Manual](http://www.slideshare.net/AndreyGershun/alasql-manual-141220-1) - PowerPoint presentation
 * [Installation](Installation)
 * [Getting started](Getting started)
@@ -15,7 +15,7 @@
 * [Internal structure](Internal Structure)
 * [Performance](Performance)
 
-## Alasql Cookbook (Q&A, examples)
+## AlaSQL Cookbook (Q&A, examples)
 * [Data manipulation](Data manipulation) - array filtering, grouping, ordering
 * [Data import and export](Data import and export) - TXT, CSV, TSV, XLS, XLSX, HTML, JSON 
 * SQL for [JavaScript frameworks and libraries](JavaScript Frameworks):
@@ -31,8 +31,8 @@
 * [External databases](External databases) - [IndexedDB](IndexedDB), [Local Storage](LocalStorage), and [SQLite](SQLite) integration
 
 ## Command-Line Utilities
-* [Alacon](Alacon) - command-line utility for text and data files processing with SQL
-* [Alaserver](Alaserver) - simple SQL server based on Alasql
+* [alacon](Alacon) - command-line utility for text and data files processing with SQL
+* [alaserver](Alaserver) - simple SQL server based on AlaSQL
 
 ## Sandbox
-* [Alasql Console](http://alasql.org/console/alaconsole.html)
+* [AlaSQL Console](http://alasql.org/console/alaconsole.html)
