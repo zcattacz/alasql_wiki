@@ -153,4 +153,5 @@ Information
  * [ROLLUP()](Rollup)
  * [GROUPING SETS()](Grouping Sets)
 * [Standard functions](Functions)
+* [Subqueries / Sub SELECT operator](Subqueries)
 * [User-defined SQL functions](User Defined Functions)
