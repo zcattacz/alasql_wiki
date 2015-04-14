@@ -10,6 +10,8 @@
 * alasql.use(databaseid) – [use database](Use Database)
 * alasql.pretty(sql) – pretty SQL output in HTML and TXT
 * alasql.options - [options](Alasql Options)
+* alasql.databases - list of AlaSQL databases
+* alasql.tables - list of tables in ```alasql``` database
 
 ## alasql() - main function
 ```js
@@ -67,3 +69,16 @@ See [Sync and Async](Async).
 
 3. Class for options:
 * alasql.options.logtarget - target for alasql.log() functions. Values can be "console" or HTML tag
+
+### List of databases
+
+You can find list of current tables in alasql.databases property:
+```js
+	console.log(Object.keys(alasql.databases).sort().join(', '));
+```
+### List of tables
+
+You can find list of current tables in alasql.tables property:
+```js
+	console.log(Object.keys(alasql.tables).sort().join(', '));
+```
