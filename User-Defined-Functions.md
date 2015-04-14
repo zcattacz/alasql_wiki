@@ -13,7 +13,8 @@ You can use alasql inside alasql functions, like below:
 
     var res = alasql('SELECT * FROM ? WHERE myfilter(Phase)',[data]);
 ```
-See the working example in (jsFiddle](http://jsfiddle.net/agershun/1nccgs6n/3/)
+See the working example [in jsFiddle](http://jsfiddle.net/agershun/1nccgs6n/3/)
+
 ## User-defined functions and [compiled statements](Compilation)
 
 Custom functions:
