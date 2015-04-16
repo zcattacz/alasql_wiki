@@ -1,6 +1,6 @@
 # Import and Export
 
-## Export
+### Export
 
 You can save tables directly to the [CSV](Csv) file, like:
 ```js
@@ -9,4 +9,11 @@ You can save tables directly to the [CSV](Csv) file, like:
 ```
 Try this example [in jsFiddle](http://jsfiddle.net/agershun/81noowmn/8/).
 
-AlaSQL also supports [CSV](Csv), [TAB](Tsv) (or [TSV](Tsv)), [XLSX](Xlsx), [JSON](Json) formats.
+AlaSQL also supports export to [CSV](Csv), [TAB](Tsv) (or [TSV](Tsv)), [XLSX](Xlsx), and [JSON](Json) formats.
+
+### Import
+
+You can read tables directly from the [CSV](Csv) file, like:
+```js
+    var res = alasql('SELECT * FROM CSV("a.csv",{headers:true})');
+```
