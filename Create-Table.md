@@ -29,5 +29,5 @@ Also you can use columns without [data types](Data Types):
 ```
 returns:
 ```json
-    [ { name: 1, seq: 10 }, { name: 'one', seq: 'ten' } ]
+    [ { "name": 1, "seq": 10 }, { "name": "one", "seq": "ten" } ]
 ```
