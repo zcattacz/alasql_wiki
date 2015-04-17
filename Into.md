@@ -16,6 +16,16 @@ Into stdout (for Node.js):
     alasql('SELECT * INTO TXT() FROM City');
 ```
 
+### Into parameter array
+You can save data into parametes array. In this case AlaSQL append records to existing array:
+```js
+    var data = [{a:1},{a:2}]; // Source array
+    var resdata = [{a:0}];    // Destination array
+    var res = alasql('SELECT * INTO ? FROM ?',[resdata,data]); 
+```
+AlaSQL returns in ```res``` == 2 - number or records and ```resdata``` equals to ```[ { a: 0 }, { a: 1 }, { a: 2 } ]```
+
+
 ## INTO-functions
 * TXT()
 * JSON()
