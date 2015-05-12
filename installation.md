@@ -59,6 +59,15 @@ Then require alasql.js module:
 
 ```
 
+### In Bower
+```
+    bower install alasql
+```
+
+### In Meteor
+```
+    meteor install agershun:alasql
+```
 ## Other options
 
 ### In browser with multi-line SQL statements
