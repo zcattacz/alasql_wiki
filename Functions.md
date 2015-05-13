@@ -6,6 +6,7 @@
  * Logical functions
  * Date-time functions
 2. Run-time standard library
+ * [ROWNUM() or ROW_NUMBER()](ROWNUM)
  * [COALESCE()](Coalesce)
 3. User-defined functions
 4. Into-functions
