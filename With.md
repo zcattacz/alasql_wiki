@@ -4,8 +4,10 @@ In AlaSQL you can use WITH caluse with SELECT operator to create temporary table
 (a.k.a. Commom Table Expressions). 
 
 <blockquote>
-A common table expression (CTE) can be thought of as a temporary result set that is defined within the execution scope of a single SELECT, INSERT, UPDATE, DELETE, or CREATE VIEW statement. A CTE is similar to a derived table in that it is not stored as an object and lasts only for the duration of the query. CTE can be referenced multiple times in the same query ([source](https://technet.microsoft.com/en-us/library/ms190766(v=sql.105).aspx)).
+A common table expression (CTE) can be thought of as a temporary result set that is defined within the execution scope of a single SELECT, INSERT, UPDATE, DELETE, or CREATE VIEW statement. A CTE is similar to a derived table in that it is not stored as an object and lasts only for the duration of the query. CTE can be referenced multiple times in the same query.
 </blockquote>
+
+[Source](https://technet.microsoft.com/en-us/library/ms190766(v=sql.105).aspx)
 
 In current version of AlaSQL CTE canot be self-referencing. 
 
@@ -28,4 +30,4 @@ In current version of AlaSQL CTE canot be self-referencing.
    Totals
 ```
 
-You can try this example [in jsFiddle](http://jsfiddle.net/n131zmw9/1/)
+You can try this example [in jsFiddle](http://jsfiddle.net/n131zmw9/2/)
