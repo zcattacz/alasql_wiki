@@ -48,7 +48,7 @@ Show
 Program
 * [DECLARE](Declare)
 * [SET](Set)
-* [IF THEN ELSE](If Then Else)
+* [IF THEN](If Then Else), [IF THEN ELSE](If Then Else)
 * [BEGIN END](Begin End)
 * [WHILE](While)
 * [SOURCE](Source)
@@ -83,12 +83,12 @@ Information
   	* ANSI SQL types
   	* SQLite, Oracle, MySQL, SQL Server, Postgres data types mapping
   * Column constraints
-    * PRIMARY KEY
-    * FOREIGN KEY
-    * DEFAULT
-    * NULL / NOT NULL
-    * AUTO_INCREMENT, IDENTITY
-    * CHECK
+    * [PRIMARY KEY](Primary Key)
+    * [FOREIGN KEY](Foreign Key)
+    * [DEFAULT](Default)
+    * [NULL](Null) / [NOT NULL](Not Null)
+    * [AUTO_INCREMENT](Identity), [AUTOINCREMENT](Identity), [IDENTITY](Identity)
+    * [CHECK](Check)
 * [DELETE](Delete)
 * DROP
  * [DROP DATABASE](Drop Database)
@@ -129,16 +129,16 @@ Information
   * +
  * Comparing
   * = != < <= > >=
-  * BETWEEN, NOT BETWEEN
+  * [BETWEEN](Between), [NOT BETWEEN](Not Between)
  * Null
-   * IS NULL, IS NOT NULL
+   * [IS NULL](Is Null), [IS NOT NULL](Is Not Null)
 * SQL-Functions
  * [ABS()](sql/abs.md)
 * Complex Operators
-  * EXISTS, NOT EXISTS
-  * IN, NOT IN
-  * SOME, ANY
-  * ALL
+  * [EXISTS](Exists), [NOT EXISTS](Not Exists)
+  * [IN](In), [NOT IN](Not In)
+  * [SOME](Some), [ANY](Any)
+  * [ALL](All)
 * [Aggregators](Aggregators)
  * [SUM()](Sum) 
  * [COUNT()](Count) 
