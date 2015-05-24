@@ -1,6 +1,6 @@
 # = Expression Statement
 
-You can use expression statement strating with ```=```
+In AlaSQL you can use expression statement starting with ```=```
 
 Like:
 ```js
