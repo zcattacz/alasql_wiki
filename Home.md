@@ -2,6 +2,7 @@
 
 ## AlaSQL Documentation
 * [About AlaSQL](About)
+* [SQL-99 compatibility](SQL-99)
 * [User Manual](http://www.slideshare.net/AndreyGershun/alasql-manual-141220-1) - PowerPoint presentation
 * [Installation](Installation)
 * [Getting started](Getting started)
