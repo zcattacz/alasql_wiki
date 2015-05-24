@@ -10,6 +10,9 @@ Data query
 
 * [SELECT](Select)
 
+Expression statement
+* [= Expression Statement](Expression Statement)
+
 Data manipulation
 
 * [INSERT](Insert)
