@@ -84,14 +84,16 @@ The list of keywords used in AlaSQL (based on the table from [here](http://devel
 <tr><td>CURRENT<td>√<td>√<td>√<td>√<td>√<td>
 <tr><td>CURRENT_CATALOG<td> <td> <td> <td>√<td>√<td> 
 <tr><td>CURRENT_DATE<td>√<td>√<td>√<td>√<td>√<td>
-<tr><td>CURRENT_DEFAULT_TRANSFORM_GROUP<td> <td>√<td>√<td>√<td>√<td> 
+<tr><td>CURRENT_DEFAULT
+_TRANSFORM_GROUP<td> <td>√<td>√<td>√<td>√<td> 
 <tr><td>CURRENT_PATH<td>√<td>√<td>√<td>√<td>√<td>
 <tr><td>CURRENT_ROLE<td> <td>√<td>√<td>√<td>√<td> 
 <tr><td>CURRENT_ROW<td> <td> <td> <td> <td>√<td> 
 <tr><td>CURRENT_SCHEMA<td> <td> <td> <td>√<td>√<td> 
 <tr><td>CURRENT_TIME<td>√<td>√<td>√<td>√<td>√<td>
 <tr><td>CURRENT_TIMESTAMP<td>√<td>√<td>√<td>√<td>√<td>√
-<tr><td>CURRENT_TRANSFORM_GROUP_FOR_TYPE<td> <td>√<td>√<td>√<td>√<td> 
+<tr><td>CURRENT_TRANSFORM
+_GROUP_FOR_TYPE<td> <td>√<td>√<td>√<td>√<td> 
 <tr><td>CURRENT_USER<td>√<td>√<td>√<td>√<td>√<td>
 <tr><td>CURSOR<td>√<td>√<td>√<td>√<td>√<td>
 <tr><td>CYCLE<td> <td>√<td>√<td>√<td>√<td> 
