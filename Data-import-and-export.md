@@ -1,6 +1,6 @@
 # Data Import and Export
 
-Here you can find Alasql examples on import and export functions.
+Here you can find AlaSQL examples on import and export functions.
 
 ### CSV and Tab
 * [How to attach the database from another folder locally in the computer or from an URL](How to attach the database from another folder locally in the computer or from an URL)
@@ -13,7 +13,7 @@ Here you can find Alasql examples on import and export functions.
 * [How to import and export Excel files to javascript array?](How to import and export Excel files to javascript array)
 * [How to upload form for txt and xlsx in javascript?](How to upload form for txt and xlsx in javascript)
 
-Nultisheet workbook:
+Multisheet workbook:
 * [How to create multiple worksheets into a workbook?](How to create multiple worksheets into a workbook)
 
 ### HTML
