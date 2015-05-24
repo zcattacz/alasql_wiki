@@ -1,4 +1,4 @@
-# = Expression Statement
+# Expression Statement (=)
 
 In AlaSQL you can use expression statement starting with ```=```
 
