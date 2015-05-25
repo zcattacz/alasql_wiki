@@ -19,6 +19,7 @@
 ## AlaSQL Cookbook (Q&A, examples)
 * [Data manipulation](Data manipulation) - array filtering, grouping, ordering
 * [Data import and export](Data import and export) - TXT, CSV, TSV, XLS, XLSX, HTML, JSON 
+* [Search in JSON arrays and objects](JSON data search)
 * SQL for [JavaScript frameworks and libraries](JavaScript Frameworks):
  * Platforms: [Apache Cordova](Apache Cordova), [Ionic](Ionic), [Windows 8](Windows 8)
  * Frameworks: [Angular.js](Angular.js), 
