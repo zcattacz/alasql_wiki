@@ -135,6 +135,8 @@ Information
   * [BETWEEN](Between), [NOT BETWEEN](Not Between)
  * [NULL](Null)
    * [IS NULL](Is Null), [IS NOT NULL](Is Not Null)
+ * Iclusion
+   * [IN](In), [NOT IN](Not In), [CONTAINS](Contains)
 * [SQL-Functions](Functions)
  * [ABS()](sql/abs.md)
  * [Custom functions](Custom Functions)
