@@ -385,7 +385,7 @@ UNDO | √ | √ | √ | √ | √ |
 UNKNOWN | √ | √ | √ | √ | √ | 
 UNNEST |   | √ | √ | √ | √ |  
 UNTIL |   | √ | √ | √ | √ | 
-UPDATE | √ | √ | √ | √ | √ | √
+[UPDATE](Update) | √ | √ | √ | √ | √ | √
 [UPPER](Upper) | √ |   |   | √ | √ |  √
 USAGE | √ | √ |   |   |   |  
 USER | √ | √ | √ | √ | √ | 
