@@ -85,8 +85,7 @@ CUME_DIST |   |   |   | √ | √ |
 CURRENT | √ | √ | √ | √ | √ | 
 CURRENT_CATALOG |   |   |   | √ | √ |  
 CURRENT_DATE | √ | √ | √ | √ | √ | 
-CURRENT_DEFAULT
-_TRANSFORM_GROUP |   | √ | √ | √ | √ |  
+CURRENT_DEFAULT _TRANSFORM_GROUP |   | √ | √ | √ | √ |  
 CURRENT_PATH | √ | √ | √ | √ | √ | 
 CURRENT_ROLE |   | √ | √ | √ | √ |  
 CURRENT_ROW |   |   |   |   | √ |  
