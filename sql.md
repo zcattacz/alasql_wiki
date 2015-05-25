@@ -130,10 +130,10 @@ Information
   * + - * / %
  * String 
   * +
- * Comparing
+ * [Comparing](Comparing)
   * = != < <= > >=
   * [BETWEEN](Between), [NOT BETWEEN](Not Between)
- * Null
+ * [NULL](Null)
    * [IS NULL](Is Null), [IS NOT NULL](Is Not Null)
 * [SQL-Functions](Functions)
  * [ABS()](sql/abs.md)
@@ -149,6 +149,7 @@ Information
  * [MAX()](Max) 
  * [FIRST()](First 
  * [LAST()](Last) 
+ * [MEDIAN()](Median) 
  * [AGGR()](Aggr)
  * [ARRAY()](Array)
 * Grouping functions
