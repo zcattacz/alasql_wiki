@@ -19,4 +19,7 @@ Samples:
     YEAR(date), DAYOFWEEK(date)
 ```
 
+### Compatibility function
+
+* [OBJECT_ID()](Object_id)
 
