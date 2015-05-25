@@ -9,6 +9,12 @@ For example:
     // returns [{a:!},{a:2}]
 ```
 
-WIth [Angular.js](Angular.js) AlaSQL automatically remove ```$$hashKey``` (see [this example](http://jsfiddle.net/agershun/efmhcnu8/1/))
+You can also remove group of columns with ```LIKE``` clause:
+```sql
+    SELECT * REMOVE COLUMNS LIKE '%a%',b,c FROM one
+```
+
+With [Angular.js](Angular.js) AlaSQL automatically remove ```$$hashKey``` (see [this example](http://jsfiddle.net/agershun/efmhcnu8/1/))
+
 
 
