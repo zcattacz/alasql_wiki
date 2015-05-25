@@ -1,6 +1,6 @@
 # FOREIGN KEY
 
-AlaSQL suports FOREIGN KEY concept.
+AlaSQL supports FOREIGN KEY concept.
 
 In this example field ```Orders.fruitid``` reference to ```Fruits``` table:
 ```sql
