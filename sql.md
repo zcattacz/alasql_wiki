@@ -135,7 +135,7 @@ Information
   * [BETWEEN](Between), [NOT BETWEEN](Not Between)
  * Null
    * [IS NULL](Is Null), [IS NOT NULL](Is Not Null)
-* SQL-Functions
+* [SQL-Functions](Functions)
  * [ABS()](sql/abs.md)
 * Complex Operators
   * [EXISTS](Exists), [NOT EXISTS](Not Exists)
