@@ -5,6 +5,7 @@
  * Number functions
  * Logical functions
  * Date-time functions
+   * [CONVERT()](Convert)
 2. Run-time standard library
  * [ROWNUM()](ROWNUM) (or [ROW_NUMBER()](ROWNUM))
  * [COALESCE()](Coalesce)
