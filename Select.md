@@ -15,10 +15,10 @@ Select clauses:
 * [HAVING](Having)
 * [WHERE](Where)
 * [ORDER BY](Order By)
-* [UNION](Union) / [UNION ALL](Union All) /[INTERSECT](Intersect) / [EXCEPT](Except)
+* [UNION](Union) / [UNION ALL](Union All) /[INTERSECT](Intersect) / [EXCEPT](Except) / [CORRESPONDING](Corresponding)
 
 [Return value modifiers](Modifiers)
-* [VALUE](Value), [COLUMN](Column), [ROW](Row), [MATRIX](Matrix), [INDEX](Index), [TEXT](Text) …
+* [VALUE](Value), [COLUMN](Column), [ROW](Row), [MATRIX](Matrix), [INDEX](Index), [TEXT](Text), [RECORDSET](Recordset)
 
 [Columns](Select Columns)
 ```sql
