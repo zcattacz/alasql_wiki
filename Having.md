@@ -17,3 +17,16 @@ Expressions can contain aggregators, like below:
                 GROUP BY Country \
                 HAVING COUNT(*) > 2');
 ```
+
+You can use aggregators in the ```HAVING``` clause like in this example:
+```js
+var groups = [{id:4, name:"abcd", id_group:"1"},
+              {id:5, name:"efgh", id_group:"1"},
+              {id:6, name:"ijkl", id_group:"1"},
+              {id:4, name:"abcd", id_group:"2"},
+              {id:7, name:"mnop", id_group:"2"}];
+               
+var res = alasql('select id_group, count(id) as cnt from ? where id in (4,7)\
+group by id_group having count(id) = 2',[groups]);  
+```
+See this example in [jsFiddle](http://jsfiddle.net/5prbwtzy/2/)
