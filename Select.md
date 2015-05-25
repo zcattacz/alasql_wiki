@@ -4,6 +4,7 @@ Select clauses:
 
 * [WITH](With)
 * [SELECT columns](Select Columns)
+* [REMOVE COLUMNS](Remove Columns) columns / LIKE pattern
 * [TOP](Top) / [LIMIT](Limit) [FETCH](Fetch)
 * [DISTINCT](Distinct)
 * [INTO](Into)
