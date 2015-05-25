@@ -7,7 +7,7 @@ Source: [StackOverflow](http://stackoverflow.com/questions/29937203/find-all-par
 
 How to find all parents elements in a Json file? I'm currently working on a recursive menu which is built on top of jQuery which looks quite good already. The structure of the JSon file containing the menu looks as the following:
 
-``js
+```js
 [
    { 
        "Id": "menuOfficeWebControlsForWebApplication", 
