@@ -92,8 +92,7 @@ CURRENT_ROW |   |   |   |   | √ |
 CURRENT_SCHEMA |   |   |   | √ | √ |  
 [CURRENT_TIME](Current_Time) | √ | √ | √ | √ | √ | 
 CURRENT_TIMESTAMP | √ | √ | √ | √ | √ | √
-CURRENT_TRANSFORM
-_GROUP_FOR_TYPE |   | √ | √ | √ | √ |  
+CURRENT_TRANSFORM _GROUP_FOR_TYPE |   | √ | √ | √ | √ |  
 CURRENT_USER | √ | √ | √ | √ | √ | 
 CURSOR | √ | √ | √ | √ | √ | 
 CYCLE |   | √ | √ | √ | √ |  
