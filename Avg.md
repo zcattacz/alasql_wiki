@@ -14,3 +14,10 @@ For example:
 ```
 
 You can try this example [in jsFiddle](http://jsfiddle.net/agershun/7yxy6frz/)
+
+Note: AlaSQL (like other SQL implementations) does not take in account ```NULL``` (undefined) values.
+
+You can use AVG like other aggregators with ```DISTINCT``` keyword:
+```sql
+    SELECT AVG(DISTINCT age) FROM people
+```
