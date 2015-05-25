@@ -9,6 +9,7 @@
 * [Supported SQL statements](Sql)
  * [Functions](Functions)
 * [JavaScript API](Api)
+* [Webworker version](Webworker)
 * [LINQ fluent interface](Fluent Interface)
 * [Import and export functions](Import export)
 * [Options](Alasql Options)
