@@ -137,6 +137,7 @@ Information
    * [IS NULL](Is Null), [IS NOT NULL](Is Not Null)
 * [SQL-Functions](Functions)
  * [ABS()](sql/abs.md)
+ * [Custom functions](Custom Functions)
 * Complex Operators
   * [EXISTS](Exists), [NOT EXISTS](Not Exists)
   * [IN](In), [NOT IN](Not In)
@@ -147,11 +148,12 @@ Information
  * [COUNT()](Count) 
  * [MIN()](Min) 
  * [MAX()](Max) 
- * [FIRST()](First 
+ * [FIRST()](First)
  * [LAST()](Last) 
  * [MEDIAN()](Median) 
  * [AGGR()](Aggr)
  * [ARRAY()](Array)
+ * [Custom aggregators](Custom Aggregators)
 * Grouping functions
  * [CUBE()](Cube)
  * [ROLLUP()](Rollup)
