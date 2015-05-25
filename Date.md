@@ -19,3 +19,5 @@ If you want ot use good old SQL date just use DATE, instead Date:
 ```js
     alasql('CREATE TABLE sample (sqldate DATE, jsdate Date)');
 ```
+
+Please see the example with dates [in jsFiddle](http://jsfiddle.net/czqfyhat/2/)
