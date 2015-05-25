@@ -100,17 +100,17 @@ E121-10 | FETCH statement: implicit NEXT | No
 E121-17 | WITH HOLD cursors | No
 E131 | Null value support (nulls in lieu of values) | Yes
 E141 | Basic integrity constraints | 
-E141-01 | NOT NULL constraints | Yes
-E141-02 | UNIQUE constraints of NOT NULL columns | Yes
-E141-03 | PRIMARY KEY constraints | Yes
+E141-01 | [NOT NULL](Not Null) constraints | Yes
+E141-02 | [UNIQUE](Unique) constraints of [NOT NULL](Not NUll) columns | Yes
+E141-03 | [PRIMARY KEY](Primary Key) constraints | Yes
 E141-04 | Basic FOREIGN KEY constraint with the NO ACTION default | Yes*
-E141-06 | CHECK constraints | Yes
-E141-07 | Column defaults | Yes
-E141-08 | NOT NULL inferred on PRIMARY KEY | ?
+E141-06 | [CHECK](Check) constraints | Yes
+E141-07 | [Column defaults](Defeult) | Yes
+E141-08 | [NOT NULL](Not Null) inferred on [PRIMARY KEY](Primary Key) | ?
 E141-10 | Names in a foreign key can be specified in any order | ?
 E151 | Transaction support | 
-E151-01 | COMMIT statement | No
-E151-02 | ROLLBACK statement | No
+E151-01 | [COMMIT] statement | No
+E151-02 | [ROLLBACK] statement | No
 E152 | Basic SET TRANSACTION statement | 
 E152-01 | SET TRANSACTION statement: ISOLATION LEVEL SERIALIZABLE clause | No
 E152-02 | SET TRANSACTION statement: READ ONLY and READ WRITE clauses | No
