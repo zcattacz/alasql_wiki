@@ -32,7 +32,7 @@ How to find all parents elements in a Json file? I'm currently working on a recu
         }]
    }
 ]
-
+```
 Now, I want to retrieve all the elements which are at a higher level and all the items which are directly below that item.
 
 ### Answer
