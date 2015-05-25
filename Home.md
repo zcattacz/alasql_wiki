@@ -4,7 +4,7 @@
 * [About AlaSQL](About)
 * [SQL-99 compatibility](SQL-99), [SQL keywords](SQL keywords)
 * [User Manual](http://www.slideshare.net/AndreyGershun/alasql-manual-141220-1) - PowerPoint presentation
-* [Installation](Installation)
+* [Installation](Installation), AlaSQL in [CDN](https://cdn.rawgit.com/agershun/alasql/master/dist/alasql.min.js)
 * [Getting started](Getting started)
 * [Supported SQL statements](Sql)
  * [Functions](Functions)
