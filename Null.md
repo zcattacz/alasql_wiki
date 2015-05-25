@@ -5,7 +5,7 @@ AlaSQL supports ```NULL``` keyword.
 
 ### JavaScript emulation
 
-AlaSQL uses ```undefined``` value to emulate SQL ```NULL``` constant instead ```null```. 
+AlaSQL uses ```undefined``` value to emulate SQL ```NULL``` constant instead of ```null```. 
 
 ### NULL Constraint
 
