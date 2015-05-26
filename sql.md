@@ -164,3 +164,8 @@ Information
 * [Standard functions](Functions)
 * [Subqueries / Sub SELECT operator](Subqueries)
 * [User-defined SQL functions](User Defined Functions)
+* Type conversions
+ * [CAST](Cast)
+ * [CONVERT](Convert)
+ * [FORMAT](Format)
+ * [::](::)
