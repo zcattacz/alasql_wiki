@@ -3,8 +3,10 @@
 ### Set options
 Set option or variable to the value. 
 ```js
+    // For LocalStorage
     alasql('SET AUTOCOMMIT ON');
     alasql('SET AUTOCOMMIT OFF');
+    /// For other AlaSQL options
     alasql('SET MODIFIER = "RECORDSET"');
 ```
 
