@@ -30,4 +30,13 @@ In current version of AlaSQL CTE canot be self-referencing.
    Totals
 ```
 
-You can try this example [in jsFiddle](http://jsfiddle.net/n131zmw9/2/)
+You can try this example [in jsFiddle](http://jsfiddle.net/n131zmw9/2/).
+
+```js
+    var res = alasql('WITH one AS (SELECT * FROM ?),\
+                           two AS (SELECT * FROM ?)\
+                      SELECT * FROM one,two', [[{a:1},{a:2}],[{b:10},{b:20}]]);
+```
+You can try this example [in jsFiddle](http://jsfiddle.net/agershun/k0e8hc60/1/).
+
+Another example
