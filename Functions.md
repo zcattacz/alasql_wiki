@@ -2,6 +2,7 @@
 
 1. Compile-time standard library
  * String functions
+   * [SUBSTRING()](Substring), [MID()](Mid), [INSTR()](Instr), [TRIM()](Trim)
  * Number functions
  * Logical functions
  * Date-time functions
