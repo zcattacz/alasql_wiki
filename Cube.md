@@ -1,6 +1,4 @@
-# CUBE()
-
-# ROLLUP
+# CUBE
 
 AlaSQL supports CUBE() grouping options:
 ```js
