@@ -31,3 +31,11 @@ returns:
 ```json
     [ { "name": 1, "seq": 10 }, { "name": "one", "seq": "ten" } ]
 ```
+
+### Constraints
+
+You can use the following types of constraints:
+* [AUTO_INCREMENT](Identity), [AUTOINCREMENT](Identity), or [IDENTITY](Identity)
+* [CHECK](Check)
+* [PRIMARY KEY](Primary Key)
+* [FOREIGN KEY](Foreign Key)
