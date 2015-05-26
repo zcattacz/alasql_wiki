@@ -38,5 +38,3 @@ You can try this example [in jsFiddle](http://jsfiddle.net/n131zmw9/2/).
                       SELECT * FROM one,two', [[{a:1},{a:2}],[{b:10},{b:20}]]);
 ```
 You can try this example [in jsFiddle](http://jsfiddle.net/agershun/k0e8hc60/1/).
-
-Another example
