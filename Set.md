@@ -8,6 +8,7 @@ Set option or variable to the value. Currently is used only for [Local Storage](
 ```
 
 ### Set local variables
+
 ```sql
     SET @data = @[{a:1},{a:2}];
 ```
