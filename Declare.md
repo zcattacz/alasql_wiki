@@ -1,4 +1,4 @@
-# DEACLARE
+# DECLARE
 
 AlaSQL allows to create local variables with ```@``` prefix:
 ```js
