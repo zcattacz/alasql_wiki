@@ -11,10 +11,22 @@ Grouping by expressions:
     var res = alasql('SELECT b FROM Nums GROUP BY a%2');
 ```
 
+The example:
+```js
+    alasql('SELECT projects, FIRST(duration) AS duration, \
+        FIRST([path]) AS [path], FIRST(application) AS application  \
+        FROM json("timing_output") \
+        GROUP BY projects, duration, [path], application \
+        ORDER BY duration DESC',[],function(res){
+          console.log(res);
+    });
+```
+Try this example in [jsFiddle](http://jsfiddle.net/j39agf7c/1/)
+
 ## Grouping functions
-* CUBE()
-* ROLLUP()
-* GROUPING SETS()
+* [CUBE()](Cube)
+* [ROLLUP()](Rollup)
+* [GROUPING SETS()](Grouping Sets)
 
 ```js
     alasql('SELECT * FROM City GROUP BY ROLLUP(Continent, Country)');
