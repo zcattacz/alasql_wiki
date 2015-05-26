@@ -6,3 +6,9 @@ AlaSQL allows to create local variables with ```@``` prefix:
     // returns "abcdef"
 ```
 Try this example in [jsFiddle](http://jsfiddle.net/agershun/g9jmt6hg/5/).
+
+### Extended syntax
+You can assign value immediatly to the declared variable:
+```sql
+     DECLARE @var1 type1 = expr1, @var2 type2;
+```
