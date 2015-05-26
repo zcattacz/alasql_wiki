@@ -168,4 +168,4 @@ Information
  * [CAST](Cast)
  * [CONVERT](Convert)
  * [FORMAT](Format)
- * [::](::)
+ * [:: double-colon](Double Colon)
