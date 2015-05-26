@@ -25,6 +25,18 @@
         console.log(data.length);
     });
 ```
+### Promises
+AlaSQL supports promises with ```alasql.promise(sql,params)``` function. It returns standard A/+ promise:
+
+```js
+    alasql.promise('SELECT * FROM test')
+    }).then(function(res){
+        // Process data
+    }).catch(function(err){
+        // Process errors
+    });
+```
+
 ## Alasql object
 See [alasql object](Alasql Object)
 
