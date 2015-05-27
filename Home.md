@@ -1,5 +1,7 @@
 # AlaSQL Wiki
 
+Please see the [README](readme) section for a quick overview
+
 ## AlaSQL Documentation
 * [About AlaSQL](About)
 * [What people say about AlaSQL?](People)
