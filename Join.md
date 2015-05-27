@@ -1,28 +1,34 @@
 # SELECT JOIN
 
+Syntax:
+```sql
+    SELECT ... FROM table1 joint-type JOIN table2 (USING|ON)...
+```
+
 ## Join Types
 Supported join types:
-* [INNER] JOIN
-* LEFT [OUTER] JOIN
-* RIGHT [OUTER] JOIN
-* [FULL] OUTER JOIN
-* ANTI JOIN
-* SEMI JOIN
-* CROSS JOIN
-* NATURAL JOIN
+* [INNER JOIN](Inner Join)
+* [LEFT [OUTER] JOIN](Left Join)
+* [RIGHT [OUTER] JOIN](Right Join)
+* [[FULL] OUTER JOIN](Outer Join)
+* [ANTI JOIN](Anti Join)
+* [SEMI JOIN](Semi Join)
+* [CROSS JOIN](Cross Join)
+* [NATURAL JOIN](Natural Join)
 
+For example:
 ```js
     alasql('SELECT * FROM Cities JOIN Countries');
 ```
 
-### JOIN USING
+### JOIN USING clause
 ```js
     alasql('SELECT city.*, country.* FROM city \
                 JOIN country USING countryid');
     alasql('SELECT * FROM Cities JOIN Countries USING Country');
 ```
 
-### JOIN ON
+### JOIN ON clause
 ```js
     alasql('SELECT city.*, country.* FROM city \
                 JOIN country ON city.countryid = country.countryid');
@@ -54,3 +60,5 @@ With using JOIN ON in [this example](http://jsfiddle.net/agershun/Lxgfduov/):
     FROM ? AS COLORS JOIN ? AS FRUITS ON COLORS.[0] = FRUITS.[0]',
     [data.COLORS,     data.FRUITS]);
 ```
+
+See also: [SELECT](Select)
