@@ -1,3 +1,3 @@
 # RENAME
 
-See also: [RENAME TABLE]
+See also: [RENAME TABLE](Rename Table)
