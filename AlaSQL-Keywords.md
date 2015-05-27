@@ -24,8 +24,6 @@ these words for columns and variables. All AlaSQL keywords are case-insensitive.
 * [BEGIN](BEGIN)
 * [BETWEEN](BETWEEN)
 * [BREAK](BREAK)
-* [NOTBETWEEN](NOTBETWEEN)
-* [NOTLIKE](NOTLIKE)
 * [BY](BY)
 * [CASE](CASE)
 * [CAST](CAST)
