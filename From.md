@@ -1,4 +1,10 @@
-## SELECT FROM
+# FROM
+
+Syntax:
+```sql
+    SELECT ... FROM (table1|from-function|json-object|parameter), table2...
+    SEARCH selectors FROM (table|json-objects|from-function|parameter)
+```
 
 From database table
 ```js
@@ -100,3 +106,5 @@ number of lines in incoming text file:
 ```js
     alasql('SELECT COUNT(*) FROM TXT()');
 ``` 
+
+See also: [SELECT](Select), [SEARCH](Search)
