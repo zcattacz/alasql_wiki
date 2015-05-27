@@ -8,4 +8,4 @@ Syntax:
     MIN(expression1, expression2, ...) -- function
 ```
 
-See also: [MAX](Max)
+See also: [MAX](Max), [LEAST](Least)
