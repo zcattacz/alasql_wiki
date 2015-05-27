@@ -13,3 +13,5 @@ Example:
     -- or
     USE mybase;
 ```
+
+See also: [CREATE DATABASE](Create Database)
