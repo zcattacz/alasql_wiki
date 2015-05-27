@@ -1,5 +1,10 @@
 # COUNT Aggregator
 
+Syntax:
+```sql
+    COUNT([DISTINCT] expression | *)
+```
+
 AlaSQL supports ```COUNT()``` aggregator:
 ```sql
     SELECT COUNT(*) FROM one;
