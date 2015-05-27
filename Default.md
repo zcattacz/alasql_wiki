@@ -1,5 +1,12 @@
 # DEFAULT
 
+Syntax:
+```sql
+    CREATE TABLE tableid (
+        columnid type DEFAULT expression
+    );
+```
+
 AlaSQL supports column ```DEFAULT``` keyword:
 
 ```js
