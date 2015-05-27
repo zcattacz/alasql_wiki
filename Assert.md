@@ -2,6 +2,12 @@
 
 Throws error if result of last operation is not equal to value (Alasql uses equalDeep() function for comparision)
 
+Syntax:
+```sql
+    ASSERT [message,] value;
+```
+For example:
+
 ```js
     alasql('ASSERT 1');
     alasql('ASSERT “Wrong Value”, @[{a:1,b:”Odessa”}]');
