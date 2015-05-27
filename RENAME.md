@@ -1,0 +1,3 @@
+# RENAME
+
+See also: [RENAME TABLE]
