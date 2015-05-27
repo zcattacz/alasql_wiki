@@ -16,3 +16,5 @@ Example:
     REQUIRE "./myfn.js"; -- 
     SELECT myfn(a) FROM one;
 ```
+
+See also: [SOURCE](Source)
