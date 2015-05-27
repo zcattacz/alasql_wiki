@@ -1,5 +1,10 @@
 # IN
 
+Syntax:
+```sql
+    expression IN array
+```
+
 AlaSQL supports ```IN``` operatior:
 ```sql
     SELECT a FROM one WHERE b IN (1,2,3)
@@ -17,3 +22,5 @@ like:
     20 IN @(@[10,20,30])
 ```
 See the example [in jsFiddle](http://jsfiddle.net/agershun/q7pz7w60/1/)
+
+See also: [NOT IN](Not In), [EXISTS](Exists)
