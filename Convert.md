@@ -1,5 +1,11 @@
 # CONVERT()
 
+Syntax:
+```sql
+    CONVERT(type, value, style)
+```
+List of [available styles](https://msdn.microsoft.com/ru-ru/library/ms187928.aspx?f=255&MSPPError=-2147217396).
+
 AlaSQL realizes CONVERT() function:
 ```js
 alasql('SET @d = DATE("01/08/2015 12:34:56.789"); \
