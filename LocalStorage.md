@@ -1,0 +1,3 @@
+# LOCALSTORAGE
+
+See also: [INDEXEDDB](IndexedDB)
