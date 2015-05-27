@@ -2,6 +2,10 @@
 
 AlaSQL ```SEARCH``` operator is designed to traverse over JSON objects and graphs.
 
+Syntax:
+```sql
+    SEARCH selectors [FROM (table|object)]
+```
 You can use it with graphs:
 ```js
     var res = alasql('SEARCH / "Harry" PATH("Roger") VERTEX name');
@@ -41,3 +45,5 @@ or with JSON files:
     var res = alasql('SEARCH ///WHERE(fruit="Apple") FROM ?',[catalog]);
     // [{fruit:'Apple'}]
 ```
+
+See also: [SELECT](Select)
