@@ -21,3 +21,5 @@ By default AlaSQL the initial value is 1 and th step is 1, but you can change it
 ```js
     alasql('CREATE TABLE one (a INT IDENTITY(10,5), b STRING)');
 ```
+
+See also: [DEFAULT](Default)
