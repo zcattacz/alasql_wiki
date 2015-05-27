@@ -1,4 +1,4 @@
-# Highcharts.js with SQL
+# Highcharts.js with AlaSQL
 
 You can use AlaSQL to load and prepare data for Highcharts.js library.
 
