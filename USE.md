@@ -1,6 +1,6 @@
 # USE
 
-Set default database.
+Set current database.
 
 Syntax:
 ```sql
