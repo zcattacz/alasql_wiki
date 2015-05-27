@@ -1,4 +1,4 @@
-# SELECT JOIN
+# JOIN
 
 Syntax:
 ```sql
