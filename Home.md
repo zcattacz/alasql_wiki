@@ -1,8 +1,9 @@
 # AlaSQL Wiki
 
 ## AlaSQL Documentation
-* [About AlaSQL](About), [What people say about AlaSQL?](People)
-* [SQL-99 compatibility](SQL-99), [SQL keywords](SQL keywords)
+* [About AlaSQL](About)
+* [What people say about AlaSQL?](People)
+* [SQL-99 compatibility](SQL-99), [SQL-99 keywords](SQL keywords), [AlaSQL keywords](AlaSQL Keywords)
 * [User Manual](http://www.slideshare.net/AndreyGershun/alasql-manual-141220-1) - PowerPoint presentation
 * [Installation](Installation), AlaSQL in [CDN](https://cdn.rawgit.com/agershun/alasql/master/dist/alasql.min.js)
 * [Getting started](Getting started)
