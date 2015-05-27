@@ -8,3 +8,5 @@ Usually AlaSQL returns array of records (JavaScript objects), but you can modify
     var res = alasql('SELECT VALUE COUNT(*) FROM ?',[data]);
     // returns 2
 ```
+
+See also: [MATRIX](Matrix), [COLUMN](Column), [ROW](Row), [RECORDSET](Recordset)
