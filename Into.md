@@ -1,4 +1,11 @@
-## SELECT INTO
+## INTO
+
+Syntax:
+```sql
+    SELECT ... INTO (table|into-function);
+    INSERT INTO table VALUES value1, value2, ...;
+```
+
 
 Into table
 ```js
@@ -39,3 +46,5 @@ Example of data format conversion from XLSX to CSV:
     alasql('SELECT * INTO CSV("parts.csv") FROM XLSX("parts.xlsx") WHERE Qty > 10');
     alasql('SELECT * INTO TXT("cities.txt") FROM cities');
 ```
+
+See also: [FROM](From)
