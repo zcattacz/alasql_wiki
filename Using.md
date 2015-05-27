@@ -5,9 +5,11 @@ Syntax:
     FROM table1 JOIN table USING column1, column2, ...
 ```
 
-This ```USING``` clause is equivalent of the next ```ON``` clause:
+This ```USING``` clause is equivalent of the next [ON](On) clause:
 ```sql
-    FROM table1 JOIN table ON table1.column1 = table2.column1 AND table1.column2 = table1.column2
+    FROM table1 JOIN table 
+       ON table1.column1 = table2.column1 
+            AND table1.column2 = table1.column2
 ```
 
 In AlaSQL you can use ```USING``` clause like in this example:
