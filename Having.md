@@ -1,6 +1,11 @@
 # SELECT HAVING
 
-Filtering groups by expressions:
+Filtering groups by expressions.
+
+Syntax:
+```sql
+    SELECT ... GROUP BY gorup-expressions HAVING expression ...
+```
 
 For example, select countries with number of cities > 2:
 
