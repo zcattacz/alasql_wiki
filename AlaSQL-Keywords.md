@@ -1,181 +1,182 @@
-# AlaSQL Keywords
+# AlaSQL Reserved Keywords
 
-```
-ABSOLUTE                                        
-ACTION                                          
-ADD                                             
-AGGR                                            
-ALL                                             
-ALTER                                           
-AND                                         
-ANTI                                            
-ANY                                         
-APPLY                                           
-ARRAY                                       
-AS                                              
-ASSERT                                          
-ASC                                             
-ATTACH                                          
-AUTOINCREMENT                               
-AUTO_INCREMENT                               
-AVG                                             
-BEGIN                                           
-BETWEEN                                     
-BREAK                                           
-NOT BETWEEN                                 
-NOT LIKE                                        
-BY                                          
-CASE                                            
-CAST                                            
-CHECK                                           
-CLASS                                           
-CLOSE                                           
-COLLATE                                     
-COLUMN                                          
-COLUMNS                                         
-COMMIT                                      
-CONSTRAINT                                  
-CONTENT                                     
-CONTINUE                                        
-CONVERT                                     
-CORRESPONDING                                   
-COUNT                                           
-CREATE                                      
-CROSS                                           
-CUBE                                            
-CURRENT_TIMESTAMP                               
-CURSOR                                      
-DATABASE                                    
-DECLARE                                       
-DEFAULT                                       
-DELETE                                        
-DELETED                                       
-DESC                                          
-DETACH                                      
-DISTINCT                                      
-DOUBLE PRECISION                                
-DROP                                            
-ECHO                                            
-EDGE                                            
-END                                         
-ENUM                                            
-ELSE                                            
-EXCEPT                                      
-EXISTS                                      
-EXPLAIN                                       
-FALSE                                           
-FETCH                                           
-FIRST                                           
-FOREIGN                                     
-FROM                                          
-GO                                              
-GRAPH                                       
-GROUP                                       
-GROUPING                                        
-HAVING                                        
-HELP                                            
-IF                                          
-IDENTITY                                        
-IS                                          
-IN                                          
-INDEX                                           
-INNER                                         
-INSERT                                        
-INSERTED                                      
-INTERSECT                                     
-INTO                                            
-JOIN                                            
-KEY                                         
-LAST                                            
-LET                                         
-LEFT                                            
-LIKE                                            
-LIMIT                                           
-LOOP                                            
-MATCHED                                     
-MATRIX                                          
-MAX                                         
-MERGE                                           
-MIN                                         
-MINUS                                           
-MODIFY                                      
-NATURAL                                     
-NEXT                                            
-NEW                                         
-NOCASE                                      
-NO                                          
-NOT                                         
-NULL                                            
-OFF                                         
-ON                                          
-ONLY                                            
-OFFSET                                      
-OPEN                                            
-OPTION                                      
-OR                                          
-ORDER                                           
-OUTER                                           
-OVER                                            
-PATH                                            
-PARTITION                                       
-PERCENT                                       
-PLAN                                            
-PRIMARY                                     
-PRINT                                           
-PRIOR                                           
-QUERY                                           
-READ                                            
-RECORDSET                                     
-REDUCE                                        
-REFERENCES                                    
-RELATIVE                                      
-REMOVE                                        
-RENAME                                        
-REQUIRE                                       
-RESTORE                                       
-RETURN                                          
-RETURNS                                       
-RIGHT                                           
-ROLLBACK                                        
-ROLLUP                                      
-ROW                                         
-SCHEMA(S)?                                      
-SEARCH                                        
-SELECT                                        
-SEMI                                            
-SET                                             
-SETS                                            
-SHOW                                            
-SOME                                            
-SOURCE                                      
-STRATEGY                                        
-STORE                                           
-SUM                                         
-TABLE                                           
-TABLES                                      
-TARGET                                      
-TEMP                                            
-TEMPORARY                                       
-TEXTSTRING                                  
-THEN                                            
-TIMEOUT                                     
-TO                                          
-TOP                                         
-TRAN                                            
-TRANSACTION                                 
-TRUE                                            
-TRUNCATE                                        
-UNION                                         
-UNIQUE                                        
-UPDATE                                        
-USE                                         
-USING                                         
-VALUE                                       
-VERTEX                                      
-VIEW                                            
-WHEN                                          
-WHERE                                         
-WHILE                                         
-WITH                                          
-WORK 
-```
+Please, use square brackets ```[ name ]``` or back-quotes ``` ` name` ``` if you want to use
+these words for columns and variables. All AlaSQL keywords are case-insensitive.
+
+* [ABSOLUTE](ABSOLUTE)
+* [ACTION](ACTION)
+* [ADD](ADD)
+* [AGGR](AGGR)
+* [ALL](ALL)
+* [ALTER](ALTER)
+* [AND](AND)
+* [ANTI](ANTI)
+* [ANY](ANY)
+* [APPLY](APPLY)
+* [ARRAY](ARRAY)
+* [AS](AS)
+* [ASSERT](ASSERT)
+* [ASC](ASC)
+* [ATTACH](ATTACH)
+* [AUTOINCREMENT](AUTOINCREMENT)
+* [AUTO_INCREMENT](AUTO_INCREMENT)
+* [AVG](AVG)
+* [BEGIN](BEGIN)
+* [BETWEEN](BETWEEN)
+* [BREAK](BREAK)
+* [NOTBETWEEN](NOTBETWEEN)
+* [NOTLIKE](NOTLIKE)
+* [BY](BY)
+* [CASE](CASE)
+* [CAST](CAST)
+* [CHECK](CHECK)
+* [CLASS](CLASS)
+* [CLOSE](CLOSE)
+* [COLLATE](COLLATE)
+* [COLUMN](COLUMN)
+* [COLUMNS](COLUMNS)
+* [COMMIT](COMMIT)
+* [CONSTRAINT](CONSTRAINT)
+* [CONTENT](CONTENT)
+* [CONTINUE](CONTINUE)
+* [CONVERT](CONVERT)
+* [CORRESPONDING](CORRESPONDING)
+* [COUNT](COUNT)
+* [CREATE](CREATE)
+* [CROSS](CROSS)
+* [CUBE](CUBE)
+* [CURRENT_TIMESTAMP](CURRENT_TIMESTAMP)
+* [CURSOR](CURSOR)
+* [DATABASE](DATABASE)
+* [DECLARE](DECLARE)
+* [DEFAULT](DEFAULT)
+* [DELETE](DELETE)
+* [DELETED](DELETED)
+* [DESC](DESC)
+* [DETACH](DETACH)
+* [DISTINCT](DISTINCT)
+* [DOUBLEPRECISION](DOUBLEPRECISION)
+* [DROP](DROP)
+* [ECHO](ECHO)
+* [EDGE](EDGE)
+* [END](END)
+* [ENUM](ENUM)
+* [ELSE](ELSE)
+* [EXCEPT](EXCEPT)
+* [EXISTS](EXISTS)
+* [EXPLAIN](EXPLAIN)
+* [FALSE](FALSE)
+* [FETCH](FETCH)
+* [FIRST](FIRST)
+* [FOREIGN](FOREIGN)
+* [FROM](FROM)
+* [GO](GO)
+* [GRAPH](GRAPH)
+* [GROUP](GROUP)
+* [GROUPING](GROUPING)
+* [HAVING](HAVING)
+* [HELP](HELP)
+* [IF](IF)
+* [IDENTITY](IDENTITY)
+* [IS](IS)
+* [IN](IN)
+* [INDEX](INDEX)
+* [INNER](INNER)
+* [INSERT](INSERT)
+* [INSERTED](INSERTED)
+* [INTERSECT](INTERSECT)
+* [INTO](INTO)
+* [JOIN](JOIN)
+* [KEY](KEY)
+* [LAST](LAST)
+* [LET](LET)
+* [LEFT](LEFT)
+* [LIKE](LIKE)
+* [LIMIT](LIMIT)
+* [LOOP](LOOP)
+* [MATCHED](MATCHED)
+* [MATRIX](MATRIX)
+* [MAX](MAX)
+* [MERGE](MERGE)
+* [MIN](MIN)
+* [MINUS](MINUS)
+* [MODIFY](MODIFY)
+* [NATURAL](NATURAL)
+* [NEXT](NEXT)
+* [NEW](NEW)
+* [NOCASE](NOCASE)
+* [NO](NO)
+* [NOT](NOT)
+* [NULL](NULL)
+* [OFF](OFF)
+* [ON](ON)
+* [ONLY](ONLY)
+* [OFFSET](OFFSET)
+* [OPEN](OPEN)
+* [OPTION](OPTION)
+* [OR](OR)
+* [ORDER](ORDER)
+* [OUTER](OUTER)
+* [OVER](OVER)
+* [PATH](PATH)
+* [PARTITION](PARTITION)
+* [PERCENT](PERCENT)
+* [PLAN](PLAN)
+* [PRIMARY](PRIMARY)
+* [PRINT](PRINT)
+* [PRIOR](PRIOR)
+* [QUERY](QUERY)
+* [READ](READ)
+* [RECORDSET](RECORDSET)
+* [REDUCE](REDUCE)
+* [REFERENCES](REFERENCES)
+* [RELATIVE](RELATIVE)
+* [REMOVE](REMOVE)
+* [RENAME](RENAME)
+* [REQUIRE](REQUIRE)
+* [RESTORE](RESTORE)
+* [RETURN](RETURN)
+* [RETURNS](RETURNS)
+* [RIGHT](RIGHT)
+* [ROLLBACK](ROLLBACK)
+* [ROLLUP](ROLLUP)
+* [ROW](ROW)
+* [SCHEMA(S)?](SCHEMA(S)?)
+* [SEARCH](SEARCH)
+* [SELECT](SELECT)
+* [SEMI](SEMI)
+* [SET](SET)
+* [SETS](SETS)
+* [SHOW](SHOW)
+* [SOME](SOME)
+* [SOURCE](SOURCE)
+* [STRATEGY](STRATEGY)
+* [STORE](STORE)
+* [SUM](SUM)
+* [TABLE](TABLE)
+* [TABLES](TABLES)
+* [TARGET](TARGET)
+* [TEMP](TEMP)
+* [TEMPORARY](TEMPORARY)
+* [TEXTSTRING](TEXTSTRING)
+* [THEN](THEN)
+* [TIMEOUT](TIMEOUT)
+* [TO](TO)
+* [TOP](TOP)
+* [TRAN](TRAN)
+* [TRANSACTION](TRANSACTION)
+* [TRUE](TRUE)
+* [TRUNCATE](TRUNCATE)
+* [UNION](UNION)
+* [UNIQUE](UNIQUE)
+* [UPDATE](UPDATE)
+* [USE](USE)
+* [USING](USING)
+* [VALUE](VALUE)
+* [VERTEX](VERTEX)
+* [VIEW](VIEW)
+* [WHEN](WHEN)
+* [WHERE](WHERE)
+* [WHILE](WHILE)
+* [WITH](WITH)
+* [WORK](WORK)
