@@ -1,4 +1,6 @@
-# Google Charts and Alasql
+# Google Charts and AlaSQL
+
+AlaSQL can be used to load and prepare data for Google Charts.
 
 Based on [StackOverflow.com question](http://stackoverflow.com/questions/28999581/alasql-and-google-charts/29010186#29010186)
 
