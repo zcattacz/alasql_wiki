@@ -1,4 +1,12 @@
-# SET variable value
+# SET
+
+Syntax:
+```sql
+    SET option ON|OFF
+    SET option = value
+    SET @variable = value
+    SET $param = value
+```
 
 ### Set options
 Set option or variable to the value. 
