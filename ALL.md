@@ -7,3 +7,5 @@ Syntax:
     SELECT ALL ...
     aggregator(ALL expression)
 ```
+
+See also: [DISTINCT](Distinct)
