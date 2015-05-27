@@ -2,6 +2,13 @@
 
 AlaSQL supports ```CHECK``` table constraints.
 
+Syntax:
+```sql
+    CREATE TABLE table (
+        column type CHECK expression
+    );
+```
+
 For example:
 ```sql
     CREATE TABLE dbo.Employees (
@@ -14,3 +21,5 @@ For example:
 ```
 
 You can use this constraint for whole table or for separate fields.
+
+See also: [CONSTRAINT](Constraint)
