@@ -1,4 +1,4 @@
-# AVG
+# AVG() - average
 
 AlaSQL supports average sum aggregator ```AVG()```.
 
