@@ -1,5 +1,7 @@
 # What people say about AlaSQL?
 
+(Please, add your articles and links)
+
 ### In English:
 
 * [Dj Walker-Morgan](https://www.compose.io/articles/author/dj/) [Meteor, SQL and other databases](https://www.compose.io/articles/meteor-sql-and-other-databases/)
