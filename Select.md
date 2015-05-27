@@ -11,6 +11,7 @@ Select clauses:
 * [FROM](From)
 * [JOIN](Join) [ON](On) / [USING](Using)
 * [APPLY](Apply)
+* [LET](Let)
 * [GROUP BY](Group By)
 * [HAVING](Having)
 * [WHERE](Where)
