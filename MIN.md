@@ -1,4 +1,4 @@
-# MIN
+# MIN()
 
 Minimal aggregator and function.
 
