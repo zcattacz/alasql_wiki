@@ -1,4 +1,6 @@
-# GREATEST
+# GREATEST()
+
+Maximal value of its arguments.
 
 Syntax:
 ```sql
