@@ -37,3 +37,5 @@ Select clauses:
 ```sql
     SELECT LCASE(name), LEN(name) FROM names
 ```
+
+See also: [SEARCH](Search)
