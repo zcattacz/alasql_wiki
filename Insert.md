@@ -1,5 +1,12 @@
 # INSERT
 
+Syntax:
+```sql
+    INSERT INTO table [(column1, column2...)] VALUES value1, value2, ...;
+    INSERT INTO table DEFAULT VALUES;
+    INSERT INTO table SELECT ...;
+```
+
 [INSERT VALUES](Insert Values)
 ```js
     alasql('INSERT INTO city (name, population) VALUES (“Moscow”,11500000), (“Kyiv”,5000000)');
@@ -16,3 +23,5 @@
 ```js
     alasql('INSERT INTO city SELECT capital AS name FROM country GROUP BY capital;');
 ```
+
+See also: [INTO](Into), [SELECT INTO](Select Into)
