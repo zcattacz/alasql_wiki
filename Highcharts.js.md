@@ -1,5 +1,7 @@
 # Highcharts.js with SQL
 
+You can use AlaSQL to load and prepare data for Highcharts.js library.
+
 Source: [Stackoverflow.com](http://stackoverflow.com/questions/27978027/preprocess-highchart-data-using-csv-file/27980656#27980656)
 
 ### Question
