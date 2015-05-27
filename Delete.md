@@ -1,5 +1,10 @@
 ## DELETE
 
+Syntax:
+```sql
+    DELETE FROM table [WHERE expression]
+```
+
 Samples:
 ```js
     alasql('DELETE FROM cities WHERE population < 100000');
