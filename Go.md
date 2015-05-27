@@ -1,5 +1,10 @@
 # GO
 
+Syntax:
+```sql
+    operator1 GO operator2
+```
+
 In AlaSQL all stetements san be separated with ```;```(semicolon) or with ```GO``` keyword:
 ```sql
     SELECT * FROM one; SELECT * FROM two GO SELECT * FROM three
