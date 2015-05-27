@@ -1,4 +1,6 @@
-# AlaSQL reserved keywords
+# SQL reserved keywords
+
+See also the full list of [AlaSQL reserved keywords](AlaSQL keywords).
 
 The list of keywords used in AlaSQL (based on the table from [here](http://developer.mimer.com/standard/reservedwords/sql-reserved-words.tml)).
 
