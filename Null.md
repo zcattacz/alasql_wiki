@@ -16,3 +16,5 @@ CREATE TABLE dbo.Parts (
   partname VARCHAR(25) NULL
 );
 ```
+
+See also: [ISNULL](Isnull), [NOT NULL](Not Null)
