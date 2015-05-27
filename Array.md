@@ -1,5 +1,11 @@
 ## ARRAY() Aggregator
 
+This aggregator is used to aggregate all values into the array.
+
+Syntax:
+```
+    ARRAY([DISTINCT] expression)
+```
 
 ```js
     var res = alasql('SELECT userId, FIRST(userName) AS userName, \
