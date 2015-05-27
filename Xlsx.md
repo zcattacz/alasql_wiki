@@ -32,3 +32,5 @@ Read headers from data range (true/false):
         [],function(data){});
 ```
 By default Alasql headers are on.
+
+See also: [XLS](Xls)
