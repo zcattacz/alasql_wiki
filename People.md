@@ -1,4 +1,4 @@
-# What people say about AlaSQL?
+# What people say about AlaSQL
 
 (Please, add your articles and links)
 
