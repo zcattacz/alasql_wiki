@@ -61,4 +61,4 @@ With using JOIN ON in [this example](http://jsfiddle.net/agershun/Lxgfduov/):
     [data.COLORS,     data.FRUITS]);
 ```
 
-See also: [SELECT](Select)
+See also: [SELECT](Select), [USING](Using), [ON](On)
