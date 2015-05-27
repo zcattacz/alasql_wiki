@@ -1,5 +1,10 @@
 # ROLLUP
 
+Syntax:
+```sql
+    SELECT ... GROUP BY ROLLUP(column)
+```
+
 AlaSQL supports ROLLUP() grouping options:
 ```js
 var testData = [
