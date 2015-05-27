@@ -1,6 +1,7 @@
 # SHOW
 
 Syntax:
+```sql
     SHOW DATABASES
     SHOW TABLES
 ```
