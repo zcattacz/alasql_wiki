@@ -15,3 +15,5 @@ You can change also query modifier with AlaSQL options:
     alasql.options.modifier = 'RECORDSET';
 ```
 By default, all nestes subqueries returns data as Recordset.
+
+See also: [VALUE](Value), [MATRIX](Matrix)
