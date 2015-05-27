@@ -1,5 +1,12 @@
 # IDENTITY, AUTO_INCREMENT, AUTOINCREMENT
 
+Syntax:
+```sql
+    CREATE TABLE tableid (
+        columnid typeid IDENTITY [(start [, step])]
+    );
+```
+
 AlaSQL supports autoincrement feature:
 ```js
     alasql('CREATE TABLE one (a INT AUTO_INCREMENT, b STRING)');
