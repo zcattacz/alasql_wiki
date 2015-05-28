@@ -1,6 +1,11 @@
 ### Alasql Databases
+
+Syntax:
+```sql
+    CREATE [engineid] DATABASE databaseid;
+```
+
 To create Alasql 'native' database:
- 
 ```js
     alasql('CREATE DATABASE mybase');
 ```
@@ -41,3 +46,5 @@ You can find database:
 
 	var mydb = alasql.databases['My Database'];
 ```
+
+See also: [DROP DATABASE](Drop Database)
