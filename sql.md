@@ -2,6 +2,7 @@
 
 * [Single and multiple SQL statements](Multiple Statements)
 * [Standard](Standard Interface) and [fluent (like LINQ)](Fluent Interface) interface
+* [Literals](Literals)
 * [Case-sensitive keywords](Case Sensitive)
 * [Comments](Comments)
 
