@@ -22,3 +22,4 @@ To delete only selected records from table:
 	var numberOfDeletedLines = alasql('DELETE FROM [Table A] WHERE field1 > 10');
 ```
 
+See also: [INSERT](Insert), [UPDATE](Update)
