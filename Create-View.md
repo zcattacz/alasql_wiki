@@ -1,5 +1,10 @@
 # CREATE VIEW
 
+Syntax:
+```sql
+    CREATE VIEW viewid [(column, ...)] AS select
+```
+
 AlaSQL supports CREATE VIEW statement:
 
 ```js
@@ -10,3 +15,5 @@ AlaSQL supports CREATE VIEW statement:
     alasql('insert into city values ("New York",16000000)');
 ```
 Try this example [in jsFiddle](http://jsfiddle.net/0a1ovw1q/2/)
+
+See also: [DROP VIEW](Drop View)
