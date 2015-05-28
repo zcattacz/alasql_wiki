@@ -13,4 +13,4 @@ Select distinct values from result array:
     alasql('SELECT DISTINCT MID(Name,1,1) FROM City');
 ```
 
-See also: [DISTINCT()][Search Distinct]
+See also: [DISTINCT][Distinct]
