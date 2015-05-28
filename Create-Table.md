@@ -1,5 +1,15 @@
 ## CREATE TABLE
 
+Create table statement.
+
+Syntax:
+```sql
+    CREATE TABLE tableid;
+    CREATE TABLE tableid (
+        column type constraints, ...
+    );
+```
+
 ```js
     alasql('CREATE TABLE star (  \
                 one INT DEFAULT 100, \
@@ -39,3 +49,5 @@ You can use the following types of constraints:
 * [CHECK](Check)
 * [PRIMARY KEY](Primary Key)
 * [FOREIGN KEY](Foreign Key)
+
+See also: [DROP TABLE](Drop Table)
