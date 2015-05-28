@@ -6,8 +6,8 @@ Syntax:
 ```
 
 ```js
-    alasql('INSERT INTO AmericanCities \
-               SELECT * FROM Cities WHERE Continent = "America"');
+    alasql('INSERT INTO AsianCities \
+               SELECT * FROM Cities WHERE Continent = "Asia"');
 ```
 
 See also: [INSERT](Insert), [SELECT](Select)
