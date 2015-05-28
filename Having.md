@@ -1,4 +1,4 @@
-# SELECT HAVING
+# HAVING
 
 Filtering groups by expressions.
 
@@ -35,3 +35,5 @@ var res = alasql('select id_group, count(id) as cnt from ? where id in (4,7)\
 group by id_group having count(id) = 2',[groups]);  
 ```
 See this example in [jsFiddle](http://jsfiddle.net/5prbwtzy/2/)
+
+See also: [WHERE](Where), [GROUP BY](Group By)
