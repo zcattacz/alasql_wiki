@@ -15,3 +15,12 @@ For example:
       );
 ```
 See the example [in jsFiddle](http://jsfiddle.net/4s36sb64/)
+
+If you want to use other characters and spaces, please use square brackets ```[ ]``` or back-quote ``` ` ``` to enclose the name:
+```sql
+    SELECT [My column] FROM `Моя табличка-1234()` ORDER BY [今日]
+```
+
+See also: [Case sensivity in AlaSQL](Case Sensitive)
+
+the name
