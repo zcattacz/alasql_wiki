@@ -1,3 +1,4 @@
+# UPDATE
 AlaSQL supports UPDATE statement.
 
 Syntax:
