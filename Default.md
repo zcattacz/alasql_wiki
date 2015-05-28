@@ -13,3 +13,5 @@ AlaSQL supports column ```DEFAULT``` keyword:
     alasql("CREATE TABLE test (a INT, \
             b INT DEFAULT 100)");
 ```
+
+See also: [INSERT DEFAULT](Insert Default)
