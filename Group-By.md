@@ -1,5 +1,10 @@
-# SELECT GROUP BY
+# GROUP BY
 
+Syntax:
+```sql
+    SELECT ... GROUP BY expression, expression...
+    SELECT ... GROUP BY CUBE(expression,...) | ROLLUP(expression,...) | GROUPING SETS(expression,...)  
+```
 Grouping by columns:
 ```js
     var res = alasql('SELECT * FROM City GROUP BY Contient, Country');
@@ -32,3 +37,5 @@ Try this example in [jsFiddle](http://jsfiddle.net/j39agf7c/1/)
     alasql('SELECT * FROM City GROUP BY ROLLUP(Continent, Country)');
 ```
 See [jsFiddle example](http://jsfiddle.net/agershun/1nccgs6n/2/) for ROLLUP(), CUBE(), and GROUPING SETS().
+
+See also: [SELECT](Select), [HAVING](Having), [CUBE](Cube), [ROLLUP](Rollup), [GROUPING SETS](Grouping Sets)
