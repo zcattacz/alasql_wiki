@@ -2,6 +2,11 @@
 
 AlaSQL supports ```NULL``` keyword.
 
+Syntax:
+```sql
+    NULL
+```
+
 
 ### JavaScript emulation
 
