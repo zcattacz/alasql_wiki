@@ -2,6 +2,13 @@
 
 AlaSQL supports FOREIGN KEY concept.
 
+Syntax:
+```sql
+    CREATE TABLE tableid (
+        columnid type REFERENCES reftableid (refcolumnid,...)
+    );
+```
+
 In this example field ```Orders.fruitid``` reference to ```Fruits``` table:
 ```sql
      CREATE DATABASE Fruits;
@@ -18,3 +25,5 @@ In this example field ```Orders.fruitid``` reference to ```Fruits``` table:
         qty FLOAT
       );
 ```
+
+See also: [PRIMARY KEY](Primary Key)
