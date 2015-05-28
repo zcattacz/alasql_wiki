@@ -1,4 +1,6 @@
-AlaSQL supports UPDATE statement with the following syntax:
+AlaSQL supports UPDATE statement.
+
+Syntax:
 ```sql
     UPDATE table SET prop1 = value1, ... WHERE condition
 ```
