@@ -20,3 +20,5 @@ CREATE TABLE dbo.Cities (
   country VARCHAR(30) NOT NULL
 );
 ```
+
+See also: [NULL](Null), [undefined](undefined)
