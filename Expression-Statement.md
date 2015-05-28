@@ -18,3 +18,5 @@ And with internal subqueries:
     alasql(' = (SELECT 2) * 2');
 ```
 returns 4
+
+See also: [SELECT](Select)
