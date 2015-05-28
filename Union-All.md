@@ -9,4 +9,4 @@ For example:
     var res = alasql('SELECT 10 UNION ALL SELECT 20');
 ```
 
-See also: [SELECT](Select), [UNION](Union), [INTERCEPT](INTERCEPT), [EXCEPT](Except), [CORRESPONDING](Corresponding)
+See also: [SELECT](Select), [UNION](Union), [INTERSECT](INTERSECT), [EXCEPT](Except), [CORRESPONDING](Corresponding)
