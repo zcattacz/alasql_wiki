@@ -1,4 +1,9 @@
-## USE [DATABASE]
+# USE DATABASE
+
+Syntax:
+```sql
+    USE [DATABASE] databaseid
+```
 
 ```js
     alasql('CREATE DATABASE geo');
@@ -23,3 +28,5 @@ You can check current database name in alasql.useid property:
 ```js
     console.log('Current database:', alasql.useid);
 ```
+
+See also: [CREATE DATABASE](Create Database), [ATTACH DATABASE](Attach Database)
