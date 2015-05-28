@@ -22,5 +22,3 @@ If you want to use other characters and spaces, please use square brackets ```[ 
 ```
 
 See also: [Case sensivity in AlaSQL](Case Sensitive)
-
-the name
