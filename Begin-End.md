@@ -6,7 +6,7 @@ Syntax:
 ```sql
     BEGIN
         statement1;
-        stetament2;
+        stetement2;
         ...
     END
 ```
