@@ -1,8 +1,13 @@
 # Expression Statement (=)
 
-In AlaSQL you can use expression statement starting with ```=```
+In AlaSQL you can use expression statement starting with ```=```.
 
-Like:
+Syntax:
+```sql
+    = expression
+```
+
+For example:
 ```js
    alasql('= 2*2');
 ```
