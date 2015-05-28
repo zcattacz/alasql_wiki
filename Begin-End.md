@@ -1,6 +1,6 @@
 # BEGIND END
 
-Compound stetments.
+Compound stetment.
 
 Syntax:
 ```sql
