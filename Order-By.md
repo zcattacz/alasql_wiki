@@ -1,4 +1,13 @@
-# SELECT ORDER BY
+# ORDER BY
+
+Syntax:
+```sql
+    SELECT ... ORDER BY expression1 [ASC|DESC], ...
+```
+
+You can specify order with keywords:
+* [ASC](Asc) - ascending (by default)
+* [DESC](Desc) - descending
 
 Ascending:
 ```js
@@ -19,3 +28,5 @@ AlaSQL supports number notation for ORDER BY arguments:
     var res1 = alasql('SELECT a,b FROM ? ORDER BY 2,1',[data]);
     var res2 = alasql('SELECT a,b FROM ? ORDER BY 1 DESC,2 DESC',[data]);
 ```
+
+See also: [SELECT](Select), [GROUP BY](Group By)
