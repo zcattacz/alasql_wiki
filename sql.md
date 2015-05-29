@@ -5,6 +5,7 @@
 * [Literals](Literals)
 * [Case-sensitive keywords](Case Sensitive)
 * [Comments](Comments)
+* [Data types](Data types)
 
 ## Short list by category
 
