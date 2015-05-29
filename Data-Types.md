@@ -18,7 +18,7 @@ Floating-Point ([number](Number))
 Serial (number with [AUTO_INCREMENT](Auto_increment))
 * smallserial
 * serial
-* bigserial (maximum 9999999999999998, [not 9223372036854775807 like in Postgres](http://www.postgresql.org/docs/9.4/static/datatype-numeric.html))
+* bigserial (maximum 9999999999999998, not 9223372036854775807 [like in Postgres](http://www.postgresql.org/docs/9.4/static/datatype-numeric.html))
 
 Monetary ([number](Number))
 * money
