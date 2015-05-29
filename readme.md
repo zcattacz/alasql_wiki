@@ -96,12 +96,12 @@ and require the alasql.js file
 
 ## Why we are proud of AlaSQL?
 
-* AlaSQL ♥ d3.js [see why](#d3js--alasql)
-* AlaSQL ♥ Meteor [see why](#alasql-and-meteor)
-* AlaSQL ♥ Angular.js [see why](#angularjs-and-alasqljs)
-* AlaSQL ♥ Google Maps [see why](#google-maps--alasql)
-* AlaSQL ♥ your JSON data [see why](#javascript-sugar)
-* AlaSQL ♥ Google Spreadsheets [see why](#google-maps--alasql)
+* AlaSQL ♥ d3.js [see why](https://github.com/agershun/alasql/wiki/readme#d3js--alasql)
+* AlaSQL ♥ Meteor [see why](https://github.com/agershun/alasql/wiki/readme#alasql-and-meteor)
+* AlaSQL ♥ Angular.js [see why](https://github.com/agershun/alasql/wiki/readme#angularjs-and-alasqljs)
+* AlaSQL ♥ Google Maps [see why](https://github.com/agershun/alasql/wiki/readme#google-maps--alasql)
+* AlaSQL ♥ your JSON data [see why](https://github.com/agershun/alasql/wiki/readme#javascript-sugar)
+* AlaSQL ♥ Google Spreadsheets [see why](https://github.com/agershun/alasql/wiki/readme#google-maps--alasql)
 * Search paths in graph data
 * Read and write Excel, CSV, TAB, JSON, and text files to/from the database
 * Got some CPU intensive SQL? AlaSQL plays nice as a WebWorker
