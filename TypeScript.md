@@ -5,7 +5,10 @@ AlaSQL ```dist``` includes definition file for the library: Simply include it to
 ```typescript
 /// <reference path="alasql.d.ts" />
 var alasql = require('alasql');
+```
 
+After it TypeScript compiler will check syntax of ```alasql()``` function and options.
+```
 // Good test 
 var res = alasql('=2*3',1,23,4,5);
 // Ok
