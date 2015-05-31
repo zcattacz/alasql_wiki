@@ -45,6 +45,7 @@ Please see the [README](readme) section for a quick overview
 ## Development 
 * [How to setup environment for AlaSQL development?](How to setup environment for AlaSQL development)
 * [How to assemble AlaSQL?](How to assemble AlaSQL)
+* [How to prepare new release?](How to prepare new release)
 
 ## Sandbox
 * [AlaSQL Console](http://alasql.org/console/alaconsole.html)
