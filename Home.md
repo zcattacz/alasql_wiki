@@ -19,6 +19,7 @@ Please see the [README](readme) section for a quick overview
 * [Errors processing](Errors)
 * [Internal structure](Internal Structure)
 * [Performance](Performance)
+* [TypeScript](TypeScript)
 
 ## AlaSQL Cookbook (Q&A, examples)
 * [Data manipulation](Data manipulation) - array filtering, grouping, ordering
