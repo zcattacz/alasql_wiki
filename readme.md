@@ -158,9 +158,6 @@ Check AlaSQL vs other JavaScript SQL databases and data processing libraries:
 * [AlaSQL vs. Human](http://jsperf.com/javascript-array-grouping/10) :) - based on SatckOverflow [question on grouping](http://stackoverflow.com/questions/6781722/fast-grouping-of-a-javascript-array).
 
 
-----
-
-![noSQL](http://i.imgur.com/0sVHEN6.png)
 
 ----
 
