@@ -21,8 +21,8 @@ AlaSQL - ([à la] (http://en.wiktionary.org/wiki/%C3%A0_la) SQL) [ælæ ɛskjuɛ
 
 ### This release:
 
-- Version: 0.1.7 "Parma" 
-- Updated: May 22, 2015, 
+- Version: 0.1.9 "Torino" 
+- Updated: May 31, 2015, 
 - Test cover: [SQLLOGICTEST=62%, NIST=24%](TESTLOG.md)
 - [Change log](CHANGELOG.md)
 - [Release plan](RELEASES.md). 
