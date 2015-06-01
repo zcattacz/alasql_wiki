@@ -17,7 +17,7 @@ AlaSQL - ([à la] (http://en.wiktionary.org/wiki/%C3%A0_la) [SQL](http://en.wiki
 - Default backend of AlaSQL work in memory and will use file, IndexedDB, or localStorage as persistent storage.
 
 
-### This release:
+### Latest release:
 
 - Version: 0.1.9 "Torino" 
 - Updated: May 31, 2015, 
