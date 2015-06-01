@@ -32,7 +32,7 @@ AlaSQL is easy to use! Just add [alasql.min.js](https://cdn.rawgit.com/agershun/
 ```alasql()``` function with SQL statement inside: 
 
 ```html
-    <script src="alasql.min.js"></script>  
+    <script src="//cdn.jsdelivr.net/alasql/latest/alasql.min.js"></script> 
     <script>
     
         alasql("CREATE TABLE cities (city string, population number)");
