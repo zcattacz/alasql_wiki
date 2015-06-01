@@ -1,6 +1,4 @@
-
-
-# SQL database for browser or node for your (traditional) relational tables and nested JSON data (noSQL). 
+# Javascript SQL database library for both for your (traditional) relational tables and nested JSON data (noSQL). 
 
 [![bitHound Score](https://www.bithound.io/github/agershun/alasql/badges/score.svg)](https://www.bithound.io/github/agershun/alasql)
 [![NPM downloads](http://img.shields.io/npm/dm/alasql.svg?style=flat&label=npm downloads)](https://npmjs.org/package/alasql)
