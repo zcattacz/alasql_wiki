@@ -1,6 +1,6 @@
 
 
-# Javascript SQL database library for both relational data and graph manipulation
+# Versatile SQL database for browser or node. Handles both your (traditional) relational tables and nested JSON data (noSQL). Export, store, and import data from localStorage, IndexedDB, or Excel.
 
 [![bitHound Score](https://www.bithound.io/github/agershun/alasql/badges/score.svg)](https://www.bithound.io/github/agershun/alasql)
 [![NPM downloads](http://img.shields.io/npm/dm/alasql.svg?style=flat&label=npm downloads)](https://npmjs.org/package/alasql)
