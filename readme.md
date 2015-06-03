@@ -19,8 +19,7 @@ AlaSQL - ([à la] (http://en.wiktionary.org/wiki/%C3%A0_la) [SQL](http://en.wiki
 
 ### Latest release:
 
-- Version: 0.1.9 "Torino" 
-- Updated: May 31, 2015, 
+- Version: 0.1.10 
 - Test cover: [SQLLOGICTEST=62%, NIST=24%](TESTLOG.md)
 - [Change log](CHANGELOG.md)
 - [Release plan](RELEASES.md). 
@@ -43,7 +42,7 @@ AlaSQL is easy to use! Just add [alasql.min.js](https://cdn.rawgit.com/agershun/
     
     </script>
 ```
-Play with this exaample in [jsFiddle](http://jsfiddle.net/agershun/15r1y9hg/) or try it in the <a href="http://alasql.org/console?CREATE TABLE cities (city string, population number);INSERT INTO cities VALUES ('Rome',2863223), ('Paris',2249975),('Berlin',3517424), ('Madrid',3041579);SELECT * FROM cities WHERE population < 3500000 ORDER BY population DESC">AlaSQL console</a>.
+Play with this example in [jsFiddle](http://jsfiddle.net/agershun/15r1y9hg/) or try it in the <a href="http://alasql.org/console?CREATE TABLE cities (city string, population number);INSERT INTO cities VALUES ('Rome',2863223), ('Paris',2249975),('Berlin',3517424), ('Madrid',3041579);SELECT * FROM cities WHERE population < 3500000 ORDER BY population DESC">AlaSQL console</a>.
 
 
 ----
