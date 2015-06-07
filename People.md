@@ -17,6 +17,7 @@ Languages listed in alphabet order.
 
 * [纯JavaScript快速的客户端SQL数据库：Alasql.js](http://www.open-open.com/lib/view/open1415688317196.html)
 * [JavaScript 数据库 Alasql.js](http://wap.oschina.net/p/alasql-js)
+* [[筆記] angularjs 中匯出 Excel 檔](http://t301000.blogspot.ru/2015/06/angularjs-excel.html)
 
 ### In French:
 
