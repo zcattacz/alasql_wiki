@@ -1,4 +1,4 @@
-Please let us know if something could be better by [submitting an issue](https://github.com/agershun/alasql/issues)
+Please let us know if something could be better by [submitting an issue](https://github.com/agershun/alasql/issues/new)
 
 ----
 
