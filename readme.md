@@ -991,4 +991,6 @@ and other people for useful tools, which make our work much easier.
 
 The MIT license on this repo covers all contents of the repo, but does not supercede the existing licenses for products used for this work, including the Chinook Database (covered by the Microsoft Public License) and other products.
 
+See [the old readme](README_OLD) for reference
+
 (c) 2014-2015, Andrey Gershun (agershun@gmail.com)
