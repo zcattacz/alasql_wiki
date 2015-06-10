@@ -13,12 +13,13 @@ AlaSQL - _([à la] (http://en.wiktionary.org/wiki/%C3%A0_la) [SQL](http://en.wik
 
 
 
-We focus on [speed](speed) by taking advantage of the dynamic nature of javascript when building up queries. Real world solutions demand real world flexebillity regarding where data comes from and where it is to be stored. We focus on flexibillity by making sure you can [import/export](import+export) and query directly on data stored in your own JSON object, Excel files, localStorage, IndexedDB, and SQLite. 
+We focus on [speed](speed) by taking advantage of the dynamic nature of javascript when building up queries. Real world solutions demand real world flexibility regarding where data comes from and where it is to be stored. We focus on flexibility by making sure you can [import/export](import+export) and query directly on data stored in your own JSON object, Excel files, localStorage, IndexedDB, and SQLite. 
 
 
-The library brings you the comfort of a full database engine to your javascript app. No, really - its a full database engine complying with SQL-92 and spiced up with aditional syntax for handeling noSQL (schemaless) data. If you are porting from an exsisting project using a native database you might find it usefull that you can specify either AlaSQL, Postgres, ORACLE, MSSQL, MySQL, or SQLite as flavor for the SQL behavour.  
+The library brings you the comfort of a full database engine to your javascript app. No, really - its a full database engine complying with SQL-92 and spiced up with additional syntax for handling noSQL (schemaless) data. We are working towards helping projects porting from native databases by letting you specify either AlaSQL, Postgres, ORACLE, MSSQL, MySQL, or SQLite as flavor for the SQL behavior.  
 
 
+----
 
 > Get the file (CDN): [jsDelivr.com](http://www.jsdelivr.com/#!alasql)
 
@@ -28,7 +29,7 @@ The library brings you the comfort of a full database engine to your javascript 
 
 > Website: [alasql.org](http://AlaSQL.org)
 
-
+----
 
 
 ## Its easy - sweet!
