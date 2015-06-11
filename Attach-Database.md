@@ -1,4 +1,4 @@
-# ATTACH DATABASE
+# Keyword `ATTACH DATABASE`
 
 Syntax:
 ```sql
