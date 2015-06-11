@@ -1,4 +1,4 @@
-# USE
+# Keyword `USE`
 
 Set current database.
 
