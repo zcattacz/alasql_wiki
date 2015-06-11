@@ -1,4 +1,4 @@
-# CREATE VIEW
+# Keyword `CREATE VIEW`
 
 Syntax:
 ```sql
