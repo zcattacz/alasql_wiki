@@ -1,4 +1,4 @@
-# JOIN
+# Keyword `JOIN`
 
 Syntax:
 ```sql
