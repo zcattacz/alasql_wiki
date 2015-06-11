@@ -5,7 +5,11 @@ Pinpointing data on a map should be easy. Here is an example of AlaSQL used to p
 
 
 ```js
-    alasql('SELECT * FROM CSV("https://cdn.rawgit.com/albertyw/avenews/master/old/data/average-latitude-longitude-countries.csv",{headers:true}) WHERE Latitude BETWEEN 0 AND 25', [], function(country){
+
+var csvUrl = 'https://cdn.rawgit.com/albertyw/avenews/master/old/data/average-latitude-longitude-countries.csv'
+
+alasql('SELECT * FROM CSV("'+csvUrl+'",{headers:true}) WHERE Latitude BETWEEN 0 AND 25', [], function(country){
+    
     var mapOptions = { 
                         zoom : 3, center : new google.maps.LatLng(40, 0),
                         mapTypeId : google.maps.MapTypeId.ROADMAP
@@ -24,9 +28,10 @@ Pinpointing data on a map should be easy. Here is an example of AlaSQL used to p
     };
     
     new google.maps.Circle(opts);
+
 });
 ```
 
-You can play with this example [on jsFiddle](http://jsfiddle.net/7a772dt6/) 
+Play with this example [on jsFiddle](http://jsfiddle.net/7a772dt6/) 
 
 Another live example of intergrating AlaSQL and Google Maps can be [seen here](http://alasql.org/demo/009geo)
