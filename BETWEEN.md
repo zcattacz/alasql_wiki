@@ -7,4 +7,3 @@ Syntax:
     expression1 [NOT] BETWEEN expression2 AND expression3
 ```
 
-See also: [NOT BETWEEN](Not Between)
