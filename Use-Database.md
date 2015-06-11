@@ -1,4 +1,4 @@
-# USE DATABASE
+# Keyword `USE DATABASE`
 
 Syntax:
 ```sql
