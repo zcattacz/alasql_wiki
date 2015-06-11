@@ -1,26 +1,22 @@
-#Google Spreadsheets
+# Google Spreadsheets + AlaSQL
 
-You an use Alasql with Tabletop library to read data from Goggle Spreadsheets:
+AlaSQL can query data directly from a google spreadsheet - so its easy to edit the raw data in the spreadsheet and make manipulations like grouping, filtering, or saving to XLSX directly in your app. The feature depends on the plugin [Tabletop library](https://github.com/jsoma/tabletop).
 
-First, add Alasql and Tabletop libraries to your page:
 ```html
-    <script src="https://cdn.rawgit.com/jsoma/tabletop/master/src/tabletop.js"></script>
-    <script src="http://alasql.org/console/alasql.min.js"></script>
-    <div id="res"></div>
+<script src='https://cdn.rawgit.com/jsoma/tabletop/master/src/tabletop.js'></script>
+<script src="//cdn.jsdelivr.net/alasql/0.1/alasql.min.js"></script> 
+
+<div id="res"></div>
+
+<script>
+    var url = 'https://docs.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=0AmYzu_s7QHsmdDNZUzRlYldnWTZCLXdrMXlYQzVxSFE&output=html';
+
+    alasql('SELECT * INTO HTML("#res",{headers:true}) FROM TABLETOP(?) WHERE name < "D" ORDER BY category',[url]);
+</script>
 ```
 
-Second, publish spreadsheet file at Goggle Drive (in case of problem read this [StackoOverflow issue](http://stackoverflow.com/questions/28059346/get-json-feed-from-published-google-sheet)). Copy received access file key to the program.
-```js
-    var url='https://docs.google.com/spreadsheets/d/12VlQDuE1hgArpsJFBHlVbe4XN3CX5qwHvo-58ClMGzU/pubhtml';
-```
+Play with this example [in jsFiddle](http://jsfiddle.net/tov0zcmd/)
 
-Third, use TABLETOP() from-function like in the example below:
-```js
-    alasql('SELECT * INTO HTML("#res",{headers:true}) FROM TABLETOP(?)',[url]);
-```
+Remember to publish your spreadsheet. In case of problem read this [StackoOverflow question](http://stackoverflow.com/questions/28059346/get-json-feed-from-published-google-sheet). 
 
-TABLETOP() function has only one parameter: Google Spreadsheet key.
-```sql
-    SELECT * FROM TABLETOP("https://docs.google.com/spreadsheets/d/12VlQDuE1hgArpsJFBHlVbe4XN3CX5qwHvo-58ClMGzU/pubhtml")
-```
-```
+More info about [the `TABLETOP` keyword](TABLETOP)
