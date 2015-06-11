@@ -1,4 +1,3 @@
-----
 
 © 2014-2015, Andrey Gershun (agershun@gmail.com) & Mathias Rangel Wulff (mathiasrw@gmail.com)
 
