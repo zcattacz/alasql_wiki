@@ -1,4 +1,4 @@
-# DETACH
+# Keyword `DETACH`
 
 Detach external AlaSQL database.
 
