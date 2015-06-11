@@ -1,4 +1,4 @@
-# DROP DATABASE
+# Keyword `DROP DATABASE`
 
 Syntax:
 ```sql
