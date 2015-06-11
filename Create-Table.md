@@ -1,4 +1,4 @@
-## CREATE TABLE
+## Keyword `CREATE TABLE`
 
 Create table statement.
 
