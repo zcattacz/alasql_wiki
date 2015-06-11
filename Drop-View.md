@@ -1,4 +1,4 @@
-# DROP VIEW
+# Keyword `DROP VIEW`
 
 Syntax:
 ```sql
