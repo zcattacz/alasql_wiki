@@ -1,5 +1,7 @@
 
-# Similar Projects (JavaScript and SQL)
+# Similar Projects
+
+We really encourage you to find the right tool for your task. Check out the other options here:
 
 SQL-database:
 * [sql.js](https://github.com/kripken/sql.js) - port of SQLite to JavaScript, compiled with Emscripten
@@ -34,6 +36,7 @@ JavaScript databases:
 * [js-hypercube](https://github.com/thesmart/js-hypercube)
 * [cubico](https://github.com/diegodayan/cubico)
 * [SimpleMemolap](https://github.com/ajlopez/SimpleMemolap)
+* [LokiJS](http://lokijs.org/)
 
 SQL Parsers
 * [sequeljs](https://github.com/camilojd/sequeljs/tree/master/web)
