@@ -1,6 +1,6 @@
-# SQL-99 core features in AlaSQL
+# SQL-99 features supported by AlaSQL
 
-The following table lists all features included in Core SQL-99 ([source](http://developer.mimer.com/validator/parser99/core-sql-99.tml)) and thier support in AlaSQL.
+The following table lists all features included in core SQL-99 ([source](http://developer.mimer.com/validator/parser99/core-sql-99.tml)) and thier support in AlaSQL.
 
 Feature ID | SQL-99 Feature Name | AlaSQL Support
 ----------- | ------------------- | -----------------
