@@ -1,4 +1,4 @@
-## INTO
+# Keyword `INTO`
 
 Syntax:
 ```sql
