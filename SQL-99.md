@@ -4,27 +4,27 @@ The following table lists all features included in Core SQL-99 ([source](http://
 
 Feature ID | SQL-99 Feature Name | AlaSQL Support
 ----------- | ------------------- | -----------------
-B011 | Embedded Ada *) | No
-B012 | Embedded C *) | No
-B013 | Embedded COBOL *) | No
-B014 | Embedded Fortran *) | No
-B015 | Embedded MUMPS *) | No
-B016 | Embedded Pascal *) | No
-B017 | Embedded PL/I 1 *) | No
+B011 | Embedded Ada  | No
+B012 | Embedded C  | No
+B013 | Embedded COBOL  | No
+B014 | Embedded Fortran  | No
+B015 | Embedded MUMPS  | No
+B016 | Embedded Pascal  | No
+B017 | Embedded PL/I 1  | No
 E011 | Numeric data types | 
-E011-01 | [INTEGER](Integer) and [SMALLINT](Smallint) data types (including all spellings) | Yes*
-E011-02 | [REAL](Real), [DOUBLE PRECISON](Double Precision), and [FLOAT](Float) data types | Yes*
-E011-03 | [DECIMAL](Decimal) and [NUMERIC](Numeric) data types | No*
+E011-01 | [INTEGER](Integer) and [SMALLINT](Smallint) data types (including all spellings) | Yes
+E011-02 | [REAL](Real), [DOUBLE PRECISON](Double Precision), and [FLOAT](Float) data types | Yes
+E011-03 | [DECIMAL](Decimal) and [NUMERIC](Numeric) data types | No
 E011-04 | Arithmetic operators | Yes
 E011-05 | Numeric comparison | Yes
 E011-06 | Implicit casting among the numeric data types | Yes
 E021 | Character data types | 
-E021-01 | [CHARACTER](Char) data type (including all its spellings) | Yes*
-E021-02 | [CHARACTER VARYING](Varchar) data type (including all its spellings) | Yes*
+E021-01 | [CHARACTER](Char) data type (including all its spellings) | Yes
+E021-02 | [CHARACTER VARYING](Varchar) data type (including all its spellings) | Yes
 E021-03 | Character literals | Yes
 E021-04 | CHARACTER_LENGTH function | Yes
 E021-05 | OCTET_LENGTH function | No
-E021-06 | [SUBSTRING](Substring) function | Yes*
+E021-06 | [SUBSTRING](Substring) function | Yes
 E021-07 | Character concatenation | Yes
 E021-08 | [UPPER](Upper) and [LOWER](Lower) functions | Yes
 E021-09 | [TRIM](Trim) function | Yes
@@ -41,7 +41,7 @@ E051-02 | [GROUP BY](Group By) clause | Yes
 E051-04 | [GROUP BY](Group By) can contain columns not in select-list | Yes
 E051-05 | Select list items can be renamed | Yes
 E051-06 | [HAVING](Having) clause | Yes
-E051-07 | Qualified [*](Star) in select list | Yes
+E051-07 | Qualified [](Star) in select list | Yes
 E051-08 | Correlation names in the [FROM](From) clause | Yes
 E051-09 | Rename columns in the [FROM](From) clause | Yes
 E061 | Basic predicates and search conditions | 
@@ -49,7 +49,7 @@ E061-01 | Comparison predicate | Yes
 E061-02 | [BETWEEN](Between) predicate | Yes
 E061-03 | IN predicate with list of values | Yes
 E061-04 | [LIKE](Like) predicate | Yes
-E061-05 | [LIKE](Like) predicate: [ESCAPE](Escape) clause | Yes*
+E061-05 | [LIKE](Like) predicate: [ESCAPE](Escape) clause | Yes
 E061-06 | [NULL](Null) predicate | Yes
 E061-07 | Quantified comparison predicate | Yes
 E061-08 | [EXISTS](Exists) predicate | Yes
@@ -103,7 +103,7 @@ E141 | Basic integrity constraints |
 E141-01 | [NOT NULL](Not Null) constraints | Yes
 E141-02 | [UNIQUE](Unique) constraints of [NOT NULL](Not NUll) columns | Yes
 E141-03 | [PRIMARY KEY](Primary Key) constraints | Yes
-E141-04 | Basic FOREIGN KEY constraint with the NO ACTION default | Yes*
+E141-04 | Basic FOREIGN KEY constraint with the NO ACTION default | Yes
 E141-06 | [CHECK](Check) constraints | Yes
 E141-07 | [Column defaults](Defeult) | Yes
 E141-08 | [NOT NULL](Not Null) inferred on [PRIMARY KEY](Primary Key) | ?
