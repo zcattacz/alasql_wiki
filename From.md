@@ -1,4 +1,4 @@
-# FROM
+# Keyword `FROM`
 
 Syntax:
 ```sql
