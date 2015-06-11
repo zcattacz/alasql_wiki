@@ -1,4 +1,4 @@
-# GROUP BY
+# Keyword `GROUP BY`
 
 Syntax:
 ```sql
