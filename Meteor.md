@@ -2,7 +2,7 @@
 
 AlaSQL supports querieng directly on Meteor collections. 
 
-Sounds simple - And it is. Walker-Morgan from compose.io puts it this way:
+Sounds simple - And it is. [Walker-Morgan](https://www.compose.io/articles/author/dj/) from [compose.io](https://www.compose.io/articles/meteor-sql-and-other-databases/) puts it this way:
 
 
 >This lets you turn
@@ -15,7 +15,7 @@ Sounds simple - And it is. Walker-Morgan from compose.io puts it this way:
 >
 >which doesn't look like a huge jump, until you realise that this works in both the browser and the server and opens up a way to do JOIN, GROUP BY, UNION, DISTINCT and others.
 
-Please read [his article about Meteor and AlaSQL](https://www.compose.io/articles/meteor-sql-and-other-databases/) if you find it interesting. 
+Read [the rest of the article about Meteor and AlaSQL](https://www.compose.io/articles/meteor-sql-and-other-databases/) if it looks useful to you. 
 
 ----
 
