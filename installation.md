@@ -1,4 +1,4 @@
-## Installation
+## How to Use
 
 ### In browser
 
