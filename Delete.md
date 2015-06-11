@@ -1,4 +1,4 @@
-## DELETE
+# Keyword `DELETE`
 
 Syntax:
 ```sql
