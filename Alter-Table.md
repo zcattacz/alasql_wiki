@@ -1,4 +1,4 @@
-# ALTER TABLE
+# Keyword `ALTER TABLE`
 
 Syntax:
 ```sql
