@@ -5,7 +5,7 @@ Pinpointing data on a map should be easy. Here is an example of AlaSQL used to p
 
 
 ```js
-    alasql("SELECT * FROM CSV("https://cdn.rawgit.com/albertyw/avenews/master/old/data/average-latitude-longitude-countries.csv",{headers:true}) WHERE Latitude BETWEEN 25 AND 50', [], function(country){
+    alasql('SELECT * FROM CSV("https://cdn.rawgit.com/albertyw/avenews/master/old/data/average-latitude-longitude-countries.csv",{headers:true})', [], function(country){
         var mapOptions = { zoom : 3, center : new google.maps.LatLng(40, 0),
             mapTypeId : google.maps.MapTypeId.ROADMAP
         };
