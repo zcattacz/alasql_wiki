@@ -1,4 +1,4 @@
-# DETACH DATABASE
+# Keyword `DETACH DATABASE`
 
 Syntax:
 ```sql
