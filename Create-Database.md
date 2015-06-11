@@ -1,6 +1,7 @@
-### Alasql Databases
+# Keyword `CREATE DATABASE`
 
 Syntax:
+
 ```sql
     CREATE [engineid] DATABASE databaseid;
 ```
