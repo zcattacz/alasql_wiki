@@ -1,4 +1,4 @@
-# IF THEN ELSE
+# Keyword `IF ... THEN ... ELSE`
 
 Syntax:
 ```sql
