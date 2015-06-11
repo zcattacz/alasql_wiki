@@ -1,4 +1,4 @@
-# SQL reserved keywords
+# SQL Compabillity
 
 See also the full list of [AlaSQL reserved keywords](AlaSQL keywords).
 
