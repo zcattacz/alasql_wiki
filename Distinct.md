@@ -1,6 +1,6 @@
-# DISTINCT
+# Keyword `DISTINCT`
 
-Keyword for [SELECT](Select) and aggregators.
+Is used in combination with [`SELECT`](Select) and aggregators.
 
 Syntax:
 ```sql
