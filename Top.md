@@ -1,4 +1,4 @@
-## TOP
+# Keyword `TOP`
 
 Select top 10 records of data table:
 ```js
