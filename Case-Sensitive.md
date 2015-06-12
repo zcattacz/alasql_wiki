@@ -11,9 +11,9 @@ Case sensitive words:
 
 Different:
 ```sql
-    SELECT * FROM city
-    SELECT * FROM City
-    SELECT * FROM CITY
+SELECT * FROM city
+SELECT * FROM City
+SELECT * FROM CITY
 ```
 ## Case Insensitive
 

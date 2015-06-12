@@ -1,4 +1,5 @@
-# AS - naming keyword
+# Keyword `AS`
+
 
 Syntax:
 ```sql

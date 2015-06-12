@@ -1,6 +1,6 @@
-# CSV
+# Keyword `CSV`
 
-AlaSQL can import export JavaScript arrays to CSV (comma-separated values) format.
+AlaSQL can import from and export to CSV (comma-separated values) format.
 
 Syntax:
 ```sql

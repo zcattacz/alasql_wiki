@@ -1,4 +1,4 @@
-# FOREIGN KEY
+# Keyword `FOREIGN KEY`
 
 AlaSQL supports FOREIGN KEY concept.
 

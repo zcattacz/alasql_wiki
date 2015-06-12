@@ -1,19 +1,45 @@
-# Alasql Object
-## Properties and functions
+# The AlaSQL Object
 
-* alasql(sql,params,callback) – execute SQL
-* alasql(data) - starting poit for [fluent interface](Fluent Interface)
-* alasql.exec(sql,params,callback) – execute SQL
-* alasql.parse(sql) – parse to [AST (abstract syntax tree)](AST)
-* ast.compile(databaseid) – compile statement and cache it in database cache
-* alasql.exec(sql) – execute statement
-* alasql.use(databaseid) – [use database](Use Database)
-* alasql.pretty(sql) – pretty SQL output in HTML and TXT
-* alasql.options - [options](Alasql Options)
-* alasql.databases - list of AlaSQL databases
-* alasql.tables - list of tables in ```alasql``` database
+## Properties and functions - overview
 
-## alasql() - main function
+In the following the term `sql` is ment as a string contaning SQL statements.
+
+
+* `alasql(sql)` - short for `alasql.exec(sql)`
+
+* `alasql.exec(sql)`- executes SQL and returns responses. If several SQL statements are given (seperated by `;`) the return value will be an array with the response of each statement. Statments that does not `SELECT` data will return an int indicating rows affected or if the execution of the statement succeeded.
+
+* `alasql(sql,params)` – short for `alasql.exec(sql,params)`
+
+* `alasql.exec(sql,params)` executes SQL after having replaces the n'th `?` in sql with the n'th index in the array `params`
+
+* `alasql(sql,params,callback)` – short for `alasql.exec(sql,params,callback)`
+
+* `alasql.exec(sql,params,callback)` - adding a 3rd parameter will run the SQL async calling the callback with one parameter (the response) when finished.
+
+* `alasql(data)` - starting poit for [fluent interface](Fluent Interface)
+
+
+* `alasql.parse(sql)` – parse SQL to an [abstract syntax tree (ATS)](AST)
+
+
+* `alasql.compile(sql)` – returns compiled statement (and adds it to database cache)
+
+
+* `alasql.use(databaseid)` – Equivalent to `alasql('USE '+databaseid)`. See also [the keyword USE](Use Database)
+
+* `alasql.pretty(sql)` – "prettyfys" SQL statements
+
+* `alasql.options.*` - See [options](Alasql Options) for more inforamtion
+
+* `alasql.databases` - array of databases in the AlaSQL object
+
+* `alasql.tables` - Array of the tables in the default database (called `alasql`)
+
+
+## In more details
+
+### alasql() - main function
 ```js
     alasql(sql,[params],[callback])
 ```

@@ -1,4 +1,4 @@
-# DROP
+# Keyword `DROP`
 
 Keyword for dropping databases, tables, views, columns, and indexes.
 

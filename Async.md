@@ -1,22 +1,24 @@
-# Async
+# Async execution of SQL statements
 
-Sync version:
+
+Normal sync version would be
 ```js
     var result = alasql(sql, params)
 ```
 
-Async version:
+To run Async version add a 3rd parameter as callback:
 ```js
-    alasql(sql, params, function(result) {
- 	// do something with result
-    });
+	alasql(sql, params, function(result) {
+		// do something with result
+	});
 ```
 
-It is impossible to use sync version with async operations like:
+AlaSQL will always run async in the following cases. 
 * IndexedDB functions
-* INTO- and FROM-functions
+* INTO- functions
+* FROM-functions
 
-This is the example:
+Example:
 ```js
      var resSync = alasql('SELECT * FROM CSV("mydata.csv")')',[],function(resAsync){
           console.log(resAsync);

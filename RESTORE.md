@@ -1,1 +1,1 @@
-# RESTORE
+# Keyword `RESTORE`

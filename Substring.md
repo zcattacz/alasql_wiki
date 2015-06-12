@@ -1,4 +1,4 @@
-# SUBSTRING
+# Keyword `SUBSTRING`
 
 AlaSQL supports ```SUBSTRING(string, start, length)``` function:
 ```sql

@@ -1,4 +1,4 @@
-# LIKE
+# Keyword `LIKE`
 
 Match expression with pattern.
 

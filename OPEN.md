@@ -1,1 +1,1 @@
-# OPEN
+# Keyword `OPEN`

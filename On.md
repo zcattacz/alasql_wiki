@@ -1,4 +1,4 @@
-# ON
+# Keyword `ON`
 
 This keyword is using as ON parameter in [SET](Set) statement and as join condition in [JOIN](Join)
 

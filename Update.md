@@ -1,5 +1,5 @@
 # Keyword `UPDATE`
-AlaSQL supports UPDATE statement.
+
 
 Syntax:
 ```sql

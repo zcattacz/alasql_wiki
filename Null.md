@@ -1,4 +1,4 @@
-# NULL
+# Keyword `NULL`
 
 AlaSQL supports ```NULL``` keyword.
 

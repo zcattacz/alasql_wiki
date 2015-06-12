@@ -1,4 +1,4 @@
-# LAST
+# Keyword `LAST`
 
 LAST aggregator takes the last record in the group.
 

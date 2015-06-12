@@ -1,4 +1,4 @@
-# SHOW DATABASES
+# Keyword `SHOW DATABASES`
 
 List of all databases in memory.
 

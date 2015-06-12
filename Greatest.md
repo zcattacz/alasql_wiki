@@ -1,4 +1,4 @@
-# GREATEST()
+# Keyword `GREATEST`
 
 Maximal value of its arguments.
 

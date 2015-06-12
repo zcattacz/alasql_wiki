@@ -1,4 +1,6 @@
-#ROWNUM() / ROW_NUMBER()
+# Keyword `ROWNUM`
+
+Has the alias `ROW_NUMBER`
 
 You can receive number of result record in the recordset like in this example:
 

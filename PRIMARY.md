@@ -1,4 +1,4 @@
-# PRIMARY
+# Keyword `PRIMARY`
 
 This keyword is using in [PRIMARY KEY](Primary Key) column definition.
 

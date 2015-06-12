@@ -1,4 +1,4 @@
-# CALL
+# Keyword `CALL
 
 This statements allows to call procedures from SQL program.
 

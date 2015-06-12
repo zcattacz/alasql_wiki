@@ -1,4 +1,4 @@
-# EXISTS
+# Keyword `EXISTS`
 
 Check if value exists in the subquery.
 

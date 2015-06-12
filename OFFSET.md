@@ -1,4 +1,4 @@
-# OFFSET
+# Keyword `OFFSET`
 
 Syntax:
 ```sql

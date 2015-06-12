@@ -1,8 +1,14 @@
-# CROSS APPLY and OUTER APPLY
+# Keyword `APPLY`
+
+Is used as part of both `CROSS APPLY` and `OUTER APPLY`
+
 
 ```sql
     SELECT ... CROSS APPLY ...
     SELECT ... OUTER APPLY ...
 ```
 
-See also: [CROSS APPLY](Cross Apply), [OUTER APPLY](Outer Apply)
+Pleae see 
+
+- [CROSS APPLY](Cross Apply)
+- [OUTER APPLY](Outer Apply)

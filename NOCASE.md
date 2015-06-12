@@ -1,3 +1,3 @@
-# NOCASE
+# Keyword `NOCASE`
 
 See also: [COLLATE](Collate)

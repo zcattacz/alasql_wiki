@@ -1,4 +1,4 @@
-# WITH SELECT (Common Table Expressions)
+# Keyword `WITH` 
 
 In AlaSQL you can use WITH caluse with SELECT operator to create temporary tables for current select 
 (a.k.a. Commom Table Expressions). 

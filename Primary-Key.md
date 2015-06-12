@@ -1,4 +1,4 @@
-# PRIMARY KEY
+# Keyword `PRIMARY KEY`
 
 Syntax:
 ```sql

@@ -1,4 +1,4 @@
-# RECORDSET
+# Keyword `RECORDSET`
 
 AlaSQL modifier for SELECT queries.
 ```sql

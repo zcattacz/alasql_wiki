@@ -1,3 +1,3 @@
-# CURSOR
+# Keyword `CURSOR`
 
-Cursors are not realized yet.
+`CURSOR` is not supported by AlaSQL yet.

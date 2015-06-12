@@ -1,3 +1,3 @@
-# COMMIT TRANSACTION
+# Keyword `COMMIT TRANSACTION`
 
-See also: [TRANSACTION](Transaction), [ROLLBACK](Rollback)
+Please see: [TRANSACTION](Transaction), [ROLLBACK](Rollback)

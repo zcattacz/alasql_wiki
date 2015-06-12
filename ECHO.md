@@ -1,10 +1,10 @@
-# ECHO
+# Keyword `ECHO`
 
-Test command
+Command used as the keyword in the main example for writing plugins for AlaSQL - and is not part of the normal AlaSQL keywords.
 
-Syntax
+Syntax when echo [plugin]
 ```sql
     ECHO expression
 ```
 
-This command stored into [Echo Plugin](Echo Plugin)
+See also [Echo Plugin](Echo Plugin)

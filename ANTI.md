@@ -1,4 +1,4 @@
-# ANTI - anti join
+# Keyword `ANTI`
 
 Syntax:
 ```

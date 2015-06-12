@@ -1,6 +1,6 @@
-# PRINT
+# Keyword `PRINT`
 
-Print statement.
+Print statement will call console.log()
 
 Syntax:
 ```sql

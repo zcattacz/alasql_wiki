@@ -1,4 +1,4 @@
-# SELECT WHERE
+# Keyword `WHERE`
 
 Expression
 ```js

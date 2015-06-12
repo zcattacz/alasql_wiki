@@ -1,4 +1,4 @@
-# NOT
+# Keyword `NOT`
 
 Syntax:
 ```sql

@@ -1,4 +1,4 @@
-# RIGHT
+# Keyword `RIGHT`
 
 Syntax:
 ```sql

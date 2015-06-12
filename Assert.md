@@ -1,6 +1,6 @@
-# ASSERT
+# Keyword `ASSERT`
 
-Throws error if result of last operation is not equal to value (Alasql uses equalDeep() function for comparision)
+Throws a javascript error if result of last operation is not equal to value (Alasql uses equalDeep() function for comparision)
 
 Syntax:
 ```sql
@@ -10,7 +10,7 @@ For example:
 
 ```js
     alasql('ASSERT 1');
-    alasql('ASSERT “Wrong Value”, @[{a:1,b:”Odessa”}]');
+    alasql('ASSERT “Wrong Value”, @[{a:1,b:”Odessa”}]');
 ```
 
 You can use Alasql ASSERT operator to test results of previous operation:

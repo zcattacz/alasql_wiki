@@ -1,6 +1,6 @@
-# AVG() - average
+# Keyword `AVG()`
 
-AlaSQL supports average sum aggregator ```AVG()```.
+AlaSQL supports average aggregator `AVG()`.
 
 Syntax:
 ```sql

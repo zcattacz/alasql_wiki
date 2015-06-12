@@ -1,4 +1,4 @@
-# UNIQUE
+# Keyword `UNIQUE`
 
 AlaSQL supports ```UNIQUE``` constraints.
 

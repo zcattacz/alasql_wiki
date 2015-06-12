@@ -1,4 +1,4 @@
-# CHECK
+# Keyword `CHECK`
 
 AlaSQL supports ```CHECK``` table constraints.
 

@@ -1,3 +1,3 @@
-# TEXTSTRING
+# Keyword `TEXTSTRING`
 
-See also: [VALUE](Value)
+See: [VALUE](Value)

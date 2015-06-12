@@ -1,4 +1,4 @@
-# MAX
+# Keyword `MAX`
 
 Maximal aggregator and function.
 

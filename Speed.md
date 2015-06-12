@@ -1,4 +1,5 @@
-## Speed - We like it fast 
+# Speed - We like it fast 
+
 Thats why we make sure to use all the tricks we can find to make javascript spit out your results as quick as possible. Among other things we make sure that: 
 
 * Queries are cached as compiled functions. 

@@ -1,4 +1,4 @@
-# LEAST()
+# Keyword `LEAST`
 
 Minimal value of its arguments
 

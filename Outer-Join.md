@@ -1,3 +1,3 @@
-# FULL OUTER JOIN
+# Keyword `FULL OUTER JOIN`
 
 See also: [JOIN](Join)

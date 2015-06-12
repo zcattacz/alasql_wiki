@@ -1,4 +1,4 @@
-# REQUIRE
+# Keyword `REQUIRE`
 
 This command is using for loading AlaSQL plugins (standard or custom) or any other JavaScript files:
 

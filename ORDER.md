@@ -1,4 +1,4 @@
-# ORDER
+# Keyword `ORDER`
 
 Syntax:
 ```sql

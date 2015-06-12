@@ -1,10 +1,10 @@
-# CONVERT()
+# Keyword `CONVERT
 
 Syntax:
 ```sql
     CONVERT(type, value, style)
 ```
-List of [available styles](https://msdn.microsoft.com/ru-ru/library/ms187928.aspx?f=255&MSPPError=-2147217396).
+List of [available styles](https://msdn.microsoft.com/ru-ru/library/ms187928.aspx?f=255&MSPPError=-2147217396) supported.
 
 AlaSQL realizes CONVERT() function:
 ```js

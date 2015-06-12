@@ -1,4 +1,6 @@
-# ALTER - altering operator
+# Keyword `ALTER`
+
+Table altering operator
 
 Syntax:
 ```sql
@@ -6,4 +8,4 @@ Syntax:
     ALTER TABLE oldname RENAME TO newname
 ```
 
-See also: [ALTER TABLE](Alter Table), [ADD COLUMN](Add Column), [RENAME TABLE](Rename Table)
+Please see: [ALTER TABLE](Alter Table), [ADD COLUMN](Add Column), [RENAME TABLE](Rename Table)

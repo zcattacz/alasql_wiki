@@ -1,4 +1,4 @@
-# ENUM
+# Keyword `ENUM`
 
 Enum type for columns.
 

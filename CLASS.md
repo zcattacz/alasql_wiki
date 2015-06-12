@@ -1,4 +1,4 @@
-# CLASS
+# Keyword `CLASS`
 
 Syntax:
 ```sql

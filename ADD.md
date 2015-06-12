@@ -1,4 +1,4 @@
-# ADD
+# Keyword `ADD`
 
 Syntax:
 ```sql

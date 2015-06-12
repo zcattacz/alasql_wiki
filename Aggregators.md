@@ -1,6 +1,7 @@
-# Aggregators
+# Aggregators supported by AlaSQL
 
 ## SQL Standard
+
 * SUM()
 * AVG()
 * COUNT()

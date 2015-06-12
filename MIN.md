@@ -1,4 +1,4 @@
-# MIN()
+# Keyword `MIN`
 
 Minimal aggregator and function.
 

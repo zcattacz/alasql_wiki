@@ -1,4 +1,4 @@
-# SOURCE
+# Keyword `SOURCE`
 
 Syntax:
 ```sql

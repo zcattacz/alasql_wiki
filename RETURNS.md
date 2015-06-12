@@ -1,1 +1,2 @@
-# RETURNS
+# Keyword `RETURNS`
+

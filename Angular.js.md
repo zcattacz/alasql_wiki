@@ -1,6 +1,19 @@
-# Angular.js
+# Angular.js + AlaSQL
 
-AlaSQL can work together with Angular.js library. 
+
+You can use AlaSQL together with Angular.js framework:
+
+```js
+    $scope.exportData = function () {
+        alasql('SELECT * INTO XLSX("john.xlsx",{headers:true}) FROM ?',[$scope.items]);
+    };
+```
+See [simple example in jsFiddle](http://jsfiddle.net/agershun/00nfeq12/).
+
+Another example: [Calculating average of array](http://jsfiddle.net/agershun/she06Lq3/2/)
+
+
+## In more detail
 
 If AlaSQL recognize Angular.js it removes ```$$hashKey``` artefacts from the exporting arrays.
 

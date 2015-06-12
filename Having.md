@@ -1,4 +1,4 @@
-# HAVING
+# Keyword `HAVING`
 
 Filtering groups by expressions.
 

@@ -1,4 +1,4 @@
-# ADD COLUMN
+# Keyword `ADD COLUMN`
 
 Syntax:
 ```sql

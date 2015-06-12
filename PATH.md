@@ -1,4 +1,4 @@
-# PATH
+# Keyword `PATH`
 
 Searching a path from one vertex to another.
 

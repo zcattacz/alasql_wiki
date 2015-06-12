@@ -1,4 +1,4 @@
-# PLAN
+# Keyword `PLAN`
 
 Syntax:
 ```sql

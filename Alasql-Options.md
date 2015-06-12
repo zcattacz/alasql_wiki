@@ -1,16 +1,21 @@
-# Alasql Options
+# AlaSQL Options
 
-You can find all AlaSQL options in ```alasql.options``` variable.
+You can find all AlaSQL options in `alasql.options` variable.
 
 You can change these options directly from JavaScript:
+
 ```js
     alasql.options.autocommit = true;
 ```
-or from SQL with [SET](Set) statement:
+or from SQL with the [`SET`](Set) statement:
+
 ```sql
     SET AUTOCOMMIT OFF;
     SET MODIFIER = "RECORDSET";
 ```
+
+Setting them via the `SET` statement is the only option when running from the console or if you run as a webworker and want to change options during executions. 
+
 ### List of AlaSQL options
 
 * alasql.options.valueof (true/false) – convert all values with .valueOf() function before comparing

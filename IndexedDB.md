@@ -1,4 +1,5 @@
 ## Work with IndexedDB
+
 Sample (try it in [jsFiddel](http://jsfiddle.net/agershun/1t2rrr78/)):
 ```js
     var cityData = [{city:"Redmond", population:57530},

@@ -1,4 +1,4 @@
-# PERCENT
+# Keyword `PERCENT`
 
 Select number percent from query result.
 

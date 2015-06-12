@@ -1,4 +1,4 @@
-# WHILE
+# Keyword `WHILE`
 
 Loop
 

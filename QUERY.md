@@ -1,2 +1,2 @@
-# QUERY
+# Keyword `QUERY`
 

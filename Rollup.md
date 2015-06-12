@@ -1,4 +1,4 @@
-# ROLLUP
+# Keyword `ROLLUP`
 
 Syntax:
 ```sql

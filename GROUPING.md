@@ -1,3 +1,3 @@
-# GROUPING
+# Keyword `GROUPING`
 
-See also: [GROUPING SETS](Grouping Sets)
+Please see: [GROUPING SETS](Grouping Sets)

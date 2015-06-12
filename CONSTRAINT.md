@@ -1,4 +1,4 @@
-# CONSTRAINT
+# Keyword `CONSTRAINT`
 
 AlaSQL supports table and column constrints, including:
 * [CHECK](Check)

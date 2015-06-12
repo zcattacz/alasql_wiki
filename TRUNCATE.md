@@ -1,4 +1,4 @@
-# TRUNCATE
+# Keyword `TRUNCATE`
 
 To remove all records from the table you can use ```TRUNCATE``` statement.
 

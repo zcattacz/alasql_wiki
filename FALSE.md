@@ -1,4 +1,4 @@
-# FALSE
+# Keyword `FALSE`
 
 Logical false value
 

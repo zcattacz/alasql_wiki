@@ -1,4 +1,4 @@
-# GROUPING SETS
+# Keyword `GROUPING SETS`
 
 AlaSQL supports GROUPING SETS() grouping options:
 ```js

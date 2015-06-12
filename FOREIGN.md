@@ -1,4 +1,4 @@
-# FOREIGN
+# Keyword `FOREIGN`
 
 Part of [FOREIGN KEY](Foreign Key) constraint.
 

@@ -1,4 +1,4 @@
-# SEARCH
+# Keyword `SEARCH`
 
 AlaSQL ```SEARCH``` operator is designed to traverse over JSON objects and graphs.
 

@@ -1,7 +1,11 @@
 # Database Class
 
-var db = new alasql.Database(‘mydb’)
-* db.databaseid – database name
-* db.tables – list of tables
-* db.engineid – engine (Local Storage, IndexedDB, etc.)
-* db.exec(sql) – execute sql in mydb database
+Example:
+
+    var db = new alasql.Database(‘mydb’) 
+
+Now
+* `db.databaseid` is database name
+* `db.tables` array of tables
+* `db.engineid` name of engine (Local Storage, IndexedDB, etc.)
+* `db.exec(sql)` executes SQL statements against the mydb database

@@ -1,6 +1,6 @@
 # FileStorage
 
-AlaSQL supports own format of database storage. This is a JSON file with all database data.
+AlaSQL supports its own file format of database storage. This is a JSON string representing the database.
 
 To use FileStorage you need to attach database:
 ```sql

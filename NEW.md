@@ -1,4 +1,4 @@
-# NEW
+# Keyword `NEW`
 
 The AlaSQL ```NEW``` operator is the same as JavaScript ```new``` operator.
 

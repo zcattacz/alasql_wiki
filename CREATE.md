@@ -1,4 +1,4 @@
-# CREATE
+# Keyword `CREATE`
 
 Keyword used for creation of AlaSQL objects: tables, views, indexes, graphs, vertices, and edges.
 

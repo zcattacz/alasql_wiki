@@ -1,4 +1,4 @@
-# TRIM()
+# Keyword `TRIM`
 
 AlaSQL supports ```TRIM(string)``` function:
 ```sql

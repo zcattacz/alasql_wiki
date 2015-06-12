@@ -1,4 +1,4 @@
-# OR
+# Keyword `OR`
 
 Syntax:
 ```sql

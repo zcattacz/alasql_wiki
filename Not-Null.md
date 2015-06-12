@@ -1,4 +1,4 @@
-# NOT NULL
+# Keyword `NOT NULL`
 
 ### IS NOT NULL operator
 You can use ```IS NOT NULL``` operator to check if value is [NULL](Null)([undefined](Undefined)).

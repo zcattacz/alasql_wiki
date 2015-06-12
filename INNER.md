@@ -1,4 +1,4 @@
-# INNER
+# Keyword `INNER`
 
 Syntax:
 ```sql

@@ -6,8 +6,8 @@ Group JavaScript array by field and count number of records in each group:
 
 ```js
     var data = [{a:1,b:1,c:1},{a:1,b:2,c:1},{a:1,b:3,c:1}, {a:2,b:1,c:1}];
-    var res = alasql('SELECT a, COUNT(*) AS b FROM ? GROUP BY a',[data]);
-    console.log(res);
+    var res = alasql('SELECT a, COUNT(*) AS b FROM ? GROUP BY a',[data]);
+    console.log(res);
 ```
 
 #### Sample 2: work with IndexedDB database with SQL 

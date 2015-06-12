@@ -1,14 +1,14 @@
-# BEGIND END
+# Keyword `BEGIND ... END`
 
-Compound stetment.
+Compound statement.
 
 Syntax:
 ```sql
-    BEGIN
-        statement1;
-        stetement2;
-        ...
-    END
+BEGIN
+    statement1;
+    stetement2;
+    ...
+END
 ```
 
 See also: [IF](If), [WHILE](While)

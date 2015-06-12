@@ -1,3 +1,3 @@
-# LEFT OUTER JOIN
+# Keywords `LEFT OUTER JOIN`
 
 See also: [JOIN](Join)

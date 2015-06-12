@@ -1,4 +1,4 @@
-# CURRENT_TIMESTAMP
+# Keyword `CURRENT_TIMESTAMP`
 
 Returns current date and time.
 

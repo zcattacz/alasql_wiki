@@ -1,4 +1,4 @@
-## INSERT SELECT
+# Keyword `INSERT ... SELECT`
 
 Syntax:
 ```sql

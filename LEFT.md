@@ -1,4 +1,4 @@
-# LEFT
+# Keyword `LEFT`
 
 This keyword usually used in combination for join: [LEFT JOIN](Left Join).
 

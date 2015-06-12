@@ -1,4 +1,4 @@
-# DROP COLUMN
+# Keyword `DROP COLUMN`
 
 Syntax:
 ```sql

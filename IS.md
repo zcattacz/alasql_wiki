@@ -1,3 +1,3 @@
-# IS
+# Keyword `IS`
 
-A keyword.
+Supported by AlaSQL

@@ -1,4 +1,4 @@
-# CORRESPONDING
+# Keyword `CORRESPONDING`
 
 Syntax:
 ```sql

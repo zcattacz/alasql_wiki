@@ -1,4 +1,6 @@
-## Single SQL statement
+# Multiple SQL statements 
+
+##Single SQL statement
 
 Returns a single value of query result:
 

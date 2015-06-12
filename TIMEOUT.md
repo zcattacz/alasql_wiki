@@ -1,1 +1,1 @@
-# TIMEOUT
+# Keyword `TIMEOUT`

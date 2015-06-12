@@ -1,4 +1,4 @@
-# BEGIN
+# Keyword `BEGIN`
 
 Starts code block for [WHILE](While) and [IF](If) statements:
 

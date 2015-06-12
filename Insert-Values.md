@@ -1,4 +1,4 @@
-## INSERT VALUES
+## Keyword `INSERT VALUES`
 
 Syntax:
 ```sql
@@ -14,4 +14,4 @@ For example:
     alasql('INSERT INTO Cities VALUES {City:"Paris",Population:5000000}');
 ```
 
-See also: [INSERT](Insert)
+See also: [INSERT](Insert) and [INSERT SELECT](Insert)

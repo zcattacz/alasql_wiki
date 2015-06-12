@@ -1,6 +1,6 @@
-# ALL
+# Keyword `ALLKeyword `
 
-Keyword using with SELECT operator and aggregators.
+Keyword using with [`SELECT`](select) operator and aggregators.
 
 Syntax:
 ```sql

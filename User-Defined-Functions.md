@@ -1,5 +1,6 @@
-# User-Defined Functions
-To define new functions simply add it to ```alasql.fn``` variable, like below:
+# User defined functions
+
+To define new functions for SQL simply add it to ```alasql.fn``` variable, like below:
 ```js
     alasql.fn.cube = function(x) { return x*x*x; }
     alasql(‘SELECT cube(x) FROM ?’,[data]);

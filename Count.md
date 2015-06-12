@@ -1,4 +1,7 @@
-# COUNT Aggregator
+# Keyword `COUNT`
+
+
+Summing aggregator.
 
 Syntax:
 ```sql

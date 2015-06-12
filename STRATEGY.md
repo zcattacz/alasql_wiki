@@ -1,1 +1,1 @@
-# STRATEGY
+# Keyword `STRATEGY`

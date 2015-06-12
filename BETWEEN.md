@@ -1,6 +1,6 @@
-# BETWEEN
+# Keyword `BETWEEN`
 
-Check if the number is in the range.
+Check if the number is in the including range.
 
 Syntax:
 ```sql

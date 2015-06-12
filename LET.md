@@ -1,4 +1,4 @@
-# LET
+# Keyword `LET`
 
 Special clause for [SELECT](Select) statement.
 

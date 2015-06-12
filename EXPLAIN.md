@@ -1,4 +1,4 @@
-# EXPLAIN
+# Keyword `EXPLAIN`
 
 Explain the query plan. Not realized yet.
 

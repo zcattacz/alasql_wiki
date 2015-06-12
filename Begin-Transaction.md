@@ -1,3 +1,3 @@
-# BEGIN TRANSACTION
+# Keyword `BEGIN TRANSACTION`
 
-See also: [TRANSACTION](Transaction), [COMMIT](Commit), [ROLLBACK](Rollback)
+Please see: [TRANSACTION](Transaction), [COMMIT](Commit), [ROLLBACK](Rollback)

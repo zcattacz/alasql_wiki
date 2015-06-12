@@ -1,6 +1,6 @@
-# BREAK
+# Keyword `BREAK`
 
-This operator is not realized yet.
+This operator is not supported by AlaSQL yet.
 
 Syntax:
 ```sql

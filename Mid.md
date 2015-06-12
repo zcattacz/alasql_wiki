@@ -1,4 +1,4 @@
-# MID()
+# Keyword `MID`
 
 AlaSQL supports ```MID(string, start, length)``` function:
 ```sql

@@ -1,4 +1,4 @@
-# UNION
+# Keyword `UNION`
 
 Syntax:
 ```sql

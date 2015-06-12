@@ -1,4 +1,4 @@
-# SELECT columns
+# Keyword `SELECT`
 
 Columns
 ```sql

@@ -1,4 +1,4 @@
-# INTERSECT
+# Keyword `INTERSECT`
 
 Intersect two SELECT results.
 

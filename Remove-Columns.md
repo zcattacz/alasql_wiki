@@ -1,4 +1,4 @@
-# REMOVE COLUMNS
+# Keyword `REMOVE COLUMNS`
 
 Sometimes you may want to select all fields but without some of them. 
 

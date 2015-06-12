@@ -1,4 +1,4 @@
-# CASE
+# Keyword `CASE`
 
 Syntax:
 ```sql

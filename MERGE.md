@@ -1,3 +1,3 @@
-# MERGE
+# Keyword `MERGE`
 
-This functionality is not realized yet.
+This functionality is not supported yet.

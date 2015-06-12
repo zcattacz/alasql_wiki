@@ -1,4 +1,4 @@
-# CUBE
+# Keyword `CUBE`
 
 AlaSQL supports CUBE() grouping options:
 ```js

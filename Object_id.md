@@ -1,6 +1,6 @@
 # OBJECT_ID
 
-AlaSQL emulates [TSQL](Tsql) ```OBJECT_ID()``` function:
+AlaSQL emulates [TSQL](Tsql) `OBJECT_ID()` function:
 ```sql
 IF OBJECT_ID('dbo.Parts') IS NOT NULL
   DROP TABLE dbo.Parts;

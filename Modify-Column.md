@@ -1,4 +1,4 @@
-# MODIFY COLUMN
+# Keyword `MODIFY COLUMN`
 
 Syntax:
 ```sql

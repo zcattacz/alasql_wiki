@@ -1,4 +1,4 @@
-# EXCEPT
+# Keyword `EXCEPT`
 
 Substract one set from another.
 

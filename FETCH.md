@@ -1,4 +1,4 @@
-# FETCH
+# Keyword `FETCH`
 
 Take a part from the query.
 

@@ -1,4 +1,4 @@
-# MATRIX
+# Keyword `MATRIX`
 
 SELECT result modifier.
 

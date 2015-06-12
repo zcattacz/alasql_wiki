@@ -1,4 +1,4 @@
-# COLUMN
+# Keyword `COLUMN`
 
 Syntax:
 ```

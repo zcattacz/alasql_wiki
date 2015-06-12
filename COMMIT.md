@@ -1,3 +1,3 @@
-# COMMIT
+# Keyword `COMMIT`
 
 Commit transaction

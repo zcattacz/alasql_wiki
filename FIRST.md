@@ -1,6 +1,6 @@
-# FIRST aggregator
+# Keyword `FIRST` 
 
-First value in the group
+Aggregator returning first value in the group
 
 Syntax:
 ```sql

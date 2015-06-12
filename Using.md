@@ -1,4 +1,4 @@
-# USING
+# Keyword `USING`
 
 Syntax:
 ```sql

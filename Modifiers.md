@@ -1,4 +1,5 @@
 # Return Value Modifiers
+
 Return Value Modifiers use for modification of alasql() function output from array of objects to anothe JavaScript data structure, like array of arrays.
 
 #### SELECT By default

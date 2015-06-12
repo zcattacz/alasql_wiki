@@ -1,4 +1,4 @@
-# EDGE
+# Keyword `EDGE`
 
 Edge of the graphs.
 

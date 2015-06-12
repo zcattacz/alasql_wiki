@@ -1,4 +1,4 @@
-## INSERT DEFAULT VALUES
+# Keyword `DEFAULT VALUES`
 
 Syntax:
 ```sql

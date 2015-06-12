@@ -1,4 +1,4 @@
-# SEMI
+# Keyword `SEMI`
 
 Semi join.
 

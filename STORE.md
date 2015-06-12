@@ -1,1 +1,1 @@
-# STORE
+# Keyword `STORE`

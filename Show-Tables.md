@@ -1,4 +1,4 @@
-# SHOW TABLES
+# Keyword `SHOW TABLES`
 
 List of tables in database.
 

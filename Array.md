@@ -1,4 +1,6 @@
-## ARRAY() Aggregator
+# Keyword `ARRAY()`
+
+`ARRAY()` Aggregator
 
 This aggregator is used to aggregate all values into the array.
 

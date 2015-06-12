@@ -1,4 +1,4 @@
-# VIEW
+# Keyword `VIEW`
 
 Syntax:
 ```sql

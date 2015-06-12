@@ -1,4 +1,4 @@
-# OUTER
+# Keyword `OUTER`
 
 AlaSQL supports three types of outer joins:
 * [LEFT OUTER JOIN](LEFT JOIN)

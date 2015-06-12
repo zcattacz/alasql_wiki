@@ -1,4 +1,6 @@
-You can use Alasql and [Alacon](Alacon) for simple ETL procedures.
+# Extract, transform and load with AlaSQL
+
+You can use AlaSQL and [Alacon](Alacon) for ETL procedures.
 
 ## Load data from [CSV](Csv) file with headers
 If you have a CSV file, you can process it directly in Alasql: 

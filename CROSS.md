@@ -1,4 +1,4 @@
-# CROSS
+# Keyword `CROSS`
 
 Keyword using in [CROSS JOIN](Cross Join) and [CROSS APPLY](Cross Apply).
 

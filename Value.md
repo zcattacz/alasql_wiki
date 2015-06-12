@@ -1,4 +1,4 @@
-# VALUE
+# Keyword `VALUE`
 
 Syntax:
 ```sql

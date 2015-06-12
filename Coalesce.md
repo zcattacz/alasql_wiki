@@ -1,4 +1,4 @@
-# COALESCE()
+# Keyword `COALESCE`
 
 Show first NON NULL and non-NaN parameter:
 

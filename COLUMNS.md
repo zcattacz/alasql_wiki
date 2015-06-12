@@ -1,3 +1,3 @@
-# COLUMNS
+# Keyword `COLUMNSKeyword `
 
-See also: [COLUMN](Column)
+Please see: [COLUMN](Column)

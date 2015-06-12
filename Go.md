@@ -1,4 +1,4 @@
-# GO
+# Keyword `GO`
 
 Syntax:
 ```sql

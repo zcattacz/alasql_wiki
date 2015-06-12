@@ -1,4 +1,4 @@
-# SUM()
+# Keyword `SUM`
 
 Sum aggregator.
 

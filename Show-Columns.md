@@ -1,4 +1,4 @@
-# SHOW COLUMNS
+# Keyword `SHOW COLUMNS`
 
 Syntax:
 ```sql

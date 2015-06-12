@@ -1,4 +1,6 @@
-# AND - logical operator
+# Keyword `AND` 
+
+Logical operator
 
 Syntax:
 ```sql

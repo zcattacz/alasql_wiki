@@ -1,4 +1,4 @@
-# NATURAL
+# Keyword `NATURAL`
 
 AlaSQL can analyze columns in two joined table and make a join by columns with similar names.
 

@@ -1,4 +1,4 @@
-# IF
+# Keyword `IF`
 
 Conditional statement.
 

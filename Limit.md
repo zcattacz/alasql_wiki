@@ -1,4 +1,4 @@
-# LIMIT
+# Keyword `LIMIT`
 
 Limit the number of records from result set.
 

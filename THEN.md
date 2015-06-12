@@ -1,4 +1,4 @@
-# THEN
+# Keyword `THEN`
 
 Syntax:
 ```sql

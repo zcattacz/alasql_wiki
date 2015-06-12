@@ -1,4 +1,4 @@
-# SET
+# Keyword `SET`
 
 Syntax:
 ```sql

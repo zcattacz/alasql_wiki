@@ -1,4 +1,4 @@
-# UNION ALL
+# Keyword `UNION ALL`
 
 Syntax:
 ```sql

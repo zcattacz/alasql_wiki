@@ -1,15 +1,16 @@
-# alasql.compile()
+# Presompile SQL statements 
 
-Alasql can precompile statements. It is a kind a "prepare" in other SQL databases.
+`alasql.compile()` lets you precompile statements. It is a kind a "prepare" in other SQL databases.
 
 To compile statement use:
 
 ```js
    var stmt = alasql.compile(sql)
 ```
+
 Then run the statement:
 ```js
-   stmt([parameters array], callback)
+   stmt([parameters array] [, callback])
 ```
 
 Here is the example how to calculate sum of numbers > 2 from [1,2,3,4,5]:

@@ -1,4 +1,4 @@
-# GRAPH
+# Keyword `GRAPH`
 
 Keyword for graph-related commands.
 

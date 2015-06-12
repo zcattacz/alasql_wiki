@@ -1,4 +1,4 @@
-# HELP
+# Keyword `HELP`
 
 List of available commands.
 

@@ -1,5 +1,4 @@
-
-### Google Maps + AlaSQL
+# Google Maps + AlaSQL
 
 Pinpointing data on a map should be easy. Here is an example of AlaSQL used to prepare source data for Google Maps
 

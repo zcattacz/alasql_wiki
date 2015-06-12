@@ -1,4 +1,4 @@
-# MINUS
+# Keyword `MINUS`
 
 This is alias for [EXCEPT](Except) keyword:
 

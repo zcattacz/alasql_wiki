@@ -1,4 +1,4 @@
-# INDEX
+# Keyword `INDEX`
 
 Index keyword is using in these statements:
 * [CREATE INDEX](Create Index)

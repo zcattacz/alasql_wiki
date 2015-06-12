@@ -1,12 +1,14 @@
 # Alasql JavaScript API
 
-## Standard functions:
+## Normal ussage:
 
-* alasql()
-* alasql.compile(sql) - [Compile statements](Compile)
+* alasql(stringWithSQL)
+* alasql.compile(stringWithSQL) - [Pre compile statements](Compile)
+
+Please see more info about the [`alasql` object here](alasql-object)
 
 
-## SQL way
+## SQL driven data insert
 ```js
     alasql(‘CREATE DATABASE test01’);
     alasql(‘USE test01’);
@@ -14,7 +16,8 @@
     alasql(‘INSERT INTO one VALUES (10)’):
     var res = alasql(‘SELECT * FROM one’);
 ```
-## JavaScript way
+
+## JavaScript driven data insert
 ```js
     var data = [{a:1}, {a:2}, {a:3}];
     alasql(‘SELECT * FROM ? WHERE a >= ?’, [data, 2]);
@@ -25,8 +28,8 @@
         console.log(data.length);
     });
 ```
-### Promises
-AlaSQL supports promises with ```alasql.promise(sql,params)``` function. It returns standard A/+ promise:
+## Promises
+AlaSQL supports promises with `alasql.promise(sql,params)` function. It returns a standard A/+ promise:
 
 ```js
     alasql.promise('SELECT * FROM test')
@@ -37,11 +40,9 @@ AlaSQL supports promises with ```alasql.promise(sql,params)``` function. It retu
     });
 ```
 
-## Alasql object
-See [alasql object](Alasql Object)
 
-## exec() function
-WebSQL
+## new database
+
 ```js
     var db = new alasql.Database(‘mydb’);
     db.exec(‘SELECT * FROM City”);
@@ -50,7 +51,7 @@ WebSQL
 ## JavaScript classes as SQL data types
 ```js
     alasql.fn.Date = Date;
-    alasql(‘CREATE order (    orderno INT,    orderdate Date)’);
+    alasql('CREATE order (orderno INT, orderdate Date)');
 ```
 
 ***NB.*** Classes are case-sensitive
@@ -66,6 +67,6 @@ Use NEW
     alasql(‘SELECT NEW Date(yr,mn-1,dy) FROM orderdates’)
 ```
 
-## JSON Objects
-See [JSON Objects](Json Objects)
+## JSON Objects usage
+Please See [JSON Objects](Json Objects)
 

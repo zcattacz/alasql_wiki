@@ -1,4 +1,4 @@
-# END
+# Keyword `END`
 
 Last part of [BEGIN](Begin) and [CASE](Case) operators.
 
