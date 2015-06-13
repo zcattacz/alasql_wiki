@@ -1,22 +1,23 @@
 
-# AlaSQL - a versatile javascript SQL database
-
-
-
-
 [![bitHound Score](https://www.bithound.io/github/agershun/alasql/badges/score.svg)](https://www.bithound.io/github/agershun/alasql)       [![NPM downloads](http://img.shields.io/npm/dm/alasql.svg?style=flat&label=npm downloads)](https://npmjs.org/package/alasql)      ![Stars](https://img.shields.io/github/stars/agershun/alasql.svg?label=Github%20%E2%98%85)       ![Release](https://img.shields.io/github/release/agershun/alasql.svg?label=Last release)      ![NPM version](https://img.shields.io/npm/l/alasql.svg) 
 
 
-
-AlaSQL - _([à la] (http://en.wiktionary.org/wiki/%C3%A0_la) [SQL](http://en.wikipedia.org/wiki/SQL)) [ælæ ɛskju:ɛl]_ - is a javascript SQL database library for both relational data and schemaless data with a strong foucus on query speed and flexibillity for datasources. It works in your browser, Node.js, IO.js and Apache Cordova.
-
+# AlaSQL
 
 
 
-We focus on [speed](speed) by taking advantage of the dynamic nature of javascript when building up queries. Real world solutions demand real world flexibility regarding where data comes from and where it is to be stored. We focus on flexibility by making sure you can [import/export](import+export) and query directly on data stored in your own JSON object, Excel files, localStorage, IndexedDB, and SQLite. 
 
 
-The library brings you the comfort of a full database engine to your javascript app. No, really - its a full database engine complying with [most of SQL-99](https://github.com/agershun/alasql/wiki/SQL-99) spiced up with additional syntax for handling noSQL (schemaless) data and graph networks. We are working towards helping projects porting from native databases by letting you specify the flavor for the SQL behavior as either AlaSQL, Postgres, ORACLE, MSSQL, MySQL, or SQLite. 
+
+_([à la] (http://en.wiktionary.org/wiki/%C3%A0_la) [SQL](http://en.wikipedia.org/wiki/SQL)) [ælæ ɛskju:ɛl]_ - AlaSQL is a versatil javascript SQL database library for both relational data, schemaless data, and graph data with a strong foucus on query speed and flexibillity for datasources. It works in your browser, Node.js, IO.js and Apache Cordova.
+
+
+
+
+We focus on [speed](speed) by taking advantage of the dynamic nature of javascript when building up queries. Real world solutions demands flexibility regarding where data comes from and where it is to be stored. We focus on flexibility by making sure you can [import/export](import+export) and query directly on data stored in your own JSON object, Excel files, localStorage, IndexedDB, and SQLite. 
+
+
+The library brings you the comfort of a full database engine to your javascript app. No, really - its a full database engine complying with [most of SQL-99](https://github.com/agershun/alasql/wiki/SQL-99) spiced up with additional syntax for handling noSQL (schemaless) data and graph networks. To help porting from native databases you can specify the flavor for the SQL behavior as either AlaSQL, T-SQL, MySQL, Postgres, ORACLE, SQLite, OrientDB. MSSQL is on its way. 
 
 
 ----
@@ -28,7 +29,7 @@ The library brings you the comfort of a full database engine to your javascript 
 > Try online: <a href="http://alasql.org/console?CREATE TABLE cities (city string, population number);INSERT INTO cities VALUES ('Rome',2863223), ('Paris',2249975),('Berlin',3517424), ('Madrid',3041579);SELECT * FROM cities WHERE population < 3500000 ORDER BY population DESC">Playground</a>
 
 
-> Feedback: [open an issue](https://github.com/agershun/alasql/issues/new)
+> Feedback: [Open an issue](https://github.com/agershun/alasql/issues/new)
 
 
 > Documentation: [Github wiki](https://github.com/agershun/alasql/wiki)
@@ -41,7 +42,7 @@ The library brings you the comfort of a full database engine to your javascript 
 
 ## How to use
 
-For the browser link to [alasql.min.js](http://cdn.jsdelivr.net/alasql/latest/alasql.min.js) and call 
+For the browser: Include [alasql.min.js](http://cdn.jsdelivr.net/alasql/latest/alasql.min.js) and call 
 `alasql()` with your SQL statements:
 
 ```html
@@ -66,50 +67,66 @@ Play with this example in [jsFiddle](http://jsfiddle.net/xxh13gLa/)
 
 ----
 
-### Node.js
+
+### Bower
+
+To use AlaSQL via bower install as normal
+
+bower install alasql
 
 
-[![NPM](https://nodei.co/npm/alasql.png)](https://nodei.co/npm/alasql/) [![NPM](https://nodei.co/npm-dl/alasql.png?months=6)](https://nodei.co/npm/alasql/)
+----
 
-For node its (also) easy to use. 
-Install with npm
+### Node.js or IO.js
+
+
+
+
+For node install with npm
 
 ```
-    npm install alasql
+npm install alasql
 ```
 
-require `alasql.js` and execute your SQL statements
+
+> [![NPM](https://nodei.co/npm/alasql.png)](https://nodei.co/npm/alasql/) [![NPM](https://nodei.co/npm-dl/alasql.png?months=6)](https://nodei.co/npm/alasql/)
+
+
+
+Require `alasql` and create a new database to start executing your SQL.
 
 
 ```js
-    var alasql = require('alasql');
+var alasql = require('alasql');
 
-    var db = new alasql.Database();
-    
-    db.exec("CREATE TABLE example (a INT, b INT)");
+var db = new alasql.Database();
 
-    // You can insert data directly from javascript object...
-    db.tables.example1.data = [ 
-        {a:5,b:6},
-        {a:3,b:4}
-    ];
+db.exec("CREATE TABLE example (a INT, b INT)");
 
-    // ...or you can insert data with normal SQL 
-    db.exec("INSERT INTO example1 VALUES (1,3)");
-    
-    var res = db.exec("SELECT * FROM example1 ORDER BY b DESC");
-    
-    // res now contains this array of objects:
-    // [{a:1,b:3},{a:3,b:4},{a:3,b:4}]
-    
-    
+// You can insert data directly from javascript object...
+db.tables.example1.data = [ 
+    {a:5,b:6},
+    {a:3,b:4}
+];
+
+// ...or you can insert data with normal SQL 
+db.exec("INSERT INTO example1 VALUES (1,3)");
+
+var res = db.exec("SELECT * FROM example1 ORDER BY b DESC");
+
+// res now contains this array of objects:
+// [{a:1,b:3},{a:3,b:4},{a:3,b:4}]
 ```
+
+Please checkout [Alacon](https://github.com/agershun/alasql/wiki/Alacon) if you intent to use alasql for commandline interface
+
+
 
 
 
 
 ## Peformance
-AlaSQL is very focused on speed and we make sure to use all the tricks we can find to make javascript spit out your results as quick as possible:
+AlaSQL is very focused on speed and we make sure to use all the tricks we can find to make javascript spit out your results as quick as possible. For example:
 
 * Queries are cached as compiled functions. 
 * Joined tables are pre-indexed
@@ -117,9 +134,11 @@ AlaSQL is very focused on speed and we make sure to use all the tricks we can fi
 
 The results are good. Check out AlaSQL vs. other javaScript SQL databases: 
 
-* [AlaSQL vs. WebSQL](http://jsperf.com/alasql-js-vs-websql/7) - Mixing `SELECT`, `SUM`, `JOIN`, and `GROUP BY` on fake data (in-memory opperations for both - see [this discussion](https://github.com/agershun/alasql/issues/47))
-* [AlaSQL vs. SQL.js](http://jsperf.com/sql-js-vs-alasql-js/9) - Mixing `SELECT`, `SUM`, `JOIN`, and `GROUP BY` on fake data
-* [AlaSQL vs. Linq](http://jsperf.com/alasql-vs-linq-on-groupby) - `GROUP BY` on 1,048,576 rows
+* **2x speed** [compared to SQL.js](http://jsperf.com/sql-js-vs-alasql-js/9) selecting with `SUM`, `JOIN`, and `GROUP BY`.
+
+* **2x speed** [compared to WebSQL](http://jsperf.com/alasql-js-vs-websql/7) selecting with `SUM`, `JOIN`, and `GROUP BY` (in-memory opperations for WebSQL - see [this discussion](https://github.com/agershun/alasql/issues/47))
+
+* **1.5x speed** [compared to Linq](http://jsperf.com/alasql-vs-linq-on-groupby) for `GROUP BY` on 1,048,576 rows
 
 
 See more [speed related info on the wiki](https://github.com/agershun/alasql/wiki/Speed) 
@@ -136,12 +155,13 @@ See more [speed related info on the wiki](https://github.com/agershun/alasql/wik
 
 ### Traditional SQL
 
-Use "good old" SQL on your data with functionality including multiple levels of: ```JOIN```, ```VIEW```, ```GROUP BY```, ```UNION```, ```PRIMARY KEY```, ```ANY```, ```ALL```, ```IN```, ```ROLLUP()```, ```CUBE()```, ```GROUPING SETS()```, ```CROSS APPLY```, ```OUTER APPLY```, ```WITH SELECT```, and subqueries. [Compare supported features with SQL standarts here](https://github.com/agershun/alasql/wiki/SQL%20keywords)
+Use "good old" SQL on your data with multiple levels of: ```JOIN```, ```VIEW```, ```GROUP BY```, ```UNION```, ```PRIMARY KEY```, ```ANY```, ```ALL```, ```IN```, ```ROLLUP()```, ```CUBE()```, ```GROUPING SETS()```, ```CROSS APPLY```, ```OUTER APPLY```, ```WITH SELECT```, and subqueries. See the wiki to [compare supported features with SQL standarts](https://github.com/agershun/alasql/wiki/SQL%20keywords).
 
 
 
-### AlaSQL ♥ your JSON data [see why](https://github.com/agershun/alasql/wiki/readme#javascript-sugar)
- [see why](https://github.com/agershun/alasql/wiki/readme#google-maps--alasql)
+### AlaSQL ♥ your JSON data 
+
+[see why](https://github.com/agershun/alasql/wiki/readme#javascript-sugar)
 
 
 
@@ -160,7 +180,7 @@ Take charge and [add your idea](http://feathub.com/agershun/alasql/features/new)
 
 
 
-## Cases where AlaSQL is (also) useful
+## Cases where AlaSQL is useful
 
 
 ### AlaSQL ♥ D3.js
@@ -176,7 +196,7 @@ Meteor is amazing. You can now query directly on your Meteor collections with SQ
 
 ### AlaSQL ♥ Angular.js 
 
-Angular is great. Besides using AlaSQL for normal data manipulation it works like a charm for exporting you present scope to Excel. See more about [Angular and AlaSQL in the wiki](https://github.com/agershun/alasql/wiki/Angular)
+Angular is great. Besides using AlaSQL for normal data manipulation it works like a charm for exporting you present scope to Excel. See more about [Angular and AlaSQL in the wiki](https://github.com/agershun/alasql/wiki/Angular.js)
 
 
 ### AlaSQL ♥ Google Maps 
@@ -187,6 +207,7 @@ Pinpointing data on a map should be easy. AlaSQL is great to prepare source data
 
 ### AlaSQL ♥ Google Spreadsheets
 
+AlaSQL can query data directly from a google spreadsheet. A good "partnership" for easy editing and powerfull data manipulation. See more about [Google Spreadsheets and AlaSQL in the wiki](https://github.com/agershun/alasql/wiki/Google-maps)
 
 
 
@@ -206,11 +227,6 @@ Pinpointing data on a map should be easy. AlaSQL is great to prepare source data
 
 
 
----------
-
----------
-
----------
 
 
 
@@ -219,52 +235,9 @@ Pinpointing data on a map should be easy. AlaSQL is great to prepare source data
 
 
 
----------
-
----------
-
----------
 
 
 
-
-
-
-
-
----------
-
----------
-
----------
-
-
-
-
-
-
-
-
----------
-
----------
-
----------
-
-
-
-
-
-
-
-
----------
-
----------
-
----------
-
-# (The rest is to be cleaned up)
 
 
 
