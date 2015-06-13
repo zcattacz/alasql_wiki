@@ -7,7 +7,7 @@ Is there a way to run an SQL query against javascript objects to find data withi
 
 ### Answer
 
-Alasql is a JavaScript SQL data manipulating library and supports SQL syntax.
+AlaSQL is a JavaScript SQL data manipulating library and supports SQL syntax.
 
 This is an example:
 ```js

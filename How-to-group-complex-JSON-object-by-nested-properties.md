@@ -46,7 +46,7 @@ The attribute to be used to group each point is `e.properties.event_set__all[0].
 
 ### Answer
 
-You can group all points with Alasql library:
+You can group all points with AlaSQL library:
 
     var res = alasql('SELECT features->0->properties->event_set__all->0->category__category \
                           AS category, ARRAY(_) AS points FROM ? GROUP BY category',[data]);

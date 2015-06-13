@@ -15,7 +15,7 @@ Please see the [README](readme) section for a quick overview
 * [Webworker version](Webworker)
 * [LINQ fluent interface](Fluent Interface)
 * [Import and export functions](Import export)
-* [Options](Alasql Options)
+* [Options](AlaSQL Options)
 * [Errors processing](Errors)
 * [Internal structure](Internal Structure)
 * [Performance](Performance)
@@ -34,7 +34,7 @@ Please see the [README](readme) section for a quick overview
  * Spreadsheets: [Microsoft Excel](XLSX), [Google Docs Spreadsheets](Google Spreadsheets) 
  * Grid: [Handsontable.js](Handsontable.js)
  * Formatting: [Numeral.js](Numeral.js), [Moment.js](Moment.js), [Sprintf.js](Sprintf.hs)
-* [SQL database](Sql database) - in-memory database + [Alasql FileStorage](FileStorage) persistence engine
+* [SQL database](Sql database) - in-memory database + [AlaSQL FileStorage](FileStorage) persistence engine
 * [SQL queries](SQL queries)
 * [External databases](External databases) - [IndexedDB](IndexedDB), [Local Storage](LocalStorage), and [SQLite](SQLite) integration
 

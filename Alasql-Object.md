@@ -30,7 +30,7 @@ In the following the term `sql` is ment as a string contaning SQL statements.
 
 * `alasql.pretty(sql)` – "prettyfys" SQL statements
 
-* `alasql.options.*` - See [options](Alasql Options) for more inforamtion
+* `alasql.options.*` - See [options](AlaSQL Options) for more inforamtion
 
 * `alasql.databases` - array of databases in the AlaSQL object
 
@@ -69,7 +69,7 @@ See [Sync and Async](Async).
 
 ## How to use alasql()
 
-*alasql* is a main object and function of Alasql library. It can be used in some different ways:  
+*alasql* is a main object and function of AlaSQL library. It can be used in some different ways:  
 
 ```html
     <script src="alasql.js"></script>

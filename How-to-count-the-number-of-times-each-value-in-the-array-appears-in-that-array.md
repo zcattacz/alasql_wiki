@@ -28,7 +28,7 @@ As seen above, values with a count of 1 fall out, which is fine, however, I need
 
 ### Answer
 
-Alasql library was originally designed to make calculations like in you question.
+AlaSQL library was originally designed to make calculations like in you question.
 ```js
     var arr = [1, 1, 0.7, 0.3, 1, 0.8, 1, 0.8, 0.7, 1];
 

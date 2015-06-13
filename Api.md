@@ -1,4 +1,4 @@
-# Alasql JavaScript API
+# AlaSQL JavaScript API
 
 ## Normal ussage:
 

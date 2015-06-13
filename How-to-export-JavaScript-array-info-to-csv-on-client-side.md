@@ -12,7 +12,7 @@ Any idea how I can export this to csv on the client side?
 
 ### Answer
 
-You can use Alasql.js library to export data locally in CSV (and XLSX as well) file format.
+You can use AlaSQL.js library to export data locally in CSV (and XLSX as well) file format.
 
 Below you can see a simple working example how to export data to CSV format.
 

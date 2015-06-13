@@ -17,7 +17,7 @@ Sheet name:
     alasql('select * from xlsx("cities.xlsx',{sheetid:"Sheet2"}',
         [],function(data){});
 ```
-By default Alasql read data from sheet "Sheet1".
+By default AlaSQL read data from sheet "Sheet1".
 
 #### range
 Cells range:
@@ -25,7 +25,7 @@ Cells range:
     alasql('select * from xlsx("cities.xlsx',{range:"A1:D100"}',
         [],function(data){});
 ```
-By default Alasql read all data in the sheet.
+By default AlaSQL read all data in the sheet.
 
 #### headers
 Read headers from data range (true/false):
@@ -33,6 +33,6 @@ Read headers from data range (true/false):
     alasql('select * from xlsx("cities.xlsx',{headers:true}',
         [],function(data){});
 ```
-By default Alasql headers are on.
+By default AlaSQL headers are on.
 
 See also: [XLS](Xls)

@@ -66,7 +66,7 @@ Desired result:
 
 ### Answer
 
-You can use Alasql library to prepare your complex structure.
+You can use AlaSQL library to prepare your complex structure.
 
 This is an example with two attributes:
 

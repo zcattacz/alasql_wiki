@@ -26,7 +26,7 @@ Is something like that possible with JS?
 
 ### Answer
 
-Alasql library can perform more complex queries with "old good" SQL:
+AlaSQL library can perform more complex queries with "old good" SQL:
 ```js
     var res = alasql('SELECT * FROM ? WHERE value = 55',[data]);
 ```

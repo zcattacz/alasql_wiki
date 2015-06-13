@@ -1,19 +1,22 @@
-# Import and Export
+# Data Import and Export
 
-### Export
+Here you can find AlaSQL examples on import and export functions.
 
-You can save tables directly to the [CSV](Csv) file, like:
-```js
-    var data = [{a:1,b:10},{a:2,b:20}];
-    alasql('select * into csv("a.csv",{headers:true}) from ?',[data]);
-```
-Try this example [in jsFiddle](http://jsfiddle.net/agershun/81noowmn/8/).
+### CSV and Tab
+* [How to attach the database from another folder locally in the computer or from an URL](How to attach the database from another folder locally in the computer or from an URL)
+* [How to export JavaScript array info to CSV on client side?](How to export JavaScript array info to csv on client side)
+* [How to read from CSV for Google Maps?](How to read from CSV for Google Maps)
+* [How to upload and parse CSV file from server and from desktop?](How to upload and parse CSV file from server and from desktop)
 
-AlaSQL also supports export to [CSV](Csv), [TAB](Tsv) (or [TSV](Tsv)), [XLSX](Xlsx), and [JSON](Json) formats.
+### Excel (XLSX, XLS)
+* [How to export JavaScript Array of Filtered HTML Table data to MS Excel or CSV?](How to export JavaScript Array of Filtered HTML Table data to MS Excel or CSV)
+* [How to import and export Excel files to javascript array?](How to import and export Excel files to javascript array)
+* [How to upload form for txt and xlsx in javascript?](How to upload form for txt and xlsx in javascript)
 
-### Import
+Multisheet workbook:
+* [How to create multiple worksheets into a workbook?](How to create multiple worksheets into a workbook)
 
-You can read tables directly from the [CSV](Csv) file, like:
-```js
-    var res = alasql('SELECT * FROM CSV("a.csv",{headers:true})');
-```
+### HTML
+* [How to export HTML table to Excel?](How to export HTML table to Excel)
+* [How to export multiple HTML tables into a CSV file?](How to export multiple HTML tables into a CSV file)
+* [How to hide HTML columns when exporting to Excel?](How to hide HTML columns when exporting to Excel)

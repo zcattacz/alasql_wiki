@@ -1,6 +1,6 @@
 # SQLite
 
-Now Alasql can work with SQLite's [SQL.js](https://github.com/kripken/sql.js/) JavScript library together. You need to include sql.jl into the project, and attach it to Alasql like in the example below:
+Now AlaSQL can work with SQLite's [SQL.js](https://github.com/kripken/sql.js/) JavScript library together. You need to include sql.jl into the project, and attach it to AlaSQL like in the example below:
 
 ```html
     <script src="alasql.js"></script>

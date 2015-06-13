@@ -13,6 +13,6 @@ For example:
        INSERT INTO one VALUES (5,500);
 ```
 
-Try this Alasql example [in jsFiddle](http://jsfiddle.net/agershun/8mobrL3o/1/).
+Try this AlaSQL example [in jsFiddle](http://jsfiddle.net/agershun/8mobrL3o/1/).
 
 See also: [CASE](Case)

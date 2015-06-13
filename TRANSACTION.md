@@ -21,7 +21,7 @@ Rollback
 ```
 
 #### Transaction realization
-In version 0.0.35 Alasql supports transactions only for Local Storage and DOM-storage database. Full support for other databases will be available in future versions
+In version 0.0.35 AlaSQL supports transactions only for Local Storage and DOM-storage database. Full support for other databases will be available in future versions
 
 
 See also: [COMMIT](Commit), [ROLLBACK](Rollback)

@@ -39,7 +39,7 @@ Usually this required for user-defined functions, like:
     </script>
 ```
 
-Include file ```alasql.js``` on the page, and then run alasql.worker(). It will create new Worker based on the alasql.min.js. After that you can use Alasql as shown before. Again, the webworker version of alasql() is async.
+Include file ```alasql.js``` on the page, and then run alasql.worker(). It will create new Worker based on the alasql.min.js. After that you can use AlaSQL as shown before. Again, the webworker version of alasql() is async.
 
 Try this example [here](http://alasql.org/demo/012worker/index2.html).
 
@@ -51,9 +51,9 @@ alasql.worker() function has three parameters:
 ```
 
 Try these three examples:
-* [http://alasql.org/demo/012worker/index.html](http://alasql.org/demo/012worker/index.html) - option 1 - include alasql-worker.min.js, which loads alasql.min.js as webworker. Alasql catches messages
-* [http://alasql.org/demo/012worker/index1.html](http://alasql.org/demo/012worker/index1.html) - option 2 - just load importScripts("alasql.min.js") inside webworker. Alasql does not catch messages
-* [http://alasql.org/demo/012worker/index2.html](http://alasql.org/demo/012worker/index2.html) - option 3 - run alasql.worker() function, which loads alasql.min.js as webworker. Alasql catches messages
+* [http://alasql.org/demo/012worker/index.html](http://alasql.org/demo/012worker/index.html) - option 1 - include alasql-worker.min.js, which loads alasql.min.js as webworker. AlaSQL catches messages
+* [http://alasql.org/demo/012worker/index1.html](http://alasql.org/demo/012worker/index1.html) - option 2 - just load importScripts("alasql.min.js") inside webworker. AlaSQL does not catch messages
+* [http://alasql.org/demo/012worker/index2.html](http://alasql.org/demo/012worker/index2.html) - option 3 - run alasql.worker() function, which loads alasql.min.js as webworker. AlaSQL catches messages
 
 Your option is number 2. Can you check it?
 
@@ -69,7 +69,7 @@ Your option is number 2. Can you check it?
 ```js
     importScripts('../../console/alasql.min.js');
     if(alasql) {
-        console.log('Alasql is here?',alasql('SELECT VALUE TRUE'));
+        console.log('AlaSQL is here?',alasql('SELECT VALUE TRUE'));
         console.log('self.onmessage is free?',!self.onmessage);
     }
 ```;

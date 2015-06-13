@@ -1,6 +1,6 @@
 # SQL for Handsontable Grid
 
-Alasql can be used as an SQL engine for [Handsontable grid](http://handsontable.com):
+AlaSQL can be used as an SQL engine for [Handsontable grid](http://handsontable.com):
 
 ```js
     var hot = new Handsontable(document.getElementById('example'), {

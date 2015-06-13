@@ -14,7 +14,7 @@ But dont take our word for it. Check out AlaSQL vs other JavaScript SQL database
 
 Every part must be optimized, so lets compare some cases where you would often use another library:
 
-* Sorting with [Alasql vs Lodash vs Underscore vs. vanilla js](http://jsperf.com/alasql-vs-lodash-sort/6) - Sorting via SQL does not ned to be so far from vanilla javascript speed
+* Sorting with [AlaSQL vs Lodash vs Underscore vs. vanilla js](http://jsperf.com/alasql-vs-lodash-sort/6) - Sorting via SQL does not ned to be so far from vanilla javascript speed
 * Finding the right data [AlaSQL vs. CrossFilter](http://jsperf.com/alasql-vs-crossfilter)
 * Finding the right data [AlaSQL vs. CrossFilter 2](http://jsperf.com/alasql-vs-crossfilter-athletic-data)
 * Grouping [AlaSQL vs. handcrafted javacsript](http://jsperf.com/javascript-array-grouping/10) - based on SatckOverflow [question on grouping](http://stackoverflow.com/questions/6781722/fast-grouping-of-a-javascript-array).

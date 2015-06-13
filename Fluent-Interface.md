@@ -1,6 +1,6 @@
 # Fluent Interface
 
-Alasql supports fluent like LINW interface:
+AlaSQL supports fluent like LINW interface:
 
 ```js
     var res = alasql(data)

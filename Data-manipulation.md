@@ -1,6 +1,6 @@
 # Data Manipulation
 
-This is a list of cases how Alasql can manipulate JavaScript data (JSON).
+This is a list of cases how AlaSQL can manipulate JavaScript data (JSON).
 
 Cases:
 * [How to add own keys for grouped output?](How to add own keys for grouped output)

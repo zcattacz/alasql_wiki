@@ -8,7 +8,7 @@ There is a CSV file with names and addresses. I need to plot markers on a Google
 
 ### Answer
 
-You can use Alasql library to load and parse CSV data from server or from desktop.
+You can use AlaSQL library to load and parse CSV data from server or from desktop.
 
 ***FROM SERVER*** Here is an example of how to load data from CSV and pass it to Google Maps api (the full code and the result [you can see here](http://alasql.org/demo/009geo/)).
 ```js

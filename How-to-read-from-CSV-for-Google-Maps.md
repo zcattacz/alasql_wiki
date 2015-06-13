@@ -15,7 +15,7 @@ I am reading the csv (data.csv) and copying it into an array data, and copying d
 
 ### Answer
 
-I recommend use more complicated CVS parser for CVS parsing. Alasql library can loading and parsing CSV files (XLSX as well):
+I recommend use more complicated CVS parser for CVS parsing. AlaSQL library can loading and parsing CSV files (XLSX as well):
 
     alasql('SELECT MATRIX * FROM CVS("data.csv", {headers:false})',[],function(data){
         // process data array

@@ -3,7 +3,7 @@
 You can use AlaSQL and [Alacon](Alacon) for ETL procedures.
 
 ## Load data from [CSV](Csv) file with headers
-If you have a CSV file, you can process it directly in Alasql: 
+If you have a CSV file, you can process it directly in AlaSQL: 
 
 ```js
     alasql('select * from csv("cities.csv",{headers:true}) where population > 100000 order by city', [],

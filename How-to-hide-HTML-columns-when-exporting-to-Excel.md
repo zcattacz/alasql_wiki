@@ -14,7 +14,7 @@ I want to hide those columns while exporting to Excel.
 
 ### Answer
 
-You can export table from HTML to Excel and skip some columns with Alasql and [js-xlsx](js-xlsx) libraries.
+You can export table from HTML to Excel and skip some columns with AlaSQL and [js-xlsx](js-xlsx) libraries.
 
 To skip unnecessary columns you can use "skipdisplaynone" parameter (like in the example below) or list columns you need in the SELECT statement instead "*".
 

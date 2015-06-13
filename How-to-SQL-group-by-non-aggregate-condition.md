@@ -19,4 +19,4 @@ And we group by firstName and then by lastName, but we want only the groups havi
         HAVING SUM(CASE WHEN Gender = "M" THEN 1 ELSE 0 END) >= 5 
 ```
 
-See the working Alasql example [in jsFiddle](http://jsfiddle.net/cutu8uwe/2/)
+See the working AlaSQL example [in jsFiddle](http://jsfiddle.net/cutu8uwe/2/)

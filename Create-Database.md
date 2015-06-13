@@ -6,7 +6,7 @@ Syntax:
     CREATE [engineid] DATABASE databaseid;
 ```
 
-To create Alasql 'native' database:
+To create AlaSQL 'native' database:
 ```js
     alasql('CREATE DATABASE mybase');
 ```

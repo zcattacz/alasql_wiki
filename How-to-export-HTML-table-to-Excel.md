@@ -2,7 +2,7 @@
 
 ### Answer
 
-You can export table from HTML to Excel and skip some columns with Alasql and [js-xlsx](js-xlsx) libraries.
+You can export table from HTML to Excel and skip some columns with AlaSQL and [js-xlsx](js-xlsx) libraries.
 
 See the working example below or [in jsFiddle](http://jsfiddle.net/agershun/arkf83b9/):
 ```js

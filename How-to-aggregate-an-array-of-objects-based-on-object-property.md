@@ -28,7 +28,7 @@ How can I obtain a resultArray like the following:
 
 ### Answer
 
-You can do it in one line with Alasql library. See the example [in jsFiddle](http://jsfiddle.net/agershun/k4hkbm53/1/).
+You can do it in one line with AlaSQL library. See the example [in jsFiddle](http://jsfiddle.net/agershun/k4hkbm53/1/).
 ```js
         var dataArray = [ { id: "a", score: 1 }, { id: "b", score: 2 }, { id: "c", score: 5 },
                           { id: "a", score: 3 }, { id: "c", score: 2}, ];

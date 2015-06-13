@@ -50,7 +50,7 @@ The result might be as follows:
 
 ### Answer
 
-You can group and aggregate data with [Alasql Node.js module](https://www.npmjs.com/package/alasql). It works in browser and Node.js.
+You can group and aggregate data with [AlaSQL Node.js module](https://www.npmjs.com/package/alasql). It works in browser and Node.js.
 ```js
     var alasql = require('alasql');
 
@@ -59,7 +59,7 @@ You can group and aggregate data with [Alasql Node.js module](https://www.npmjs.
 ```
 You can try this example (in browser version) [in jsFiddle.](http://jsfiddle.net/agershun/jkxvc615/1/)
 
-To install Alasql npm package use:
+To install AlaSQL npm package use:
 ```
     npm install alasql
 ```

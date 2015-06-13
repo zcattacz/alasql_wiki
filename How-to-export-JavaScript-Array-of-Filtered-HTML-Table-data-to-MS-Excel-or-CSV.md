@@ -8,7 +8,7 @@ How do I get the JavaScript array into an Excel or CSV file? Again, this will be
 
 ### Answer
 
-You can use Alasql with [js-xlsx](js-xlsx) library to export data locally in XLSX file format.
+You can use AlaSQL with [js-xlsx](js-xlsx) library to export data locally in XLSX file format.
 
 Below you can see a simple working example how to export data to XLSX format.
 

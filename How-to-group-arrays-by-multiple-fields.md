@@ -25,7 +25,7 @@ How to get a new JSON object from this:
 
 ### Answer
 
-You can do it with Alasql library:
+You can do it with AlaSQL library:
 
     var res = alasql('SELECT a,b,c,SUM(d) AS d,COUNT(*) AS [count] FROM ? \
                       GROUP BY a,b,c',[json]);

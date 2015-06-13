@@ -1,6 +1,6 @@
 # Formatting Numbers with Numeral.js
 
-You can use [Numeral.js](http://numeraljs.com/) library to format numbers in Alasql expressions:
+You can use [Numeral.js](http://numeraljs.com/) library to format numbers in AlaSQL expressions:
 
 ```js
     var data = [{a:120000003.456},{a:567234.12}];

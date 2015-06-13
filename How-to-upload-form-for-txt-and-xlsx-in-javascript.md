@@ -10,7 +10,7 @@ Source: [StackOverflow.com](http://stackoverflow.com/questions/19211193/upload-f
 
 ### Answer
 
-You can read CSV or XLSX data with Alasql library. It uses [js-xlsx](js-xlsx) library.
+You can read CSV or XLSX data with AlaSQL library. It uses [js-xlsx](js-xlsx) library.
 
 If you read data from server:
 ```js
@@ -33,6 +33,6 @@ If you are reading data from the browser:
     </script>
 ```
 
-Alasql automatically recognize file type by file extension.
+AlaSQL automatically recognize file type by file extension.
 
 You can try the working example of uploading data [here](http://alasql.org/demo/008file/).

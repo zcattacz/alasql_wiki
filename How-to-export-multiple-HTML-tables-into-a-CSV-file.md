@@ -8,7 +8,7 @@ There are multiple tables that I want to export into a single CSV file. How coul
 
 ### Answer
 
-You can export table from multiple HTML tables to CSV (and XLSX file) with Alasql library.
+You can export table from multiple HTML tables to CSV (and XLSX file) with AlaSQL library.
 
 See the working example below or try it [in jsFiddle](http://jsfiddle.net/agershun/97rp0r2g/):
 ```js

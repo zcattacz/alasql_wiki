@@ -46,7 +46,7 @@ You can do it with this code:
 ```
 Try this example [at jsFiddle](http://jsfiddle.net/agershun/ztc32a8h/1/).
 
-***BTW:*** On large arrays (100000 records and more) Alasql faster tham Linq. See test [at jsPref](http://jsperf.com/alasql-vs-linq-on-groupby). 
+***BTW:*** On large arrays (100000 records and more) AlaSQL faster tham Linq. See test [at jsPref](http://jsperf.com/alasql-vs-linq-on-groupby). 
 
 Comments:
 

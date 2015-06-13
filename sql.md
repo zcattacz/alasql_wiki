@@ -1,4 +1,4 @@
-# Alasql SQL Statements
+# AlaSQL SQL Statements
 
 * [Single and multiple SQL statements](Multiple Statements)
 * [Standard](Standard Interface) and [fluent (like LINQ)](Fluent Interface) interface

@@ -1,6 +1,6 @@
 # How to upload and parse CSV file from server and from desktop?
 
-You can use [Alasql][1] library to load and parse CSV data from server or from desktop.
+You can use [AlaSQL][1] library to load and parse CSV data from server or from desktop.
 
 ####From Server 
 You can and parse data with CSV() function:
