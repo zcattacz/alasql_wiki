@@ -1,16 +1,22 @@
 # Speed - We like it fast 
 
-Thats why we make sure to use all the tricks we can find to make javascript spit out your results as quick as possible. Among other things we make sure that: 
+AlaSQL is very focused on speed and we make sure to use all the tricks we can find to make javascript spit out your results as quick as possible. For example:
 
 * Queries are cached as compiled functions. 
 * Joined tables are pre-indexed
 * ```WHERE``` expressions are pre-filtered for joins
 
-But dont take our word for it. Check out AlaSQL vs other JavaScript SQL databases: 
+The results are good. Check out AlaSQL vs. other javaScript SQL databases: 
 
-* [AlaSQL vs. WebSQL](http://jsperf.com/alasql-js-vs-websql/7) - Mixing `SELECT`, `SUM`, `JOIN`, and `GROUP BY` on fake data (in-memory opperations for both - see [this discussion](https://github.com/agershun/alasql/issues/47))
-* [AlaSQL vs. SQL.js](http://jsperf.com/sql-js-vs-alasql-js/9) - Mixing `SELECT`, `SUM`, `JOIN`, and `GROUP BY` on fake data
-* [AlaSQL vs. Linq](http://jsperf.com/alasql-vs-linq-on-groupby) - `GROUP BY` on 1,048,576 rows
+* **2x speed** [compared to SQL.js](http://jsperf.com/sql-js-vs-alasql-js/10) selecting with `SUM`, `JOIN`, and `GROUP BY`.
+
+* **2x speed** [compared to WebSQL](http://jsperf.com/alasql-js-vs-websql/7) selecting with `SUM`, `JOIN`, and `GROUP BY` (in-memory opperations for WebSQL - see [this discussion](https://github.com/agershun/alasql/issues/47))
+
+* **1.5x speed** [compared to Linq](http://jsperf.com/alasql-vs-linq-on-groupby) for `GROUP BY` on 1,048,576 rows
+
+----
+
+**More tests **
 
 Every part must be optimized, so lets compare some cases where you would often use another library:
 
