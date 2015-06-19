@@ -134,7 +134,7 @@ AlaSQL is very focused on speed and we make sure to use all the tricks we can fi
 
 The results are good. Check out AlaSQL vs. other javaScript SQL databases: 
 
-* **2x speed** [compared to SQL.js](http://jsperf.com/sql-js-vs-alasql-js/9) selecting with `SUM`, `JOIN`, and `GROUP BY`.
+* **2x speed** [compared to SQL.js](http://jsperf.com/sql-js-vs-alasql-js/10) selecting with `SUM`, `JOIN`, and `GROUP BY`.
 
 * **2x speed** [compared to WebSQL](http://jsperf.com/alasql-js-vs-websql/7) selecting with `SUM`, `JOIN`, and `GROUP BY` (in-memory opperations for WebSQL - see [this discussion](https://github.com/agershun/alasql/issues/47))
 
