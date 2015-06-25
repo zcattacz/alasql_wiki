@@ -11,6 +11,7 @@ Languages listed in alphabet order.
 * SlideShare [SQL and NoSQL in AlaSQL database](http://www.slideshare.net/AndreyGershun/sql-and-nosql-in-alasql)
 * Glauco Custódio [Local Storage with AlaSQL in Cordova/Ionic Framework](http://blog.glaucocustodio.com/2015/03/30/local-storage-with-alasql-in-cordovaionic-framework/)
 * Paulo Diniz [AlaSQL](http://www.pdiniz.com/alasql/)
+* Louis Lazaris [9 JavaScript Libraries for Working with Local Storage](http://www.sitepoint.com/9-javascript-libraries-working-with-local-storage/)
 
 
 ### In Chinese
