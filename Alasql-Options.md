@@ -1,6 +1,6 @@
 # AlaSQL Options
 
-You can find all AlaSQL options in `alasql.options` variable.
+You can find all AlaSQL options in the `alasql.options` variable. The options are global for all databases - also if you create them with `new`.
 
 You can change these options directly from JavaScript:
 
