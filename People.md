@@ -44,6 +44,7 @@ Languages listed in alphabet order.
 * [AlaSQL.js - сервер на JavaScript](http://www.slideshare.net/AndreyGershun/alasqljs-sql-javascript) (Russian)
 * [Habrahabr.ru](http://habrahabr.ru/company/zfort/blog/242709/)
 * [RadioJS. Выпуск №16: Код и Калиграфия](http://radiojs.ru/2015/01/radiojs-16/)
+* [MoscowJS (video)](https://www.youtube.com/watch?v=EjkbxCgBZ30)
 
 ### In Ukranian:
 
