@@ -23,7 +23,7 @@ Please see the [README](readme) section for a quick overview
 
 ## AlaSQL Cookbook (Q&A, examples)
 * [Data manipulation](Data manipulation) - array filtering, grouping, ordering
-* [Data import and export](Data import and export) - [TXT](Txt), [CSV](Csv), [TSV/TAB](Tsv)/, [XLS](Xls), 
+* [Data import and export](Import-export) - [TXT](Txt), [CSV](Csv), [TSV/TAB](Tsv)/, [XLS](Xls), 
 [XLSX](Xlsx), [HTML](Html), [JSON](Json) 
 * [Search in JSON arrays and objects](JSON data search)
 * SQL for [JavaScript frameworks and libraries](JavaScript Frameworks):
