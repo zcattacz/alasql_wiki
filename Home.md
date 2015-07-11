@@ -10,7 +10,7 @@ Check out [what other people are saying](People) about AlaSQL.
 * [Data manipulation](Data manipulation) - array filtering, grouping, ordering
 * [Data import and export](Import-export) - [TXT](Txt), [CSV](Csv), [TSV/TAB](Tsv)/, [XLS](Xls), 
 [XLSX](Xlsx), [HTML](Html), [JSON](Json) 
-* [Search in JSON arrays and objects](JSON data search)
+* [Search in JSON arrays and objects](JSON)
 * SQL for [JavaScript frameworks and libraries](JavaScript Frameworks):
  * Platforms: [Apache Cordova](Apache Cordova), [Ionic](Ionic), [Windows 8](Windows 8)
  * Frameworks: [Angular.js](Angular.js), 
