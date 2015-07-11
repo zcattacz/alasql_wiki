@@ -146,3 +146,8 @@ Work with IndexedDB database with SQL: Attach IndexedDB database, and then compl
                    WHERE Country.Continent = ”Asia”’, [], function (res) {
               console.log(res.pop());
     }); 
+
+----
+
+See also [this slide](http://www.slideshare.net/AndreyGershun/alasql-manual-141220-1) for more inspiration
+
