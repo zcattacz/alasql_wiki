@@ -3,7 +3,7 @@
 
 
 
-alasql is a main variable of module. You can use it immediatly as default database
+`alasql` is the only global variable of themodule. You can use it immediately as default database
 
 In browser:
 ```html
