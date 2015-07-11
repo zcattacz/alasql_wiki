@@ -4,7 +4,7 @@ _Languages listed in alphabet order:_
 
 ### In English:
 
-* [Dj Walker-Morgan](https://www.compose.io/articles/author/dj/) [Meteor, SQL and other databases](https://www.compose.io/articles/meteor-sql-and-other-databases/)
+* Dj Walker-Morgan: [Meteor, SQL and other databases](https://www.compose.io/articles/meteor-sql-and-other-databases/)
 * DailyJS [AlaSQL.js: In-memory SQL / Daily JS](http://dailyjs.com/2014/11/06/alasql/)
 * ValueType [Pure JavaScript In-Memory Database](http://valuetype.wordpress.com/2014/11/07/pure-javascript-in-memory-database/)
 * SlideShare [AlaSQL.js fast JavaScript in-memory SQL database](http://www.slideshare.net/AndreyGershun/alasqljsfast-javascript-inmemory-sql-database)
