@@ -1,6 +1,6 @@
-# What people say about AlaSQL
+# What are other people saying about AlaSQL
 
-Languages listed in alphabet order.
+_Languages listed in alphabet order:_
 
 ### In English:
 
