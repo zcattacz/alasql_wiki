@@ -19,7 +19,9 @@ Read [the rest of the article about Meteor and AlaSQL](https://www.compose.io/ar
 
 ----
 
-AlaSQL works on client and the server side. To get started install AlaSQL for Meteor from [the Meteor packagemanager aatmospherejs](https://atmospherejs.com/agershun/alasql):
+AlaSQL works on client and the server side. 
+
+To get started install AlaSQL for Meteor from [the Meteor packagemanager atmospherejs](https://atmospherejs.com/agershun/alasql):
 
 ```
     meteor add agershun:alasql
@@ -33,4 +35,12 @@ Now you can query directly on Meteor Collections with the `alasql` function:
          return alasql('SELECT * WHEERE done = false FROM ?',[Tasks]);
        }
     });
+```
+
+You can use it with find() options with the METEOR() from-function:
+```
+    return alasql('SELECT * FROM ?',[Tasks]);
+    return alasql('SELECT * FROM METEOR(?)',[Tasks]);
+    return alasql('SELECT * FROM METEOR(?,?)',[Tasks,{text:"Hello world!"}]);
+    return alasql('SELECT * FROM METEOR(?,{text:"Hello world!"})',[Tasks]);
 ```
