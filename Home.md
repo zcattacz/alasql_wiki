@@ -2,6 +2,8 @@
 
 For a quick overview please see the [[README]] section. 
 
+To get started have a look at: [[Getting started]]
+
 Check out [what other people are saying](People) about AlaSQL.
 
 
