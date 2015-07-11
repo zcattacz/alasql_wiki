@@ -120,7 +120,32 @@ var res = db.exec("SELECT * FROM example1 ORDER BY b DESC");
 // [{a:1,b:3},{a:3,b:4},{a:3,b:4}]
 ```
 
-Please checkout [Alacon](https://github.com/agershun/alasql/wiki/Alacon) if you intent to use alasql for commandline interface
+----
+
+### Commandline
+
+You can access AlaSQL [from the comandline](https://github.com/agershun/alasql/wiki/Alacon) by installing from npm globally
+
+```
+npm install alasql -g
+```
+
+Now you can access `alasql` via the commandline
+
+```
+> alasql "SELECT * INTO json('my.json') from xlsx('cities.xlsx',{headers:true}) WHERE population > 20000000"
+```
+
+To get get value instead of a JSON you can prepend `VALUE` to the `SELECT`
+
+`?` will be replaced with the corresponding n'th argument.
+
+```
+alacon "VALUE SELECT 20-?+?" 5 100
+```
+
+See more examples [at the wiki](https://github.com/agershun/alasql/wiki/Alacon) 
+
 
 
 
@@ -160,15 +185,28 @@ See more [speed related info on the wiki](https://github.com/agershun/alasql/wik
 Use "good old" SQL on your data with multiple levels of: ```JOIN```, ```VIEW```, ```GROUP BY```, ```UNION```, ```PRIMARY KEY```, ```ANY```, ```ALL```, ```IN```, ```ROLLUP()```, ```CUBE()```, ```GROUPING SETS()```, ```CROSS APPLY```, ```OUTER APPLY```, ```WITH SELECT```, and subqueries. See the wiki to [compare supported features with SQL standarts](https://github.com/agershun/alasql/wiki/SQL%20keywords).
 
 
+### AlaSQL supports plug-ins
 
-### AlaSQL ♥ your JSON data 
-
-[see why](https://github.com/agershun/alasql/wiki/readme#javascript-sugar)
-
+AlaSQL supports plugins. To install the plugin you need to use the `REQUIRE` statement. See more [at the wiki](https://github.com/agershun/alasql/wiki/Plugins)
 
 
+### Graphs 
 
-###Miss a feature? 
+AlaSQL is a multi-paradigm database with support for graphs that can be searched or manipulated. 
+
+
+```js
+    // Who loves lovers of Alice?
+    alasql('SEARCH / ANY(>> >> #Alice) name');
+    // ['Olga','Helen']
+```
+
+See more [at the wiki](https://github.com/agershun/alasql/wiki/GRAPH)
+
+
+
+
+## Miss a feature? 
 Take charge and [add your idea](http://feathub.com/agershun/alasql/features/new) or [vote on your favorite feature](http://feathub.com/agershun/alasql) to be implemented:
 
 [![Feature Requests](http://feathub.com/agershun/alasql?format=svg)](http://feathub.com/agershun/alasql)
@@ -312,143 +350,11 @@ AlaSQL can query data directly from a google spreadsheet. A good "partnership" f
 
 #What is new?
 
-## AlaSQL now supports plug-ins
 
-Now AlaSQL supports plugins system. To install the plugin you need to use REQUIRE statement, like:
-
-```js
-    alasql('REQUIRE ECHO');
-    var res = alasql('ECHO 123');  // Returns simply 123
-```
-
-You can use the same command in browser or include plugins directly:
-
-```html
-    <script src="alasql.min.js"></script>
-    <script src="alasql-echo.js"></script>
-```
-
-The list of exsisting packages and how to build your own is on its way...
-
-## AlaSQL and Meteor
-
-Install AlaSQL for Meteor from the [official package](https://atmospherejs.com/agershun/alasql):
-
-```
-    meteor add agershun:alasql
-```
-
-AlaSQL supports Meteor collections. Sounds awesome but what is it? [Dj Walker-Morgan from compose.io](https://www.compose.io/articles/meteor-sql-and-other-databases/) puts it this way:
-
-_This lets you turn..._
-
-    return Robots.find({}, { sort: { introduced: 1 }} ); 
-     
-_into_
-
-    return alasql('SELECT * FROM ? ORDER BY introduced',[Robots]);  
-
-_which doesn't look like a huge jump, until you realise that this works in both the browser and the server and opens up a way to do JOIN, GROUP BY, UNION, DISTINCT and others._ 
-
-
-It works on the client and the server side.
-
-Now you can use Meteor Collections as arguments. To do it simply store alasql.min.js to the client/lib directory and then apply SQL to Meteor Collections: 
-
-```js
-    Template.body.helpers({
-       tasks: function () {
-         return alasql('SELECT * FROM ?',[Tasks]);
-       }
-    });
-```
-
-Or you can use with find() options with special METEOR() from-function:
-```
-    return alasql('SELECT * FROM ?',[Tasks]);
-    return alasql('SELECT * FROM METEOR(?)',[Tasks]);
-    return alasql('SELECT * FROM METEOR(?,?)',[Tasks,{text:"Hello world!"}]);
-    return alasql('SELECT * FROM METEOR(?,{text:"Hello world!"})',[Tasks]);
-```
 
 ### Search paths in graph
 
-Now you can search graphs with SEARCH operator:
 
-```javascript
-    var res = alasql('CREATE GRAPH Pablo, Maxim, Alex, Napoleon, \
-      Josephine,  Kate, Julia  {age:27}, Paloma, \
-      #Pablo >loves> #Julia, #Maxim >> #Julia, #Alex >> #Kate, \
-      #Kate >> #Julia, #Alex >> #Paloma, #Napoleon > "loves" > #Josephine, \
-      #Josephine >"knows"> #Pablo');
-
-    var res = alasql('SEARCH PATH(#Pablo) name FROM #Napoleon ');
-    // returns ['loves','Josephine','knows','Pablo']
-```
-You can play with grpahs in AlaSQL in [this jsFiddle example](http://jsfiddle.net/fgzya692/2/).
-
-### Documents and graphs paradigms
-
-AlaSQL now is multi-paradigm database with support documents and graphs. Below you can find an example
-how to create graph:
-
-```js
-    alasql('CREATE GRAPH #Olga, #Helen, #Pablo, #Andrey, #Alice, \
-        #Olga >> #Pablo, #Helen >> #Andrey, \
-        #Pablo >> #Alice, #Andrey >> #Alice');
-```
-
-and search over it with SEARCH operator:
-
-```js
-    // Whom loves Olga?
-    alasql('SEARCH / #Olga >> name');
-    // ['Pablo']
-
-    // Whom loves Olga's love objects?
-    alasql('SEARCH / #Olga >> >> name');
-    // ['Alice']
-
-    // Who loves lovers of Alice?
-    alasql('SEARCH / ANY(>> >> #Alice) name');
-    // ['Olga','Helen']
-
-```
-
-You also make searches over JSON object with SEARCH operator:
-
-```js
-    var data = {a:{a:{a:{a:{b:10}}}},b:20};
-    var res = alasql('SEARCH a b FROM ?',[data]);
-    var res = alasql('SEARCH (a)+ b FROM ?',[data]);
-    var res = alasql('SEARCH (a a)+ b FROM ?',[data]);
-    var res = alasql('SEARCH (a a a)+ b FROM ?',[data]);
-    var res = alasql('SEARCH (/)+ b FROM ?',[data]);
-    var res = alasql('SEARCH /+b FROM ?',[data]);
-    var res = alasql('SEARCH a* b FROM ?',[data]);
-    var res = alasql('SEARCH a+ b FROM ?',[data]);
-    var res = alasql('SEARCH a? b WHERE(b>20) FROM ?',[data]);
-```
-Please see more examples in test300-test309.js. All these features will be documented soon.
-
-### Version upgrade from 0.0.51 to 0.1.0
-
-AlaSQL now is 6 month old and it can change minor release number from 0.0 to 0.1. 
-
-As we decided earlier, we will change version number to 0.1 after cleaning some 
-known bugs and problems (including [UNION CORRESPONDING](https://github.com/agershun/alasql/issues/75) issue and [IE9 file saving](https://github.com/agershun/alasql/issues/73)). 
-
-The plans and priorities for development from version 0.1 to 0.2 will be:
-* Wiki documentation
-* Fixing bugs and clean the code
-* Add graph- and document- database paradigm functionality
-* Prepare to convert AlaSQL to modular structure (AlaSQL2)
-
-Other areas of future improvements (please add and vote for new features on [Feathub](http://feathub.com/agershun/alasql)):
-* Better Apache Cordova and other mobile frameworks support
-* Improve export to XLS and XLSX (adding colors and LibreOffice support)
-* Support key-value external storages and NoSQL databases
-* Add some missing SQL functionality (constraints, foreign keys, etc.)
 
 ### AlaSQL export to Excel with colors (2)
 
@@ -1068,6 +974,8 @@ Now optimization algorithm has some limitations and therefore "table1 JOIN table
 It is Ok with select for 1000000 records or to join two tables by 10000 records in each. 
 Now you can use streamming functions to work with longer datasources (see [test/test143.js](test/test143.js)).
 
+### AlaSQL ♥ your JSON data 
+
 ## Tests
 
 ### Tests with Mocha
@@ -1159,5 +1067,3 @@ and other people for useful tools, which make our work much easier.
 
 © 2014-2015, Andrey Gershun (agershun@gmail.com) & Mathias Rangel Wulff (mathiasrw@gmail.com)
 
-
-See [the old readme](README_OLD) for reference
