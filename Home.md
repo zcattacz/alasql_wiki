@@ -2,7 +2,7 @@
 
 For a quick overview please see the [[README]] section. 
 
-For articles online about AlaSQL please checkout [What people say about AlaSQL?](People)
+Check out [what other people are saying](People) about AlaSQL.
 
 
 
