@@ -1,17 +1,131 @@
-## How to Use
 
-### In browser
 
-For production: copy file from ```dist``` catalog to your project
+# How to use
 
-* dist/alasql.min.js
+For the browser: Include [alasql.min.js](http://cdn.jsdelivr.net/alasql/latest/alasql.min.js) and call 
+`alasql()` with your SQL statements:
 
-For debug: copy two files to your porject: 
+```html
+
+<script src="//cdn.jsdelivr.net/alasql/0.1/alasql.min.js"></script> 
+
+<script>
+    
+	alasql("CREATE TABLE cities (city string, population number)");
+        
+	alasql("INSERT INTO cities VALUES ('Rome',2863223), ('Paris',2249975), ('Berlin',3517424),  ('Madrid',3041579)");
+        
+	var res = alasql("SELECT * FROM cities WHERE population < 3500000 ORDER BY population DESC");
+   
+   // res now contains this array of object:
+   // [{"city":"Madrid","population":3041579},{"city":"Rome","population":2863223},{"city":"Paris","population":2249975}] 	
+   
+</script>
+```
+
+Play with this example in [jsFiddle](http://jsfiddle.net/xxh13gLa/) 
+
+----
+
+
+### Bower
+
+To use AlaSQL via bower install as normal
+
+    bower install alasql
+
+----
+
+### Meteor
+
+To use AlaSQL with Meteor install as normal
+
+    meteor install agershun:alasql
+
+----
+
+### Node.js or IO.js
+
+
+
+
+For node install with npm
+
+```
+npm install alasql
+```
+
+
+> [![NPM](https://nodei.co/npm/alasql.png)](https://nodei.co/npm/alasql/) [![NPM](https://nodei.co/npm-dl/alasql.png?months=6)](https://nodei.co/npm/alasql/)
+
+
+
+Require `alasql` and create a new database to start executing your SQL.
+
+
+```js
+var alasql = require('alasql');
+
+var db = new alasql.Database();
+
+db.exec("CREATE TABLE example (a INT, b INT)");
+
+// You can insert data directly from javascript object...
+db.tables.example1.data = [ 
+    {a:5,b:6},
+    {a:3,b:4}
+];
+
+// ...or you can insert data with normal SQL 
+db.exec("INSERT INTO example1 VALUES (1,3)");
+
+var res = db.exec("SELECT * FROM example1 ORDER BY b DESC");
+
+// res now contains this array of objects:
+// [{a:1,b:3},{a:3,b:4},{a:3,b:4}]
+```
+
+----
+
+### Commandline
+
+You can access AlaSQL [from the comandline](https://github.com/agershun/alasql/wiki/Alacon) by installing from npm globally
+
+```
+npm install alasql -g
+```
+
+Now you can access `alasql` via the commandline
+
+```
+> alasql "SELECT * INTO json('my.json') from xlsx('cities.xlsx',{headers:true}) WHERE population > 20000000"
+```
+
+To get get value instead of a JSON you can prepend `VALUE` to the `SELECT`
+
+`?` will be replaced with the corresponding n'th argument.
+
+```
+alacon "VALUE SELECT 20-?+?" 5 100
+```
+
+See more examples [at the wiki](https://github.com/agershun/alasql/wiki/Alacon) 
+
+
+
+
+
+## Other options
+
+
+### For debug
+
+Copy following files from `dist` catalog to your project
 
 * dist/alasql.js
 * dist/alasql.js.map
 
-Include file: alasql.js or alasql.min.js to the HTML page:
+Include file: alasql.js or to the HTML page:
 
 ```html
   <script src="alasql.js"></script>  
@@ -35,72 +149,3 @@ You can use alasql.js with define()/require() functions in browser as well, beca
         console.log( alasql('SELECT a, b*c AS bc FROM ? AS t',[test1]) );
     });
 ```
-
-### In Node.js
-
-Use the following command for installation:
-```
-    npm install alasql
-```
-Then require alasql.js module:
-
-```js
-    var alasql = require('alasql');
-
-    var db = new alasql.Database();
-    
-    db.exec("CREATE TABLE test (one INT, two INT)");
-    db.tables.test.data = [   // You can mix SQL and JavaScript
-        {one:3,two:4},
-        {one:5,two:6},
-    ];
-    var res = db.exec("SELECT * FROM test ORDER BY two DESC");
-    console.log(res[0].one);
-
-```
-
-### In Bower
-```
-    bower install alasql
-```
-
-### In Meteor
-```
-    meteor install agershun:alasql
-```
-## Other options
-
-### In browser with multi-line SQL statements
-
-```html
-    <script src="http://alasql.org/console/alasql.min.js"></script>
-    <div id="res"></div>
-    <script type="text/sql" id="sql">
-    CREATE TABLE people (
-        Id INT PRIMARY KEY,
-        FirstName STRING,
-        LastName STRING
-    );
-    
-    INSERT INTO people VALUES 
-        (1,"Peter","Peterson"),
-        (2,"Eric","Ericson"),
-        (3,"John","Johnson");
-
-    IF EXISTS (SELECT * FROM people WHERE Id=2)
-        UPDATE people SET FirstName = "Roll", LastName = "Rolson" WHERE Id=2
-    ELSE
-        INSERT INTO people VALUES (2,"Eric","Rollson");
-
-    IF EXISTS (SELECT * FROM people WHERE Id=4)
-        UPDATE people SET FirstName = "Roll", LastName = "Rolson" WHERE Id=4
-    ELSE
-        INSERT INTO people VALUES (4,"Smith","Smithson");
-
-    SELECT * INTO HTML("#res",{headers:true}) FROM people;
-    </script>
-    <script>
-        alasql('SOURCE "#res"');
-    </script>
-```
-Try this example [in jsFiddle](http://jsfiddle.net/agershun/n4de6433/4/)
