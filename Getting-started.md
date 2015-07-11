@@ -10,7 +10,7 @@ In browser:
         alasql('CREATE TABLE one (two INT)');
     </script>
 ```
-Try this sample in [AlaSQL console](http://alasql.org/console?CREATE TABLE one (two INT))
+_Try this sample in [AlaSQL console](http://alasql.org/console?CREATE TABLE one (two INT))_
 
 
 or in Node.js:
@@ -90,6 +90,9 @@ You even can use param in FROM clause:
         // res == [2015,2016]
 ```
 
+----
+#### Work directly on JSON data
+
 Work directly on JSON data and group JavaScript array by field and count number of records in each group:
 
 ```js
@@ -99,8 +102,9 @@ Work directly on JSON data and group JavaScript array by field and count number 
     console.log(res);
 ```
 
+----
 
-
+#### Array of arrays
 You can use array of arrays to make a query. In this case use square brackets for column name,
 like \[1\] or table\[2\] (remember, all arrays in JavaScript start with 0):
 
@@ -118,7 +122,7 @@ you can specify array position of selected column with number or number in brack
         var res = alasql.queryArrayOfArrays(
             'SELECT [1] AS 0,[1]+[2] AS [1] FROM ? d WHERE [0]>2016', [data]);
 ```
-This feature can be used as filter for arrays. Compare:
+This feature can be used as filter for arrays:
 ```js
         // Same filter
         var res1 = alasql.queryArrayOfArrays('SELECT * FROM ? a WHERE [0]>2016', [data]);
@@ -131,9 +135,11 @@ This feature can be used as filter for arrays. Compare:
 
 ```
 
+----
 
+#### Work with IndexedDB database with SQL: 
 
-Work with IndexedDB database with SQL: Attach IndexedDB database, and then complex query on two joined tables and filtering:
+Attach IndexedDB database, and then complex query on two joined tables and filtering:
  
 ```js
     alasql(’ATTACH INDEXEDDB DATABASE MyBase; \ 
@@ -144,11 +150,12 @@ Work with IndexedDB database with SQL: Attach IndexedDB database, and then compl
                    WHERE Country.Continent = ”Asia”’, [], function (res) {
               console.log(res.pop());
     }); 
+```
 
 ----
 
 
-### In browser with multi-line SQL statements
+#### In browser multi-line SQL statements:
 
 ```html
     <script src="http://alasql.org/console/alasql.min.js"></script>
