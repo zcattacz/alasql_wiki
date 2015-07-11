@@ -1,4 +1,4 @@
-# Excel 2007 files: XLSX
+# Excel 2007 files: .XLSX
 
 AlaSQL can export data to Excel 2007 and LibreOffice format with colors and other Excel formatting functions. This also works in IE9. Code sample:
 
