@@ -17,7 +17,9 @@ _([à la] (http://en.wiktionary.org/wiki/%C3%A0_la) [SQL](http://en.wikipedia.or
 We focus on [speed](speed) by taking advantage of the dynamic nature of javascript when building up queries. Real world solutions demands flexibility regarding where data comes from and where it is to be stored. We focus on flexibility by making sure you can [import/export](import+export) and query directly on data stored in your own JSON object, Excel files, localStorage, IndexedDB, and SQLite. 
 
 
-The library brings you the comfort of a full database engine to your javascript app. No, really - its a full database engine complying with [most of SQL-99](https://github.com/agershun/alasql/wiki/SQL-99) spiced up with additional syntax for handling noSQL (schemaless) data and graph networks. To help porting from native databases you can specify the flavor for the SQL behavior as either AlaSQL, T-SQL, MySQL, Postgres, ORACLE, SQLite, OrientDB. MSSQL is on its way. 
+The library brings you the comfort of a full database engine to your javascript app. No, really - its working towards a full database engine complying with [most of SQL-99](https://github.com/agershun/alasql/wiki/SQL-99) spiced up with additional syntax for handling noSQL (schemaless) data and graph networks. To help porting from native databases you can specify the flavor for the SQL behavior as either AlaSQL, T-SQL, MySQL, Postgres, ORACLE, SQLite, OrientDB. MSSQL is on its way. 
+
+AlaSQL uses [Semantic Versioning](http://semver.org/) so please note that major version is zero (0.y.z) so the API should not be considered 100% stable.
 
 
 ----
