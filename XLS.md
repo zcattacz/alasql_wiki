@@ -1,4 +1,4 @@
-# XLS
+# Excel 2003 files: .XLS
 
 AlaSQL can read and export data in Excel 2003 format (.xls) with coloring of cells.
 
