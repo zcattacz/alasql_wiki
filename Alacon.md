@@ -2,6 +2,8 @@
 
 Alacon is AlaSQL in a console
 
+_Please note that from version 0.2.0 the command will be called `alasql` instead of `alacon`_
+
 Examples:
 
 1. Number of lines in text file with length more than 20 characters 
