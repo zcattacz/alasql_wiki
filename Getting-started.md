@@ -1,10 +1,7 @@
 # Getting Started
 
 
-After [installing AlaSQL](installation)
-
-
-`alasql` is the only global variable of themodule. You can use it immediately as default database
+After [installing AlaSQL](installation) `alasql` is the only global variable of the module. You can use it immediately as a default database
 
 In browser:
 ```html
