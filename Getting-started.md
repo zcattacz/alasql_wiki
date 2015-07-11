@@ -1,6 +1,7 @@
 # Getting Started
 
 
+After [installing AlaSQL](installation)
 
 
 `alasql` is the only global variable of themodule. You can use it immediately as default database
