@@ -1,27 +1,12 @@
 # AlaSQL Wiki
 
-Please see the [README](readme) section for a quick overview
+For a quick overview please see the [[README]] section. 
 
-## AlaSQL Documentation
-* [About AlaSQL](About)
-* [What people say about AlaSQL?](People)
-* [SQL-99 compatibility](SQL-99), [SQL-99 keywords](SQL keywords), [AlaSQL keywords](AlaSQL Keywords)
-* [User Manual](http://www.slideshare.net/AndreyGershun/alasql-manual-141220-1) - PowerPoint presentation
-* [Installation](Installation), AlaSQL in [CDN](https://cdn.rawgit.com/agershun/alasql/master/dist/alasql.min.js)
-* [Getting started](Getting started)
-* [Supported SQL statements](Sql)
- * [Functions](Functions)
-* [JavaScript API](Api)
-* [Webworker version](Webworker)
-* [LINQ fluent interface](Fluent Interface)
-* [Import and export functions](Import export)
-* [Options](AlaSQL Options)
-* [Errors processing](Errors)
-* [Internal structure](Internal Structure)
-* [Performance](Performance)
-* [TypeScript](TypeScript)
+For articles online about AlaSQL please checkout [What people say about AlaSQL?](People)
 
-## AlaSQL Cookbook (Q&A, examples)
+
+
+### AlaSQL Q&A
 * [Data manipulation](Data manipulation) - array filtering, grouping, ordering
 * [Data import and export](Import-export) - [TXT](Txt), [CSV](Csv), [TSV/TAB](Tsv)/, [XLS](Xls), 
 [XLSX](Xlsx), [HTML](Html), [JSON](Json) 
@@ -38,14 +23,32 @@ Please see the [README](readme) section for a quick overview
 * [SQL queries](SQL queries)
 * [External databases](External databases) - [IndexedDB](IndexedDB), [Local Storage](LocalStorage), and [SQLite](SQLite) integration
 
-## Command-Line Utilities
+### AlaSQL Documentation
+* [About AlaSQL](About)
+* [SQL-99 compatibility](SQL-99), [SQL-99 keywords](SQL keywords), [AlaSQL keywords](AlaSQL Keywords)
+* [User Manual](http://www.slideshare.net/AndreyGershun/alasql-manual-141220-1) - PowerPoint presentation
+* [Installation](Installation), AlaSQL in [CDN](https://cdn.rawgit.com/agershun/alasql/master/dist/alasql.min.js)
+* [Getting started](Getting started)
+* [Supported SQL statements](Sql)
+ * [Functions](Functions)
+* [JavaScript API](Api)
+* [Webworker version](Webworker)
+* [LINQ fluent interface](Fluent Interface)
+* [Import and export functions](Import export)
+* [Options](AlaSQL Options)
+* [Errors processing](Errors)
+* [Internal structure](Internal Structure)
+* [Performance](Performance)
+* [TypeScript](TypeScript)
+
+### Command-Line Utilities
 * [alacon](Alacon) - command-line utility for text and data files processing with SQL
 * [alaserver](Alaserver) - simple SQL server based on AlaSQL
 
-## Development 
+### Development 
 * [How to setup environment for AlaSQL development?](How to setup environment for AlaSQL development)
 * [How to assemble AlaSQL?](How to assemble AlaSQL)
 * [How to prepare new release?](How to prepare new release)
 
-## Sandbox
+### Sandbox
 * [AlaSQL Console](http://alasql.org/console/alaconsole.html)
