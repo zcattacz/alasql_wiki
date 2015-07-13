@@ -1,15 +1,12 @@
-# What other people posted about AlaSQL
+# What other people says regarding AlaSQL
 
 _Languages listed in alphabet order:_
 
 ### In English:
 
-
 * Dj Walker-Morgan: [Meteor, SQL and other databases](https://www.compose.io/articles/meteor-sql-and-other-databases/)
 * DailyJS [AlaSQL.js: In-memory SQL / Daily JS](http://dailyjs.com/2014/11/06/alasql/)
 * ValueType [Pure JavaScript In-Memory Database](http://valuetype.wordpress.com/2014/11/07/pure-javascript-in-memory-database/)
-* SlideShare [AlaSQL.js fast JavaScript in-memory SQL database](http://www.slideshare.net/AndreyGershun/alasqljsfast-javascript-inmemory-sql-database)
-* SlideShare [SQL and NoSQL in AlaSQL database](http://www.slideshare.net/AndreyGershun/sql-and-nosql-in-alasql)
 * Glauco Custódio [Local Storage with AlaSQL in Cordova/Ionic Framework](http://blog.glaucocustodio.com/2015/03/30/local-storage-with-alasql-in-cordovaionic-framework/)
 * Paulo Diniz [AlaSQL](http://www.pdiniz.com/alasql/)
 * Louis Lazaris [9 JavaScript Libraries for Working with Local Storage](http://www.sitepoint.com/9-javascript-libraries-working-with-local-storage/)
