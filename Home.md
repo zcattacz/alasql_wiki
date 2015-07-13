@@ -27,12 +27,10 @@ Check out [what other people are saying](People) about AlaSQL.
 
 ### AlaSQL Documentation
 * [About AlaSQL](About)
-* [SQL-99 compatibility](SQL-99), [SQL-99 keywords](SQL keywords), [AlaSQL keywords](AlaSQL Keywords)
-* [User Manual](http://www.slideshare.net/AndreyGershun/alasql-manual-141220-1) - PowerPoint presentation
-* [Installation](Installation), AlaSQL in [CDN](https://cdn.rawgit.com/agershun/alasql/master/dist/alasql.min.js)
+* [Installation](Installation)
 * [Getting started](Getting started)
 * [Supported SQL statements](Sql)
- * [Functions](Functions)
+* [Functions](Functions)
 * [JavaScript API](Api)
 * [Webworker version](Webworker)
 * [LINQ fluent interface](Fluent Interface)
@@ -42,6 +40,13 @@ Check out [what other people are saying](People) about AlaSQL.
 * [Internal structure](Internal Structure)
 * [Performance](Performance)
 * [TypeScript](TypeScript)
+* [SQL-99 compatibility](SQL-99), [SQL-99 keywords](SQL keywords), [AlaSQL keywords](AlaSQL Keywords)
+* ["User Manual"](http://www.slideshare.net/AndreyGershun/alasql-manual-141220-1) - PowerPoint presentation
+* SlideShare [AlaSQL.js - fast JavaScript in-memory SQL database](http://www.slideshare.net/AndreyGershun/alasqljsfast-javascript-inmemory-sql-database)
+* SlideShare [SQL and NoSQL in AlaSQL database](http://www.slideshare.net/AndreyGershun/sql-and-nosql-in-alasql)
+
+
+
 
 ### Command-Line Utilities
 * [alacon](Alacon) - command-line utility for text and data files processing with SQL
