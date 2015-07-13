@@ -1,8 +1,9 @@
-# What are other people saying about AlaSQL
+# What other people posted about AlaSQL
 
 _Languages listed in alphabet order:_
 
 ### In English:
+
 
 * Dj Walker-Morgan: [Meteor, SQL and other databases](https://www.compose.io/articles/meteor-sql-and-other-databases/)
 * DailyJS [AlaSQL.js: In-memory SQL / Daily JS](http://dailyjs.com/2014/11/06/alasql/)
@@ -12,6 +13,7 @@ _Languages listed in alphabet order:_
 * Glauco Custódio [Local Storage with AlaSQL in Cordova/Ionic Framework](http://blog.glaucocustodio.com/2015/03/30/local-storage-with-alasql-in-cordovaionic-framework/)
 * Paulo Diniz [AlaSQL](http://www.pdiniz.com/alasql/)
 * Louis Lazaris [9 JavaScript Libraries for Working with Local Storage](http://www.sitepoint.com/9-javascript-libraries-working-with-local-storage/)
+* The bitHound blog: [Why the AlaSQL team uses bitHound](https://www.bithound.io/blog/post/now-youre-speaking-my-language)
 
 
 ### In Chinese
