@@ -44,7 +44,7 @@ Check out [what other people are saying](People) about AlaSQL.
 * ["User Manual"](http://www.slideshare.net/AndreyGershun/alasql-manual-141220-1) - PowerPoint presentation
 * SlideShare [AlaSQL.js - fast JavaScript in-memory SQL database](http://www.slideshare.net/AndreyGershun/alasqljsfast-javascript-inmemory-sql-database)
 * SlideShare [SQL and NoSQL in AlaSQL database](http://www.slideshare.net/AndreyGershun/sql-and-nosql-in-alasql)
-
+* [Quirky things](Quirky) about AlaSQL
 
 
 
