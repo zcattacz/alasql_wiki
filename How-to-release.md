@@ -8,7 +8,7 @@ That includes changes like minor corrections to documentation files such as READ
 The following is a checklist for the team to remember the steps. Please update where you see a better way...
 
 
-0. Make sure you have the last version both master and develop `git checkout develop && git pull && git checkout master && git pull`
+0. Make sure you have the last version of both master and develop `git checkout develop && git pull && git checkout master && git pull`
     
 0. Pick the correct version number: Given a version number MAJOR.MINOR.PATCH, increment the: **MAJOR** version when you make incompatible API changes, **MINOR** version when you add functionality in a backwards-compatible manner. **PATCH** version when you make backwards-compatible bug fixes.
 
