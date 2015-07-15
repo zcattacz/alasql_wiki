@@ -32,7 +32,7 @@ Play with this example in [jsFiddle](http://jsfiddle.net/xxh13gLa/)
 
 To use AlaSQL via bower install as normal
 
-    bower install alasql
+    bower install alasql --save
 
 ----
 
@@ -40,19 +40,17 @@ To use AlaSQL via bower install as normal
 
 To use AlaSQL with Meteor install as normal
 
-    meteor install agershun:alasql
+    meteor add agershun:alasql
 
 ----
 
 ### Node.js or IO.js
 
 
-
-
 For node install with npm
 
 ```
-npm install alasql
+npm install alasql --save
 ```
 
 
