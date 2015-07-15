@@ -15,7 +15,7 @@
 
 
 
-_([à la] (http://en.wiktionary.org/wiki/%C3%A0_la) [SQL](http://en.wikipedia.org/wiki/SQL)) [ælæ ɛskju:ɛl]_ - AlaSQL is a versatil javascript SQL database library for both relational data, schemaless data, and graph data with a strong foucus on query speed and flexibillity for datasources. It works in your browser, Node.js, IO.js and Apache Cordova.
+_( [à la] (http://en.wiktionary.org/wiki/%C3%A0_la) [SQL](http://en.wikipedia.org/wiki/SQL) ) [ælæ ɛskju:ɛl]_ - AlaSQL is a versatil javascript SQL database library for both relational data, schemaless data, and graph data with a strong foucus on query speed and flexibillity for datasources. It works in your browser, Node.js, IO.js and Apache Cordova.
 
 
 
@@ -29,20 +29,15 @@ The library brings you the comfort of a full database engine to your javascript 
 
 ----
 
-
-> Website: [alasql.org](http://AlaSQL.org)
-
-
-> Try online: <a href="http://alasql.org/console?CREATE TABLE cities (city string, population number);INSERT INTO cities VALUES ('Rome',2863223), ('Paris',2249975),('Berlin',3517424), ('Madrid',3041579);SELECT * FROM cities WHERE population < 3500000 ORDER BY population DESC">Playground</a>
-
-
-> Feedback: [Open an issue](https://github.com/agershun/alasql/issues/new)
-
+> Get the file (CDN): [jsDelivr.com](http://www.jsdelivr.com/#!alasql)
 
 > Documentation: [Github wiki](https://github.com/agershun/alasql/wiki)
 
+> Feedback: [Open an issue](https://github.com/agershun/alasql/issues/new)
 
-> Get the file (CDN): [jsDelivr.com](http://www.jsdelivr.com/#!alasql)
+> Try online: <a href="http://alasql.org/console?CREATE TABLE cities (city string, population number);INSERT INTO cities VALUES ('Rome',2863223), ('Paris',2249975),('Berlin',3517424), ('Madrid',3041579);SELECT * FROM cities WHERE population < 3500000 ORDER BY population DESC">Playground</a>
+
+> Website: [alasql.org](http://AlaSQL.org)
 
 ----
 
@@ -87,7 +82,7 @@ Play with this example in [jsFiddle](http://jsfiddle.net/xxh13gLa/)
 
 To use AlaSQL via bower install as normal
 
-    bower install alasql
+    bower install alasql --save
 
 ----
 
@@ -95,19 +90,16 @@ To use AlaSQL via bower install as normal
 
 To use AlaSQL with Meteor install as normal
 
-    meteor install agershun:alasql
+    meteor add agershun:alasql
 
 ----
 
 ### Node.js or IO.js
 
-
-
-
 For node install with npm
 
 ```
-npm install alasql
+npm install alasql --save
 ```
 
 
