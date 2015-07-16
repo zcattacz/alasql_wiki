@@ -16,7 +16,7 @@ The results are good. Check out AlaSQL vs. other javaScript SQL databases:
 
 ----
 
-**More tests **
+**More tests**
 
 Every part must be optimized, so lets compare some cases where you would often use another library:
 
