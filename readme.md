@@ -1,10 +1,10 @@
 
 [![bitHound Score](https://www.bithound.io/github/agershun/alasql/badges/score.svg)](https://www.bithound.io/github/agershun/alasql) 
 [![Build status](https://api.travis-ci.org/agershun/alasql.svg)](https://travis-ci.org/agershun/alasql) 
-[![NPM downloads](http://img.shields.io/npm/dm/alasql.svg?style=flat&label=npm downloads)](https://npmjs.org/package/alasql) 
+[![NPM downloads](http://img.shields.io/npm/dm/alasql.svg?style=flat&label=npm%20downloads)](https://npmjs.org/package/alasql) 
 [![Inline docs](http://inch-ci.org/github/agershun/alasql.svg?branch=develop)](http://inch-ci.org/github/agershun/alasql) 
 ![Stars](https://img.shields.io/github/stars/agershun/alasql.svg?label=Github%20%E2%98%85) 
-![Release](https://img.shields.io/github/release/agershun/alasql.svg?label=Last release) 
+![Release](https://img.shields.io/github/release/agershun/alasql.svg?label=Last%20release) 
 ![NPM version](https://img.shields.io/npm/l/alasql.svg) 
 
 
@@ -56,19 +56,17 @@ For the browser: Include [alasql.min.js](http://cdn.jsdelivr.net/alasql/latest/a
 `alasql()` with your SQL statements:
 
 ```html
-
 <script src="//cdn.jsdelivr.net/alasql/0.1/alasql.min.js"></script> 
-
 <script>
-    
+   
 	alasql("CREATE TABLE cities (city string, population number)");
         
 	alasql("INSERT INTO cities VALUES ('Rome',2863223), ('Paris',2249975), ('Berlin',3517424),  ('Madrid',3041579)");
         
 	var res = alasql("SELECT * FROM cities WHERE population < 3500000 ORDER BY population DESC");
    
-   // res now contains this array of object:
-   // [{"city":"Madrid","population":3041579},{"city":"Rome","population":2863223},{"city":"Paris","population":2249975}] 	
+	// res now contains this array of object:
+	// [{"city":"Madrid","population":3041579},{"city":"Rome","population":2863223},{"city":"Paris","population":2249975}] 	
    
 </script>
 ```
