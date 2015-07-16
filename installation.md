@@ -8,7 +8,6 @@ For the browser: Include [alasql.min.js](http://cdn.jsdelivr.net/alasql/latest/a
 ```html
 
 <script src="//cdn.jsdelivr.net/alasql/0.1/alasql.min.js"></script> 
-
 <script>
     
 	alasql("CREATE TABLE cities (city string, population number)");
@@ -17,8 +16,8 @@ For the browser: Include [alasql.min.js](http://cdn.jsdelivr.net/alasql/latest/a
         
 	var res = alasql("SELECT * FROM cities WHERE population < 3500000 ORDER BY population DESC");
    
-   // res now contains this array of object:
-   // [{"city":"Madrid","population":3041579},{"city":"Rome","population":2863223},{"city":"Paris","population":2249975}] 	
+	// res now contains this array of object:
+	// [{"city":"Madrid","population":3041579},{"city":"Rome","population":2863223},{"city":"Paris","population":2249975}] 	
    
 </script>
 ```
