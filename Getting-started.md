@@ -50,7 +50,7 @@ or you can use promise()
 
 ```js
     alasql.promise('SELECT * FROM test')
-    }).then(function(res){
+    .then(function(res){
         // Process data
     }).catch(function(err){
         // Process errors
