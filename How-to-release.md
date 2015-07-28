@@ -51,6 +51,8 @@ Todo:
 
 * implement https://www.npmjs.com/package/npm-check as part of the release check
 
+* idea: implement this list as a script in npm so one can `npm release-steps`. Each step must be optional. Will be an issue to keep script and this wiki updated.
+
 
 
 
