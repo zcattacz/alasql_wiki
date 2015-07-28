@@ -45,6 +45,12 @@ The following is a checklist for the team to remember the steps. Please update w
 
 0. [Finish your draft](https://github.com/agershun/alasql/releases/) of the release on github. You should be able to find it in the dropdown in "Tag version" - and select **master** as branch.
 
+----
+
+Todo: 
+
+* implement https://www.npmjs.com/package/npm-check as part of the release check
+
 
 
 
