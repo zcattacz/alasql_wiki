@@ -55,7 +55,7 @@ Check out [what other people are saying](People) about AlaSQL.
 ### Development 
 * [How to setup environment for AlaSQL development?](How to setup environment for AlaSQL development)
 * [How to assemble AlaSQL?](How to assemble AlaSQL)
-* [How to prepare new release?](How to prepare new release)
+* [How to prepare new release?](How to release)
 
 ### Sandbox
 * [AlaSQL Console](http://alasql.org/console/alaconsole.html)
