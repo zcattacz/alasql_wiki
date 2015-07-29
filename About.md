@@ -8,12 +8,6 @@ AlaSQL is a JavaScript SQL database library designed for:
 * Easy [ETL](Etl) (extract, transfer, and loading) data in [CSV](Csv), [XLSX](Xlsx), and other formats
 * It works in all major browsers,  Node.js, and mobile applications
 
-## Information about AlaSQL
-* GitHub - [http://github.com/agershun/alasql](http://github.com/agershun/alasql)
-* Official site - [http://alasql.org](http://alasql.org)
-
-## JavaScript SQL
-* [Other JavaScript SQL databases](Similar-Projects)
 
 ## Why AlaSQL?
 AlaSQL can apply SQL on JavaScript arrays and objects, including following operations:
@@ -39,4 +33,14 @@ It has many functions for data manipulation in JSON format, including uploading 
     var res2 = alasql('SELECT a, SUM(b) AS b FROM ? GROUP BY a',[data]);
 ```
 You can  try it [at jsFiddle](http://jsfiddle.net/agershun/30to2rh8/1/).
+
+
+---- 
+
+## Information about AlaSQL
+* GitHub - [http://github.com/agershun/alasql](http://github.com/agershun/alasql)
+* Official site - [http://alasql.org](http://alasql.org)
+
+## Is it unique to combine JavaScript and SQL?
+* No. Chekout the [other JavaScript SQL databases](Similar-Projects)
 
