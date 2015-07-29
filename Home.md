@@ -1,46 +1,41 @@
 # The AlaSQL Wiki
 
-**To get an overview please have a look at the [[README]] section. **
+* **The [[README]] section actually seeks to be helpful**
 
-**To get inspired try: [[Getting started]].**
+* **[[Getting started]] gives you inspiration on how to use the library**
 
-**Check out [what other people say](People) about AlaSQL.**
+* **We are proud of what [other people say](People) about the library**
 
 ### About AlaSQL
 
+AlaSQL applys SQL opperations to JavaScript arrays and objects therefore the library can best be described as a JavaScript SQL database. 
 
-AlaSQL is a JavaScript SQL database library designed for:
+The API is designed for:
 
-* JavaScript [data manipulation](Data manipulation) and advanced filtering, grouping and joining
-* Client-side [SQL database](Sql database) with persistence
-* Fast data processing for BI and ERP applications
-* Easy [ETL](Etl) (extract, transfer, and loading) data in [CSV](Csv), [XLSX](Xlsx), and other formats
-* It works in all major browsers,  Node.js, and mobile applications
+* JavaScript [[data manipulation]] plus advanced filtering, grouping and joining
+* Client-side SQL database with option for persistency (as Local Storage and Indexed DB)
+* Fast data processing for BI and ERP applications on fat clients
+* Easy ETL (extract, transfer, and loading) data to/from [CSV](Csv) and [XLSX](Xlsx) + others
+* Works in all major browsers,  Node.js, and mobile applications
 
-AlaSQL can apply SQL on JavaScript arrays and objects, including following operations:
 
-* Can store,
-* retrieve,
-* sort,
-* and iterate through JSON data,
-* with a clean API,
-* supports SQL
-* and many other operations, like support of Local Storage and Indexed DB.
-
-It has many functions for data manipulation in JSON format, including uploading and downloading JSON data.
 ```js
-    // Load and process data
-    alasql('SELECT * FROM JSON('mydata.json') GROUP BY name WHERE lastname LIKE "A%" \
-                WHERE city = "London"', [], function(res1){
-       console.log(res1);
-    });
+// a) SQL on array of objects
+var data = [{a:1,b:10}, {a:2,b:20}, {a:1,b:30}];
+var res = alasql('SELECT a, SUM(b) AS b FROM ? GROUP BY a',[data]);    
+console.log(res);
 
-    // Process data on JSON arrays
-    var data = [{a:1,b:10}, {a:2,b:20}, {a:1,b:30}];
-    var res2 = alasql('SELECT a, SUM(b) AS b FROM ? GROUP BY a',[data]);
+// b) Async promise notation
+alasql
+      .promise('SELECT * FROM XLS("mydata.xls") GROUP BY name WHERE lastname LIKE "A%" and city = "London"')
+      .then(function(res){
+           console.log(res);
+      }).catch(function(err){
+           console.log('error:', err);
+      });
 ```
-You can  try it [at jsFiddle](http://jsfiddle.net/agershun/30to2rh8/1/).
-
+    
+Try example `a)` in [jsFiddle](http://jsfiddle.net/agershun/30to2rh8/1/).
 
 
 
