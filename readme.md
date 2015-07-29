@@ -8,6 +8,7 @@
 ![NPM version](https://img.shields.io/npm/l/alasql.svg) 
 
 
+
 # AlaSQL
 
 
@@ -17,8 +18,63 @@
 
 _( [à la] (http://en.wiktionary.org/wiki/%C3%A0_la) [SQL](http://en.wikipedia.org/wiki/SQL) ) [ælæ ɛskju:ɛl]_ - AlaSQL is a versatil javascript SQL database library for both relational data, schemaless data, and graph data with a strong foucus on query speed and flexibillity for datasources. It works in your browser, Node.js, IO.js and Apache Cordova.
 
+In short AlaSQL applys SQL opperations to JavaScript arrays and objects:
+ 
+```js
+// A) Traditional SQL
+alasql("CREATE TABLE cities (city string, population number)");
 
+alasql("INSERT INTO cities VALUES ('Rome',2863223),('Paris',2249975),('Berlin',3517424),('Madrid',3041579)");
 
+var res = alasql("SELECT * FROM cities WHERE population < 3500000 ORDER BY population DESC");
+
+console.log(res);  
+
+/* 
+[
+  {
+    "city": "Madrid",
+    "population": 3041579
+  },
+  {
+    "city": "Rome",
+    "population": 2863223
+  },
+  {
+    "city": "Paris",
+    "population": 2249975
+  }
+]
+*/	
+```
+
+```js
+// B) SQL on array of objects
+var data = [{a:1,b:10}, {a:2,b:20}, {a:1,b:30}];
+
+var res = alasql('SELECT a, SUM(b) AS b FROM ? GROUP BY a',[data]);    
+
+console.log(res); // [{"a":1,"b":40},{"a":2,"b":20}]
+```
+
+```js
+// C) Read from file + promise notation
+alasql.promise('SELECT * FROM XLS("mydata.xls") WHERE lastname LIKE "A%" and city = "London" GROUP BY name ')
+      .then(function(res){
+           console.log(res); // output depends on mydata.xls
+      }).catch(function(err){
+           console.log('Does the file exists? there was an error:', err);
+      });
+```
+    
+jsFiddle with [example A)](http://jsfiddle.net/xxh13gLa/) and [example B)](http://jsfiddle.net/agershun/30to2rh8/1/)
+
+The API is designed for:
+
+* Fast data processing for BI and ERP applications on fat clients
+* Client-side SQL database with option for persistency (as Local Storage and Indexed DB)
+* Versatile data manipulation and easy ETL including filtering, grouping and joining data directly from files in different formats.
+* All major browsers,  Node.js, and mobile applications
 
 We focus on [speed](https://github.com/agershun/alasql/wiki/Speed) by taking advantage of the dynamic nature of javascript when building up queries. Real world solutions demands flexibility regarding where data comes from and where it is to be stored. We focus on flexibility by making sure you can [import/export](https://github.com/agershun/alasql/wiki/Import-export) and query directly on data stored in your own JSON object, Excel files, localStorage, IndexedDB, and SQLite. 
 
