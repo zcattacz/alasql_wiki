@@ -18,6 +18,22 @@
 
 _( [à la] (http://en.wiktionary.org/wiki/%C3%A0_la) [SQL](http://en.wikipedia.org/wiki/SQL) ) [ælæ ɛskju:ɛl]_ - AlaSQL is a versatil javascript SQL database library for both relational data, schemaless data, and graph data with a strong foucus on query speed and flexibillity for datasources. It works in your browser, Node.js, IO.js and Apache Cordova.
 
+
+----
+
+> Get the file (CDN): [jsDelivr.com](http://www.jsdelivr.com/#!alasql)
+
+> Documentation: [Github wiki](https://github.com/agershun/alasql/wiki)
+
+> Feedback: [Open an issue](https://github.com/agershun/alasql/issues/new)
+
+> Try online: <a href="http://alasql.org/console?CREATE TABLE cities (city string, population number);INSERT INTO cities VALUES ('Rome',2863223), ('Paris',2249975),('Berlin',3517424), ('Madrid',3041579);SELECT * FROM cities WHERE population < 3500000 ORDER BY population DESC">Playground</a>
+
+> Website: [alasql.org](http://AlaSQL.org)
+
+----
+
+
 In short AlaSQL applys SQL opperations to JavaScript arrays and objects:
  
 ```js
@@ -82,20 +98,6 @@ We focus on [speed](https://github.com/agershun/alasql/wiki/Speed) by taking adv
 The library brings you the comfort of a full database engine to your javascript app. No, really - its working towards a full database engine complying with [most of SQL-99](https://github.com/agershun/alasql/wiki/SQL-99) spiced up with additional syntax for handling noSQL (schemaless) data and graph networks. To help porting from native databases you can specify the flavor for the SQL behavior as either AlaSQL, T-SQL, MySQL, Postgres, ORACLE, SQLite, OrientDB. MSSQL is on its way. 
 
 
-
-----
-
-> Get the file (CDN): [jsDelivr.com](http://www.jsdelivr.com/#!alasql)
-
-> Documentation: [Github wiki](https://github.com/agershun/alasql/wiki)
-
-> Feedback: [Open an issue](https://github.com/agershun/alasql/issues/new)
-
-> Try online: <a href="http://alasql.org/console?CREATE TABLE cities (city string, population number);INSERT INTO cities VALUES ('Rome',2863223), ('Paris',2249975),('Berlin',3517424), ('Madrid',3041579);SELECT * FROM cities WHERE population < 3500000 ORDER BY population DESC">Playground</a>
-
-> Website: [alasql.org](http://AlaSQL.org)
-
-----
 
 
 ### Please note
