@@ -1,10 +1,46 @@
-# AlaSQL Wiki
+# The AlaSQL Wiki
 
-For a quick overview please see the [[README]] section. 
+**To get an overview please have a look at the [[README]] section. **
 
-To get started have a look at: [[Getting started]]
+**To get inspired try: [[Getting started]].**
 
-Check out [what other people are saying](People) about AlaSQL.
+**Check out [what other people say](People) about AlaSQL.**
+
+### About AlaSQL
+
+
+AlaSQL is a JavaScript SQL database library designed for:
+
+* JavaScript [data manipulation](Data manipulation) and advanced filtering, grouping and joining
+* Client-side [SQL database](Sql database) with persistence
+* Fast data processing for BI and ERP applications
+* Easy [ETL](Etl) (extract, transfer, and loading) data in [CSV](Csv), [XLSX](Xlsx), and other formats
+* It works in all major browsers,  Node.js, and mobile applications
+
+AlaSQL can apply SQL on JavaScript arrays and objects, including following operations:
+
+* Can store,
+* retrieve,
+* sort,
+* and iterate through JSON data,
+* with a clean API,
+* supports SQL
+* and many other operations, like support of Local Storage and Indexed DB.
+
+It has many functions for data manipulation in JSON format, including uploading and downloading JSON data.
+```js
+    // Load and process data
+    alasql('SELECT * FROM JSON('mydata.json') GROUP BY name WHERE lastname LIKE "A%" \
+                WHERE city = "London"', [], function(res1){
+       console.log(res1);
+    });
+
+    // Process data on JSON arrays
+    var data = [{a:1,b:10}, {a:2,b:20}, {a:1,b:30}];
+    var res2 = alasql('SELECT a, SUM(b) AS b FROM ? GROUP BY a',[data]);
+```
+You can  try it [at jsFiddle](http://jsfiddle.net/agershun/30to2rh8/1/).
+
 
 
 
@@ -59,3 +95,5 @@ Check out [what other people are saying](People) about AlaSQL.
 
 ### Sandbox
 * [AlaSQL Console](http://alasql.org/console/alaconsole.html)
+
+Unsure if AlaSQL fit your needs? Chekout the [other JavaScript SQL databases](Similar-Projects)
