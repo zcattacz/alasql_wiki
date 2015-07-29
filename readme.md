@@ -153,7 +153,7 @@ To get get value instead of a JSON you can prepend `VALUE` to the `SELECT`
 `?` will be replaced with the corresponding n'th argument.
 
 ```
-alacon "VALUE SELECT 20-?+?" 5 100
+alasql "VALUE SELECT 20-?+?" 5 100
 ```
 
 See more examples [at the wiki](https://github.com/agershun/alasql/wiki/Alacon) 
