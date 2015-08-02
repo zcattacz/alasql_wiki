@@ -57,8 +57,7 @@ Try example `a)` in [jsFiddle](http://jsfiddle.net/agershun/30to2rh8/1/).
 * [External databases](External databases) - [IndexedDB](IndexedDB), [Local Storage](LocalStorage), and [SQLite](SQLite) integration
 
 ### AlaSQL Documentation
-* [About AlaSQL](About)
-* [Installation](Installation)
+* [[Install]]
 * [Getting started](Getting started)
 * [Supported SQL statements](Sql)
 * [Functions](Functions)
