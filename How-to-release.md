@@ -57,5 +57,55 @@ Todo:
 
 
 
+----
+
+#!/bin/sh
+
+:'
+# Steps for making new release 
+
+This contains a list of all the steps to make a new releasing of AlaSQL. The Idea came from how you install (this is not an install - its only for the members of the team behind the library).
+
+The formatting is a bit fun so it can work both as a markdown document but also as a sh script - so if you feel you trust this source you can
+
+```sh
+curl https://raw.githubusercontent.com/wiki/agershun/alasql/release.md | sh
+```
+
+
+    curl https://raw.githubusercontent.com/wiki/agershun/alasql/readme.md -o readme.md
+'
+
+###### Functions to wait for keypress
+Pause()
+{
+ OLDCONFIG=`stty -g`
+ stty -icanon -echo min 1 time 0
+ dd count=1 2>/dev/null
+ stty $OLDCONFIG
+}
+
+###### Get a carriage return into `CR`
+CR=`echo $'\n.'`
+CR=${CR%.}
+
+###### Aks if user wants to do something
+todo () {
+    while true; do
+        read -p "Would you like to $1 by executing: $CR$2$CR(Yes)$CR" yn
+        case ${yn:-Y} in
+            [Yy]* ) $2 && return;;
+            [Nn]* ) ECHO "OK - just make sure to do it your self (!). Hit a key to continue..." && Pause && return;;
+            * ) echo "Please answer yes or no.";;
+        esac
+    done
+}
+
+# Steps for making new release
+
+## Make sure you are awesome
+todo "**make new branch**" "echo I love you";
+
+echo "All Done"
 
 
