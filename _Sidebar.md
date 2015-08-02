@@ -1,3 +1,5 @@
+**Quick links**
+
 [AlaSQL wiki frontpage](Home)
 
 [About AlaSQL](readme)
