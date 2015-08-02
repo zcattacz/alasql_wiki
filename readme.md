@@ -19,19 +19,6 @@
 _( [à la] (http://en.wiktionary.org/wiki/%C3%A0_la) [SQL](http://en.wikipedia.org/wiki/SQL) ) [ælæ ɛskju:ɛl]_ - AlaSQL is a versatil javascript SQL database library for both relational data, schemaless data, and graph data with a strong foucus on query speed and flexibillity for datasources. It works in your browser, Node.js, IO.js and Apache Cordova.
 
 
-----
-
-> Get the file (CDN): [jsDelivr.com](http://www.jsdelivr.com/#!alasql)
-
-> Documentation: [Github wiki](https://github.com/agershun/alasql/wiki)
-
-> Feedback: [Open an issue](https://github.com/agershun/alasql/issues/new)
-
-> Try online: <a href="http://alasql.org/console?CREATE TABLE cities (city string, population number);INSERT INTO cities VALUES ('Rome',2863223), ('Paris',2249975),('Berlin',3517424), ('Madrid',3041579);SELECT * FROM cities WHERE population < 3500000 ORDER BY population DESC">Playground</a>
-
-> Website: [alasql.org](http://AlaSQL.org)
-
-----
 
 
 In short AlaSQL applys SQL opperations to JavaScript arrays and objects:
@@ -74,7 +61,7 @@ console.log(res); // [{"a":1,"b":40},{"a":2,"b":20}]
 ```
 
 ```js
-// C) Read from file + promise notation
+// C) Read from file 
 alasql.promise('SELECT * FROM XLS("mydata.xls") WHERE lastname LIKE "A%" and city = "London" GROUP BY name ')
       .then(function(res){
            console.log(res); // output depends on mydata.xls
@@ -85,7 +72,37 @@ alasql.promise('SELECT * FROM XLS("mydata.xls") WHERE lastname LIKE "A%" and cit
     
 jsFiddle with [example A)](http://jsfiddle.net/xxh13gLa/) and [example B)](http://jsfiddle.net/agershun/30to2rh8/1/)
 
-The API is designed for:
+## Install
+
+
+```bash
+npm install alasql --save     # npm
+meteor add agershun:alasql    # meteor
+bower install alasql --save   # bower
+npm install -g alasql         # command line interface
+```
+
+For the browser: include [alasql.min.js](http://cdn.jsdelivr.net/alasql/latest/alasql.min.js)  
+
+```html
+<script src="//cdn.jsdelivr.net/alasql/0.2/alasql.min.js"></script> 
+```
+
+## Links
+* Get the file (CDN): [jsDelivr.com](http://www.jsdelivr.com/#!alasql)
+
+* Documentation: [Github wiki](https://github.com/agershun/alasql/wiki)
+
+* Feedback: [Open an issue](https://github.com/agershun/alasql/issues/new)
+
+* Try online: <a href="http://alasql.org/console?CREATE TABLE cities (city string, population number);INSERT INTO cities VALUES ('Rome',2863223), ('Paris',2249975),('Berlin',3517424), ('Madrid',3041579);SELECT * FROM cities WHERE population < 3500000 ORDER BY population DESC">Playground</a>
+
+* Website: [alasql.org](http://AlaSQL.org)
+
+
+## Priorities
+
+The library is designed for:
 
 * Fast data processing for BI and ERP applications on fat clients
 * Client-side SQL database with option for persistency (as Local Storage and Indexed DB)
@@ -107,49 +124,6 @@ AlaSQL project is very young and still in active development phase, therefore it
 
 
 
-## How to use
-
-For the browser: Include [alasql.min.js](http://cdn.jsdelivr.net/alasql/latest/alasql.min.js) and call 
-`alasql()` with your SQL statements:
-
-```html
-<script src="//cdn.jsdelivr.net/alasql/0.1/alasql.min.js"></script> 
-<script>
-   
-	alasql("CREATE TABLE cities (city string, population number)");
-        
-	alasql("INSERT INTO cities VALUES ('Rome',2863223), ('Paris',2249975), ('Berlin',3517424),  ('Madrid',3041579)");
-        
-	var res = alasql("SELECT * FROM cities WHERE population < 3500000 ORDER BY population DESC");
-   
-	// res now contains this array of object:
-	// [{"city":"Madrid","population":3041579},{"city":"Rome","population":2863223},{"city":"Paris","population":2249975}] 	
-   
-</script>
-```
-
-Play with this example in [jsFiddle](http://jsfiddle.net/xxh13gLa/) 
-
-----
-
-
-### Bower
-
-To use AlaSQL via bower install as normal
-
-    bower install alasql --save
-
-----
-
-### Meteor
-
-To use AlaSQL with Meteor install as normal
-
-    meteor add agershun:alasql
-
-See the wiki for [more information about Meteor](https://github.com/agershun/alasql/wiki/Meteor)
-
-----
 
 ### Node or IO.js
 
