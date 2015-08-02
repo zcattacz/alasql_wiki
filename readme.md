@@ -88,6 +88,17 @@ For the browser: include [alasql.min.js](http://cdn.jsdelivr.net/alasql/latest/a
 <script src="//cdn.jsdelivr.net/alasql/0.2/alasql.min.js"></script> 
 ```
 
+
+### Getting started
+
+The wiki has a great section on [how to get started](https://github.com/agershun/alasql/wiki/Getting%20started) 
+
+When you feel you got the grip you can check out the wiki section about [data manipulation](https://github.com/agershun/alasql/wiki/Data-manipulation) or getting inspired by the [list of Q&As](http://stackoverflow.com/questions/tagged/alasql)
+
+
+
+
+
 ### Links
 * Documentation: [Github wiki](https://github.com/agershun/alasql/wiki)
 
@@ -100,7 +111,7 @@ For the browser: include [alasql.min.js](http://cdn.jsdelivr.net/alasql/latest/a
 * Website: [alasql.org](http://AlaSQL.org)
 
 
-### Priorities
+## Priorities
 
 The library is designed for:
 
@@ -112,7 +123,7 @@ The library is designed for:
 We focus on [speed](https://github.com/agershun/alasql/wiki/Speed) by taking advantage of the dynamic nature of javascript when building up queries. Real world solutions demands flexibility regarding where data comes from and where it is to be stored. We focus on flexibility by making sure you can [import/export](https://github.com/agershun/alasql/wiki/Import-export) and query directly on data stored in your own JSON object, Excel files, localStorage, IndexedDB, and SQLite. 
 
 
-The library brings you the comfort of a full database engine to your javascript app. No, really - its working towards a full database engine complying with [most of SQL-99](https://github.com/agershun/alasql/wiki/SQL-99) spiced up with additional syntax for handling noSQL (schemaless) data and graph networks. To help porting from native databases you can specify the flavor for the SQL behavior as either AlaSQL, T-SQL, MySQL, Postgres, ORACLE, SQLite, OrientDB. MSSQL is on its way. 
+The library brings you the comfort of a full database engine to your javascript app. No, really - its working towards a full database engine complying with [most of SQL-99](https://github.com/agershun/alasql/wiki/Supported-SQL-statements) spiced up with additional syntax for handling noSQL (schema less) data and graph networks. To help porting from native databases you can specify the flavour for the SQL behaviour as either AlaSQL, T-SQL, MySQL, Postgres, ORACLE, SQLite, OrientDB. MSSQL is on its way. 
 
 
 
@@ -123,14 +134,6 @@ AlaSQL project is very young and still in active development phase, therefore it
 **All contributions are much welcome and greatly appreciated(!)** so just [open an issue](https://github.com/agershun/alasql/issues/new) and lets talk about your idea. Also: we (really) love pull requests - please use the develop branch.
 
 
-
-
-
-## Getting started
-
-The wiki has a great section on [how to getting started](https://github.com/agershun/alasql/wiki/Getting%20started) 
-
-When you feel you got the grip you can check out the wiki section about [data manipulation](https://github.com/agershun/alasql/wiki/Data-manipulation) or getting inspired by the [list of Q&As](http://stackoverflow.com/questions/tagged/alasql)
 
 
 
@@ -167,6 +170,18 @@ See more [speed related info on the wiki](https://github.com/agershun/alasql/wik
 ### Traditional SQL
 
 Use "good old" SQL on your data with multiple levels of: ```JOIN```, ```VIEW```, ```GROUP BY```, ```UNION```, ```PRIMARY KEY```, ```ANY```, ```ALL```, ```IN```, ```ROLLUP()```, ```CUBE()```, ```GROUPING SETS()```, ```CROSS APPLY```, ```OUTER APPLY```, ```WITH SELECT```, and subqueries. See the wiki to [compare supported features with SQL standarts](https://github.com/agershun/alasql/wiki/SQL%20keywords).
+
+
+
+#### User-defined JavaScript functions
+
+You can use all benefits of SQL and JavaScript togeather by defining user functions. Just add new functions to alasql.fn object:
+
+```js
+        alasql.fn.double = function(x){return x*2};        
+        alasql.fn.sum10 = function(x,y) { return x+y*10; }
+        db.exec('SELECT a, double(a) AS b, sum10(a,b) FROM test1');
+```
 
 
 ### AlaSQL supports plugins
@@ -248,7 +263,7 @@ AlaSQL can query data directly from a google spreadsheet. A good "partnership" f
 
 
 
-### Node or IO.js
+### Node and IO.js
 
 To use AlaSQL with Node or IO.js install with npm
 
@@ -286,9 +301,9 @@ var res = db.exec("SELECT * FROM example1 ORDER BY b DESC");
 // [{a:1,b:3},{a:3,b:4},{a:3,b:4}]
 ```
 
-----
 
-### Commandline
+
+### Command line interfce (CLI)
 
 You can access AlaSQL [from the comandline](https://github.com/agershun/alasql/wiki/Alacon) by installing from npm globally
 
@@ -323,7 +338,7 @@ See more examples [at the wiki](https://github.com/agershun/alasql/wiki/Alacon)
 
 ### AlaSQL as a WebWorker
 
-AlaSQL can work as a webworker. Include alasql-worker.js and that is it: AlaSQL will work as a webworker.
+AlaSQL can work as a webworker. Include alasql-worker.js and thats's it: AlaSQL will work as a webworker.
 
 ```html
     <script src="alasql-worker.min.js"></script>
@@ -367,8 +382,7 @@ Now AlaSQL can work with files in XLS, XSLX, CSV, TAB, TXT, and JSON format
         console.log(data);
     });
 ```
-See [test168](test/test168.js) - [test169](test/test169.js)
-
+See test168 and test169
 
 ### Read SQLite database files
 
