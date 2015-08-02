@@ -1,5 +1,7 @@
 # SQL Compabillity
 
+See list of [[Supported SQL statements]]
+
 See also the full list of [AlaSQL reserved keywords](AlaSQL keywords).
 
 The list of keywords used in AlaSQL (based on the table from [here](http://developer.mimer.com/standard/reservedwords/sql-reserved-words.tml)).
