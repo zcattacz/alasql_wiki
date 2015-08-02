@@ -72,7 +72,7 @@ alasql.promise('SELECT * FROM XLS("mydata.xls") WHERE lastname LIKE "A%" and cit
     
 jsFiddle with [example A)](http://jsfiddle.net/xxh13gLa/) and [example B)](http://jsfiddle.net/agershun/30to2rh8/1/)
 
-## Install
+### Install
 
 
 ```bash
@@ -88,10 +88,10 @@ For the browser: include [alasql.min.js](http://cdn.jsdelivr.net/alasql/latest/a
 <script src="//cdn.jsdelivr.net/alasql/0.2/alasql.min.js"></script> 
 ```
 
-## Links
-* Get the file (CDN): [jsDelivr.com](http://www.jsdelivr.com/#!alasql)
-
+### Links
 * Documentation: [Github wiki](https://github.com/agershun/alasql/wiki)
+
+* Library CDN: [jsDelivr.com](http://www.jsdelivr.com/#!alasql)
 
 * Feedback: [Open an issue](https://github.com/agershun/alasql/issues/new)
 
@@ -100,7 +100,7 @@ For the browser: include [alasql.min.js](http://cdn.jsdelivr.net/alasql/latest/a
 * Website: [alasql.org](http://AlaSQL.org)
 
 
-## Priorities
+### Priorities
 
 The library is designed for:
 
@@ -117,78 +117,10 @@ The library brings you the comfort of a full database engine to your javascript 
 
 
 
-### Please note
+#### Please note
 AlaSQL project is very young and still in active development phase, therefore it <s>may</s> have [bugs](https://github.com/agershun/alasql/labels/Bug). Please, submit any bugs and suggestions [as an issue](https://github.com/agershun/alasql/issues/new). AlaSQL uses [Semantic Versioning](http://semver.org/) so please note that major version is zero (0.y.z) and the API can not be considered 100% stable. Consider this before using the library in production.  
 
 **All contributions are much welcome and greatly appreciated(!)** so just [open an issue](https://github.com/agershun/alasql/issues/new) and lets talk about your idea. Also: we (really) love pull requests - please use the develop branch.
-
-
-
-
-### Node or IO.js
-
-To use AlaSQL with Node or IO.js install with npm
-
-```
-npm install alasql --save
-```
-
-
-> [![NPM](https://nodei.co/npm/alasql.png)](https://nodei.co/npm/alasql/) [![NPM](https://nodei.co/npm-dl/alasql.png?months=6)](https://nodei.co/npm/alasql/)
-
-
-
-Require `alasql` and create a new database to start executing your SQL.
-
-
-```js
-var alasql = require('alasql');
-
-var db = new alasql.Database();
-
-db.exec("CREATE TABLE example (a INT, b INT)");
-
-// You can insert data directly from javascript object...
-db.tables.example1.data = [ 
-    {a:5,b:6},
-    {a:3,b:4}
-];
-
-// ...or you can insert data with normal SQL 
-db.exec("INSERT INTO example1 VALUES (1,3)");
-
-var res = db.exec("SELECT * FROM example1 ORDER BY b DESC");
-
-// res now contains this array of objects:
-// [{a:1,b:3},{a:3,b:4},{a:3,b:4}]
-```
-
-----
-
-### Commandline
-
-You can access AlaSQL [from the comandline](https://github.com/agershun/alasql/wiki/Alacon) by installing from npm globally
-
-```
-npm install alasql -g
-```
-
-Now you can access `alasql` via the commandline
-
-```
-> alasql "SELECT * INTO json('my.json') from xlsx('cities.xlsx',{headers:true}) WHERE population > 20000000"
-```
-
-To get get value instead of a JSON you can prepend `VALUE` to the `SELECT`
-
-`?` will be replaced with the corresponding n'th argument.
-
-```
-alasql "VALUE SELECT 20-?+?" 5 100
-```
-
-See more examples [at the wiki](https://github.com/agershun/alasql/wiki/Alacon) 
-
 
 
 
@@ -273,10 +205,6 @@ Group your JavaScript array of objects by field and count number of records in e
 See more ideas of creative datamanipulation [in the wiki](https://github.com/agershun/alasql/wiki/Getting-started) 
 
 
-## Miss a feature? 
-Take charge and [add your idea](http://feathub.com/agershun/alasql/features/new) or [vote on your favorite feature](http://feathub.com/agershun/alasql) to be implemented:
-
-[![Feature Requests](http://feathub.com/agershun/alasql?format=svg)](http://feathub.com/agershun/alasql)
 
 
 
@@ -287,7 +215,6 @@ Take charge and [add your idea](http://feathub.com/agershun/alasql/features/new)
 
 
 
-## Cases where AlaSQL is useful
 
 
 ### AlaSQL ♥ D3.js
@@ -321,10 +248,72 @@ AlaSQL can query data directly from a google spreadsheet. A good "partnership" f
 
 
 
+### Node or IO.js
+
+To use AlaSQL with Node or IO.js install with npm
+
+```
+npm install alasql --save
+```
+
+
+> [![NPM](https://nodei.co/npm/alasql.png)](https://nodei.co/npm/alasql/) [![NPM](https://nodei.co/npm-dl/alasql.png?months=6)](https://nodei.co/npm/alasql/)
+
+
+
+Require `alasql` and create a new database to start executing your SQL.
+
+
+```js
+var alasql = require('alasql');
+
+var db = new alasql.Database();
+
+db.exec("CREATE TABLE example (a INT, b INT)");
+
+// You can insert data directly from javascript object...
+db.tables.example1.data = [ 
+    {a:5,b:6},
+    {a:3,b:4}
+];
+
+// ...or you can insert data with normal SQL 
+db.exec("INSERT INTO example1 VALUES (1,3)");
+
+var res = db.exec("SELECT * FROM example1 ORDER BY b DESC");
+
+// res now contains this array of objects:
+// [{a:1,b:3},{a:3,b:4},{a:3,b:4}]
+```
 
 ----
 
-#What is new?
+### Commandline
+
+You can access AlaSQL [from the comandline](https://github.com/agershun/alasql/wiki/Alacon) by installing from npm globally
+
+```
+npm install alasql -g
+```
+
+Now you can access `alasql` via the commandline
+
+```
+> alasql "SELECT * INTO json('my.json') from xlsx('cities.xlsx',{headers:true}) WHERE population > 20000000"
+```
+
+To get get value instead of a JSON you can prepend `VALUE` to the `SELECT`
+
+`?` will be replaced with the corresponding n'th argument.
+
+```
+alasql "VALUE SELECT 20-?+?" 5 100
+```
+
+See more examples [at the wiki](https://github.com/agershun/alasql/wiki/Alacon) 
+
+
+
 
 
 
@@ -416,11 +405,6 @@ See [the example](http://alasql.org/demo/001csv/).
 
 
 
-### Examples
-
-See more examples [in the wiki](https://github.com/agershun/alasql/wiki/Examples)
-
-### Supported SQL statements
 
 Most of SQL-99. Please [see the wiki](https://github.com/agershun/alasql/wiki/Supported-SQL-statements) for more info
 
@@ -516,6 +500,11 @@ then type in browser something like "http://127.0.0.1:1337/?SELECT VALUE 2*2"
 
 Warning: Alaserver is not multi-thread, not concurent, and not secured.
 
+
+### Miss a feature? 
+Take charge and [add your idea](http://feathub.com/agershun/alasql/features/new) or [vote on your favorite feature](http://feathub.com/agershun/alasql) to be implemented:
+
+[![Feature Requests](http://feathub.com/agershun/alasql?format=svg)](http://feathub.com/agershun/alasql)
 
 
 
