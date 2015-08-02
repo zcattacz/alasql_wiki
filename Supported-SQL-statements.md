@@ -57,6 +57,9 @@ SELECT modifiers (non-standard SQL):
 * SELECT COLUMN - get first column as an array
 * SELECT MATRIX - get all results as an array of arrays
 
+
+See a complete list of [[SQL-99]] statements and if they are supported or not
+
 #### User-defined JavaScript functions
 
 You can use all benefits of SQL and JavaScript togeather by defining user functions. Just add new functions to alasql.fn object:
