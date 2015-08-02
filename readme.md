@@ -15,13 +15,9 @@
 
 
 
+_( [à la] (http://en.wiktionary.org/wiki/%C3%A0_la) [SQL](http://en.wikipedia.org/wiki/SQL) ) [ælæ ɛskju:ɛl]_ - AlaSQL is a open source SQL database for javascript handeling relational data, schemaless data, and graph data with a strong foucus on query speed and flexibillity for datasources. It works in your browser, Node.js, IO.js and Apache Cordova.
 
-_( [à la] (http://en.wiktionary.org/wiki/%C3%A0_la) [SQL](http://en.wikipedia.org/wiki/SQL) ) [ælæ ɛskju:ɛl]_ - AlaSQL is a versatil javascript SQL database library for both relational data, schemaless data, and graph data with a strong foucus on query speed and flexibillity for datasources. It works in your browser, Node.js, IO.js and Apache Cordova.
-
-
-
-
-In short AlaSQL applys SQL opperations to JavaScript arrays and objects:
+In short AlaSQL applys SQL opperations to javascript arrays and objects.
  
 ```js
 // A) Traditional SQL
@@ -72,7 +68,7 @@ alasql.promise('SELECT * FROM XLS("mydata.xls") WHERE lastname LIKE "A%" and cit
     
 jsFiddle with [example A)](http://jsfiddle.net/xxh13gLa/) and [example B)](http://jsfiddle.net/agershun/30to2rh8/1/)
 
-### Install
+## Install
 
 
 ```bash
@@ -89,7 +85,7 @@ For the browser: include [alasql.min.js](http://cdn.jsdelivr.net/alasql/latest/a
 ```
 
 
-### Getting started
+## Get started
 
 The wiki has a great section on [how to get started](https://github.com/agershun/alasql/wiki/Getting%20started) 
 
@@ -99,7 +95,7 @@ When you feel you got the grip you can check out the wiki section about [data ma
 
 
 
-### Links
+## Links
 * Documentation: [Github wiki](https://github.com/agershun/alasql/wiki)
 
 * Library CDN: [jsDelivr.com](http://www.jsdelivr.com/#!alasql)
@@ -128,7 +124,7 @@ The library brings you the comfort of a full database engine to your javascript 
 
 
 
-#### Please note
+### Please note
 AlaSQL project is very young and still in active development phase, therefore it <s>may</s> have [bugs](https://github.com/agershun/alasql/labels/Bug). Please, submit any bugs and suggestions [as an issue](https://github.com/agershun/alasql/issues/new). AlaSQL uses [Semantic Versioning](http://semver.org/) so please note that major version is zero (0.y.z) and the API can not be considered 100% stable. Consider this before using the library in production.  
 
 **All contributions are much welcome and greatly appreciated(!)** so just [open an issue](https://github.com/agershun/alasql/issues/new) and lets talk about your idea. Also: we (really) love pull requests - please use the develop branch.
