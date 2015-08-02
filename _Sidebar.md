@@ -1,7 +1,7 @@
-[Home](https://github.com/agershun/alasql/wiki)
+AlaSQL [wiki frontpage](Home)
 
-[SQL](https://github.com/agershun/alasql/wiki/Sql)
+[About](readme) AlaSQL
 
-[Installation](https://github.com/agershun/alasql/wiki/Installation)
+[[Install]] AlaSQL
 
-[Getting started](https://github.com/agershun/alasql/wiki/Getting%20started)
+[Get started](getting started) with AlaSQL
