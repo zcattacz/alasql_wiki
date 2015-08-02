@@ -1,9 +1,9 @@
 **Quick links**
 
-[AlaSQL wiki frontpage](Home)
+* [AlaSQL wiki frontpage](Home)
 
-[About AlaSQL](readme)
+* [About AlaSQL](readme)
 
-[Install AlaSQL](install)
+* [Install AlaSQL](install)
 
-[Get started with AlaSQL](getting started)
+* [Get started with AlaSQL](getting started)
