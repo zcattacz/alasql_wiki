@@ -1,7 +1,7 @@
-AlaSQL [wiki frontpage](Home)
+[AlaSQL wiki frontpage](Home)
 
-[About](readme) AlaSQL
+[About AlaSQL](readme)
 
-[[Install]] AlaSQL
+[Install AlaSQL](install)
 
-[Get started](getting started) with AlaSQL
+[Get started with AlaSQL](getting started)
