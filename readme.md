@@ -12,12 +12,21 @@
 # AlaSQL
 
 
-
-
-
 _( [à la] (http://en.wiktionary.org/wiki/%C3%A0_la) [SQL](http://en.wikipedia.org/wiki/SQL) ) [ælæ ɛskju:ɛl]_ - AlaSQL is a open source SQL database for javascript handeling relational data, schemaless data, and graph data with a strong foucus on query speed and flexibillity for datasources. It works in your browser, Node.js, IO.js and Apache Cordova.
 
-In short AlaSQL applys SQL opperations to javascript arrays and objects.
+In short AlaSQL applys SQL opperations to javascript arrays and objects. The library is designed for:
+
+* Fast data processing for BI and ERP applications on fat clients
+* Client-side SQL database with option for persistency (as Local Storage and Indexed DB)
+* Versatile data manipulation and easy ETL including filtering, grouping and joining data directly from files in different formats.
+* All major browsers,  Node.js, and mobile applications
+
+We focus on [speed](https://github.com/agershun/alasql/wiki/Speed) by taking advantage of the dynamic nature of javascript when building up queries. Real world solutions demands flexibility regarding where data comes from and where it is to be stored. We focus on flexibility by making sure you can [import/export](https://github.com/agershun/alasql/wiki/Import-export) and query directly on data stored in your own JSON object, Excel files, localStorage, IndexedDB, and SQLite. 
+
+
+The library brings you the comfort of a full database engine to your javascript app. No, really - its working towards a full database engine complying with [most of SQL-99](https://github.com/agershun/alasql/wiki/Supported-SQL-statements) spiced up with additional syntax for handling noSQL (schema less) data and graph networks. To help porting from native databases you can specify the flavour for the SQL behaviour as either AlaSQL, T-SQL, MySQL, Postgres, ORACLE, SQLite, OrientDB. MSSQL is on its way. 
+
+
  
 ```js
 // A) Traditional SQL
@@ -95,7 +104,12 @@ When you feel you got the grip you can check out the wiki section about [data ma
 
 
 
-## Links
+## Please note
+AlaSQL project is very young and still in active development phase, therefore it <s>may</s> have [bugs](https://github.com/agershun/alasql/labels/Bug). Please, submit any bugs and suggestions [as an issue](https://github.com/agershun/alasql/issues/new). AlaSQL uses [Semantic Versioning](http://semver.org/) so please note that major version is zero (0.y.z) and the API can not be considered 100% stable. Consider this before using the library in production.  
+
+**All contributions are much welcome and greatly appreciated(!)** so just [open an issue](https://github.com/agershun/alasql/issues/new) and lets talk about your idea. Also: we (really) love pull requests - please use the develop branch.
+
+
 * Documentation: [Github wiki](https://github.com/agershun/alasql/wiki)
 
 * Library CDN: [jsDelivr.com](http://www.jsdelivr.com/#!alasql)
@@ -105,30 +119,6 @@ When you feel you got the grip you can check out the wiki section about [data ma
 * Try online: <a href="http://alasql.org/console?CREATE TABLE cities (city string, population number);INSERT INTO cities VALUES ('Rome',2863223), ('Paris',2249975),('Berlin',3517424), ('Madrid',3041579);SELECT * FROM cities WHERE population < 3500000 ORDER BY population DESC">Playground</a>
 
 * Website: [alasql.org](http://AlaSQL.org)
-
-
-## Priorities
-
-The library is designed for:
-
-* Fast data processing for BI and ERP applications on fat clients
-* Client-side SQL database with option for persistency (as Local Storage and Indexed DB)
-* Versatile data manipulation and easy ETL including filtering, grouping and joining data directly from files in different formats.
-* All major browsers,  Node.js, and mobile applications
-
-We focus on [speed](https://github.com/agershun/alasql/wiki/Speed) by taking advantage of the dynamic nature of javascript when building up queries. Real world solutions demands flexibility regarding where data comes from and where it is to be stored. We focus on flexibility by making sure you can [import/export](https://github.com/agershun/alasql/wiki/Import-export) and query directly on data stored in your own JSON object, Excel files, localStorage, IndexedDB, and SQLite. 
-
-
-The library brings you the comfort of a full database engine to your javascript app. No, really - its working towards a full database engine complying with [most of SQL-99](https://github.com/agershun/alasql/wiki/Supported-SQL-statements) spiced up with additional syntax for handling noSQL (schema less) data and graph networks. To help porting from native databases you can specify the flavour for the SQL behaviour as either AlaSQL, T-SQL, MySQL, Postgres, ORACLE, SQLite, OrientDB. MSSQL is on its way. 
-
-
-
-
-### Please note
-AlaSQL project is very young and still in active development phase, therefore it <s>may</s> have [bugs](https://github.com/agershun/alasql/labels/Bug). Please, submit any bugs and suggestions [as an issue](https://github.com/agershun/alasql/issues/new). AlaSQL uses [Semantic Versioning](http://semver.org/) so please note that major version is zero (0.y.z) and the API can not be considered 100% stable. Consider this before using the library in production.  
-
-**All contributions are much welcome and greatly appreciated(!)** so just [open an issue](https://github.com/agershun/alasql/issues/new) and lets talk about your idea. Also: we (really) love pull requests - please use the develop branch.
-
 
 
 
