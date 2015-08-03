@@ -113,6 +113,14 @@ open -t file.txt
 
 open some_url
 
+####Version Bumping
+##### This actually comes baked into npm (it is a package manager after all). Simply run npm version patch to increment the patch number (e.g. 1.1.1 -> 1.1.2), npm version minor to increment the minor version number (e.g. 1.1.1 -> 1.2.0) or npm version major (e.g. 1.1.1 -> 2.0.0). It'll commit and tag up your package for you, all that is left is to git push and npm publish. This can be fully customised too. For example, if you don't want it running git tag, simply run it with the --git-tag-version=false flag (or set it to permanently not with npm config set git-tag-version false). Want to configure the commit message? Simply run it with the -m flag, e.g. npm version patch -m "Bumped to %s"
+
+
+##### Get last tag version
+
+git describe --tags `git rev-list --tags --max-count=1`
+
 
 # Steps for making new release
 
