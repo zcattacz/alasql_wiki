@@ -106,6 +106,14 @@ if ! foobar_loc="$(type -p "$foobar_command_name")" || [ -z "$foobar_loc" ]; the
   # install foobar here
 fi
 
+
+##### Stub to open `The -t option means "open the file with the default application for editing text files, as determined via LaunchServices". By default, this will be /Applications/TextEdit.app; however, it's possible for this setting to get overridden`
+
+open -t file.txt
+
+open some_url
+
+
 # Steps for making new release
 
 ## Make sure you are awesome
