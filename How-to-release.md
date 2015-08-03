@@ -101,6 +101,11 @@ todo () {
     done
 }
 
+##### Stub to check if git and git-flow is installed.
+if ! foobar_loc="$(type -p "$foobar_command_name")" || [ -z "$foobar_loc" ]; then
+  # install foobar here
+fi
+
 # Steps for making new release
 
 ## Make sure you are awesome
