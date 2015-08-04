@@ -55,7 +55,6 @@ Todo:
 
 
 
-
 #!/bin/sh
 
 : '
@@ -88,8 +87,8 @@ todo () { ###### Aks if user wants to do something
     while true; do
         read -p "Would you like to $(echo "\033[0;32m$1\033[0m") by executing: $CR$(echo "\033[1;30m$2\033[0m")$CR(Yes) " yn
         case ${yn:-Y} in
-            [Yy]* ) eval $2 && echo "***************$CR" && return;;
-            [Nn]* ) echo "$(echo "\033[0;101mThis step was skipped - Please fix it now while i'm waiting\033[0m")" && bonusinfo "Hit a key to continue..." && Pause && echo "***************$CR" && return;;
+            [Yy]* ) eval $2 && echo "°°°°°°°°°°°°°°°°°°°°°°$CR" && return;;
+            [Nn]* ) echo "$(echo "\033[0;101mThis step was skipped - Please fix it now while i'm waiting\033[0m")" && bonusinfo "Hit a key to continue..." && Pause && echo "°°°°°°°°°°°°°°°°°°°°°°$CR" && return;;
             [Qq]* ) echo "Are you a quitter?" && exit;;
             * ) echo "${CR}Please answer $(echo "\033[0;32mY\033[0mes or \033[0;31mN\033[0mo")";;
         esac
@@ -98,32 +97,22 @@ todo () { ###### Aks if user wants to do something
 bonusinfo () {
     echo "\033[1;30m$1\033[0m"
 }
-
 ##### Stub to check if git and git-flow is installed.
 #####if ! foobar_loc="$(type -p "$foobar_command_name")" || [ -z "$foobar_loc" ]; then
 #####  # install foobar here
 #####fi
-
-
 ##### Stub to open `The -t option means "open the file with the default application for editing text files, as determined via LaunchServices". By default, this will be /Applications/TextEdit.app; however, it's possible for this setting to get overridden`
 ##### open -t file.txt
 ##### open some_url
-
 ####Version Bumping
 ##### This actually comes baked into npm (it is a package manager after all). Simply run npm version patch to increment the patch number (e.g. 1.1.1 -> 1.1.2), npm version minor to increment the minor version number (e.g. 1.1.1 -> 1.2.0) or npm version major (e.g. 1.1.1 -> 2.0.0). It'll commit and tag up your package for you, all that is left is to git push and npm publish. This can be fully customised too. For example, if you don't want it running git tag, simply run it with the --git-tag-version=false flag (or set it to permanently not with npm config set git-tag-version false). Want to configure the commit message? Simply run it with the -m flag, e.g. npm version patch -m "Bumped to %s"
-
-
 ####curl https://raw.githubusercontent.com/wiki/agershun/alasql/readme.md -o readme.md
-
-
-##### Get last tag version
-
 
 
 
 # Checklist
 
-## Update local versoin
+## Update local version
 todo "Make sure you have the last version of both master and develop" "git checkout develop && git pull && git checkout master && git pull"
 
 
@@ -135,7 +124,10 @@ bonusinfo "Version is now: $thisVersion"
 
 todo "Show last releasebranch" "echo $thisVersion";
 
-####todo "make new branch" "echo I love you";
+
+
+##  Copy al content from https://github.com/agershun/alasql/wiki/readme into README.md
+todo "Update README" "curl https://raw.githubusercontent.com/wiki/agershun/alasql/readme.md -o readme.md"
+
 
 echo "All Done"
-
