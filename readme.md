@@ -14,14 +14,13 @@
 
 _( [à la] (http://en.wiktionary.org/wiki/%C3%A0_la) [SQL](http://en.wikipedia.org/wiki/SQL) ) [ælæ ɛskju:ɛl]_ - AlaSQL is an open source SQL database for Javascript with a strong foucus on query speed and datasource flexibillity for relational data, schemaless data, and graph data. It works in your browser, Node.js, IO.js and Cordova.
 
-In short AlaSQL applies SQL opperations to javascript arrays and objects. The library is designed for:
+The library is designed for:
 
-* Fast data processing for BI and ERP applications on fat clients
-* Easy ETL by data manipulation including filtering, grouping and joining directly from files in different formats (Excel, CSV, JSON)
-* In-memory datahandeling combined with option for persistency (IndexedDB, Localstorage, SQLite file, Excel, CSV, JSON)
+* Fast SQL based in-memory data processing for BI and ERP applications on fat clients
+* Easy ETL and option for persistency by data import / manipulation / export for several formats
 * All major browsers,  Node.js, and mobile applications
 
-We focus on [speed](https://github.com/agershun/alasql/wiki/Speed) by taking advantage of the dynamic nature of javascript when building up queries. Real world solutions demands flexibility regarding where data comes from and where it is to be stored. We focus on flexibility by making sure you can [import/export](https://github.com/agershun/alasql/wiki/Import-export) and query directly on data stored in your own JSON object, Excel files, localStorage, IndexedDB, and SQLite. 
+We focus on [speed](https://github.com/agershun/alasql/wiki/Speed) by taking advantage of the dynamic nature of javascript when building up queries. Real world solutions demands flexibility regarding where data comes from and where it is to be stored. We focus on flexibility by making sure you can [import/export](https://github.com/agershun/alasql/wiki/Import-export) and query directly on data stored in Excel (both `xls` and `.xlsx`), CSV, JSON, TAB, IndexedDB, LocalStorage, and SQLite files.
 
 
 The library brings you the comfort of a full database engine to your javascript app. No, really - its working towards a full database engine complying with [most of SQL-99](https://github.com/agershun/alasql/wiki/Supported-SQL-statements) spiced up with additional syntax for handling noSQL (schema less) data and graph networks. To help porting from native databases you can specify the flavour for the SQL behaviour as either AlaSQL, T-SQL, MySQL, Postgres, ORACLE, SQLite, OrientDB. MSSQL is on its way. 
