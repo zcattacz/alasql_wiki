@@ -54,7 +54,6 @@ Todo:
 * idea: implement this list as a script in npm so one can `npm release-steps`. Each step must be optional. Will be an issue to keep script and this wiki updated.
 
 
-
 #!/bin/sh
 
 : '
@@ -87,8 +86,8 @@ todo () { ###### Aks if user wants to do something
     while true; do
         read -p "Would you like to $(echo "\033[0;32m$1\033[0m") by executing: $CR$(echo "\033[1;30m$2\033[0m")$CR(Yes) " yn
         case ${yn:-Y} in
-            [Yy]* ) eval $2 && echo "°°°°°°°°°°°°°°°°°°°°°°$CR" && return;;
-            [Nn]* ) echo "$(echo "\033[0;101mThis step was skipped - Please fix it now while i'm waiting\033[0m")" && bonusinfo "Hit a key to continue..." && Pause && echo "°°°°°°°°°°°°°°°°°°°°°°$CR" && return;;
+            [Yy]* ) eval $2 && echo "$CR°°°°°°°°°°°°°°°$CR" && return;;
+            [Nn]* ) echo "$(echo "\033[0;101mThis step was skipped - Please fix it now while i'm waiting\033[0m")" && bonusinfo "Hit a key to continue..." && Pause && echo "$CR°°°°°°°°°°°°°°°$CR" && return;;
             [Qq]* ) echo "Are you a quitter?" && exit;;
             * ) echo "${CR}Please answer $(echo "\033[0;32mY\033[0mes or \033[0;31mN\033[0mo")";;
         esac
@@ -127,7 +126,7 @@ todo "Show last releasebranch" "echo $thisVersion";
 
 
 ##  Copy al content from https://github.com/agershun/alasql/wiki/readme into README.md
-todo "Update README" "curl https://raw.githubusercontent.com/wiki/agershun/alasql/readme.md -o readme.md"
+todo "Update README" "curl https://raw.githubusercontent.com/wiki/agershun/alasql/readme.md -o README.md"
 
 
 echo "All Done"
