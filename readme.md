@@ -12,13 +12,13 @@
 # AlaSQL
 
 
-_( [à la] (http://en.wiktionary.org/wiki/%C3%A0_la) [SQL](http://en.wikipedia.org/wiki/SQL) ) [ælæ ɛskju:ɛl]_ - AlaSQL is a open source SQL database for javascript handeling relational data, schemaless data, and graph data with a strong foucus on query speed and flexibillity for datasources. It works in your browser, Node.js, IO.js and Apache Cordova.
+_( [à la] (http://en.wiktionary.org/wiki/%C3%A0_la) [SQL](http://en.wikipedia.org/wiki/SQL) ) [ælæ ɛskju:ɛl]_ - AlaSQL is an open source SQL database for Javascript with a strong foucus on query speed and datasource flexibillity for relational data, schemaless data, and graph data. It works in your browser, Node.js, IO.js and Cordova.
 
 In short AlaSQL applies SQL opperations to javascript arrays and objects. The library is designed for:
 
 * Fast data processing for BI and ERP applications on fat clients
-* Client-side SQL database with option for persistency (as Local Storage and Indexed DB)
-* Versatile data manipulation and easy ETL including filtering, grouping and joining data directly from files in different formats.
+* Easy ETL by data manipulation including filtering, grouping and joining directly from files in different formats (Excel, CSV, JSON)
+* In-memory datahandeling combined with option for persistency (IndexedDB, Localstorage, SQLite file, Excel, CSV, JSON)
 * All major browsers,  Node.js, and mobile applications
 
 We focus on [speed](https://github.com/agershun/alasql/wiki/Speed) by taking advantage of the dynamic nature of javascript when building up queries. Real world solutions demands flexibility regarding where data comes from and where it is to be stored. We focus on flexibility by making sure you can [import/export](https://github.com/agershun/alasql/wiki/Import-export) and query directly on data stored in your own JSON object, Excel files, localStorage, IndexedDB, and SQLite. 
