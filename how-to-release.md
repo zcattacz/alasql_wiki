@@ -127,6 +127,9 @@ run "push package to npm" "npm publish"
 run "push package to athmospherejs (Meteor)" "cd meteor && meteor publish && cd .."
 
 
+#### # You are done
+br
+echo "\033[0;32mAll Done!\033[0m"
 }
 
 
@@ -215,13 +218,3 @@ check(){
 }
 
 check
-
-echo "All Done"
-
-exit
-
-: '
-```
-' 
-
-#
