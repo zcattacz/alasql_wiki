@@ -41,7 +41,7 @@ todo "Run gulp, change a line in any js file in src and wait until uglyfy is don
 #### # Verify that `npm test` does not give any errors
 echo "For the checklist to continue npm test must be OK" && hitkey
 npm test || exit 1
-hr
+br
 
 
 #### # Copy al content from https://github.com/agershun/alasql/wiki/readme into README.md
@@ -51,15 +51,16 @@ run "Update README" "curl https://raw.githubusercontent.com/wiki/agershun/alasql
 
 
 #### # Update CHANGELOG.md with some words to what has changed. Select a city name the flavor of the day as part of the title. You can see [the commits](https://github.com/agershun/alasql/commits/develop) and [the roadmap](https://trello.com/b/qxz65pVi/alasql-roadmap) for inspiration to what to write
+commitUrl="https://github.com/agershun/alasql/commits/develop"
+roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
 
-
-run "Update CHANGELOG.md with some words to what has changed. ${CR}Select a city name (flavor of the day) as part of the title. ${CR}Edit CHANGELOG.md and open url for roadmap + commits" "vim CHANGELOG.md && open https://github.com/agershun/alasql/commits/develop && https://trello.com/b/qxz65pVi/alasql-roadmap"
+run "Check commits + roadmap to see whats new.${CR}Update CHANGELOG.md with some words to what has changed. ${CR}Select a city name (flavor of the day) as part of the title." '{ open $commitUrl 2>/dev/null || echo "No browser found to open: $commitUrl" && hitkey ; } && { open $roadmapUrl 2>/dev/null || echo "No browser found to open: $roadmapUrl" && hitkey ; } && { open -f CHANGELOG.md || vi CHANGELOG.md ; }'
 
 
 
 #### # Pick the correct version number: Given a version number MAJOR.MINOR.PATCH, increment the: **MAJOR** version when you make incompatible API changes, **MINOR** version when you add functionality in a backwards-compatible manner. **PATCH** version when you make backwards-compatible bug fixes.
 
-flee "Rest of this checklist not implemented in shell script... (sorry)"
+flee "Rest of this checklist not implemented in shell script... (yet)"
 
 #### # #  identify new version
 thisVersion=`npm view .. version`
@@ -96,7 +97,7 @@ todo "Run gulp, change a line in any js file in src and wait until uglyfy is don
 #### # Verify that `npm test` does not give any errors
 echo "For the checklist to continue npm test must be OK" && hitkey
 npm test || exit 1
-hr
+br
 
 
 #### # Finish release `git flow release finish x.y.z` (for source tree just clicking "git-flow" at the top right corner)
@@ -126,11 +127,10 @@ run "push package to npm" "npm publish"
 run "push package to athmospherejs (Meteor)" "cd meteor && meteor publish && cd .."
 
 
-
-
-
-
 }
+
+
+
 
 
 # Functions to make it all easy
@@ -144,6 +144,7 @@ pause() {
  dd count=1 2>/dev/null
  stty $OLDCONFIG
 }
+
 todo(){
   echo "$(echo "\033[0;101mManual action:\033[0m \033[0;32m$1\033[0m ")" 
   if [ -n "$2" ]; then
@@ -151,22 +152,26 @@ todo(){
   fi
   info "Hit a key when its done..." 
   pause
-  hr
+  br
 }
+
 CR=`echo '\n.'` ###### Get a carriage return into `CR`
 CR=${CR%.}
+
 hr () {
-#echo ""
-clear
-echo "‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗"
-echo ""
+  echo "‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗" && echo
 }
+
+br () {
+  clear && hr
+}
+
 run () { ###### Aks if user wants to do something
     while true; do
         read -p "$(echo "\033[0;32m$1\033[0m")${CR}Would you like to execute: $CR$(echo "\033[1;30m$2\033[0m")$CR(Yes) " yn
         case ${yn:-Y} in
-            [Yy]* ) { eval $2 || { flee "Please solve the problem manually and restart this checklist"; } ; } && hr && return;;
-            [Nn]* ) echo "$(echo "\033[0;101mThis step was skipped - Please fix manually...\033[0m")" && hitkey && hr && return;;
+            [Yy]* ) { eval $2 || { flee "Please solve the problem manually and restart this checklist"; } ; } && br && return;;
+            [Nn]* ) echo "$(echo "\033[0;101mThis step was skipped - Please fix manually...\033[0m")" && hitkey && br && return;;
             [Qq]* ) echo "Are you a quitter?" && exit;;
             * ) echo "${CR}Please answer $(echo "\033[0;32mY\033[0mes or \033[0;31mN\033[0mo")";;
         esac
@@ -179,29 +184,40 @@ hitkey () {
      info "Hit a key to continue..." && pause 
 } 
 alert(){
-echo "\033[0;101m$1\033[0m"
+  echo "\033[0;101m$1\033[0m"
 }
 flee(){
-echo
-alert "$1"
-echo
-exit 1
+  echo && alert "$1" && echo && exit 1
 }
 check(){
-clear  && echo
+
+clear && echo
 echo "How to release a new version of AlaSQL" && hr
 
-#### # Check git is installed
+#### # Check npm is installed
+npm version > /dev/null 2>&1 || flee "Please install npm before continuing"  
+
+#### # Check we are in same folder as package.json
+[ -f ./package.json ] || flee "Please cd to package root folder" 
+
+#### # Check we are in same folder as package.json
+[ "alasql" = "$(npm view .. name)" ] || flee "This checklist is ment for AlaSQL" 
+
+
+#### # Check git-flow is installed
 git version > /dev/null 2>&1 || flee "Please install git before continuing"  
 
 
 #### # Check git-flow is installed
 git flow version > /dev/null 2>&1 || flee "Please install git-flow before continuing" 
 
+
 go
 }
 
 check
+
+
 
 echo "All Done"
 
