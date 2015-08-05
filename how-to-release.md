@@ -16,6 +16,11 @@ The formatting is a bit fun so it can work both as a markdown document and also 
 curl https://raw.githubusercontent.com/wiki/agershun/alasql/how-to-release.md | sh
 ```
 
+In some terminals there is an issue with piping to sh. TO avoid this please run the following (will still curl into sh but via a temp file)
+```bash
+npm run release
+```
+
     
 Version Bumping This actually comes baked into npm (it is a package manager after all). Simply run npm version patch to increment the patch number (e.g. 1.1.1 -> 1.1.2), npm version minor to increment the minor version number (e.g. 1.1.1 -> 1.2.0) or npm version major (e.g. 1.1.1 -> 2.0.0). It'll commit and tag up your package for you, all that is left is to git push and npm publish. This can be fully customised too. For example, if you don't want it running git tag, simply run it with the --git-tag-version=false flag (or set it to permanently not with npm config set git-tag-version false). Want to configure the commit message? Simply run it with the -m flag, e.g. npm version patch -m "Bumped to %s"
 
@@ -29,7 +34,7 @@ go(){
 
 
 #### # Get latest version of master and develop 
-run "Make sure you have the last version of both master and develop" "git checkout develop && git pull && git checkout master && git pull"
+run "Make sure you have the last version of both master and develop" "git checkout master && git pull && git checkout develop && git pull"
 
 
 #### # Run gulp, change a line in any js file in src and wait until uglyfy is done - close it. 
@@ -41,52 +46,77 @@ todo "Run gulp, change a line in any js file in src and wait until uglyfy is don
 #### # Verify that `npm test` does not give any errors
 echo "For the checklist to continue npm test must be OK" && hitkey
 npm test || exit 1
+hitkey
 br
 
 
-#### # Copy al content from https://github.com/agershun/alasql/wiki/readme into README.md
-run "Update README" "curl https://raw.githubusercontent.com/wiki/agershun/alasql/readme.md -o README.md"
+
+
+#### # What kind of changes are involved in this release
+
+commitUrl="https://github.com/agershun/alasql/commits/develop"
+
+roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
+
+run "Identify next version number.${CR}First, determine if the changes involved are:${CR}Bug fixes, Added functinality or Incompatible API changes" 'open $commitUrl 2>/dev/null || { echo "No browser found to open: $commitUrl" && hitkey ; }'
+
+
+#### # Pick the correct version number: 
+preVersion=`npm view .. version`
+while true; do
+	echo "\033[0;32mVersion is now $preVersion" 
+	echo "For the format X.Y.Z select part to bump:" 
+	echo "  Q) Do not bump the version"
+	echo "  X) MAJOR - incompatible API changes" 
+	echo "  Y) MINOR - added functionality in a backwards-compatible manner"
+	echo "  Z) PATCH - backwards-compatible bug fixes\033[0m"
+	read -p ": " v
+	case $v in
+		[Xx]* ) false && npm version major ; break ;;
+		[Yy]* ) false && npm version minor ; break ;;
+		[Zz]* ) false && npm version patch ; break ;;
+		[Qq]* ) break ;;
+		* ) echo "Please answer X, Y or Z" && echo ;;
+	esac
+done
+br	
+	
+
+##### #  identify new version
+thisVersion=`npm view .. version`
+
+echo "Version has gone from: $preVersion -> $thisVersion"
+
+
+
+#### # Create and switch to a new release branch `git flow release start x.y.z` (in source tree click "git flow" at the top right). Name it exactly as the new version number (for example "###2.0"). 
+run "Create and switch to a new release branch" "git flow release start $thisVersion"
 
 
 
 
 #### # Update CHANGELOG.md with some words to what has changed. Select a city name the flavor of the day as part of the title. You can see [the commits](https://github.com/agershun/alasql/commits/develop) and [the roadmap](https://trello.com/b/qxz65pVi/alasql-roadmap) for inspiration to what to write
-commitUrl="https://github.com/agershun/alasql/commits/develop"
-roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
-
-run "Check commits + roadmap to see whats new.${CR}Update CHANGELOG.md with some words to what has changed. ${CR}Select a city name (flavor of the day) as part of the title." '{ open $commitUrl 2>/dev/null || echo "No browser found to open: $commitUrl" && hitkey ; } && { open $roadmapUrl 2>/dev/null || echo "No browser found to open: $roadmapUrl" && hitkey ; } && { open -f CHANGELOG.md || vi CHANGELOG.md ; }'
+run "Update CHANGELOG.md with some words to what has changed.${CR}${CR}Set title as '$thisVersion \"CITYNAME\" (LAST_RELEASE - TODAY)'${CR}For example '$thisVersion \"Athens\" (02.06.2015 - 13.07.2015)'${CR}Select a city name (flavor of the day) as part of the title." '{ open $commitUrl 2>/dev/null || echo "No browser found to open: $commitUrl" && hitkey ; } && { open $roadmapUrl 2>/dev/null || echo "No browser found to open: $roadmapUrl" && hitkey ; } && { open -f CHANGELOG.md || vim CHANGELOG.md ; }'
 
 
 
-#### # Pick the correct version number: Given a version number MAJOR.MINOR.PATCH, increment the: **MAJOR** version when you make incompatible API changes, **MINOR** version when you add functionality in a backwards-compatible manner. **PATCH** version when you make backwards-compatible bug fixes.
 
-flee "Rest of this checklist not implemented in shell script... (yet)"
-
-#### # #  identify new version
-thisVersion=`npm view .. version`
-
-info "Version is now: $thisVersion"
+#### # Copy al content from https://github.com/agershun/alasql/wiki/readme into README.md
+run "Update README.md with the one on the wiki" "curl https://raw.githubusercontent.com/wiki/agershun/alasql/readme.md -o README.md"
 
 
-#### # Create and switch to a new release branch `git flow release start x.y.z` (in source tree click "git flow" at the top right). Name it exactly as the new version number (for example "###2.0"). 
-todo "Create and switch to a new release branch"
 
 
 #### # Change version number in `src/05start.js`, `src/10alasql.js` 
-todo "Change version number in src/05start.js, src/10alasql.js"
+run "Replace $preVersion with $thisVersion in src/ for 05copyright.js and 10start.js" "sed -i -e 's/$preVersion/$thisVersion/g' src/05copyright.js && sed -i -e 's/$preVersion/$thisVersion/g' src/10start.js"
 
 
-#### # Change version number in package.json 
-todo "Change version number in package.json"
+#### # <s>Change version number in bower.json https://github.com/bower/bower.json-spec/commit/2c0ac26d1b714aceb579f709aade352463679540#commitcomment-12546714 </s>
+    # run "Change version to $thisVersion in bower.json" "open -f bower.json || vim bower.json"
+ 
 
-
-#### # Change version number in bower.json
-todo "Change version number in bower.json"
-
-
-#### # Change version number for Meteor `meteor/10alasql.js`
-todo "Change version number for Meteor meteor/10alasql.js"
-
+#### # Change version number for Meteor `/partners/meteor/package.js`
+run "Replace $preVersion with $thisVersion in partners/meteor/ for package.js and .versions" "sed -i -e 's/'$preVersion',/'$thisVersion',/g' partners/meteor/package.js &&  sed -i -e 's/alasql@$preVersion/alasql@$thisVersion/g' partners/meteor/.versions"
 
 
 
@@ -97,27 +127,8 @@ todo "Run gulp, change a line in any js file in src and wait until uglyfy is don
 #### # Verify that `npm test` does not give any errors
 echo "For the checklist to continue npm test must be OK" && hitkey
 npm test || exit 1
+hitkey
 br
-
-
-#### # Finish release `git flow release finish x.y.z` (for source tree just clicking "git-flow" at the top right corner)
-todo "Finish release"
-
-
-#### # Push develop to github `git checkout develop && git push`
-todo "Push develop to github" "git checkout develop && git push"
-
-
-#### # Push master and tags to github `git checkout master && git push && git push --tags`
-todo "Push master and tags to github" "git checkout master && git push && git push --tags"
-
-
-#### # [Create a new github release](https://github.com/agershun/alasql/releases/new) Same description as CHANGELOG.md and with release title as `"CITYNAME" (LAST_RELEASE - TODAY)` for example `"Athens" (02.06.2015 - 13.07.2015)` You should be able to find it in the dropdown in "Tag version" - and select **master** as branch.
-run "Create a new github release" "open https://github.com/agershun/alasql/releases/new"
-
-
-
-
 
 #### # push package to npm `npm publish` 
 run "push package to npm" "npm publish"
@@ -127,14 +138,27 @@ run "push package to npm" "npm publish"
 run "push package to athmospherejs (Meteor)" "cd meteor && meteor publish && cd .."
 
 
+#### # Add and commit changes
+run "Add and commit changed files" "git commit -am 'Updated version in files to $thisVersion'"
+
+
+#### # Finish release `git flow release finish x.y.z` (for source tree just clicking "git-flow" at the top right corner)
+run "Finish git-flow release" "git flow release finish $thisVersion"
+
+
+#### # Push develop, master and tags to github 
+run "Push develop and master + tags to github" "git checkout develop && git push && git checkout master && git push && git push --tags"
+
+#### # [Create a new github release](https://github.com/agershun/alasql/releases/new) Same description as CHANGELOG.md and with release title as `"CITYNAME" (LAST_RELEASE - TODAY)` for example `"Athens" (02.06.2015 - 13.07.2015)` You should be able to find it in the dropdown in "Tag version" - and select **master** as branch.
+releaseUrl="https://github.com/agershun/alasql/releases/new"
+
+run "Create a new github release.${CR}${CR}Same title and description as in CHANGELOG.md but without title version number${CR}${CR}You should be able to find $thisVersion in the dropdown \"Tag version\"${CR}${CR}Please select MASTER as branch(!)${CR}" '{ open -f CHANGELOG.md || vim CHANGELOG.md ; } && { open $releaseUrl 2>/dev/null || echo "No browser found to open: $releaseUrl" && hitkey ; }'
+
+
 #### # You are done
 br
-echo "\033[0;32mAll Done!\033[0m"
+echo "\033[0;32mAll Done!\033[0m${CR}"
 }
-
-
-
-
 
 # Functions to make it all easy
 : '
@@ -162,7 +186,7 @@ CR=`echo '\n.'` ###### Get a carriage return into `CR`
 CR=${CR%.}
 
 hr () {
-  echo "‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗" && echo
+    echo "‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗" && echo
 }
 
 br () {
@@ -174,7 +198,7 @@ run () { ###### Aks if user wants to do something
         read -p "$(echo "\033[0;32m$1\033[0m")${CR}Would you like to execute: $CR$(echo "\033[1;30m$2\033[0m")$CR(Yes) " yn
         case ${yn:-Y} in
             [Yy]* ) { eval $2 || { flee "Please solve the problem manually and restart this checklist"; } ; } && br && return;;
-            [Nn]* ) echo "$(echo "\033[0;101mThis step was skipped - Please fix manually...\033[0m")" && hitkey && br && return;;
+            [Nn]* ) echo "$(echo "\033[0;101mThis step was skipped - Please fix manually...\033[0m")" && hitkey && br && return 1;;
             [Qq]* ) echo "Are you a quitter?" && exit;;
             * ) echo "${CR}Please answer $(echo "\033[0;32mY\033[0mes or \033[0;31mN\033[0mo")";;
         esac
