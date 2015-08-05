@@ -191,33 +191,30 @@ flee(){
 }
 check(){
 
-clear && echo
-echo "How to release a new version of AlaSQL" && hr
+  clear && echo
+  echo "How to release a new version of AlaSQL" && hr
 
-#### # Check npm is installed
-npm version > /dev/null 2>&1 || flee "Please install npm before continuing"  
+  #### # Check npm is installed
+  npm version > /dev/null 2>&1 || flee "Please install npm before continuing"  
 
-#### # Check we are in same folder as package.json
-[ -f ./package.json ] || flee "Please cd to package root folder" 
+  #### # Check we are in same folder as package.json
+  [ -f ./package.json ] || flee "Please cd to package root folder" 
 
-#### # Check we are in same folder as package.json
-[ "alasql" = "$(npm view .. name)" ] || flee "This checklist is ment for AlaSQL" 
-
-
-#### # Check git-flow is installed
-git version > /dev/null 2>&1 || flee "Please install git before continuing"  
+  #### # Check we are in same folder as package.json
+  [ "alasql" = "$(npm view .. name)" ] || flee "This checklist is ment for AlaSQL" 
 
 
-#### # Check git-flow is installed
-git flow version > /dev/null 2>&1 || flee "Please install git-flow before continuing" 
+  #### # Check git-flow is installed
+  git version > /dev/null 2>&1 || flee "Please install git before continuing"  
 
 
-go
+  #### # Check git-flow is installed
+  git flow version > /dev/null 2>&1 || flee "Please install git-flow before continuing" 
+
+  go
 }
 
 check
-
-
 
 echo "All Done"
 
@@ -226,3 +223,5 @@ exit
 : '
 ```
 ' 
+
+#
