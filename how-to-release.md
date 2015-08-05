@@ -10,13 +10,9 @@ That includes changes like minor corrections to documentation files such as READ
 
 
 
-The formatting is a bit fun so it can work both as a markdown document and also as a sh script - so if you feel you trust this source you can run
+The formatting is a bit fun so it can work both as a markdown document and a `sh` script.
 
-```bash
-curl https://raw.githubusercontent.com/wiki/agershun/alasql/how-to-release.md | sh
-```
-
-In some terminals there is an issue with piping to sh. TO avoid this please run the following (will still curl into sh but via a temp file)
+To `curl` the content of this wiki page to `sh`:
 ```bash
 npm run release
 ```
@@ -24,7 +20,6 @@ npm run release
 '
 
 go(){
-
 
 ##The following is a checklist for the team to remember the steps. Please update where you see a better way...
 
