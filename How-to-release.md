@@ -12,7 +12,7 @@ That includes changes like minor corrections to documentation files such as READ
 The formatting is a bit fun so it can work both as a markdown document and also as a sh script - so if you feel you trust this source you can run
 
 ```sh
-curl https://raw.githubusercontent.com/wiki/agershun/alasql/release.md | sh
+curl https://raw.github.com/wiki/agershun/alasql/How-to-release.md | sh
 ```
 '
 
