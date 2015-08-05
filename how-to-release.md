@@ -15,14 +15,17 @@ The formatting is a bit fun so it can work both as a markdown document and also 
 ```bash
 curl https://raw.githubusercontent.com/wiki/agershun/alasql/how-to-release.md | sh
 ```
+
+    
+Version Bumping This actually comes baked into npm (it is a package manager after all). Simply run npm version patch to increment the patch number (e.g. 1.1.1 -> 1.1.2), npm version minor to increment the minor version number (e.g. 1.1.1 -> 1.2.0) or npm version major (e.g. 1.1.1 -> 2.0.0). It'll commit and tag up your package for you, all that is left is to git push and npm publish. This can be fully customised too. For example, if you don't want it running git tag, simply run it with the --git-tag-version=false flag (or set it to permanently not with npm config set git-tag-version false). Want to configure the commit message? Simply run it with the -m flag, e.g. npm version patch -m "Bumped to %s"
+
+
 '
 
 go(){
 
 
 ##The following is a checklist for the team to remember the steps. Please update where you see a better way...
-clear  && echo
-echo "How to release a new version of AlaSQL" && hr
 
 
 #### # Get latest version of master and develop 
@@ -38,7 +41,7 @@ todo "Run gulp, change a line in any js file in src and wait until uglyfy is don
 #### # Verify that `npm test` does not give any errors
 echo "For the checklist to continue npm test must be OK" && hitkey
 npm test || exit 1
-
+hr
 
 
 #### # Copy al content from https://github.com/agershun/alasql/wiki/readme into README.md
@@ -48,20 +51,20 @@ run "Update README" "curl https://raw.githubusercontent.com/wiki/agershun/alasql
 
 
 #### # Update CHANGELOG.md with some words to what has changed. Select a city name the flavor of the day as part of the title. You can see [the commits](https://github.com/agershun/alasql/commits/develop) and [the roadmap](https://trello.com/b/qxz65pVi/alasql-roadmap) for inspiration to what to write
-info "Update CHANGELOG.md with some words to what has changed. ${CR}Select a city name the flavor of the day as part of the title." 
 
-run "Edit CHANGELOG.md and open url for roadmap + commits" "open -t CHANGELOG.md && open https://github.com/agershun/alasql/commits/develop && https://trello.com/b/qxz65pVi/alasql-roadmap"
+
+run "Update CHANGELOG.md with some words to what has changed. ${CR}Select a city name (flavor of the day) as part of the title. ${CR}Edit CHANGELOG.md and open url for roadmap + commits" "vim CHANGELOG.md && open https://github.com/agershun/alasql/commits/develop && https://trello.com/b/qxz65pVi/alasql-roadmap"
 
 
 
 #### # Pick the correct version number: Given a version number MAJOR.MINOR.PATCH, increment the: **MAJOR** version when you make incompatible API changes, **MINOR** version when you add functionality in a backwards-compatible manner. **PATCH** version when you make backwards-compatible bug fixes.
 
+flee "Rest of this checklist not implemented in shell script... (sorry)"
+
 #### # #  identify new version
 thisVersion=`npm view .. version`
 
 info "Version is now: $thisVersion"
-
-run "Show last releasebranch" "echo $thisVersion";
 
 
 #### # Create and switch to a new release branch `git flow release start x.y.z` (in source tree click "git flow" at the top right). Name it exactly as the new version number (for example "###2.0"). 
@@ -93,7 +96,7 @@ todo "Run gulp, change a line in any js file in src and wait until uglyfy is don
 #### # Verify that `npm test` does not give any errors
 echo "For the checklist to continue npm test must be OK" && hitkey
 npm test || exit 1
-
+hr
 
 
 #### # Finish release `git flow release finish x.y.z` (for source tree just clicking "git-flow" at the top right corner)
@@ -148,11 +151,13 @@ todo(){
   fi
   info "Hit a key when its done..." 
   pause
+  hr
 }
 CR=`echo '\n.'` ###### Get a carriage return into `CR`
 CR=${CR%.}
 hr () {
 #echo ""
+clear
 echo "‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗"
 echo ""
 }
@@ -160,7 +165,7 @@ run () { ###### Aks if user wants to do something
     while true; do
         read -p "$(echo "\033[0;32m$1\033[0m")${CR}Would you like to execute: $CR$(echo "\033[1;30m$2\033[0m")$CR(Yes) " yn
         case ${yn:-Y} in
-            [Yy]* ) { eval $2 || { exit 1; } ; } && hr && return;;
+            [Yy]* ) { eval $2 || { flee "Please solve the problem manually and restart this checklist"; } ; } && hr && return;;
             [Nn]* ) echo "$(echo "\033[0;101mThis step was skipped - Please fix manually...\033[0m")" && hitkey && hr && return;;
             [Qq]* ) echo "Are you a quitter?" && exit;;
             * ) echo "${CR}Please answer $(echo "\033[0;32mY\033[0mes or \033[0;31mN\033[0mo")";;
@@ -173,21 +178,34 @@ info () {
 hitkey () { 
      info "Hit a key to continue..." && pause 
 } 
+alert(){
+echo "\033[0;101m$1\033[0m"
+}
+flee(){
+echo
+alert "$1"
+echo
+exit 1
+}
+check(){
+clear  && echo
+echo "How to release a new version of AlaSQL" && hr
+
+#### # Check git-flow is installed
+git version > /dev/null 2>&1 || flee "Please install git before continuing"  
+
+
+#### # Check git-flow is installed
+git flow version > /dev/null 2>&1 || flee "Please install git-flow before continuing" 
+
 go
+}
+
+check
+
 echo "All Done"
+
 exit
-
-##### Stub to check if git and git-flow is installed.
-    if ! foobar_loc="$(type -p "$foobar_command_name")" || [ -z "$foobar_loc" ]; then
-        # install foobar here
-    fi
-
-##### Stub to open `The -t option means "open the file with the default application for editing text files, as determined via LaunchServices". By default, this will be /Applications/TextEdit.app; however, it's possible for this setting to get overridden`
-open -t file.txt
-open some_url
-    
-#####Version Bumping This actually comes baked into npm (it is a package manager after all). Simply run npm version patch to increment the patch number (e.g. 1.1.1 -> 1.1.2), npm version minor to increment the minor version number (e.g. 1.1.1 -> 1.2.0) or npm version major (e.g. 1.1.1 -> 2.0.0). It'll commit and tag up your package for you, all that is left is to git push and npm publish. This can be fully customised too. For example, if you don't want it running git tag, simply run it with the --git-tag-version=false flag (or set it to permanently not with npm config set git-tag-version false). Want to configure the commit message? Simply run it with the -m flag, e.g. npm version patch -m "Bumped to %s"
-
 
 : '
 ```
