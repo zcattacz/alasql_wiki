@@ -1,4 +1,5 @@
 #!/bin/sh
+
 : '
 # How to release a new version of AlaSQL
 
@@ -20,9 +21,8 @@ go(){
 
 
 ##The following is a checklist for the team to remember the steps. Please update where you see a better way...
-clear  && echo " "
-echo "How to release a new version of AlaSQL"
-hr
+clear  && echo
+echo "How to release a new version of AlaSQL" && hr
 
 
 #### # Get latest version of master and develop 
