@@ -217,7 +217,9 @@ releaseUrl="https://github.com/agershun/alasql/releases/new"
 #### # Check git-flow is installed
       git flow version > /dev/null 2>&1 || flee "Please install git-flow before continuing" 
 
+#### # Go follow the checklist
       go
     }
 
+#### # Its all loadet - we can start checking if things are OK to start the checklist
     check
