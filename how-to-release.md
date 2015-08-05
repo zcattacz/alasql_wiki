@@ -191,7 +191,7 @@ check(){
 clear  && echo
 echo "How to release a new version of AlaSQL" && hr
 
-#### # Check git-flow is installed
+#### # Check git is installed
 git version > /dev/null 2>&1 || flee "Please install git before continuing"  
 
 
