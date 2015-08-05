@@ -20,211 +20,204 @@ go(){
 
 
 #### # Get latest version of master and develop 
-run "Make sure you have the last version of both master and develop" "git checkout master && git pull && git checkout develop && git pull"
+    run "Make sure you have the last version of both master and develop" "git checkout master && git pull && git checkout develop && git pull"
 
 
 #### # Run gulp, change a line in any js file in src and wait until uglyfy is done - close it. 
 ###### To do: automate npm build script - or/and make better gulp file_ 
-todo "Run gulp, change a line in any js file in src and wait until uglyfy is done - close it"
+    todo "Run gulp, change a line in any js file in src and wait until uglyfy is done - close it"
 
 
 
 #### # Verify that `npm test` does not give any errors
-echo "For the checklist to continue npm test must be OK" && hitkey
-npm test || exit 1
-hitkey
-br
+    echo "For the checklist to continue npm test must be OK" && hitkey
+    npm test || exit 1
+    hitkey && br
 
 
 
 
 #### # What kind of changes are involved in this release
-
 commitUrl="https://github.com/agershun/alasql/commits/develop"
 
 roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
 
-run "Identify next version number.${CR}First, determine if the changes involved are:${CR}Bug fixes, Added functinality or Incompatible API changes" 'open $commitUrl 2>/dev/null || { echo "No browser found to open: $commitUrl" && hitkey ; }'
+    run "Identify next version number.${CR}First, determine if the changes involved are:${CR}Bug fixes, Added functinality or Incompatible API changes" 'open $commitUrl 2>/dev/null || { echo "No browser found to open: $commitUrl" && hitkey ; }'
 
 
 #### # Pick the correct version number: 
-preVersion=`npm view .. version`
-while true; do
-	echo "\033[0;32mVersion is now $preVersion" 
-	echo "For the format X.Y.Z select part to bump:" 
-	echo "  Q) Do not bump the version"
-	echo "  X) MAJOR - incompatible API changes" 
-	echo "  Y) MINOR - added functionality in a backwards-compatible manner"
-	echo "  Z) PATCH - backwards-compatible bug fixes\033[0m"
-	read -p ": " v
-	case $v in
-		[Xx]* ) npm version major ; break ;;
-		[Yy]* ) npm version minor ; break ;;
-		[Zz]* ) npm version patch ; break ;;
-		[Qq]* ) break ;;
-		* ) echo "Please answer X, Y or Z" && echo ;;
-	esac
-done
-br	
+    preVersion=`npm view .. version`
+    while true; do
+    	echo "\033[0;32mVersion is now $preVersion" 
+    	echo "For the format X.Y.Z select part to bump:" 
+    	echo "  Q) Do not bump the version"
+    	echo "  X) MAJOR - incompatible API changes" 
+    	echo "  Y) MINOR - added functionality in a backwards-compatible manner"
+    	echo "  Z) PATCH - backwards-compatible bug fixes\033[0m"
+    	read -p ": " v
+    	case $v in
+    		[Xx]* ) npm version major ; break ;;
+    		[Yy]* ) npm version minor ; break ;;
+    		[Zz]* ) npm version patch ; break ;;
+    		[Qq]* ) break ;;
+    		* ) echo "Please answer X, Y or Z" && echo ;;
+    	esac
+    done
+    br	
 	
 
 ##### #  identify new version
-thisVersion=`npm view .. version`
+    thisVersion=`npm view .. version`
 
-echo "Version has gone from: $preVersion -> $thisVersion"
+    echo "Version has gone from: $preVersion -> $thisVersion"
 
 
 
 #### # Create and switch to a new release branch `git flow release start x.y.z` (in source tree click "git flow" at the top right). Name it exactly as the new version number (for example "###2.0"). 
-run "Create and switch to a new release branch" "git flow release start $thisVersion"
+    run "Create and switch to a new release branch" "git flow release start $thisVersion"
 
 
 
 
 #### # Update CHANGELOG.md with some words to what has changed. Select a city name the flavor of the day as part of the title. You can see [the commits](https://github.com/agershun/alasql/commits/develop) and [the roadmap](https://trello.com/b/qxz65pVi/alasql-roadmap) for inspiration to what to write
-run "Update CHANGELOG.md with some words to what has changed.${CR}${CR}Set title as '$thisVersion \"CITYNAME\" (LAST_RELEASE - TODAY)'${CR}For example '$thisVersion \"Athens\" (02.06.2015 - 13.07.2015)'${CR}Select a city name (flavor of the day) as part of the title." '{ open $commitUrl 2>/dev/null || echo "No browser found to open: $commitUrl" && hitkey ; } && { open $roadmapUrl 2>/dev/null || echo "No browser found to open: $roadmapUrl" && hitkey ; } && { open -f CHANGELOG.md || vim CHANGELOG.md ; }'
+    run "Update CHANGELOG.md with some words to what has changed.${CR}${CR}Set title as '$thisVersion \"CITYNAME\" (LAST_RELEASE - TODAY)'${CR}For example '$thisVersion \"Athens\" (02.06.2015 - 13.07.2015)'${CR}Select a city name (flavor of the day) as part of the title." '{ open $commitUrl 2>/dev/null || echo "No browser found to open: $commitUrl" && hitkey ; } && { open $roadmapUrl 2>/dev/null || echo "No browser found to open: $roadmapUrl" && hitkey ; } && { open -f CHANGELOG.md || vim CHANGELOG.md ; }'
 
 
 
 
 #### # Copy al content from https://github.com/agershun/alasql/wiki/readme into README.md
-run "Update README.md with the one on the wiki" "curl https://raw.githubusercontent.com/wiki/agershun/alasql/readme.md -o README.md"
+    run "Update README.md with the one on the wiki" "curl https://raw.githubusercontent.com/wiki/agershun/alasql/readme.md -o README.md"
 
 
 
 
 #### # Change version number in `src/05start.js`, `src/10alasql.js` 
-run "Replace $preVersion with $thisVersion in src/ for 05copyright.js and 10start.js" "sed -i -e 's/$preVersion/$thisVersion/g' src/05copyright.js && sed -i -e 's/$preVersion/$thisVersion/g' src/10start.js"
+    run "Replace $preVersion with $thisVersion in src/ for 05copyright.js and 10start.js" "sed -i -e 's/$preVersion/$thisVersion/g' src/05copyright.js && sed -i -e 's/$preVersion/$thisVersion/g' src/10start.js"
 
-
-#### # <s>Change version number in bower.json https://github.com/bower/bower.json-spec/commit/2c0ac26d1b714aceb579f709aade352463679540#commitcomment-12546714 </s>
-    # run "Change version to $thisVersion in bower.json" "open -f bower.json || vim bower.json"
- 
 
 #### # Change version number for Meteor `/partners/meteor/package.js`
-run "Replace $preVersion with $thisVersion in partners/meteor/ for package.js and .versions" "sed -i -e 's/'$preVersion',/'$thisVersion',/g' partners/meteor/package.js &&  sed -i -e 's/alasql@$preVersion/alasql@$thisVersion/g' partners/meteor/.versions"
+    run "Replace $preVersion with $thisVersion in partners/meteor/ for package.js and .versions" "sed -i -e 's/'$preVersion',/'$thisVersion',/g' partners/meteor/package.js &&  sed -i -e 's/alasql@$preVersion/alasql@$thisVersion/g' partners/meteor/.versions"
 
 
 
 #### # Run gulp, change a line in any js file in src and wait until uglyfy is done - close it. 
 ###### To do: automate npm build script - or/and make better gulp file_ 
-todo "Run gulp, change a line in any js file in src and wait until uglyfy is done - close it"
+    todo "Run gulp, change a line in any js file in src and wait until uglyfy is done - close it"
 
 #### # Verify that `npm test` does not give any errors
-echo "For the checklist to continue npm test must be OK" && hitkey
-npm test || exit 1
-hitkey
-br
+    echo "For the checklist to continue npm test must be OK" && hitkey
+    npm test || exit 1
+    hitkey
+    br
 
 #### # push package to npm `npm publish` 
-run "push package to npm" "npm publish"
+    run "push package to npm" "npm publish"
 
 
 #### # push package to athmospherejs (Meteor) `cd meteor && meteor publish && cd ..` 
-run "push package to athmospherejs (Meteor)" "cd meteor && meteor publish && cd .."
+    run "push package to athmospherejs (Meteor)" "cd meteor && meteor publish && cd .."
 
 
 #### # Add and commit changes
-run "Add and commit changed files" "git commit -am 'Updated version in files to $thisVersion'"
+    run "Add and commit changed files" "git commit -am 'Updated version in files to $thisVersion'"
 
 
 #### # Finish release `git flow release finish x.y.z` (for source tree just clicking "git-flow" at the top right corner)
-run "Finish git-flow release" "git flow release finish $thisVersion"
+    run "Finish git-flow release" "git flow release finish $thisVersion"
 
 
 #### # Push develop, master and tags to github 
-run "Push develop and master + tags to github" "git checkout develop && git push && git checkout master && git push && git push --tags"
+    run "Push develop and master + tags to github" "git checkout develop && git push && git checkout master && git push && git push --tags"
 
 #### # [Create a new github release](https://github.com/agershun/alasql/releases/new) Same description as CHANGELOG.md and with release title as `"CITYNAME" (LAST_RELEASE - TODAY)` for example `"Athens" (02.06.2015 - 13.07.2015)` You should be able to find it in the dropdown in "Tag version" - and select **master** as branch.
 releaseUrl="https://github.com/agershun/alasql/releases/new"
 
-run "Create a new github release.${CR}${CR}Same title and description as in CHANGELOG.md but without title version number${CR}${CR}You should be able to find $thisVersion in the dropdown \"Tag version\"${CR}${CR}Please select MASTER as branch(!)${CR}" '{ open -f CHANGELOG.md || vim CHANGELOG.md ; } && { open $releaseUrl 2>/dev/null || echo "No browser found to open: $releaseUrl" && hitkey ; }'
+    run "Create a new github release.${CR}${CR}Same title and description as in CHANGELOG.md but without title version number${CR}${CR}You should be able to find $thisVersion in the dropdown \"Tag version\"${CR}${CR}Please select MASTER as branch(!)${CR}" '{ open -f CHANGELOG.md || vim CHANGELOG.md ; } && { open $releaseUrl 2>/dev/null || echo "No browser found to open: $releaseUrl" && hitkey ; }'
 
 
 #### # You are done
-br
-echo "\033[0;32mAll Done!\033[0m${CR}"
+    br
+    echo "\033[0;32mAll Done!\033[0m${CR}"
 }
 
 # Functions to make it all easy
-: '
-```
-'
-
-pause() {
- OLDCONFIG=`stty -g`
- stty -icanon -echo min 1 time 0
- dd count=1 2>/dev/null
- stty $OLDCONFIG
-}
-
-todo(){
-  echo "$(echo "\033[0;101mManual action:\033[0m \033[0;32m$1\033[0m ")" 
-  if [ -n "$2" ]; then
-    echo "This might help you: \033[1;36m$2\033[0m"
-  fi
-  info "Hit a key when its done..." 
-  pause
-  br
-}
-
-CR=`echo '\n.'` ###### Get a carriage return into `CR`
-CR=${CR%.}
-
-hr () {
-    echo "‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗" && echo
-}
-
-br () {
-  clear && hr
-}
-
-run () { ###### Aks if user wants to do something
-    while true; do
-        read -p "$(echo "\033[0;32m$1\033[0m")${CR}Would you like to execute: $CR$(echo "\033[1;30m$2\033[0m")$CR(Yes) " yn
-        case ${yn:-Y} in
-            [Yy]* ) { eval $2 || { flee "Please solve the problem manually and restart this checklist"; } ; } && br && return;;
-            [Nn]* ) echo "$(echo "\033[0;101mThis step was skipped - Please fix manually...\033[0m")" && hitkey && br && return 1;;
-            [Qq]* ) echo "Are you a quitter?" && exit;;
-            * ) echo "${CR}Please answer $(echo "\033[0;32mY\033[0mes or \033[0;31mN\033[0mo")";;
-        esac
-    done
-}
-info () {
-    echo "\033[1;30m$1\033[0m"
-}
-hitkey () { 
-     info "Hit a key to continue..." && pause 
-} 
-alert(){
-  echo "\033[0;101m$1\033[0m"
-}
-flee(){
-  echo && alert "$1" && echo && exit 1
-}
-check(){
-
-  clear && echo
-  echo "How to release a new version of AlaSQL" && hr
-
-  #### # Check npm is installed
-  npm version > /dev/null 2>&1 || flee "Please install npm before continuing"  
-
-  #### # Check we are in same folder as package.json
-  [ -f ./package.json ] || flee "Please cd to package root folder" 
-
-  #### # Check we are in same folder as package.json
-  [ "alasql" = "$(npm view .. name)" ] || flee "This checklist is ment for AlaSQL" 
 
 
-  #### # Check git-flow is installed
-  git version > /dev/null 2>&1 || flee "Please install git before continuing"  
+    pause() {
+     OLDCONFIG=`stty -g`
+     stty -icanon -echo min 1 time 0
+     dd count=1 2>/dev/null
+     stty $OLDCONFIG
+    }
+
+    todo(){
+      echo "$(echo "\033[0;101mManual action:\033[0m \033[0;32m$1\033[0m ")" 
+      if [ -n "$2" ]; then
+        echo "This might help you: \033[1;36m$2\033[0m"
+      fi
+      info "Hit a key when its done..." 
+      pause
+      br
+    }
+
+    CR=`echo '\n.'` ###### Get a carriage return into `CR`
+    CR=${CR%.}
+
+    hr () {
+        echo "‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗‗" && echo
+    }
+
+    br () {
+      clear && hr
+    }
+
+    run () { ###### Aks if user wants to do something
+        while true; do
+            read -p "$(echo "\033[0;32m$1\033[0m")${CR}Would you like to execute: $CR$(echo "\033[1;30m$2\033[0m")$CR(Yes) " yn
+            case ${yn:-Y} in
+                [Yy]* ) { eval $2 || { flee "Please solve the problem manually and restart this checklist"; } ; } && br && return;;
+                [Nn]* ) echo "$(echo "\033[0;101mThis step was skipped - Please fix manually...\033[0m")" && hitkey && br && return 1;;
+                [Qq]* ) echo "Are you a quitter?" && exit;;
+                * ) echo "${CR}Please answer $(echo "\033[0;32mY\033[0mes or \033[0;31mN\033[0mo")";;
+            esac
+        done
+    }
+    info () {
+        echo "\033[1;30m$1\033[0m"
+    }
+    hitkey () { 
+         info "Hit a key to continue..." && pause 
+    } 
+    alert(){
+      echo "\033[0;101m$1\033[0m"
+    }
+    flee(){
+      echo && alert "$1" && echo && exit 1
+    }
+    check(){
+
+#### # Greeting + check prereqs are OK
+      clear && echo
+      echo "How to release a new version of AlaSQL" && hr
+
+#### # Check npm is installed
+      npm version > /dev/null 2>&1 || flee "Please install npm before continuing"  
+
+#### # Check we are in same folder as package.json
+      [ -f ./package.json ] || flee "Please cd to package root folder" 
+
+#### # Check we are in same folder as package.json
+      [ "alasql" = "$(npm view .. name)" ] || flee "This checklist is ment for AlaSQL" 
 
 
-  #### # Check git-flow is installed
-  git flow version > /dev/null 2>&1 || flee "Please install git-flow before continuing" 
+#### # Check git-flow is installed
+      git version > /dev/null 2>&1 || flee "Please install git before continuing"  
 
-  go
-}
 
-check
+#### # Check git-flow is installed
+      git flow version > /dev/null 2>&1 || flee "Please install git-flow before continuing" 
+
+      go
+    }
+
+    check
