@@ -1,5 +1,4 @@
 #!/bin/sh
-
 : '
 # How to release a new version of AlaSQL
 
@@ -8,17 +7,13 @@ AlaSQL uses [git flow](http://danielkummer.github.io/git-flow-cheatsheet/) to ma
 **In practice the result is that the master branch us never updated without updating the version number.**
 That includes changes like minor corrections to documentation files such as README.md. 
 
-
-
-The formatting is a bit fun so it can work both as a markdown document and a `sh` script.
+The formatting is a bit fun because it works both as a markdown document and a `sh` script.
 
 To `curl` the content of this wiki page to `sh`:
 ```bash
 npm run release
 ```
-
 '
-
 go(){
 
 ##The following is a checklist for the team to remember the steps. Please update where you see a better way...
