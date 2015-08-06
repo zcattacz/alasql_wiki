@@ -14,10 +14,9 @@ Shortcut to `curl` the content of this wiki page to `sh`
 > npm run release
 ```
 '
-go(){
+do(){
 
-##The following is a checklist for the team to remember the steps. Please update where you see a better way...
-
+#Please update the following checklist where you see a better way...
 
 #### # Get latest version of master and develop 
     run "Make sure you have the last version of both master and develop" "git checkout master && git pull && git checkout develop && git pull"
@@ -32,7 +31,7 @@ go(){
 
 
 #### # Run gulp, change a line in any js file in src and wait until uglyfy is done - close it. 
-###### To do: automate npm run compile script - or/and make better gulp file_ 
+###### To do: automate npm run compile script - or/and make better gulp file
     todo "Run gulp, change a line in any js file in src and wait until uglyfy is done - close it"
 
 
@@ -141,13 +140,45 @@ releaseUrl="https://github.com/agershun/alasql/releases/new"
     run "Create a new github release.${CR}${CR}Same title and description as in CHANGELOG.md but without title version number${CR}${CR}You should be able to find $thisVersion in the dropdown \"Tag version\"${CR}${CR}Please select MASTER as branch(!)${CR}" '{ open -f CHANGELOG.md || vim CHANGELOG.md ; } && { open $releaseUrl 2>/dev/null || echo "No browser found to open: $releaseUrl" && hitkey ; }'
 
 
-#### # You are done
-    br
-    echo "\033[0;32mAll Done!\033[0m${CR}"
+###### You are done
+    done
 }
 
-# Functions to make it all easy
+# Things to check before you run the checklist
+	check(){
+	clear && echo
+	echo "How to release a new version of AlaSQL" && hr 
+	info "Checking all is OK to start the checklist..." && echo 
 
+#### # Check npm is installed
+	npm version > /dev/null 2>&1 || flee "Please install npm before continuing"  
+
+#### # Check we are in same folder as package.json
+      [ -f ./package.json ] || flee "Please cd to package root folder" 
+
+#### # Check we are in same folder as package.json
+      [ "alasql" = "$(npm view .. name)" ] || flee "This checklist is ment for AlaSQL" 
+
+
+#### # Check git-flow is installed
+      git version > /dev/null 2>&1 || flee "Please install git before continuing"  
+
+
+#### # Check git-flow is installed
+      git flow version > /dev/null 2>&1 || flee "Please install git-flow before continuing" 
+
+
+#### # Check repo is git-flow ready
+      git flow config > /dev/null 2>&1 || run "To run the checklist you must prepare the repo for git-flow${CR}Its recomended to accept the suggested values" "git flow init" || flee "Please 'git flow init' before restarting this checklist"
+
+
+
+###### Now go do the steps in the checklist
+      do
+    }
+
+
+# Functions to make it all easy
 
     pause() {
      OLDCONFIG=`stty -g`
@@ -176,7 +207,7 @@ releaseUrl="https://github.com/agershun/alasql/releases/new"
     br () {
       clear && hr
     }
-
+	
     run () { ###### Aks if user wants to do something
         while true; do
             read -p "$(echo "\033[0;32m$1\033[0m")${CR}Would you like to execute: $CR$(echo "\033[1;30m$2\033[0m")$CR(Yes) " yn
@@ -200,39 +231,8 @@ releaseUrl="https://github.com/agershun/alasql/releases/new"
     flee(){
       echo && alert "$1" && echo && exit 1
     }
-    check(){
-
-#### # Greeting + check prereqs are OK
-      clear && echo
-      echo "How to release a new version of AlaSQL" && hr 
-      info "Checking all is OK to start the checklist..." && echo 
-
-#### # Check npm is installed
-      npm version > /dev/null 2>&1 || flee "Please install npm before continuing"  
-
-#### # Check we are in same folder as package.json
-      [ -f ./package.json ] || flee "Please cd to package root folder" 
-
-#### # Check we are in same folder as package.json
-      [ "alasql" = "$(npm view .. name)" ] || flee "This checklist is ment for AlaSQL" 
-
-
-#### # Check git-flow is installed
-      git version > /dev/null 2>&1 || flee "Please install git before continuing"  
-
-
-#### # Check git-flow is installed
-      git flow version > /dev/null 2>&1 || flee "Please install git-flow before continuing" 
-
-
-#### # Check repo is git-flow ready
-      git flow config > /dev/null 2>&1 || run "To run the checklist you must prepare the repo for git-flow${CR}Its recomended to accept the suggested values" "git flow init" || flee "Please 'git flow init' before restarting this checklist"
-
-
-
-#### # Go follow the checklist
-      go
-    }
-
-#### # Its all loadet - we can start checking if things are OK to start the checklist
+	done (){
+      br
+      echo "\033[0;32mAll Done!\033[0m${CR}"
+	}
     check
