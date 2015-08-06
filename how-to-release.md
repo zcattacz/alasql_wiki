@@ -228,7 +228,7 @@ releaseUrl="https://github.com/agershun/alasql/releases/new"
 
 
 #### # Check repo is git-flow ready
-      git flow config > /dev/null 2>&1 || run "To run the checklist you must prepare the repo for git-flow${CR}Its recomended to accept the suggested values" "git flow config" || flee "Please 'git flow init' before restarting this checklist"
+      git flow config > /dev/null 2>&1 || run "To run the checklist you must prepare the repo for git-flow${CR}Its recomended to accept the suggested values" "git flow init" || flee "Please 'git flow init' before restarting this checklist"
 
 
 
