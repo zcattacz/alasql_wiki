@@ -32,7 +32,7 @@ go(){
 
 
 #### # Run gulp, change a line in any js file in src and wait until uglyfy is done - close it. 
-###### To do: automate npm build script - or/and make better gulp file_ 
+###### To do: automate npm run compile script - or/and make better gulp file_ 
     todo "Run gulp, change a line in any js file in src and wait until uglyfy is done - close it"
 
 
