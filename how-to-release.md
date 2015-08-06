@@ -22,6 +22,7 @@ do(){
 
 #Please update the following checklist where you see a better way...
 
+
 #### # Get latest version of master and develop 
     run "Make sure you have the last version of both master and develop" "git checkout master && git pull && git checkout develop && git pull"
 
@@ -179,7 +180,7 @@ releaseUrl="https://github.com/agershun/alasql/releases/new"
 
 ###### Now go do the steps in the checklist
       do
-    }
+}
 
 
 # Functions to make it all easy
