@@ -206,8 +206,8 @@ releaseUrl="https://github.com/agershun/alasql/releases/new"
 
 #### # Greeting + check prereqs are OK
       clear && echo
-      echo "How to release a new version of AlaSQL" && hr && echo 
-      info "Checking all is OK to start the checklist..." 
+      echo "How to release a new version of AlaSQL" && hr 
+      info "Checking all is OK to start the checklist..." && echo 
 
 #### # Check npm is installed
       npm version > /dev/null 2>&1 || flee "Please install npm before continuing"  
