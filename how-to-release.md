@@ -5,11 +5,9 @@
 AlaSQL uses [git flow](http://danielkummer.github.io/git-flow-cheatsheet/) to manage development and [Semantic Versioning](http://semver.org) to manage versioning. 
 
 **In practice the result is that the master branch us never updated without updating the version number.**
-That includes changes like minor corrections to documentation files such as README.md. 
+That includes changes like corrections to documentation files such as README.md. 
 
-The formatting is a bit fun because it works both as a markdown document and a `sh` script.
-
-Shortcut to `curl` the content of this wiki page to `sh`
+The formatting is a bit fun because it works both as a markdown document and a `sh` script. Shortcut to `curl` the content of this wiki page to `sh`
 ```sh
 > npm run release
 ```
