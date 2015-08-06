@@ -7,10 +7,16 @@ AlaSQL uses [git flow](http://danielkummer.github.io/git-flow-cheatsheet/) to ma
 **In practice the result is that the master branch us never updated without updating the version number.**
 That includes changes like corrections to documentation files such as README.md. 
 
-The formatting is a bit fun because it works both as a markdown document and a `sh` script. Shortcut to `curl` the content of this wiki page to `sh`
+The formatting is a bit fun because it works both as a markdown document and a `sh` script. 
+
+Standing in a local AlaSQL repo the command
 ```sh
 > npm run release
 ```
+will `curl` the content of this wiki page to `sh`.
+
+----
+
 '
 do(){
 
@@ -76,7 +82,7 @@ roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
 
 
 
-#### # Create and switch to a new release branch `git flow release start x.y.z` (in source tree click "git flow" at the top right). Name it exactly as the new version number (for example "###2.0"). 
+#### # Create and switch to a new release branch `git flow release start x.y.z` (in source tree click "git flow" at the top right). Name it exactly as the new version number (for example "0.2.0"). 
     run "Create and switch to a new release branch" "git flow release start $thisVersion"
 
 
