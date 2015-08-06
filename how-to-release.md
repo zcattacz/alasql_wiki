@@ -28,7 +28,7 @@ go(){
 
     
 #### # Check for node modules to be updated
-    run "Check for node modules to be updated" "node run update && pause"
+    run "Check for node modules to be updated" "npm run update && pause"
 
 
 #### # Run gulp, change a line in any js file in src and wait until uglyfy is done - close it. 
