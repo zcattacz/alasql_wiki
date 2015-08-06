@@ -18,7 +18,7 @@ will `curl` the content of this wiki page to `sh`.
 ----
 
 '
-do(){
+go(){
 
 #Please update the following checklist where you see a better way...
 
@@ -145,8 +145,8 @@ releaseUrl="https://github.com/agershun/alasql/releases/new"
     run "Create a new github release.${CR}${CR}Same title and description as in CHANGELOG.md but without title version number${CR}${CR}You should be able to find $thisVersion in the dropdown \"Tag version\"${CR}${CR}Please select MASTER as branch(!)${CR}" '{ open -f CHANGELOG.md || vim CHANGELOG.md ; } && { open $releaseUrl 2>/dev/null || echo "No browser found to open: $releaseUrl" && hitkey ; }'
 
 
-###### You are done
-    done
+###### You are done !
+    allOK
 }
 
 # Things to check before you run the checklist
@@ -177,10 +177,9 @@ releaseUrl="https://github.com/agershun/alasql/releases/new"
       git flow config > /dev/null 2>&1 || run "To run the checklist you must prepare the repo for git-flow${CR}Its recomended to accept the suggested values" "git flow init" || flee "Please 'git flow init' before restarting this checklist"
 
 
-
 ###### Now go do the steps in the checklist
-      do
-}
+      go
+    }
 
 
 # Functions to make it all easy
@@ -213,7 +212,7 @@ releaseUrl="https://github.com/agershun/alasql/releases/new"
       clear && hr
     }
 	
-    run () { ###### Aks if user wants to do something
+    run () { ###### Aks if user wants to execute something
         while true; do
             read -p "$(echo "\033[0;32m$1\033[0m")${CR}Would you like to execute: $CR$(echo "\033[1;30m$2\033[0m")$CR(Yes) " yn
             case ${yn:-Y} in
@@ -236,7 +235,7 @@ releaseUrl="https://github.com/agershun/alasql/releases/new"
     flee(){
       echo && alert "$1" && echo && exit 1
     }
-	done (){
+	  allOK(){
       br
       echo "\033[0;32mAll Done!\033[0m${CR}"
 	}
