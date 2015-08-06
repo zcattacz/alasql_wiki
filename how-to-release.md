@@ -9,9 +9,9 @@ That includes changes like minor corrections to documentation files such as READ
 
 The formatting is a bit fun because it works both as a markdown document and a `sh` script.
 
-To `curl` the content of this wiki page to `sh`:
-```bash
-npm run release
+Shortcut to `curl` the content of this wiki page to `sh`
+```sh
+> npm run release
 ```
 '
 go(){
@@ -28,7 +28,7 @@ go(){
 
     
 #### # Check for node modules to be updated
-    run "Check for node modules to be updated" "npm run update && hitkey"
+    run "Make sure all node modules are  up to dated" "npm run uptodate && hitkey"
 
 
 #### # Run gulp, change a line in any js file in src and wait until uglyfy is done - close it. 
@@ -41,7 +41,6 @@ go(){
     echo "For the checklist to continue npm test must be OK" && hitkey
     npm test || exit 1
     hitkey && br
-
 
 
 
@@ -58,17 +57,17 @@ roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
     while true; do
     	echo "\033[0;32mVersion is now $preVersion" 
     	echo "For the format X.Y.Z select part to bump:" 
-    	echo "  Q) Do not bump the version"
     	echo "  X) MAJOR - incompatible API changes" 
     	echo "  Y) MINOR - added functionality in a backwards-compatible manner"
     	echo "  Z) PATCH - backwards-compatible bug fixes\033[0m"
+    	echo "  Q)         Do not bump the version"
     	read -p ": " v
     	case $v in
     		[Xx]* ) npm version major ; break ;;
     		[Yy]* ) npm version minor ; break ;;
     		[Zz]* ) npm version patch ; break ;;
     		[Qq]* ) break ;;
-    		* ) echo "Please answer X, Y or Z" && echo ;;
+    		* ) echo "Please answer X, Y, Z or Q" && echo ;;
     	esac
     done
     br	
@@ -76,8 +75,7 @@ roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
 
 ##### #  identify new version
     thisVersion=`npm view .. version`
-
-    echo "Version has gone from: $preVersion -> $thisVersion"
+    echo "Version was bumped: $preVersion -> $thisVersion"
 
 
 
@@ -99,7 +97,7 @@ roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
 
 
 
-#### # Change version number in `src/05start.js`, `src/10alasql.js` 
+#### # Replace version number in `src/05start.js`, `src/10alasql.js` 
     run "Replace $preVersion with $thisVersion in src/ for 05copyright.js and 10start.js" "sed -i -e 's/$preVersion/$thisVersion/g' src/05copyright.js && sed -i -e 's/$preVersion/$thisVersion/g' src/10start.js"
 
 
