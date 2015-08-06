@@ -206,7 +206,8 @@ releaseUrl="https://github.com/agershun/alasql/releases/new"
 
 #### # Greeting + check prereqs are OK
       clear && echo
-      echo "How to release a new version of AlaSQL" && hr
+      echo "How to release a new version of AlaSQL" && hr && echo 
+      info "Checking all is OK to start the checklist..." 
 
 #### # Check npm is installed
       npm version > /dev/null 2>&1 || flee "Please install npm before continuing"  
@@ -224,6 +225,12 @@ releaseUrl="https://github.com/agershun/alasql/releases/new"
 
 #### # Check git-flow is installed
       git flow version > /dev/null 2>&1 || flee "Please install git-flow before continuing" 
+
+
+#### # Check repo is git-flow ready
+      git flow config > /dev/null 2>&1 || run "To run the checklist you must prepare the repo for git-flow${CR}Its recomended to accept the suggested values" "git flow config" || flee "Please 'git flow init' before restarting this checklist"
+
+
 
 #### # Go follow the checklist
       go
