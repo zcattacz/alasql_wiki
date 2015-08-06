@@ -16,8 +16,8 @@ Standing in a local AlaSQL repo the command
 will `curl` the content of this wiki page to `sh`.
 
 ----
-'
 
+'
 do(){
 
 #Please update the following checklist where you see a better way...
