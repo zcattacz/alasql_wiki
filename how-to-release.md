@@ -161,11 +161,11 @@ releaseUrl="https://github.com/agershun/alasql/releases/new"
 #### # Check we are in same folder as package.json
       [ -f ./package.json ] || flee "Please cd to package root folder" 
 
-#### # Check we are in same folder as package.json
+#### # Check we are in the AlSQL module
       [ "alasql" = "$(npm view .. name)" ] || flee "This checklist is ment for AlaSQL" 
 
 
-#### # Check git-flow is installed
+#### # Check git is installed
       git version > /dev/null 2>&1 || flee "Please install git before continuing"  
 
 
