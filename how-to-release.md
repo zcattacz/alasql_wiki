@@ -216,7 +216,7 @@ releaseUrl="https://github.com/agershun/alasql/releases/new"
         while true; do
             read -p "$(echo "\033[0;32m$1\033[0m")${CR}Would you like to execute: $CR$(echo "\033[1;30m$2\033[0m")$CR(Yes) " yn
             case ${yn:-Y} in
-                [Yy]* ) { eval $2 || { flee "Please solve the problem manually and restart this checklist"; } ; } && br && return;;
+                [Yy]* ) { { eval $2 && hitkey } || flee "Please solve the problem manually and restart this checklist"; } ; } && br && return;;
                 [Nn]* ) echo "$(echo "\033[0;101mThis step was skipped - Please fix manually...\033[0m")" && hitkey && br && return 1;;
                 [Qq]* ) echo "Are you a quitter?" && exit;;
                 * ) echo "${CR}Please answer $(echo "\033[0;32mY\033[0mes or \033[0;31mN\033[0mo")";;
