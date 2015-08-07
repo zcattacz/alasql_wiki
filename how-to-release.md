@@ -32,7 +32,7 @@ go(){
 
     
 #### # Check for node modules to be updated
-    run "Make sure all node modules are  up to dated" "npm run uptodate && hitkey"
+    run "Make sure all node modules are  up to dated" "npm run uptodate"
 
 
 #### # Run gulp, change a line in any js file in src and wait until uglyfy is done - close it. 
