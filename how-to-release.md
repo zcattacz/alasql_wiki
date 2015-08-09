@@ -79,7 +79,7 @@ roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
 
 ##### #  identify new version
     thisVersion=`npm list alasql --silent --depth=0 | grep -o "alasql@[^ ]*" | cut -c8-` # Dancing around as 'npm view .. version' will give info about any globally installed package before the local one
-    git commit -am "Version bumped: $preVersion -> $thisVersion" 
+    git commit -am "Version bumped: $preVersion -> $thisVersion" --quiet
     echo "Version was bumped: $preVersion -> $thisVersion"
 
 
