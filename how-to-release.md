@@ -174,7 +174,7 @@ releaseUrl="https://github.com/agershun/alasql/releases/new"
 
 
 #### # Check repo has git-flow config
-      grep -q 'gitflow' ./.git/config; || run "To run the checklist you must prepare the repo for git-flow${CR}Its recommended to accept the suggested values" "git flow init" || flee "Please 'git flow init' before restarting this checklist"
+      grep -q 'gitflow' ./.git/config || run "To run the checklist you must prepare the repo for git-flow${CR}Its recommended to accept the suggested values" "git flow init" || flee "Please 'git flow init' before restarting this checklist"
 
 
 ###### Now go do the steps in the checklist
