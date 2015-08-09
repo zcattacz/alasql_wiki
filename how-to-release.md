@@ -85,7 +85,9 @@ roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
 
 
 #### # Create and switch to a new release branch `git flow release start x.y.z` (in source tree click "git flow" at the top right). Name it exactly as the new version number (for example "0.2.0"). 
-    run "Create and switch to a new release branch" "git stash --quiet; git flow release start $thisVersion ; git stash pop --quiet"
+    
+
+     { git branch | grep -m 1 -q 'release/' && git checkout `git branch | grep -m 1 -o "release/.*"` } || run "Create and switch to a new release branch" "git stash --quiet; git flow release start $thisVersion ; git stash pop --quiet"
    
 #### # Update CHANGELOG.md with some words to what has changed. Select a city name the flavor of the day as part of the title. You can see [the commits](https://github.com/agershun/alasql/commits/develop) and [the roadmap](https://trello.com/b/qxz65pVi/alasql-roadmap) for inspiration to what to write
     run "Update CHANGELOG.md with some words to what has changed.${CR}${CR}Set title as '$thisVersion \"CITYNAME\" (LAST_RELEASE - TODAY)'${CR}For example '$thisVersion \"Athens\" (02.06.2015 - 13.07.2015)'${CR}Select a city name (flavor of the day) as part of the title." '{ open $commitUrl 2>/dev/null || echo "No browser found to open: $commitUrl" && hitkey ; } && { open $roadmapUrl 2>/dev/null || echo "No browser found to open: $roadmapUrl" && hitkey ; } && { open -f CHANGELOG.md || vim CHANGELOG.md ; }'
@@ -173,6 +175,17 @@ releaseUrl="https://github.com/agershun/alasql/releases/new"
 
 #### # Check repo has git-flow config
       grep -q 'gitflow' ./.git/config || run "To run the checklist you must prepare the repo for git-flow${CR}Its recommended to accept the suggested values" "git flow init" || flee "Please 'git flow init' before restarting this checklist"
+
+#### # Check repo has git-flow config
+      grep -q 'gitflow' ./.git/config || run "To run the checklist you must prepare the repo for git-flow${CR}Its recommended to accept the suggested values" "git flow init" || flee "Please 'git flow init' before restarting this checklist"
+
+#### # Check repo has git-flow config
+      grep -q 'gitflow' ./.git/config || run "To run the checklist you must prepare the repo for git-flow${CR}Its recommended to accept the suggested values" "git flow init" || flee "Please 'git flow init' before restarting this checklist"
+
+
+#### # Check repo has git-flow config
+      grep -q 'gitflow' ./.git/config || run "To run the checklist you must prepare the repo for git-flow${CR}Its recommended to accept the suggested values" "git flow init" || flee "Please 'git flow init' before restarting this checklist"
+
 
 
 ###### Now go do the steps in the checklist
