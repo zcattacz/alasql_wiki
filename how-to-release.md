@@ -32,7 +32,7 @@ go(){
 
     
 #### # Check for node modules to be updated
-    run "Make sure all node modules are  up to dated" "npm run uptodate"
+    run "Make sure all node modules are up to dated" "npm run uptodate"
 
 
 #### # Run gulp, change a line in any js file in src and wait until uglyfy is done - close it. 
@@ -57,7 +57,7 @@ roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
 
 
 #### # Pick the correct version number: 
-    preVersion=`npm view .. version`
+    preVersion=`npm list alasql --silent --depth=0 | grep -o "alasql@[^ ]*" | cut -c8-` # Dancing around as npm view .. version will give info about any globally installed package before the local one
     while true; do
     	echo "\033[0;32mVersion is now $preVersion" 
     	echo "For the format X.Y.Z select part to bump:" 
@@ -67,9 +67,9 @@ roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
     	echo "  Q)         Do not bump the version"
     	read -p ": " v
     	case $v in
-    		[Xx]* ) ./node_modules/.bin/mversion major --no-prefix ; break ;;
-    		[Yy]* ) ./node_modules/.bin/mversion minor --no-prefix ; break ;;
-    		[Zz]* ) ./node_modules/.bin/mversion patch --no-prefix ; break ;;
+    		[Xx]* ) ./node_modules/.bin/mversion major -m --no-prefix ; break ;;
+    		[Yy]* ) ./node_modules/.bin/mversion minor -m --no-prefix ; break ;;
+    		[Zz]* ) ./node_modules/.bin/mversion patch -m --no-prefix ; break ;;
     		[Qq]* ) break ;;
     		* ) echo "Please answer X, Y, Z or Q" && echo ;;
     	esac
@@ -78,7 +78,7 @@ roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
 	
 
 ##### #  identify new version
-    thisVersion=`npm view .. version`
+    thisVersion=`npm list alasql --silent --depth=0 | grep -o "alasql@[^ ]*" | cut -c8-` # Dancing around as 'npm view .. version' will give info about any globally installed package before the local one
     echo "Version was bumped: $preVersion -> $thisVersion"
 
 
