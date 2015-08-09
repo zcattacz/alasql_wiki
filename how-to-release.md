@@ -67,9 +67,9 @@ roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
     	echo "  Q)         Do not bump the version"
     	read -p ": " v
     	case $v in
-    		[Xx]* ) npm version major ; break ;;
-    		[Yy]* ) npm version minor ; break ;;
-    		[Zz]* ) npm version patch ; break ;;
+    		[Xx]* ) ./node_modules/.bin/mversion major --no-prefix ; break ;;
+    		[Yy]* ) ./node_modules/.bin/mversion minor --no-prefix ; break ;;
+    		[Zz]* ) ./node_modules/.bin/mversion patch --no-prefix ; break ;;
     		[Qq]* ) break ;;
     		* ) echo "Please answer X, Y, Z or Q" && echo ;;
     	esac
