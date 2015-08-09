@@ -173,8 +173,8 @@ releaseUrl="https://github.com/agershun/alasql/releases/new"
       git flow version > /dev/null 2>&1 || flee "Please install git-flow before continuing" 
 
 
-#### # Check repo is git-flow ready
-      git flow config > /dev/null 2>&1 || run "To run the checklist you must prepare the repo for git-flow${CR}Its recomended to accept the suggested values" "git flow init" || flee "Please 'git flow init' before restarting this checklist"
+#### # Check repo has git-flow config
+      grep -q 'gitflow' ./.git/config; || run "To run the checklist you must prepare the repo for git-flow${CR}Its recommended to accept the suggested values" "git flow init" || flee "Please 'git flow init' before restarting this checklist"
 
 
 ###### Now go do the steps in the checklist
