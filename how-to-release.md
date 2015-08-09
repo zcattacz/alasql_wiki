@@ -74,6 +74,7 @@ roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
     		* ) echo "Please answer X, Y, Z or Q" && echo ;;
     	esac
     done
+    hitkey
     br	
 	
 
