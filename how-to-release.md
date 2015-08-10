@@ -85,7 +85,7 @@ roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
 #### # Switch to or create a release branch `git flow release start x.y.z` (in source tree click "git flow" at the top right). Name it exactly as the new version number (for example "0.2.0"). 
     
      if grep -m 1 -q 'release/' <<< "`git branch`"  ; then
-         git stash --quiet; && git checkout $thisVersion > /dev/null 2>&1 && git stash pop --quiet || echo "Was expecting to find release/$thisVersion branch${CR}but found `git branch | grep -m 1 -o 'release/.*'`" && flee "Please delete the branch or rerun this checklist ${CR}but make sure the version bump match the existing branch version" ;
+         git stash --quiet && git checkout $thisVersion > /dev/null 2>&1 && git stash pop --quiet || echo "Was expecting to find release/$thisVersion branch${CR}but found `git branch | grep -m 1 -o 'release/.*'`" && flee "Please delete the branch or rerun this checklist ${CR}but make sure the version bump match the existing branch version" ;
      else
          run "Create and switch to a new release branch" "git stash --quiet; git flow release start $thisVersion ; git stash pop --quiet"
     fi
