@@ -3,13 +3,11 @@
 # How to release a new version of AlaSQL
 
 AlaSQL uses [git flow](http://danielkummer.github.io/git-flow-cheatsheet/) to manage development and [Semantic Versioning](http://semver.org) to manage versioning. 
-
 **In practice the result is that the master branch us never updated without updating the version number.**
 That includes changes like corrections to documentation files such as README.md. 
 
 The formatting is a bit fun because it works both as a markdown document and a `sh` script. 
-
-Standing in a local AlaSQL repo the command
+Running the command
 ```sh
 > npm run release
 ```
