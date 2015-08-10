@@ -103,7 +103,7 @@ roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
 
 
 #### # Replace version number in `src/05start.js`, `src/10alasql.js` 
-    run "Replace $preVersion with $thisVersion in src/ for 05copyright.js and 10start.js" "sed 's/$preVersion/$thisVersion/g' src/05copyright.js > tmp && mv tmp src/05copyright.js && sed 's/$preVersion/$thisVersion/g' src/10start.js  > tmp && mv tmp"
+    run "Replace $preVersion with $thisVersion in src/ for 05copyright.js and 10start.js" "sed 's/$preVersion/$thisVersion/g' src/05copyright.js > tmp && mv tmp src/05copyright.js && sed 's/$preVersion/$thisVersion/g' src/10start.js  > tmp && mv tmp src/10start.js"
 
 
 #### # Change version number for Meteor `/partners/meteor/package.js`
