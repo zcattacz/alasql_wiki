@@ -1,7 +1,7 @@
 # Angular.js + AlaSQL
 
 
-You can use AlaSQL together with Angular.js framework:
+You can use AlaSQL together with Angular.js framework. Please include the file normally and not via requireJS
 
 ```js
     $scope.exportData = function () {
