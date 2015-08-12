@@ -93,7 +93,7 @@ roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
 
    
 #### # Update CHANGELOG.md with some words to what has changed. Select a city name the flavor of the day as part of the title. You can see [the commits](https://github.com/agershun/alasql/commits/develop) and [the roadmap](https://trello.com/b/qxz65pVi/alasql-roadmap) for inspiration to what to write
-    run "Update CHANGELOG.md with some words to what has changed.${CR}${CR}Set title as '$thisVersion \"CITYNAME\" (LAST_RELEASE - TODAY)'${CR}For example '$thisVersion \"Athens\" (02.06.2015 - 13.07.2015)'${CR}${CR}Select a city name (flavor of the day) as part of the title." '{ open $commitUrl 2>/dev/null || echo "No browser found to open: $commitUrl" ; } && { open $roadmapUrl 2>/dev/null || echo "No browser found to open: $roadmapUrl" && hitkey ; } && { open CHANGELOG.md || vim CHANGELOG.md ; }'
+    run "Update CHANGELOG.md with some words to what has changed.${CR}${CR}Set title as '$thisVersion \"CITYNAME\" (LAST_RELEASE - TODAY)'${CR}For example '$thisVersion \"Athens\" (02.06.2015 - 13.07.2015)'${CR}${CR}Select a city name (flavor of the day) as part of the title." '{ open $commitUrl 2>/dev/null || echo "No browser found to open: $commitUrl" ; } && { open $roadmapUrl 2>/dev/null || echo "No browser found to open: $roadmapUrl" && hitkey ; } && { open CHANGELOG.md || vim CHANGELOG.md ; } && echo "Please edit CHANGELOG.md before continuing"'
 
 
 
@@ -105,11 +105,11 @@ roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
 
 
 #### # Replace version number in `src/05start.js`, `src/10alasql.js` 
-    run "Replace $preVersion with $thisVersion in src/ for 05copyright.js and 10start.js" "sed 's/$preVersion/$thisVersion/g' src/05copyright.js > tmp && mv tmp src/05copyright.js && sed 's/$preVersion/$thisVersion/g' src/10start.js  > tmp && mv tmp src/10start.js &&  echo 'Please verify that version is set to $thisVersion. ${CR}Press "i" to edit and "<esc>:wq" to save...' && hitkey && vim src/05copyright.js && vim src/10start.js -c ':/version ='"
+    run "Replace $preVersion with $thisVersion in src/ for 05copyright.js and 10start.js" "sed 's/$preVersion/$thisVersion/g' src/05copyright.js > tmp && mv tmp src/05copyright.js && sed 's/$preVersion/$thisVersion/g' src/10start.js  > tmp && mv tmp src/10start.js &&  echo 'Please verify that version is set to $thisVersion. ${CR}Press "i" to edit and "<esc>:wq" to save...' && hitkey && vim src/05copyright.js && vim src/10start.js -c ':/version =' && echo 'Nice job'"
 
 
 #### # Change version number for Meteor `/partners/meteor/package.js`
-    run "Replace $preVersion with $thisVersion in partners/meteor/ for package.js and .versions" "sed 's/'$preVersion',/'$thisVersion',/g' partners/meteor/package.js > tmp && mv tmp partners/meteor/package.js && sed 's/alasql@$preVersion/alasql@$thisVersion/g' partners/meteor/.versions > tmp && mv tmp partners/meteor/.versions && echo 'Please verify that version is set to $thisVersion. ${CR}Press "i" to edit and "<esc>:wq" to save...' && hitkey && vim partners/meteor/package.js && vim partners/meteor/.versions"
+    run "Replace $preVersion with $thisVersion in partners/meteor/ for package.js and .versions" "sed 's/'$preVersion',/'$thisVersion',/g' partners/meteor/package.js > tmp && mv tmp partners/meteor/package.js && sed 's/alasql@$preVersion/alasql@$thisVersion/g' partners/meteor/.versions > tmp && mv tmp partners/meteor/.versions && echo 'Please verify that version is set to $thisVersion. ${CR}Press "i" to edit and "<esc>:wq" to save...' && hitkey && vim partners/meteor/package.js && vim partners/meteor/.versions  && echo 'Verry well...'"
 
 
 
