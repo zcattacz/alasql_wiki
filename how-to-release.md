@@ -68,7 +68,7 @@ roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
     		[Xx]* ) ./node_modules/.bin/mversion major ; break ;;
     		[Yy]* ) ./node_modules/.bin/mversion minor ; break ;;
     		[Zz]* ) ./node_modules/.bin/mversion patch ; break ;;
-    		[Qq]* ) break ;;
+    		[Qq]* ) echo "No changes made" ; break ;;
     		* ) echo "Please answer X, Y, Z or Q" && echo ;;
     	esac
     done
