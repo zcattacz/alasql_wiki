@@ -93,7 +93,7 @@ roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
 
    
 #### # Update CHANGELOG.md with some words to what has changed. Select a city name the flavor of the day as part of the title. You can see [the commits](https://github.com/agershun/alasql/commits/develop) and [the roadmap](https://trello.com/b/qxz65pVi/alasql-roadmap) for inspiration to what to write
-    run "Update CHANGELOG.md with some words to what has changed.${CR}${CR}Set title as '$thisVersion \"CITYNAME\" (LAST_RELEASE - TODAY)'${CR}For example '$thisVersion \"Athens\" (02.06.2015 - 13.07.2015)'${CR}${CR}Select a city name (flavor of the day) as part of the title." '{ open $commitUrl 2>/dev/null || echo "No browser found to open: $commitUrl" } && { open $roadmapUrl 2>/dev/null || echo "No browser found to open: $roadmapUrl" && hitkey ; } && { open CHANGELOG.md || vim CHANGELOG.md ; }'
+    run "Update CHANGELOG.md with some words to what has changed.${CR}${CR}Set title as '$thisVersion \"CITYNAME\" (LAST_RELEASE - TODAY)'${CR}For example '$thisVersion \"Athens\" (02.06.2015 - 13.07.2015)'${CR}${CR}Select a city name (flavor of the day) as part of the title." '{ open $commitUrl 2>/dev/null || echo "No browser found to open: $commitUrl" ; } && { open $roadmapUrl 2>/dev/null || echo "No browser found to open: $roadmapUrl" && hitkey ; } && { open CHANGELOG.md || vim CHANGELOG.md ; }'
 
 
 
