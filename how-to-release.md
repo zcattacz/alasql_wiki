@@ -223,7 +223,7 @@ releaseUrl="https://github.com/agershun/alasql/releases/new"
 	
     run () { ###### Aks if user wants to execute something
         while true; do
-            read -p "$(echo "\033[0;32m$1\033[0m")${CR}Would you like to execute: $CR$(echo "\033[1;30m$2\033[0m")$CR(Yes) " yn
+            read -p "$(echo "\033[0;32m$1\033[0m")${CR}Would you like to execute: $CR$(echo "\033[1;30m$2\033[0m")$CR[Yes] " yn
             case ${yn:-Y} in
                 [Yy]* ) { { eval $2 && hitkey } || flee "Please solve the problem manually and restart this checklist"; } ; } && br && return;;
                 [Nn]* ) echo "$(echo "\033[0;101mThis step was skipped - Please fix manually...\033[0m")" && hitkey && br && return 1;;
