@@ -42,10 +42,10 @@ To use AlaSQL with Meteor install as normal
 
 ----
 
-### Node.js or IO.js
+### Node.js
 
 
-For node install with npm
+For Node (>= 0.10) install with npm
 
 ```
 npm install alasql --save
