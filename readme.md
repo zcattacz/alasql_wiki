@@ -120,9 +120,18 @@ When you feel you got the grip you can check out the wiki section about [data ma
 ## Please note
 AlaSQL project is very young and still in active development phase, therefore it <s>may</s> have [bugs](https://github.com/agershun/alasql/labels/Bug). Please, submit any bugs and suggestions [as an issue](https://github.com/agershun/alasql/issues/new). AlaSQL uses [Semantic Versioning](http://semver.org/) so please note that major version is zero (0.y.z) and the API can not be considered 100% stable. Consider this before using the library in production.  
 
-**All contributions are much welcome and greatly appreciated(!)** so just [open an issue](https://github.com/agershun/alasql/issues/new) and lets talk about your idea. 
 
-Also: we (really) love pull requests. Please use the [develop branch](https://github.com/agershun/alasql/tree/develop) which contains the last build. If you are looking for the last stable version please look at [the `dist/` folder in master branch](https://github.com/agershun/alasql/tree/master/dist/)
+**All contributions are much welcome and greatly appreciated(!)** so just [open an issue](https://github.com/agershun/alasql/issues/new) and lets talk about your idea. 
+Also: we really (really) love pull requests:
+
+- Please work with the [develop branch](https://github.com/agershun/alasql/tree/develop) (do a `npm install` first time you clone)
+- Add a test for the issue: Copy and rename `test/test000.js`. Impelement a test that reflects the issue.
+- Run `npm test` to verify the test fails
+- Implement your contributions in `src/`
+- Build from source: `npm run build` 
+- Re-run tests: `npm test` and verify all tests are OK
+- Pull-request to the develop branch 
+
 
 
 
