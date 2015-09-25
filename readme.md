@@ -89,7 +89,7 @@ npm install -g alasql         # command line interface
 For the browser: include [alasql.min.js](http://cdn.jsdelivr.net/alasql/latest/alasql.min.js)  
 
 ```html
-<script src="//cdn.jsdelivr.net/alasql/0.2/alasql.min.js"></script> 
+<script src="http://cdn.jsdelivr.net/alasql/0.2/alasql.min.js"></script> 
 ```
 
 
@@ -122,16 +122,8 @@ AlaSQL project is very young and still in active development phase, therefore it
 
 
 **All contributions are much welcome and greatly appreciated(!)** so just [open an issue](https://github.com/agershun/alasql/issues/new) and lets talk about your idea. 
-Also: we really (really) love pull requests:
 
-- Please work with the [develop branch](https://github.com/agershun/alasql/tree/develop) (do a `npm install` first time you clone)
-- Add a test for the issue: Copy and rename `test/test000.js`. Impelement a test that reflects the issue.
-- Run `npm test` to verify the test fails
-- Implement your contributions in `src/`
-- Build from source: `npm run build` 
-- Re-run tests: `npm test` and verify all tests are OK
-- Pull-request to the develop branch 
-
+Also: [we really (really) love pull requests](https://github.com/agershun/alasql/blob/develop/CONTRIBUTING.md)
 
 
 
@@ -144,7 +136,7 @@ AlaSQL is very focused on speed and we make sure to use all the tricks we can fi
 
 The results are good. Check out AlaSQL vs. other javaScript SQL databases: 
 
-* **2x speed** [compared to SQL.js](http://jsperf.com/sql-js-vs-alasql-js/10) selecting with `SUM`, `JOIN`, and `GROUP BY`.
+* **2.5x speed** [compared to SQL.js](http://jsperf.com/sql-js-vs-alasql-js/11) selecting with `SUM`, `JOIN`, and `GROUP BY`.
 
 * **2x speed** [compared to WebSQL](http://jsperf.com/alasql-js-vs-websql/7) selecting with `SUM`, `JOIN`, and `GROUP BY` (in-memory opperations for WebSQL - see [this discussion](https://github.com/agershun/alasql/issues/47))
 
