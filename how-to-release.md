@@ -33,14 +33,11 @@ go(){
     run "Make sure all node modules are up to dated" "npm run uptodate"
 
 
-#### # Run gulp, change a line in any js file in src and wait until uglyfy is done - close it. 
-###### To do: automate npm run compile script - or/and make better gulp file
-    todo "Run gulp, change a line in any js file in src and wait until uglyfy is done - close it"
 
 
 
 #### # Verify that `npm test` does not give any errors
-    echo "For the checklist to continue npm test must be OK" && hitkey
+    echo "For the checklist to continue build+test must be OK" && hitkey
     npm test || exit 1
     hitkey && br
 
@@ -112,10 +109,6 @@ roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
     run "Replace $preVersion with $thisVersion in partners/meteor/ for package.js and .versions" "sed 's/'$preVersion',/'$thisVersion',/g' partners/meteor/package.js > tmp && mv tmp partners/meteor/package.js && sed 's/alasql@$preVersion/alasql@$thisVersion/g' partners/meteor/.versions > tmp && mv tmp partners/meteor/.versions && echo 'Please verify that version is set to $thisVersion. ${CR}Press \"i\" to edit and \"<esc>:wq\" to save...' && hitkey && vim partners/meteor/package.js && echo 'and the second file' && hitkey && vim partners/meteor/.versions  && echo 'Verry well...'"
 
 
-
-#### # Run gulp, change a line in any js file in src and wait until uglyfy is done - close it. 
-###### To do: automate npm build script - or/and make better gulp file_ 
-    todo "Run gulp, change a line in any js file in src and wait until uglyfy is done - close it"
 
 #### # Verify that `npm test` does not give any errors
     echo "For the checklist to continue npm test must be OK" && hitkey
