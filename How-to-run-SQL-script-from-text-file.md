@@ -11,5 +11,5 @@ You can use SOURCE statement:
 
 Please not that accessing files in a browser should be done async to give the best user experience: 
 ```js
-    alasql('SOURCE "myfile.sql"',[],function(res,err){...});
+    alasql('SOURCE "myfile.sql"',[],function(){ ... });
 ```
