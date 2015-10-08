@@ -416,8 +416,8 @@ Most of SQL-99. Please [see the wiki](https://github.com/agershun/alasql/wiki/Su
 
 AlaSQL extends "good old" SQL to make it closer to JavaScript. The "sugar" includes:
 
-* Json objects - ``` {a:1,b:@[1,2,3]}
-* Object propertires - ```obj->property->subproperty```
+* Json objects - `{a:1,b:@[1,2,3]}`
+* Object propertires - `obj->property->subproperty`
 * Object and arrays elements - ```obj->(a*1)```
 * JavaScript functions - ```obj->valueOf()```
 * SELECT VALUE, ROW, COLUMN, MATRIX to format results of query
