@@ -74,7 +74,7 @@ alasql.promise('SELECT * FROM XLS("mydata.xls") WHERE lastname LIKE "A%" and cit
       });
 ```
     
-jsFiddle with [example A)](http://jsfiddle.net/xxh13gLa/) and [example B)](http://jsfiddle.net/agershun/30to2rh8/1/)
+jsFiddle with [example A)](http://jsfiddle.net/hguw3LLk/) and [example B)](http://jsfiddle.net/c1hbytf1/)
 
 ## Install
 
