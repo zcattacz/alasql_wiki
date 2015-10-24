@@ -3,8 +3,8 @@
 AlaSQL can query data directly from a google spreadsheet - so its easy to edit the raw data in the spreadsheet and make manipulations like grouping, filtering, or saving to XLSX directly in your app. The feature depends on the plugin [Tabletop library](https://github.com/jsoma/tabletop).
 
 ```html
-<script src='https://cdn.rawgit.com/jsoma/tabletop/master/src/tabletop.js'></script>
-<script src="//cdn.jsdelivr.net/alasql/0.1/alasql.min.js"></script> 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.4.2/tabletop.min.js'></script>
+<script src="//cdn.jsdelivr.net/alasql/0.2/alasql.min.js"></script> 
 
 <div id="res"></div>
 
