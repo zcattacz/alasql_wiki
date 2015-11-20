@@ -23,19 +23,19 @@ Custom functions:
     alasql.fn.myfn = function(a,b) {
         return a*b+1;
     }
-    var res = alasql(‘SELECT myfn(a,b) FROM one’);
+    var res = alasql('SELECT myfn(a,b) FROM one');
 ```
 
 Compiled statements:
 ```js
-    var ins = alasql.compile(‘INSERT INTO one VALUES (?,?)’);
+    var ins = alasql.compile('INSERT INTO one VALUES (?,?)');
     ins(1,10);
     ins(2,20);
 ```
 
 Compiled functions:
 ```js
-    var bigSum = alasql.compile(‘SELECT SUM(a) FROM one WHERE a>3’, ‘value’);
+    var bigSum = alasql.compile('SELECT SUM(a) FROM one WHERE a>3', 'value');
     var res = bigSum([10]) + 10;
 ```
 
