@@ -14,5 +14,11 @@ Syntax:
 ```
 
 
+You can set query modifier for all SELECTs:
+```js
+    alasql.options.modifier = 'COLUMN';
+```
+
+
 
 See also: [ADD COLUMN](Add Column), [REMOVE COLUMN](Remove Column), [RECORDSET](Recordset), [VALUE](Value), [ROW](Row)
