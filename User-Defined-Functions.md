@@ -9,9 +9,9 @@ To define new functions for SQL simply add it to ```alasql.fn``` variable, like 
 ```
 
 ```js
-        alasql.fn.double = function(x){return x*2};        
-        alasql.fn.sum10 = function(x,y) { return x+y*10; }
-        alasql('SELECT a, double(a) AS b, sum10(a,b) FROM test1');
+    alasql.fn.double = function(x){return x*2};        
+    alasql.fn.sum10 = function(x,y) { return x+y*10; }
+    alasql('SELECT a, double(a) AS b, sum10(a,b) FROM test1');
 ```
 
 
