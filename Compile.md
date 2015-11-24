@@ -5,13 +5,28 @@
 To compile statement use:
 
 ```js
-   var stmt = alasql.compile(sql)
+   var stmt = alasql.compile(sql [, dbName])
 ```
 
 Then run the statement:
 ```js
    stmt([parameters array] [, callback])
 ```
+
+Compiled statement examples:
+
+```js
+    var bigSum = alasql.compile('SELECT SUM(a) FROM one WHERE a>?', 'myDBname'); // no DBname needed
+    var foo = bigSum([10]) ;
+```
+
+```js
+    var ins = alasql.compile('INSERT INTO one VALUES (?,?)'); // no DBname needed
+    ins(1,10);
+    ins(2,20);
+```
+
+
 
 Here is the example how to calculate sum of numbers > 2 from [1,2,3,4,5]:
 ```js
