@@ -39,4 +39,14 @@ Here is the example how to calculate sum of numbers > 2 from [1,2,3,4,5]:
     var res = mysum([data])
 ```
 
+How to deal with parameters:
+```
+    var insert1 = db.compile('INSERT INTO one (?,?)');
+    var insert2 = db.compile('INSERT INTO one ($a,$b)');
+    var insert3 = db.compile('INSERT INTO one (:a,:b)');
+
+    insert1([1,2]);
+    insert2({a:1,b:2});
+    insert3({a:3,b:4});
+```
 Try this example in [jsFiddle](http://jsfiddle.net/7cn8kp16/1/)
