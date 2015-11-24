@@ -14,6 +14,14 @@ Alternative syntax:
 ```
 
 
-Usually AlaSQL returns array of records (JavaScript objects), but you can modify SELECT statement to return a matrix (array of arrays) of values from the recordset. Row order is as requested in the select and is not 
+Usually AlaSQL returns array of records (JavaScript objects), but you can modify SELECT statement to return a matrix (array of arrays) of values from the recordset. Row order is as requested in the select.
+
+
+You can set query modifier for all SELECTs:
+```js
+    alasql.options.modifier = 'MATRIX';
+```
+
+ 
 
 See also: [RECORDSET](Recordset), [VALUE](Value), [ROW](Row), [COLUMN](Column)
