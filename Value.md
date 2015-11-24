@@ -26,4 +26,11 @@ Usually AlaSQL returns array of records (JavaScript objects), but you can modify
 
 ```
 
+You can set query modifier for all SELECTs:
+```js
+    alasql.options.modifier = 'VALUE';
+```
+
+
+
 See also: [MATRIX](Matrix), [COLUMN](Column), [ROW](Row), [RECORDSET](Recordset)
