@@ -20,23 +20,33 @@ Samples:
 
 Examples:
 
-1. Number of lines in text file with length more than 20 characters 
+Number of lines in text file with length more than 20 characters 
 
-```
-   alasql 'select value count(*) from txt("README.md") where length([0]) > 20'
-```
-
-2. Simple calculator
-
-```
-    alasql '2*2'
-```
-
-3. Convert XLSX file to JSON
-
-```
-    alasql "select * into json('my.json') from xlsx('cities.xlsx',{headers:true})"
+``` bash
+alasql 'select value count(*) from txt("README.md") where length([0]) > 20'
 ```
 
 
-You can place `?` in the code. They will be replaced by the n'th parameter so `alasql "select ?+?" 10 20` corresponds to `alasql select 10+20` 
+
+Convert XLSX file to JSON
+
+```bash
+> alasql "SELECT * INTO json('my.json') from xlsx('cities.xlsx',{headers:true}) WHERE population > 20000000"
+```
+
+Simple calculator
+
+``` bash
+> alasql 'VALUE OF SELECT 2*2'
+4
+```
+
+`?` will be replaced with the corresponding n'th argument so `alasql "select ?+?" 10 20` corresponds to `alasql select 10+20` 
+
+```bash
+> alasql "VALUE SELECT 20-?+?" 5 100
+115
+```
+
+_(To get value instead of a JSON you can prepend [`VALUE OF`](Value) to the `SELECT`)_
+
