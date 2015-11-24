@@ -31,4 +31,3 @@ See the working example [in jsFiddle](http://jsfiddle.net/agershun/1nccgs6n/3/)
 
   
 
-Also see [compiled statements](Compilation)
