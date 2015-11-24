@@ -1,3 +1,17 @@
 # Keyword `ROW`
 
-See also: [MATRIX](Matrix)
+
+Syntax:
+```sql
+    ROW OF SELECT ...
+```
+
+Alternative syntax:
+```sql
+    SELECT ROW ...
+```
+
+
+Usually AlaSQL returns array of records (JavaScript objects), but you can modify SELECT statement to return an array of values from first row selected.
+
+See also: [VALUE](Value), [MATRIX](Matrix), [COLUMN](Column), [ROW](Row), [RECORDSET](Recordset)
