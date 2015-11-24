@@ -1,4 +1,4 @@
-# Presompile SQL statements 
+# Precompile SQL statements 
 
 `alasql.compile()` lets you precompile statements. It is a kind a "prepare" in other SQL databases.
 
