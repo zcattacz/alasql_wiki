@@ -15,4 +15,4 @@ Syntax:
 
 
 
-See also: [SELECT COLUMN](Select Column), [ADD COLUMN](Add Column), [REMOVE COLUMN](Remove Column), [RECORDSET](Recordset), [VALUE](Value), [ROW](Row)
+See also: [ADD COLUMN](Add Column), [REMOVE COLUMN](Remove Column), [RECORDSET](Recordset), [VALUE](Value), [ROW](Row)
