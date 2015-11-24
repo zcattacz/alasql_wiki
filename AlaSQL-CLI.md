@@ -44,7 +44,7 @@ Simple calculator
 `?` will be replaced with the corresponding n'th argument so `alasql "select ?+?" 10 20` corresponds to `alasql select 10+20` 
 
 ```bash
-> alasql "VALUE SELECT 20-?+?" 5 100
+> alasql "VALUE OF SELECT 20-?+?" 5 100
 115
 ```
 
