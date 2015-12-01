@@ -233,7 +233,7 @@ After globally installing AlaSQL `npm install alasql -g` you can access AlaSQL v
 
 
 ```bash
-> alasql "SET @data = @[{a:1,b:?},{a:2,b:?}]; SELECT a, b FROM @data;" 10 20
+> alasql "SET @data = @[{a:'1',b:?},{a:'2',b:?}]; SELECT a, b FROM @data;" 10 20
 [ 1, [ { a: 1, b: 10 }, { a: 2, b: 20 } ] ]
 
 > alasql "VALUE OF SELECT COUNT(*) as abc FROM TXT('README.md') WHERE LENGTH([0]) > ?" 140
@@ -412,7 +412,7 @@ Most of SQL-99. Please [see the wiki](https://github.com/agershun/alasql/wiki/Su
 
 AlaSQL extends "good old" SQL to make it closer to JavaScript. The "sugar" includes:
 
-* Json objects - `{a:1,b:@[1,2,3]}`
+* Json objects - `{a:'1',b:@['1','2','3']}`
 * Object propertires - `obj->property->subproperty`
 * Object and arrays elements - ```obj->(a*1)```
 * JavaScript functions - ```obj->valueOf()```
@@ -464,19 +464,19 @@ You can use JSON objects in your databases (do not forget use == and !== operato
 
 ```sql
 
-alasql> SELECT VALUE @{a:1,b:2}
+alasql> SELECT VALUE @{a:'1',b:'2'}
 
 {a:1,b:2}
 
-alasql> SELECT VALUE @{a:1,b:2} == @{a:1,b:2}
+alasql> SELECT VALUE @{a:'1',b:'2'} == @{a:'1',b:'2'}
 
 true
 
-alasql> SELECT VALUE @{a:1,b:2}->b
+alasql> SELECT VALUE @{a:'1',b:'2'}->b
 
 2
 
-alasql> SELECT VALUE @{a:1,b:(2*2)}->b
+alasql> SELECT VALUE @{a:'1',b:(2*2)}->b
 
 4
 
