@@ -78,8 +78,7 @@ alasql.promise('SELECT * FROM XLS("mydata.xls") WHERE lastname LIKE "A%" and cit
 
 
 ```js
-// D) Node example
-var alasql = require('alasql');
+// D) Cheat and load your data directly
 
 alasql("CREATE TABLE example1 (a INT, b INT)");
 
