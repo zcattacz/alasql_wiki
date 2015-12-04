@@ -52,6 +52,7 @@ Try example `a)` in [jsFiddle](http://jsfiddle.net/agershun/30to2rh8/1/).
  * Spreadsheets: [Microsoft Excel](XLSX), [Google Docs Spreadsheets](Google Spreadsheets) 
  * Grid: [Handsontable.js](Handsontable.js)
  * Formatting: [Numeral.js](Numeral.js), [Moment.js](Moment.js), [Sprintf.js](Sprintf.hs)
+ * Applications: [Lotus Notes](http://blog.tcl-digitrade.com/blogs/tcl-digitrade-blog.nsf/dx/26.11.2015130651SMAG8A.htm)
 * [SQL database](Sql database) - in-memory database + [AlaSQL FileStorage](FileStorage) persistence engine
 * [SQL queries](SQL queries)
 * [External databases](External databases) - [IndexedDB](IndexedDB), [Local Storage](LocalStorage), and [SQLite](SQLite) integration
