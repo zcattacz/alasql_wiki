@@ -4,7 +4,7 @@ SQL command to get ASCII value of first char.
 
 Please be aware that AlaSQL uses Javascript to find the char values. The traditional ASCII chars are all OK, but 25 of the extended ASCII table will give different result than expected in traditional DBs
 
-The following chars gives a different value thank expected (here the expected value is shown)
+The following chars gives a different value than expected (here the expected value is shown)
 ```sql
     - SELECT ASCII('€'); -- 128 - Euro sign
     - SELECT ASCII('‚'); -- 130 - Single low-9 quotation mark
