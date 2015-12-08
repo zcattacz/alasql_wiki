@@ -1,6 +1,6 @@
 # SQLite
 
-Now AlaSQL can work with SQLite's [SQL.js](https://github.com/kripken/sql.js/) JavScript library together. You need to include sql.jl into the project, and attach it to AlaSQL like in the example below:
+AlaSQL can read from SQLite files if the [SQL.js](https://github.com/kripken/sql.js/) is included. When the library is included you can attach a SQLite db file to AlaSQL like in the example below:
 
 ```html
     <script src="alasql.js"></script>
@@ -20,3 +20,5 @@ You can use this feature for advanced [ETL](Etl) operations. For example, you ca
                ATTACH INDEXEDDB DATABASE geo AS geo2; \
               SELECT * INTO geo2.cities FROM geo1.cities",[]);
 ``` 
+
+Please note that it's not yet possible to update the SQLite db file from AlaSQL.
