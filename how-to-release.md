@@ -157,7 +157,7 @@ releaseUrl="https://github.com/agershun/alasql/releases/new"
 #### # Check we are in same folder as package.json
       [ -f ./package.json ] || flee "Please cd to package root folder" 
 
-#### # Check we are in the AlSQL module
+#### # Check we are in the AlaSQL module
       [ "alasql" = "$(npm view .. name)" ] || flee "This checklist is ment for AlaSQL" 
 
 
