@@ -370,7 +370,7 @@ See test168 and test169 for examples
 
 ### Read SQLite database files
 
-AlaSQL can work with SQLite data files on the top of with [SQL.js](https://github.com/kripken/sql.js) library:
+AlaSQL can read (not write) SQLite data files if you include [SQL.js](https://github.com/kripken/sql.js) library:
 ```html
     <script src="alasql.js"></script>
     <script src="sql.js"></script>
