@@ -1,0 +1,30 @@
+# Keyword `TRIGGER`
+
+Syntax:
+```sql
+    CREATE TRIGGER triggerName BEFORE INSERT ON tableName CALL functionToCall()
+```
+
+Example A
+```js
+    alasql.fn.check = function(r) {
+         if(r.n == 42) return false; // Do not insert on this number 
+    };
+    alasql('CREATE TRIGGER mytrigger BEFORE INSERT ON mytable check');
+```
+
+Example B
+```js
+    alasql.fn.onchange = function(r) {
+        if(r.a == 123) console.log('Observable event!');
+    };;
+    alasql('CREATE TABLE one (a INT)');
+    alasql('CREATE TRIGGER two BEFORE INSERT ON one CALL onchange()');
+    alasql('INSERT INTO one VALUES (123)');  // This will fire onchange()
+```
+
+Limitations:
+* No `INSTEAD OF DELETE` 
+* No `AFTER DELETE` 
+* `BEFORE DELETE` can not prevent record from deletion 
+
