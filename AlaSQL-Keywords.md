@@ -164,6 +164,7 @@ these words for columns and variables. All AlaSQL keywords are case-insensitive.
 * [TOP](TOP)
 * [TRAN](TRAN)
 * [TRANSACTION](TRANSACTION)
+* [[TRIGGER]]
 * [TRUE](TRUE)
 * [TRUNCATE](TRUNCATE)
 * [UNION](UNION)
