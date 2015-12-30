@@ -376,7 +376,7 @@ TRANSLATE | √ |   |   | √ | √ |
 TRANSLATE_REGEX |   |   |   | √ | √ |  
 TRANSLATION | √ | √ | √ | √ | √ |  
 TREAT |   | √ | √ | √ | √ |  
-TRIGGER |   | √ | √ | √ | √ | 
+[[TRIGGER]] |   | √ | √ | √ | √ | √
 TRIM | √ |   |   | √ | √ | √ 
 TRIM_ARRAY |   |   |   |   | √ |  
 [TRUE](True) | √ | √ | √ | √ | √ | √
