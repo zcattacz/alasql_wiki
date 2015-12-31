@@ -28,4 +28,5 @@ Limitations:
 * No `INSTEAD OF DELETE` 
 * No `AFTER DELETE` 
 * `BEFORE DELETE` can not prevent record from deletion 
+* Triggers do not works for `DELETE FROM` mytable without `WHEN` clause
 
