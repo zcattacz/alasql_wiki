@@ -2,7 +2,7 @@
 
 Syntax:
 ```sql
-    CREATE TRIGGER triggerName BEFORE INSERT ON tableName CALL functionToCall()
+    CREATE TRIGGER triggerName (BEFORE|AFTER|INSTEAD OF) (INSERT|DELETE|UPDATE) ON tableName (Statement|Function)
 ```
 
 Example A
@@ -22,6 +22,7 @@ Example B
     alasql('CREATE TRIGGER two BEFORE INSERT ON one CALL onchange()');
     alasql('INSERT INTO one VALUES (123)');  // This will fire onchange()
 ```
+
 
 Limitations:
 * No `INSTEAD OF DELETE` 
