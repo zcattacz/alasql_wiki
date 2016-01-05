@@ -8,7 +8,7 @@ See the example:
 ```js
     alasql('CREATE TABLE orders (orderdate Date)');
     alasql('INSERT INTO orders VALUES ("2014-01-01")');
-    var res = alasql('SELECT * FROM orders");
+    var res = alasql('SELECT * FROM orders');
     // It gives a JavaScript dates
     var res = alasql('SELECT orderdare->getFullYear() FROM orders');
     // This is gives an array of years
