@@ -17,6 +17,12 @@ You can try this example [in jsFiddle](http://jsfiddle.net/agershun/efmhcnu8/1/)
 You can specify delimiters and quote characters:
 ```js
     alasql('SELECT * FROM CSV("my.csv". {headers:true, quote:"\'",separator:","})');
+
+```
+
+Example on how to change the seperator only
+```js
+   alasql('SELECT * FROM CSV("a.csv",{separator:";"})');
 ```
 
 ### Export CSV data
