@@ -1,6 +1,6 @@
 # AlaSQL Reserved Keywords
 
-Please, use square brackets ```[ name ]``` or back-quotes ``` ` name` ``` if you want to use
+Please, use square brackets ```[name]``` or back-quotes ``` `name` ``` if you want to use
 these words for columns and variables. All AlaSQL keywords are case-insensitive.
 
 * [ABSOLUTE](ABSOLUTE)
