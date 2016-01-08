@@ -11,14 +11,15 @@
 
 Data query
 
-* [SELECT](Select)
+* [SELECT](Select) - for relational data
+* [SEARCH](Search) - for nested JSON objects
 
 Expression statement
 * [= Expression Statement](Expression Statement)
 
 Data manipulation
 
-* [INSERT](Insert)
+* [INSERT](Insert), [INSERT OR REPLACE](Insert Or Replace), [REPLACE](Insert Or Replace)
 * [UPDATE](Update)
 * [DELETE](Delete)
 
@@ -95,10 +96,15 @@ Information
     * [NULL](Null) / [NOT NULL](Not Null)
     * [AUTO_INCREMENT](Identity), [AUTOINCREMENT](Identity), [IDENTITY](Identity)
     * [CHECK](Check)
+  * [CREATE TRIGGER](Create Trigger)
+  * [CREATE GRAPH](Create Graph)
+  * [CREATE EDGE](Create Edge)
+  * [CREATE VERTEX](Create Vertex)
 * [DELETE](Delete)
 * DROP
  * [DROP DATABASE](Drop Database)
  * [DROP TABLE](Drop Table)
+ * [DROP TRIGGER](Drop Trigger)
 * INSERT
  * [INSERT SELECT](Insert Select)
  * [INSERT VALUES](Insert Values)
@@ -137,8 +143,8 @@ Information
   * = != < <= > >=
   * [BETWEEN](Between), [NOT BETWEEN](Not Between)
  * [NULL](Null)
-   * [IS NULL](Is Null), [IS NOT NULL](Is Not Null)
- * Iclusion
+   * [IS NULL](Is Null), [IS NOT NULL](Is Not Null), [NOT NULL](Is Not Null)
+ * Inclusion
    * [IN](In), [NOT IN](Not In), [CONTAINS](Contains)
 * [SQL-Functions](Functions)
  * [ABS()](sql/abs.md)
@@ -158,6 +164,7 @@ Information
  * [MEDIAN()](Median) 
  * [AGGR()](Aggr)
  * [ARRAY()](Array)
+ * [Statistical functions](Statistical Functions)
  * [Custom aggregators](Custom Aggregators)
 * Grouping functions
  * [CUBE()](Cube)
