@@ -61,4 +61,6 @@ With using JOIN ON in [this example](http://jsfiddle.net/agershun/Lxgfduov/):
     [data.COLORS,     data.FRUITS]);
 ```
 
+See the expected results in [Join On Join](Join On Join) page.
+
 See also: [SELECT](Select), [USING](Using), [ON](On), [APPLY](Apply)
