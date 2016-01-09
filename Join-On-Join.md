@@ -1,5 +1,7 @@
 #JOIN ON JOIN
 
+This page created for understanding results produced with combination of joins.
+
 ## Create script
 First we will create three tables and fill them with values:
 ```sql
