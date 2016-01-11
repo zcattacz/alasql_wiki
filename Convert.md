@@ -4,7 +4,7 @@ Syntax:
 ```sql
     CONVERT(type, value, style)
 ```
-List of [available styles](https://msdn.microsoft.com/ru-ru/library/ms187928.aspx?f=255&MSPPError=-2147217396) supported.
+List of [available styles](https://msdn.microsoft.com/library/ms187928.aspx?f=255&MSPPError=-2147217396) supported.
 
 AlaSQL realizes CONVERT() function:
 ```js
@@ -35,3 +35,10 @@ alasql('SET @d = DATE("01/08/2015 12:34:56.789"); \
             ');
 ```
 See the example [in jsFiddle](http://jsfiddle.net/agershun/qytn1n0L/)
+
+
+To cast types to Number you can use one of three forms:
+```sql
+    SELECT CAST(a AS NUMBER), FORMAT(NUMBER,a), a::NUMBER 
+```
+
