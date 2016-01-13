@@ -76,6 +76,7 @@ Try example `a)` in [jsFiddle](http://jsfiddle.net/agershun/30to2rh8/1/).
 * SlideShare [AlaSQL.js - fast JavaScript in-memory SQL database](http://www.slideshare.net/AndreyGershun/alasqljsfast-javascript-inmemory-sql-database)
 * SlideShare [SQL and NoSQL in AlaSQL database](http://www.slideshare.net/AndreyGershun/sql-and-nosql-in-alasql)
 * [Quirky things](Quirky) about AlaSQL
+* [[Error codes]]
 
 
 
