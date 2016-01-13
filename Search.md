@@ -46,4 +46,7 @@ or with JSON files:
     // [{fruit:'Apple'}]
 ```
 
+Other examples of ```SEARCH``` operator:
+* [How to parse a Json with array and objects and export the data into Excel file](How to parse a Json with array and objects and export the data into Excel file)
+
 See also: [SELECT](Select)
