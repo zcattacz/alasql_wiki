@@ -5,12 +5,8 @@ To save space in the min version the debug information is spit out as the follow
 Error code | Meaning
 -----------|---------
 e00001| Unknown string in FROM clause
-
 e01501|You can remove files only in Node.js and Apache Cordova
 e01502|You can use exists() only in Node.js or Apache Cordova
-
-
-
 e07401-tableid | Table tableid does not exists
 e09301|Connot create SQLITE database in memory. Please attach it.
 e09302|It not supported to drop SQLite database. Please detach it.
