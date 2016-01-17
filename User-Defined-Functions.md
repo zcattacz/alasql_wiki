@@ -28,6 +28,30 @@ You can use alasql inside alasql functions, like below:
 See the working example [in jsFiddle](http://jsfiddle.net/agershun/1nccgs6n/3/)
 
 
+## Aggregators
+
+To make your own user defined aggregators please follow this example:
+
+```js
+alasql.aggr.MYAGGR = function (value, accumulator, stage) {
+   if(stage == 1) {
+       // first call of aggregator - for first line
+       var newAccumulator =  value;
+       return newAccumulator;
+  } else if(stage == 2) {
+     // for every line in the group
+     accumulator = accumulator + value;
+     return accumulator;
+  } else {if stage == 3) {
+     // Post production
+     return accunulator;  
+ }
+}
+```
+
+See more examples here:
+* [50functions.js](https://github.com/agershun/alasql/blob/develop/src/55functions.js#L230-L339)
+* [test266.js](https://github.com/agershun/alasql/blob/develop/test/test266.js)
 
   
 
