@@ -4,9 +4,10 @@ Source: [StackOverflow](http://stackoverflow.com/questions/34856054/alasql-how-t
 ### Question: How to reference the JSON object it self (to call a function on it)?
 
 I have the following object and I would like to call it's function.
-
+```
 [{a:1, fn:function(){} }]
-Now I know if the object would be nested ([{a:1, b:{fn:function(){} } }]) that I could do b->fn() but how do I do it when it's direct property of the first element?
+```
+Now I know if the object would be nested (```[{a:1, b:{fn:function(){} } }]```) that I could do ```b->fn()``` but how do I do it when it's direct property of the first element?
 
 ### Answer
 Please use _ variable. This is a pseudo-variable, which includes the record whole itself:
