@@ -33,15 +33,15 @@ XLSX() function supports the following options:
 #### sheetid
 Sheet name:
 ```js
-    alasql('select * from xlsx("cities.xlsx',{sheetid:"Sheet2"}',
+    alasql('select * from xlsx("cities.xlsx",{sheetid:"Sheet2"}',
         [],function(data){});
 ```
 By default AlaSQL read data from sheet "Sheet1".
 
-#### range
+#### Range
 Cells range:
 ```js
-    alasql('select * from xlsx("cities.xlsx',{range:"A1:D100"}',
+    alasql('select * from xlsx("cities.xlsx",{range:"A1:D100"}',
         [],function(data){});
 ```
 By default AlaSQL read all data in the sheet.
@@ -49,10 +49,10 @@ By default AlaSQL read all data in the sheet.
 #### headers
 Read headers from data range (true/false):
 ```js
-    alasql('select * from xlsx("cities.xlsx',{headers:true}',
+    alasql('select * from xlsx("cities.xlsx",{headers:true}',
         [],function(data){});
 ```
-By default AlaSQL headers are on.
+By default AlaSQL headers are set to `true`
 
 
 
