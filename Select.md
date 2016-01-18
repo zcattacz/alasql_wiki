@@ -25,6 +25,9 @@ Select clauses:
 ```sql
     SELECT City.Name, City.*, Population AS p FROM Cities
 ```
+
+Select [_](Underscore Object) - underscore object - whole row
+
 [Operators](Operators)
 ```sql
     SELECT w*h+20 FROM ?
