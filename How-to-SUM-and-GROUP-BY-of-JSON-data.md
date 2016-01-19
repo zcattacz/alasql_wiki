@@ -41,7 +41,7 @@ This is an example with SQL query from your question:
 ```js
     var data = [ { "category" : "Search Engines", "hits" : 5, "bytes" : 50189 },...;
 
-    var res = alasql('SELECT category, sum(hits) AS hits, sum(bytes) as bytes \
+    var res = alasql('SELECT category, SUM(hits) AS hits, SUM(bytes) AS bytes \
        FROM ? \
        GROUP BY category \
        ORDER BY bytes DESC',[data]);
