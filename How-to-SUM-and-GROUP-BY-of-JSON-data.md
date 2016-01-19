@@ -5,7 +5,7 @@ Source: [StackOverflow.com](http://stackoverflow.com/questions/11199653/javascri
 ### Question
 Some server-side code actually generates a JSON formatted string, which converts to JSON object:
 ```js
-    var dataString='[ 
+    var dataString=[ 
       { "category" : "Search Engines", "hits" : 5, "bytes" : 50189 },
       { "category" : "Content Server", "hits" : 1, "bytes" : 17308 },
       { "category" : "Content Server", "hits" : 1, "bytes" : 47412 },
@@ -28,7 +28,7 @@ I need to the equivalent of an SQL statement like this:
 
 The desired output would be an object like this:
 ```js
-    var aggregatedObject='[ 
+    var aggregatedObject=[ 
         { "category" : "Search Engines", "hits" : 13, "bytes" : 673684 },
         { "category" : "Content Server", "hits" : 3, "bytes" : 88930 },
         { "category" : "Internet Services", "hits" : 1, "bytes" : 3690 },
