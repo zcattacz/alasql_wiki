@@ -33,7 +33,7 @@ The desired output would be an object like this:
         { "category" : "Content Server", "hits" : 3, "bytes" : 88930 },
         { "category" : "Internet Services", "hits" : 1, "bytes" : 3690 },
         { "category" : "Business", "hits" : 1, "bytes" : 2847 } 
-    ]';
+    ];
 ```
 
 ### Answer
