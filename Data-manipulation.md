@@ -2,7 +2,7 @@
 
 This is a list of cases how AlaSQL can manipulate JavaScript data (JSON).
 
-Cases:
+Counting:
 * [How to add own keys for grouped output?](How to add own keys for grouped output)
 * [How to aggregate an array of objects based on object property?](How to aggregate an array of objects based on object property)
 * [How to create a cleaned up contact object of an array of contact data?](How to create a cleaned up contact object of an array of contact data)
@@ -15,6 +15,8 @@ Cases:
 * [How to filter an array using an array?](How to filter an array using an array)
 * [How to find a item based on a key?](How to find a item based on a key)
 * [How to find and count unique values in nested JSON objects?](How to find and count unique values in nested JSON objects)
+
+Grouping:
 * [How to group?](How to group)
 * [How to group by array of objects?](How to group by array of objects)
 * [How to group and count?](How to group and count)
@@ -29,3 +31,6 @@ Cases:
 * [How to unique by multiple properties?](How to unique by multiple properties)
 * [How to use aggregate functions using node-js?](How to use aggregate functions using node-js)
 * [How to use SQL to query javascript objects?](How to use SQL to query javascript objects)
+
+Other:
+* [How to restructure an array of strings based on prefix](How to restructure an array of strings based on prefix)
