@@ -1,6 +1,6 @@
 #How to restructure an array of strings based on prefix?
 
-Source: [StackOverflow]
+Source: [StackOverflow](http://stackoverflow.com/questions/34895800)
 
 ### Question
 I have an array containing a list of filenames:
