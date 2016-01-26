@@ -71,7 +71,7 @@ Try example `a)` in [jsFiddle](http://jsfiddle.net/agershun/30to2rh8/1/).
 * [Internal structure](Internal Structure)
 * [Performance](Performance)
 * [TypeScript](TypeScript)
-* [SQL-99 compatibility](SQL-99), [SQL-99 keywords](SQL.keywords), [AlaSQL keywords](AlaSQL-Keywords)
+* [SQL-99 compatibility](SQL-99), [SQL-99 keywords](SQL-keywords), [AlaSQL keywords](AlaSQL-Keywords)
 * ["User Manual"](http://www.slideshare.net/AndreyGershun/alasql-manual-141220-1) - PowerPoint presentation
 * SlideShare [AlaSQL.js - fast JavaScript in-memory SQL database](http://www.slideshare.net/AndreyGershun/alasqljsfast-javascript-inmemory-sql-database)
 * SlideShare [SQL and NoSQL in AlaSQL database](http://www.slideshare.net/AndreyGershun/sql-and-nosql-in-alasql)
