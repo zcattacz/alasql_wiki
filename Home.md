@@ -37,7 +37,7 @@ alasql
     
 Try example `a)` in [jsFiddle](http://jsfiddle.net/agershun/30to2rh8/1/).
 
-Please make sure `[[promise]]` is supported if you are in the browser. 
+Please make sure [[promise]] is supported if you are in the browser. 
 
 ### AlaSQL Q&A
 * [Data manipulation](Data manipulation) - array filtering, grouping, ordering
