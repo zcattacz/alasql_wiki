@@ -7,6 +7,8 @@
  * Logical functions
  * Date-time functions
    * [CONVERT()](Convert)
+ * Unique identified functions
+   * [NEWID(), UUID() and GEN_RANDOM_UUID()](Uuid)
 2. Run-time standard library
  * [ROWNUM()](ROWNUM) (or [ROW_NUMBER()](ROWNUM))
  * [COALESCE()](Coalesce)
