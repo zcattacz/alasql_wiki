@@ -1,3 +1,3 @@
 # JSON data search
 
-Please see [`JSON`](json)
+Please see [`JSON`](json) and [SEARCH](Search) pages
