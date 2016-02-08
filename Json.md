@@ -8,6 +8,9 @@ Property operator ->
     INSERT INTO one VALUES @{a:5, b:{c:@[4,5]}}
     SELECT * FROM one WHERE a->b->0 = 4
 ```
+
+Please note that negavie numbers must be enclosed like this: `(-5)`. There is [an issue to get it fixed](https://github.com/agershun/alasql/issues/475). 
+
 Expression
 ```sql
     SELECT * FROM one WHERE a->(LCASE(“B”))->(1-1) = 4
@@ -120,6 +123,5 @@ See also
 * [How to traverse a complex JSON doc with javascript and extract named values?](How to traverse a complex JSON doc with javascript and extract named values)
 * [How to find all parents elements in a JSON file?](How to find all parents elements in a JSON file)
 * [How to recursive find and replace in multidimensional JavaScript object?](How to recursive find and replace in multidimensional JavaScript object)
-
 
 
