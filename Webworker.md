@@ -28,6 +28,9 @@ Usually this required for user-defined functions, like:
     alasql.fn.myfn = function(x){ return x*x; }
 ```
 
+Please note that webworkers does not support localStorage so this is not supported for AlaSQL running in a webworker.
+
+
 ### Option 2:
 ```html
     <script src="alasql.js"></script>
