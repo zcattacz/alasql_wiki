@@ -11,9 +11,7 @@ alasql.promise('SELECT * FROM XLS("mydata.xls") GROUP BY name WHERE lastname LIK
       });
 ```
 
-
-Please make sure `promise` is supported - for example by including [es6-promise](https://github.com/jakearchibald/es6-promise/blob/master/dist/es6-promise.min.js) - if using alasql in the browser. 
-
+AlaSQL uses ES6 promises which are available in most modern browsers. If you need to support browsers that do not support Promises, fear not! There is a [polyfill](https://github.com/jakearchibald/es6-promise/blob/master/dist/es6-promise.min.js). So no action required on the developer's part for promises!
 
 
 
