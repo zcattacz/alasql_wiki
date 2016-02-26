@@ -49,7 +49,7 @@ alasql.aggr.MYAGGR = function(value, accumulator, stage) {
 	
 	} else if(stage == 3) {
 
-		// Post production
+		// Post production - please nota that value Will be undefined
 		return accumulator;  
 	}
 }
