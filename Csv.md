@@ -8,7 +8,8 @@ Syntax:
     SELECT column FROM CSV(filename,options) ;
 ```
 
-Please note that when interacting with files AlaSQL [will run async](async). We strongly recommend you to [use the promise notation](promise).
+Please note that when interacting with files AlaSQL [will run async](async). We strongly recommend you to [use the promise notation](promise) instead of the simple notation: `alasql(sql, params, function(data) { console.log(data) })`
+
 
 ### Import CSV data
 ```js
