@@ -2,7 +2,7 @@
 
 Using alasql will normally be sync
 ```js
-    var result = alasql(sql[, params])
+    var result = alasql(sql [, params])
 ```
 
 However, AlaSQL will always run async in the following cases. 
@@ -13,7 +13,7 @@ However, AlaSQL will always run async in the following cases.
 We strongly recommend using the [[promise]] notation:
 
 ```js
-alasql.promise('SELECT * FROM CLS("foo.csv")')
+alasql.promise(sql [, params])
       .then(function(data){
            console.log(data);
       }).catch(function(err){
