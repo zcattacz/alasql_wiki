@@ -8,26 +8,47 @@ Syntax:
     SELECT column FROM CSV(filename,options) ;
 ```
 
+Please note that when interacting with files AlaSQL [will run async](async). We strongly recommend you to [use the promise notation](promise).
+
 ### Import CSV data
 ```js
-    alasql('SELECT * FROM CSV("my.csv". {headers:true})');
+    alasql.promise('SELECT * FROM CSV("my.csv". {headers:true})')
+            .then(function(data){
+                 console.log(data);
+            }).catch(function(err){
+                 console.log('Error:', err);
+            });
 ```
 You can try this example [in jsFiddle](http://jsfiddle.net/agershun/efmhcnu8/1/)
 
 You can specify delimiters and quote characters:
 ```js
-    alasql('SELECT * FROM CSV("my.csv". {headers:true, quote:"\'",separator:","})');
-
+    alasql.promise('SELECT * FROM CSV("my.csv". {headers:true, quote:"\'",separator:","})')
+            .then(function(data){
+                 console.log(data);
+            }).catch(function(err){
+                 console.log('Error:', err);
+            });
 ```
 
 Example on how to change the seperator only
 ```js
-   alasql('SELECT * FROM CSV("a.csv",{separator:";"})');
+   alasql.promise('SELECT * FROM CSV("a.csv",{separator:";"})')
+            .then(function(data){
+                 console.log(data);
+            }).catch(function(err){
+                 console.log('Error:', err);
+            });
 ```
 
-### Export CSV data
+### Export to CSV data
 ```js
-    alasql('SELECT * INTO CSV("my.csv". {headers:true}) FROM ?',[data]);
+    alasql.promise('SELECT * INTO CSV("my.csv". {headers:true}) FROM ?',[data])
+            .then(function(){
+                 console.log('Data saved');
+            }).catch(function(err){
+                 console.log('Error:', err);
+            });;
 ```
 See also: [TAB](Tab), [TSV](Tsv), [XLSX](Xlsx), [JSON](Json)
 
