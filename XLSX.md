@@ -1,6 +1,75 @@
 # `.XLSX` - Excel 2007 
 
-AlaSQL can export data to Excel 2007 and LibreOffice format with colors and other Excel formatting functions. This also works in IE9. Code sample:
+AlaSQL can export data to Excel 2007 and LibreOffice format with colors and other Excel formatting functions. This also works in IE9. 
+
+Please note that when interacting with files AlaSQL [will run async](async). We strongly recommend you to [use the promise notation](promise).
+
+
+### Read from XLSX
+
+```js
+    alasql.promise('select City, Population from xlsx("cities.xlsx") where Population > 100000')
+            .then(function(data){
+                 console.log(data);
+            }).catch(function(err){
+                 console.log('Error:', err);
+            });
+```
+
+### Save data to XLSX
+
+```js
+
+    alasql.promise('SELECT * INTO XLSXML("restest280b.xls") FROM ?', [data])
+            .then(function(data){
+                 console.log('Data saved');
+            }).catch(function(err){
+                 console.log('Error:', err);
+            });
+```
+		
+### Options
+
+XLSX() function supports the following options:
+
+#### sheetid
+Sheet name:
+```js
+    alasql.promise('select * from xlsx("cities.xlsx",{sheetid:"Sheet2"}')
+            .then(function(data){
+                 console.log(data);
+            }).catch(function(err){
+                 console.log('Error:', err);
+            });
+```
+By default AlaSQL read data from sheet "Sheet1".
+
+#### Range
+Cells range:
+```js
+    alasql.promise('select * from xlsx("cities.xlsx",{range:"A1:D100"}')
+            .then(function(data){
+                 console.log(data);
+            }).catch(function(err){
+                 console.log('Error:', err);
+            });
+```
+By default AlaSQL read all data in the sheet.
+
+#### headers
+Read headers from data range (true/false):
+```js
+    alasql.promise('select * from xlsx("cities.xlsx",{headers:true}')
+            .then(function(data){
+                 console.log(data);
+            }).catch(function(err){
+                 console.log('Error:', err);
+            });
+```
+By default AlaSQL headers are set to `true`
+
+
+### Example
 
 ```js
     var mystyle = {
@@ -11,50 +80,16 @@ AlaSQL can export data to Excel 2007 and LibreOffice format with colors and othe
         style: {Font:{Color:"#00FFFF"}}
       }}}
     };
-    alasql('SELECT * INTO XLSXML("restest280b.xls",?) FROM ?',[mystyle,data]);
+    alasql.promise('SELECT * INTO XLSXML("restest280b.xls",?) FROM ?',[mystyle,data])
+            .then(function(data){
+                 console.log('Data saved');
+            }).catch(function(err){
+                 console.log('Error:', err);
+            });
 ```
 See the working example in [jsFiddle](http://jsfiddle.net/95j0txwx/7/)
 
-
-
-Another simple example:
-
-```js
-    alasql('select City, Population from xlsx("cities.xlsx") where Population > 100000',
-       [], function(data){
-       console.lod(data);
-    });
-```
-
-### Options
-
-XLSX() function supports the following options:
-
-#### sheetid
-Sheet name:
-```js
-    alasql('select * from xlsx("cities.xlsx",{sheetid:"Sheet2"}',
-        [],function(data){});
-```
-By default AlaSQL read data from sheet "Sheet1".
-
-#### Range
-Cells range:
-```js
-    alasql('select * from xlsx("cities.xlsx",{range:"A1:D100"}',
-        [],function(data){});
-```
-By default AlaSQL read all data in the sheet.
-
-#### headers
-Read headers from data range (true/false):
-```js
-    alasql('select * from xlsx("cities.xlsx",{headers:true}',
-        [],function(data){});
-```
-By default AlaSQL headers are set to `true`
-
-
+			
 
 ---
 
