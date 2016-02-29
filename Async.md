@@ -6,6 +6,7 @@ Using alasql will normally be sync
 ```
 
 However, AlaSQL will always run async in the following cases. 
+* If using AlaSQL as a [[WebWorker]]
 * IndexedDB functions
 * INTO-functions (for example `SELECT * INTO CSV(...)`)
 * FROM-functions  (for example `SELECT * FROM CSV(...)`)
