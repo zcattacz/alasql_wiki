@@ -2,7 +2,7 @@
 
 AlaSQL can export data to Excel 2007 and LibreOffice format with colors and other Excel formatting functions. This also works in IE9. 
 
-Please note that when interacting with files AlaSQL [will run async](async). We strongly recommend you to [use the promise notation](promise).
+Please note that when interacting with files AlaSQL [will run async](async). We strongly recommend you to [use the promise notation](promise) instead of the simple notation: [`alasql(sql, params, function(data) { console.log(data) })`](async)
 
 
 ### Read from XLSX
