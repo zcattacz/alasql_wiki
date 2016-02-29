@@ -1,27 +1,38 @@
 # Async execution of SQL statements
 
-
-Normal sync version would be
+Using alasql will normally be sync
 ```js
-    var result = alasql(sql, params)
+    var result = alasql(sql[, params])
 ```
 
-To run Async version add a 3rd parameter as callback:
+However, AlaSQL will always run async in the following cases. 
+* IndexedDB functions
+* INTO-functions (for example `SELECT * INTO CSV(...)`)
+* FROM-functions  (for example `SELECT * FROM CSV(...)`)
+
+We strongly recommend using the [[promise]] notation:
+
 ```js
-	alasql(sql, params, function(result) {
-		// do something with result
+alasql.promise('SELECT * FROM CLS("foo.csv")')
+      .then(function(data){
+           console.log(data);
+      }).catch(function(err){
+           console.log('Error:', err);
+      });
+```
+
+If you feel very confident that you do not need to handle errors you can run async by add a 3rd parameter to alasql with a callback function:
+```js
+	alasql(sql, params, function(data) {
+		// do something with data
 	});
 ```
-
-AlaSQL will always run async in the following cases. 
-* IndexedDB functions
-* INTO- functions
-* FROM-functions
+Note that if you have no params the value must be set to `[]`
 
 Example:
 ```js
-     var resSync = alasql('SELECT * FROM CSV("mydata.csv")')',[],function(resAsync){
-          console.log(resAsync);
+     var resSync = alasql('SELECT * FROM CSV("mydata.csv")',[],function(data){
+          console.log(data);
      });
-     console.log(resSync);
 ```
+
