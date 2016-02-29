@@ -25,7 +25,7 @@ alasql.promise(sql [, params])
 ```
 
 ## Simple notation
-If you feel very confident that you do not need to handle errors you can run async by add a 3rd parameter to alasql with a callback function:
+If you feel very confident that you do not need to handle errors you can run async by adding a 3rd parameter to alasql with a callback function:
 ```js
 	alasql(sql, params, function(data) {
 		// do something with data
