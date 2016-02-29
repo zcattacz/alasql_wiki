@@ -11,6 +11,8 @@ However, AlaSQL will always run async in the following cases.
 * INTO-functions (for example `SELECT * INTO CSV(...)`)
 * FROM-functions  (for example `SELECT * FROM CSV(...)`)
 
+
+## Promise notation
 We strongly recommend using the [[promise]] notation:
 
 ```js
@@ -22,6 +24,7 @@ alasql.promise(sql [, params])
       });
 ```
 
+## Simple notation
 If you feel very confident that you do not need to handle errors you can run async by add a 3rd parameter to alasql with a callback function:
 ```js
 	alasql(sql, params, function(data) {
