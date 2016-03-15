@@ -4,5 +4,5 @@ AlaSQL supports its own file format of database storage. This is a JSON string r
 
 To use FileStorage you need to attach database:
 ```sql
-    ATTACH FILESTORAGE DATABASE one;
+    ATTACH FILESTORAGE DATABASE one("./myFile.json");
 ```
