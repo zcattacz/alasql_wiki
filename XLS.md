@@ -28,6 +28,9 @@ AlaSQL can read and export data in Excel 2003 format (.xls) with coloring of cel
 ```
 Please, see the example with advanced color syntax [in jsFiddle](http://jsfiddle.net/agershun/95j0txwx/2/).
 
+You can pass the object as a Blob:
+
+    alasql('SELECT * FROM XLS(?,{headers:true}',[myblob]);
 ----
 
 If you need Excel 2007 files please check out [[XLSX]]
