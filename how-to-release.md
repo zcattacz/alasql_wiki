@@ -128,7 +128,7 @@ roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
 
 
 #### # Push develop, master and tags to github 
-    run "Push develop and master + tags to github" "git checkout develop && git push && git checkout master && git push && git push --tags"
+    run "Push develop and master + tags to github" "git checkout master && git push && git checkout develop && git push && git push --tags"
 
 #### # [Create a new github release](https://github.com/agershun/alasql/releases/new) Same description as CHANGELOG.md and with release title as `"CITYNAME" (TODAY)` for example `"Athens" (13.07.2015)` You should be able to find it in the dropdown in "Tag version" - and select **master** as branch.
 releaseUrl="https://github.com/agershun/alasql/releases/new"
@@ -163,12 +163,6 @@ releaseUrl="https://github.com/agershun/alasql/releases/new"
 #### # Check git-flow is installed
       git flow version > /dev/null 2>&1 || flee "Please install git-flow before continuing" 
 
-
-#### # Check repo has git-flow config
-      grep -q 'gitflow' ./.git/config || run "To run the checklist you must prepare the repo for git-flow${CR}Its recommended to accept the suggested values" "git flow init" || flee "Please 'git flow init' before restarting this checklist"
-
-#### # Check repo has git-flow config
-      grep -q 'gitflow' ./.git/config || run "To run the checklist you must prepare the repo for git-flow${CR}Its recommended to accept the suggested values" "git flow init" || flee "Please 'git flow init' before restarting this checklist"
 
 #### # Check repo has git-flow config
       grep -q 'gitflow' ./.git/config || run "To run the checklist you must prepare the repo for git-flow${CR}Its recommended to accept the suggested values" "git flow init" || flee "Please 'git flow init' before restarting this checklist"
