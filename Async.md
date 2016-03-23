@@ -25,6 +25,30 @@ alasql.promise(sql [, params])
       });
 ```
 
+### Chain of promises
+
+If you put more than one SQL commands in the same string they will (until its fixed) run sync within in the async call to `alasql` - so a command like `"INSERT ...; SELECT * ..."` might not give the expected result as the select might run before the insert is done. 
+
+From version 0.2.5 you are able to pass an array of queries to `alasql.promise` and they will execute in a chain (so one after the return of the promise of the other). For the moment the only drawback is that you only get the result from the last query in the chain. 
+
+```js
+alasql.promise([
+	'CREATE FILESTORAGE DATABASE test123("./testDBfile.json")', 
+	'ATTACH FILESTORAGE DATABASE test123("./testDBfile.json")', 
+	'USE test123', 
+	'CREATE TABLE IF NOT EXISTS products (id INT, category_id INT, name string, created_at DATE)', 
+	['INSERT INTO products (id, category_id, name, created_at) VALUES (?,?,?,?)', [1, 2, 'XYZ', new Date()] ],
+	'SELECT * FROM products'	
+]).then(function(res){
+	console.log('Result from last query:',res)
+}).catch(function(reason){
+	console.log('Error:',reason)
+})
+```
+
+Please note that to be able to combine a query with parameters instead of a string one must pass an array with the query string at index 0 and the array of parameters at index 1.
+
+
 ## Simple notation
 If you feel very confident that you do not need to handle errors you can run async by adding a 3rd parameter to alasql with a callback function:
 ```js
