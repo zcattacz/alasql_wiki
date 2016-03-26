@@ -645,6 +645,6 @@ and other people for useful tools, which make our work much easier.
 ----
 
 
-<a href="http://alasql.org"><img src="https://cloud.githubusercontent.com/assets/1063454/14003946/d6e5c076-f156-11e5-8238-e62d2a8d20dc.png" align="left" alt="AlaSQL logo" width="82" height="82"/></a>
+<a href="http://alasql.org"><img src="https://cloud.githubusercontent.com/assets/1063454/14003946/d6e5c076-f156-11e5-8238-e62d2a8d20dc.png" align="right" alt="AlaSQL logo" width="82" height="82"/></a>
 © 2014-2016, Andrey Gershun (agershun@gmail.com) & M. Rangel Wulff (m@rawu.dk)
 
