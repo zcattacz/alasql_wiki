@@ -99,6 +99,15 @@ AlaSQL uses js-xlsx library to read and export Excel files.
 
 js-xlsx at Github: https://github.com/SheetJS/js-xlsx
 
+
+
+----
+
+By default AlaSQL look through first 10 records to collect infomation about all columns. You can change this flag to be sure that AlaSQL collect information about all columns in all records (it may take a time for large recordsets).
+
+    alasql.options.columnlookup = 10;
+
+
 ----
 
 If you need Excel 2003 files please check out: [[XLS]]
