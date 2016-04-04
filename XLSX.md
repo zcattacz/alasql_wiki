@@ -107,7 +107,10 @@ By default AlaSQL look through first 10 records to collect infomation about all 
 
     alasql.options.columnlookup = 10;
 
+----
 
+To read blank column values from xls,xlsx and csv you can use this notation for column names [0],[1],[2] like:
+    SELECT [0],[2] FROM XLS('filename.xls') WHERE [3] > 100
 ----
 
 If you need Excel 2003 files please check out: [[XLS]]
