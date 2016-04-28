@@ -48,7 +48,7 @@ HTML:
 ```
 Controller:
 ```
-    $rootScope.loadFile = function ($event) {
+    $rootScope.loadFile = function (event) {
         if (event.fromElement.files.length==0) {
             return(false);   // leave in case no file was chosen
         };
@@ -57,3 +57,7 @@ Controller:
         }); 
     };
 ```
+
+Play with this example: http://jsfiddle.net/vxjgnmxa/ (only chrome)
+
+For firefox support, please check out https://github.com/agershun/alasql/tree/develop/examples/angular/import-export-excel
