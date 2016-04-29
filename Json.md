@@ -47,25 +47,23 @@ Calculated property names
 ## Object Properties & Functions
 
 Object property
-* a -> b
-* a -> b -> c
+* `a -> b`
+* `a -> b -> c`
 
 Array member
-* a -> 1
-* a -> 1 -> 2
+* `a -> 1`
+* `a -> 1 -> 2`
 
 Calculated property name
-* a -> (1+2)
-* a -> (“text” + “ “ + ”more”)
+* `a -> (1+2)`
+* `a -> ("text2 + " " + "more")`
 
 Functions
-* myTime -> getFullYear()
-* s -> substr(1,2)
+* `myTime -> getFullYear()`
+* `s -> substr(1,2)`
 
-JavaScript string functions
-```js
-    “ABCDE”->length
-```
+JavaScript string functions can also be used
+
 ```sql
     SELECT s->length FROM mytext
 ```
