@@ -48,3 +48,46 @@ The `->` operator is inspired by the structure-pointer member operator in C/C++ 
 - `property->text` equals `property["text"]` in javascript 
 - `property->number` equals `property[number]` in javascript 
 - `property->functionName(args)`  equals `property["functionName"](args)` in javascript
+
+
+Object property
+* `a -> b`
+* `a -> b -> c`
+
+Array member
+* `a -> 1`
+* `a -> 1 -> 2`
+
+Calculated property name
+* `a -> (1+2)`
+* `a -> ("text2 + " " + "more")`
+
+Functions
+* `myTime -> getFullYear()`
+* `s -> substr(1,2)`
+
+
+Arrow function -> property
+```js
+    var data = [{a:{b:1,c:1}, {a:{b:2}}}]
+    alasql(‘SELECT a->b FROM ?’,[data]);
+```
+
+Array members
+```sql
+    SELECT a->(0) FROM data
+```
+
+Calculated property names
+```sql
+    SELECT a->(“mon”+moid), b->(2+2) FROM data
+```
+
+## Object Properties & Functions
+
+
+JavaScript string functions can also be used
+
+```sql
+    SELECT s->length FROM mytext
+```
