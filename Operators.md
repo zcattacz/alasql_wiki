@@ -70,7 +70,8 @@ Functions
 Arrow function -> property
 ```js
     var data = [{a:{b:1,c:1}, {a:{b:2}}}]
-    alasql(‘SELECT a->b FROM ?’,[data]);
+    alasql(‘SELECT a->b as val FROM ?’,[data]);
+    // [{val:1},{val:2}]
 ```
 
 Array members
