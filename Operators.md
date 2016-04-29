@@ -83,9 +83,6 @@ Calculated property names
     SELECT a->(“mon”+moid), b->(2+2) FROM data
 ```
 
-## Object Properties & Functions
-
-
 JavaScript string functions can also be used
 
 ```sql
