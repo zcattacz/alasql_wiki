@@ -1,6 +1,6 @@
 # Keyword `SEARCH`
 
-AlaSQL ```SEARCH``` operator is designed to traverse over JSON objects and graphs.
+AlaSQL ```SEARCH``` operator is designed to traverse over JSON objects and graphs and is inspired by the [OrientDB graph search](https://github.com/agershun/alasql/issues/131#issuecomment-94413228)
 
 Syntax:
 ```sql
