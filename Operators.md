@@ -1,20 +1,27 @@
 # Operators
 
-Number
+Operators you can use with AlaSQL
+
+**Number**
 ```
     +,-,*,/
 ```
-String
+
+**String**
 ```
     +
 ```
-Logic
+
+**Logic**
 ```sql
     AND, OR, NOT
     =, !=, >, >=, <, <=
 ```
 
-Complex 
+### Complex operators
+
+**SQL related**
+
 ```sql
     v BETWEEN a AND b
     v NOT BETWEEN a AND b
@@ -23,7 +30,8 @@ Complex
     v >= ANY (20,30,40)
 ```
 
-## Deep Equal Operator
+
+**Deep Equal Operator**
 ```sql
     SELECT @{a:1} == @{a:1}
     => True
@@ -33,3 +41,10 @@ Complex
     SELECT * FROM one WHERE a==@[5,6]
 ```
 
+**Access a child**
+
+The `->` operator is inspired by the structure-pointer member operator in C/C++ and the object member operator in C++/Perl/PHP and is used in AlaSQL to access nested data.
+
+- `property->text` equals `property["text"] in javascript 
+- `property->number` equals `property[number]` in javascript 
+- `property->functionName(args)`  equalis `property["functionName"](args)` in javascript
