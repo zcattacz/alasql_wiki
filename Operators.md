@@ -45,6 +45,6 @@ Operators you can use with AlaSQL
 
 The `->` operator is inspired by the structure-pointer member operator in C/C++ and the object member operator in C++/Perl/PHP and is used in AlaSQL to access nested data.
 
-- `property->text` equals `property["text"] in javascript 
+- `property->text` equals `property["text"]` in javascript 
 - `property->number` equals `property[number]` in javascript 
 - `property->functionName(args)`  equalis `property["functionName"](args)` in javascript
