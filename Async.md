@@ -12,6 +12,7 @@ However, AlaSQL will always run async in the following cases.
 * If using AlaSQL as a [[WebWorker]]
 * All operations involving [[IndexedDB]]
 
+If you are not sure what the point of async is, have a look at http://rowanmanning.com/posts/javascript-for-beginners-async and continue when you can explain the output order of A, B and C in http://jsfiddle.net/5Lnsxhf2/
 
 ## Promise notation
 We strongly recommend using the [[promise]] notation:
