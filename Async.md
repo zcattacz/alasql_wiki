@@ -29,7 +29,7 @@ alasql.promise(sql [, params])
 
 If you put more than one SQL commands in the same string they will (until its fixed) run sync within in the async call to `alasql` - so a command like `"INSERT ...; SELECT * ..."` might not give the expected result as the select might run before the insert is done. 
 
-From version 0.2.5 you are able to pass an array of queries to `alasql.promise` and they will execute in a chain (so one after the return of the promise of the other). For the moment the only drawback is that you only get the result from the last query in the chain. 
+You are able to pass an array of queries to `alasql.promise` and they will execute in a chain (so one after the return of the promise of the other). From version 0.2.7 the value passed to `.then` will be an array with the response of each of the queries. Pre 0.2.7 versions will only give the result from the last query executed. 
 
 ```js
 alasql.promise([
@@ -40,7 +40,7 @@ alasql.promise([
 	['INSERT INTO products (id, category_id, name, created_at) VALUES (?,?,?,?)', [1, 2, 'XYZ', new Date()] ],
 	'SELECT * FROM products'	
 ]).then(function(res){
-	console.log('Result from last query:',res)
+	console.log('Result from last query:',res.pop())
 }).catch(function(reason){
 	console.log('Error:',reason)
 })
