@@ -42,5 +42,10 @@ alasql('ATTACH INDEXEDDB DATABASE NN'.[].function(data){
     //do something with data
 });
 
+# DROP
 
+To [[drop]] an IndexedDB database please remember to include the engine name
+
+```sql
+DROP INDEXEDDB DATABASE db_name
 ```
