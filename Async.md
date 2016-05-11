@@ -51,18 +51,38 @@ Please note that to be able to combine a query with parameters instead of a stri
 
 
 ## Simple notation
-If you feel very confident that you do not need to handle errors you can run async by adding a 3rd parameter to alasql with a callback function:
+Another way to execute code async is the simple notation
 ```js
-	alasql(sql, params, function(data) {
+	alasql(sql, [params,] function(data) {
 		// do something with data
 	});
 ```
-Note that if you have no params the value must be set to `[]`
+Note that if you have no params the value is not needed
 
 Example:
 ```js
-     var resSync = alasql('SELECT * FROM CSV("mydata.csv")',[],function(data){
+     var resSync = alasql('SELECT * FROM CSV("mydata.csv")', function(data){
           console.log(data);
      });
 ```
 
+For the simple notation you can ask for the second parameter to be an error
+```js
+alasql.options.errorlog = true; 
+alasql('ATTACH INDEXEDDB DATABASE NN'.[].function(data,err){
+    if(err) // do something with error;
+});
+
+```
+
+Or you can handle errors in one central function for all executions
+
+```js
+alasql.options.errorlog = function(err){console.log(err)}; // Do something with error
+
+alasql('ATTACH INDEXEDDB DATABASE NN'.[].function(data){
+    //do something with data
+});
+```
+
+Please note that the `.promise` notation is recommended.
