@@ -15,8 +15,8 @@ Sample (try it in [jsFiddel](http://jsfiddle.net/agershun/1t2rrr78/)):
         SELECT * INTO cities FROM ?', [cityData], function(){
 
         // Select data from IndexedDB
-        alasql('SELECT COLUMN * FROM cities WHERE population > 100000 ORDER BY city DESC',
-           [],function(res){
+        alasql.promise('SELECT COLUMN * FROM cities WHERE population > 100000 ORDER BY city DESC')
+              .then(function(res){
                 document.write('Big cities: ', res.join(','));
         });
     });
@@ -24,24 +24,7 @@ Sample (try it in [jsFiddel](http://jsfiddle.net/agershun/1t2rrr78/)):
 
 ### Errors
 
-All IndexedDB operations are asyncronous. This is the main reason ```try catch``` construction does not catch errors fron IndexedDB at the moment. 
-
-If you need to handle errors please try the following
-
-```js
-alasql.options.errorlog = true; 
-alasql('ATTACH INDEXEDDB DATABASE NN'.[].function(data,err){
-    if(err) // do something with error;
-});
-
-// or 
-
-alasql.options.errorlog = function(err){console.log(err)}; // Do something with error
-
-alasql('ATTACH INDEXEDDB DATABASE NN'.[].function(data){
-    //do something with data
-});
-```
+All IndexedDB operations are asyncronous. This is the main reason ```try catch``` construction does not catch errors fron IndexedDB. Please see more about [[async]] code execution. 
 
 # DROP
 
