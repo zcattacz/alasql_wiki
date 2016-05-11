@@ -41,6 +41,7 @@ alasql.options.errorlog = function(err){console.log(err)}; // Do something with 
 alasql('ATTACH INDEXEDDB DATABASE NN'.[].function(data){
     //do something with data
 });
+```
 
 # DROP
 
