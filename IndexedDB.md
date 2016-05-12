@@ -30,6 +30,6 @@ All IndexedDB operations are asyncronous. This is the main reason ```try catch``
 
 To [[drop]] an IndexedDB database please remember to include the engine name
 
-```sql
+```
 DROP INDEXEDDB DATABASE db_name
 ```
