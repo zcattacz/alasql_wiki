@@ -1,4 +1,4 @@
-## Work with IndexedDB
+# Working with IndexedDB
 
 Sample (try it in [jsFiddel](http://jsfiddle.net/agershun/1t2rrr78/)):
 ```js
@@ -22,11 +22,11 @@ Sample (try it in [jsFiddel](http://jsfiddle.net/agershun/1t2rrr78/)):
     });
 ```
 
-### Errors
+## Errors
 
 All IndexedDB operations are asyncronous. This is the main reason ```try catch``` construction does not catch errors fron IndexedDB. Please see more about [[async]] code execution. 
 
-# DROP
+## DROP
 
 To [[drop]] an IndexedDB database please remember to include the engine name
 
