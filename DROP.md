@@ -10,7 +10,7 @@ Syntax:
     DROP INDEX index;
 ```
 
-Note that `[engine]` is to be used when the database to be `DROP`ed is hosed by a different engine. Example: 
+Note that [engine] is to be used when the database to be DROPped is hosed by a different engine (as for example IndexedDB or filestorage). Example:
 
 ```sql
 DROP INDEXEDDB DATABASE db_name
