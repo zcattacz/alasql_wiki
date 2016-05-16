@@ -91,7 +91,7 @@ See the working example in [jsFiddle](http://jsfiddle.net/95j0txwx/7/)
 
 You can also pass the file as a Blob:
 
-    alasql('SELECT * FROM XLSX(?,{headers:true}',[myblob]);		
+    alasql('SELECT * FROM XLSX(?)',[myblobData]);		
 
 ---
 
