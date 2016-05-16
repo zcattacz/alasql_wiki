@@ -20,7 +20,7 @@ Please note that when interacting with files AlaSQL [will run async](async). We 
 
 ```js
 
-    alasql.promise('SELECT * INTO XLSXML("restest280b.xls") FROM ?', [data])
+    alasql.promise('SELECT * INTO XLSX("restest280b.xlsx") FROM ?', [data])
             .then(function(data){
                  console.log('Data saved');
             }).catch(function(err){
