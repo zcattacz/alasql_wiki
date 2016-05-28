@@ -1,7 +1,7 @@
 # Getting Started
 
 
-After [including/requireing/installing AlaSQL](install) the object `alasql` is the main variable of the module. You can use it immediately as a default database
+After [including/requiring/installing AlaSQL](install) the object `alasql` is the main variable of the module. You can use it immediately as a default database
 
 In browser:
 ```html
