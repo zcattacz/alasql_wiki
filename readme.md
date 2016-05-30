@@ -14,7 +14,6 @@ _Got a question? Ask on [Stack Overflow](http://stackoverflow.com/questions/ask?
 # AlaSQL
 
 <a href="http://alasql.org"><img src="https://cloud.githubusercontent.com/assets/1063454/14003945/d6e56888-f156-11e5-95b9-3035a2538ae8.png" align="left" alt="AlaSQL logo" /></a>
-
 _( [à la](http://en.wiktionary.org/wiki/%C3%A0_la) [SQL](http://en.wikipedia.org/wiki/SQL) ) [ælæ ɛskju:ɛl]_ - AlaSQL is an open source SQL database for Javascript with a strong focus on query speed and datasource flexibility for relational data, schemaless data, and graph data. It works in your browser, Node.js, IO.js and Cordova.
 
 The library is designed for:
