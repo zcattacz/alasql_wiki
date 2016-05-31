@@ -24,4 +24,6 @@ Syntax:
     alasql('INSERT INTO city SELECT capital AS name FROM country GROUP BY capital;');
 ```
 
+An `INSERT` statement will return the amount of rows inserted by the statment. 
+
 See also: [INTO](Into), [SELECT INTO](Select Into)
