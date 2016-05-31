@@ -16,6 +16,7 @@ alasql('UPDATE cities SET population = population * 1.5 WHERE name LIKE "A%"');
 alasql('UPDATE city SET population = LEN(name) * 1000000 WHERE name LIKE "M%"');
 ```
 
+An `UPDATE` statement will return the amount of rows updated by the statment. 
 
 
 See also: [DELETE](Delete), [INSERT](Insert)
