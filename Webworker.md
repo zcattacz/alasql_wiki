@@ -48,9 +48,9 @@ Try this example [here](http://alasql.org/demo/012worker/index2.html).
 
 alasql.worker() function has three parameters:
 ```js
-    alasql.worker() - start worker
-    alasql("alasql.min.js") - start worker from specified path
-    alasql("alasql.min.js",["script1.js","script2.js"], callback) - load additional javascript files.
+alasql.worker() - start worker
+alasql.worker("alasql.min.js") - start worker from specified path
+alasql.worker("alasql.min.js",["script1.js","script2.js"], callback) - load additional javascript files.
 ```
 
 Try these three examples:
