@@ -101,7 +101,7 @@ roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
 
 
 #### # Change version number for Meteor `/partners/meteor/package.js`
-    run "Replace $preVersion with $thisVersion in partners/meteor/ for package.js and .versions" "sed 's/'$preVersion',/'$thisVersion',/g' partners/meteor/package.js > tmp && mv tmp partners/meteor/package.js && sed 's/alasql@$preVersion/alasql@$thisVersion/g' partners/meteor/.versions > tmp && mv tmp partners/meteor/.versions && echo 'Please verify that version is set to $thisVersion. ${CR}Press \"i\" to edit and \"<esc>:wq\" to save...' && hitkey && vim partners/meteor/package.js && echo 'and the second file' && hitkey && vim partners/meteor/.versions  && echo 'Verry well...'"
+    run "Replace $preVersion with $thisVersion in partners/meteor/ for package.js" "sed 's/'$preVersion',/'$thisVersion',/g' partners/meteor/package.js > tmp && mv tmp partners/meteor/package.js && echo 'Please verify that the version is set to $thisVersion. ${CR}Press \"i\" to edit and \"<esc>:wq\" to save...' && hitkey && vim partners/meteor/package.js && echo 'Very well...'"
 
 
 
