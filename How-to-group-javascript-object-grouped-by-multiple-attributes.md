@@ -80,6 +80,6 @@ This is an example with two attributes:
              AS groups FROM ? GROUP BY label', [res1]);
     };
 
-    var res = json2group(input, ["age","class"]);
+    var res = json2group(input, ["age","[class]"]);
 
 You can try it [in jsFiddle](http://jsfiddle.net/agershun/ztc32a8h/4/)
