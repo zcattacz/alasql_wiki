@@ -27,6 +27,8 @@ Please note that when interacting with files AlaSQL [will run async](async). We 
                  console.log('Error:', err);
             });
 ```
+
+To store data in multiple sheets have a look at http://jsfiddle.net/gd7jex9s/
 		
 ### Options
 
@@ -110,7 +112,9 @@ By default AlaSQL look through first 10 records to collect infomation about all 
 ----
 
 To read blank column values from xls,xlsx and csv you can use this notation for column names [0],[1],[2] like:
+
     SELECT [0],[2] FROM XLS('filename.xls') WHERE [3] > 100
+
 ----
 
 If you need Excel 2003 files please check out: [[XLS]]
