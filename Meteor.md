@@ -21,10 +21,10 @@ Read [the rest of the article about Meteor and AlaSQL](https://www.compose.io/ar
 
 AlaSQL works on client and the server side. 
 
-To get started install AlaSQL for Meteor from [the Meteor packagemanager atmospherejs](https://atmospherejs.com/agershun/alasql):
+To get started import AlaSQL from NPM in your code
 
 ```
-    meteor add agershun:alasql
+import alasql from 'alasql';
 ```
 
 Now you can query directly on Meteor Collections with the `alasql` function: 
