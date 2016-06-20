@@ -36,9 +36,9 @@ To use AlaSQL via bower install as normal
 
 ### Meteor
 
-To use AlaSQL with Meteor install as normal
+To use AlaSQL with Meteor import it from NPM by having the following in your code
 
-    meteor add agershun:alasql
+    import alasql from 'alasql';
 
 ----
 
