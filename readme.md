@@ -101,8 +101,8 @@ jsFiddle with [example A)](http://jsfiddle.net/hguw3LLk/) and [example B)](http:
 
 ```bash
 npm install --save alasql      # node
-meteor add agershun:alasql     # meteor
 bower install --save alasql    # bower
+import alasql from 'alasql';   # meteor
 npm install -g alasql          # command line
 ```
 
