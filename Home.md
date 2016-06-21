@@ -85,7 +85,6 @@ Please make sure [[promise]] is supported if you are in the browser.
 * [alaserver](Alaserver) - simple SQL server based on AlaSQL
 
 ### Development 
-* [How to setup environment for AlaSQL development?](How to setup environment for AlaSQL development)
 * [How to assemble AlaSQL?](How to assemble AlaSQL)
 * [How to prepare new release?](How to release)
 
