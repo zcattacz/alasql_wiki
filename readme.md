@@ -5,6 +5,7 @@
 [![ghit.me](https://ghit.me/badge.svg?repo=agershun/alasql)](https://ghit.me/repo/agershun/alasql)
 ![Release](https://img.shields.io/github/release/agershun/alasql.svg?label=Last%20release&a)
 ![Stars](https://img.shields.io/github/stars/agershun/alasql.svg?label=Github%20%E2%98%85&a)
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/agershun/alasql.svg)](http://isitmaintained.com/project/agershun/alasql "Average time to resolve an issue")
 
 _AlaSQL is an open source project and we appreciate any and all contributions we can get. Please help out._
 
