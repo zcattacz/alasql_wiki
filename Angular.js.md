@@ -38,6 +38,8 @@ Controller:
     };
 ```
 
+Codepen example: http://codepen.io/DickSwart/pen/wWPYpX/
+
 ### Import data from file in client computer
 
 Unfortunately, we cannot use ```ng-change``` because the input needs to be bound (```ng-model```), but it seems that ```type=file``` inputs are not supported for binding in Angular.js, so we can switch to ```ng-mouseleave``` and it worked, though we had to check in the function that a file had been chosen.
