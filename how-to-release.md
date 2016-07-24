@@ -99,12 +99,6 @@ roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
 
 
 
-
-#### # Change version number for Meteor `/partners/meteor/package.js`
-    run "Replace $preVersion with $thisVersion in partners/meteor/ for package.js" "sed 's/'$preVersion',/'$thisVersion',/g' partners/meteor/package.js > tmp && mv tmp partners/meteor/package.js && echo 'Please verify that the version is set to $thisVersion. ${CR}Press \"i\" to edit and \"<esc>:wq\" to save...' && hitkey && vim partners/meteor/package.js && echo 'Very well...'"
-
-
-
 #### # Verify that `npm test` does not give any errors
     echo "For the checklist to continue build+test must be OK" && hitkey
     npm run build || exit 1
@@ -114,10 +108,6 @@ roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
 
 #### # push package to npm `npm publish` 
     run "push package to npm" "npm publish"
-
-
-#### # push package to athmospherejs (Meteor)  
-    run "push package to athmospherejs (Meteor)" "cd partners/meteor && meteor publish && cd ../../"
 
 
 #### # Add and commit changes
