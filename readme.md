@@ -529,7 +529,7 @@ var IgnorePlugin =  require("webpack").IgnorePlugin;
 module.exports = {
   ...
   //Will ignore the modules fs, path, xlsx, xls
-  plugins:[new IgnorePlugin(/(^fs$|xlsx|xls ... |^path$)/)]
+  plugins:[new IgnorePlugin(/(^fs$|cptable|jszip|xlsx|xls|^es6-promise$|^net$|^tls$|^forever-agent$|^tough-cookie$|cpexcel|^path$)/)]
 };
 ```
 
