@@ -31,11 +31,11 @@ To create new database:
 
 	// or
 
-	new mydb = new alasql.Database();
+	var mydb = new alasql.Database();
 
 	// or
 
-	new mydb = new alasql.Database('My Database');
+	var mydb = new alasql.Database('My Database');
 ```
 
 You can find database:
