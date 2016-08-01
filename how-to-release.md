@@ -100,9 +100,9 @@ roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
 
 
 #### # Verify that `npm test` does not give any errors
-    echo "For the checklist to continue build+test must be OK" && hitkey
-    npm run build || exit 1
-    npm run test:cover || exit 1
+    echo "For the checklist to continue build+test must be OK and a test cover report must be created" && hitkey
+    npm run test || exit 1
+    npm run test:cover 
     hitkey
     br
 
