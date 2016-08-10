@@ -130,7 +130,7 @@ these words for columns and variables. All AlaSQL keywords are case-insensitive.
 * [REDUCE](REDUCE)
 * [REFERENCES](REFERENCES)
 * [RELATIVE](RELATIVE)
-* [REPLACE]
+* [[REPLACE]]
 * [REMOVE](REMOVE)
 * [RENAME](RENAME)
 * [REQUIRE](REQUIRE)
