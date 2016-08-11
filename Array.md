@@ -16,3 +16,7 @@ Syntax:
 ```
 
 See example [at jsFiddle](http://jsfiddle.net/agershun/5rte00j6/7/)
+
+The keyword can also be used like in this example 
+
+    SELECT COLUMN a FROM test1 WHERE a = ANY (ARRAY[2,3,4])
