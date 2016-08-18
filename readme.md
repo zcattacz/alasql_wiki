@@ -499,7 +499,7 @@ To run enter the command:
 ```
     alaserver [port]
 ```
-then type in browser something like "http://127.0.0.1:1337/?SELECT VALUE 2*2"
+then type in browser something like "<a href="http://127.0.0.1:1337/?SELECT VALUE 2*2">http://127.0.0.1:1337/?SELECT VALUE 2*2</a>"
 
 Warning: Alaserver is not multi-thread, not concurrent, and not secured.
 
