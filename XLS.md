@@ -2,7 +2,7 @@
 
 AlaSQL can read and export data in Excel 2003 format (.xls) with coloring of cells.
 
-Please know that we recommend exporting to ".xlsx" instead of ".xls" as Microsoft has started [refusing to open files in the old format](http://www.infoworld.com/article/3098898/microsoft-windows/excel-refusing-to-open-files-blame-the-kb-3115322-3115262-security-updates.html).
+Please know that we recommend exporting to [".xlsx"](XLSX) instead of ".xls" as Microsoft has started [refusing to open files in the old format](http://www.infoworld.com/article/3098898/microsoft-windows/excel-refusing-to-open-files-blame-the-kb-3115322-3115262-security-updates.html).
 
 
 ```js
