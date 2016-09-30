@@ -26,7 +26,7 @@ You can also give the full content of a CSV file as a string instead of the path
 
 You can specify delimiters and quote characters:
 ```js
-    alasql.promise('SELECT * FROM CSV("my.csv", {headers:true, quote:"\'",separator:","})')
+    alasql.promise('SELECT * FROM CSV("my.csv", {headers:false, quote:"\'",separator:","})')
             .then(function(data){
                  console.log(data);
             }).catch(function(err){
@@ -46,7 +46,7 @@ Example on how to change the seperator only
 
 ### Export to CSV data
 ```js
-    alasql.promise('SELECT * INTO CSV("my.csv", {headers:true}) FROM ?',[data])
+    alasql.promise('SELECT * INTO CSV("my.csv", {headers:false}) FROM ?',[data])
             .then(function(){
                  console.log('Data saved');
             }).catch(function(err){
