@@ -16,7 +16,7 @@ To export multisheet workbook use this code:
         done();
       });
 ```
-You can try this example [in jsFiddle](http://jsfiddle.net/ry8fq0dL/).
+You can try this example [in jsFiddle](http://jsfiddle.net/6ckj281f/).
 
 Please note, that by some reason AlaSQL uses this syntax ```SELECT FROM``` without star inside. This syntax is equvalent to ```SELECT COLUMN _ FROM```, that different from ```SELECT * FROM```, because second syntax creates new objects on the base of data. 
 
