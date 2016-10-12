@@ -28,7 +28,7 @@ Please know that we recommend exporting to [".xlsx"](XLSX) instead of ".xls" as 
     var res = alasql('SELECT * INTO XLS("restest257a.xls",?) FROM ?',[opts,data]); 
 
 ```
-Please, see the example with advanced color syntax [in jsFiddle](http://jsfiddle.net/wosp8owh/).
+Please, see the example with advanced color syntax [in jsFiddle](http://jsfiddle.net/4e6vyk8v/).
 
 You can pass the object as a Blob:
 
