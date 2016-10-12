@@ -1,3 +1,8 @@
+_AlaSQL is an open source project and we appreciate any and all contributions we can get. Please help out._
+
+_Got a question? Ask on [Stack Overflow](http://stackoverflow.com/questions/ask?tags=AlaSQL) and tag with "alasql"._
+
+
 [![Build status](https://api.travis-ci.org/agershun/alasql.svg)](https://travis-ci.org/agershun/alasql?123)
 [![NPM downloads](http://img.shields.io/npm/dm/alasql.svg?style=flat&label=npm%20downloads)](https://npmjs.org/package/alasql?)
 [![ghit.me](https://ghit.me/badge.svg?repo=agershun/alasql)](https://ghit.me/repo/agershun/alasql)
@@ -7,20 +12,14 @@
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/328/badge)](https://bestpractices.coreinfrastructure.org/projects/328)
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/agershun/alasql.svg)](http://isitmaintained.com/project/agershun/alasql "Average time to resolve an issue")
 
-[![Throughput Graph](https://graphs.waffle.io/agershun/alasql/throughput.svg)](https://waffle.io/agershun/alasql/metrics/throughput)
+<div align="center"><a href="http://alasql.org"><img src="https://cloud.githubusercontent.com/assets/1063454/19309516/94f8007e-9085-11e6-810f-62fd60b42185.png" alt="AlaSQL logo" styl="max-width:80%"/></a>
+</div>
 
-
-
-
-
-_AlaSQL is an open source project and we appreciate any and all contributions we can get. Please help out._
-
-_Got a question? Ask on [Stack Overflow](http://stackoverflow.com/questions/ask?tags=AlaSQL) and tag with "alasql"._
 
 
 # AlaSQL
 
-<a href="http://alasql.org"><img src="https://cloud.githubusercontent.com/assets/1063454/14003945/d6e56888-f156-11e5-95b9-3035a2538ae8.png" align="left" alt="AlaSQL logo" /></a>
+
 _( [à la](http://en.wiktionary.org/wiki/%C3%A0_la) [SQL](http://en.wikipedia.org/wiki/SQL) ) [ælæ ɛskju:ɛl]_ - AlaSQL is an open source SQL database for Javascript with a strong focus on query speed and datasource flexibility for relational data, schemaless data, and graph data. It works in your browser, Node.js, IO.js and Cordova.
 
 The library is designed for:
@@ -645,6 +644,10 @@ MIT - see [MIT licence information](LICENSE)
 * [Mathias Rangel Wulff](https://twitter.com/rangelwulff)
 * [Aubert Grégoire](https://github.com/gregaubert)
 
+[![Throughput Graph](https://graphs.waffle.io/agershun/alasql/throughput.svg)](https://waffle.io/agershun/alasql/metrics/throughput)
+
+
+
 ## Credits
 
 Many thanks to Zach Carter for [Jison](http://zaach.github.io/jison/) parser generator, to the author of FileSaver.js, Andrew Kent for his [SQL Parser](https://github.com/forward/sql-parser),
@@ -659,8 +662,7 @@ and other people for useful tools, which make our work much easier.
 * [Other similar projects](http://github.com/agershun/alasql/wiki/Similar-Projects.md) - list of databases on JavaScript
 
 
+
 ----
-
-
 <a href="http://alasql.org"><img src="https://cloud.githubusercontent.com/assets/1063454/14003946/d6e5c076-f156-11e5-8238-e62d2a8d20dc.png" align="right" alt="AlaSQL logo"/></a>
 © 2014-2016, Andrey Gershun (agershun@gmail.com) & M. Rangel Wulff (m@rawu.dk)
