@@ -1,6 +1,6 @@
 # Excel 2003 files: .XLS
 
-AlaSQL can read and export data in Excel 2003 format (.xls) with coloring of cells.
+AlaSQL can export data in Excel 2003 format (.xls) with coloring of cells.
 
 Please know that we recommend exporting to [".xlsx"](XLSX) instead of ".xls" as Microsoft has started [refusing to open files in the old format](http://www.infoworld.com/article/3098898/microsoft-windows/excel-refusing-to-open-files-blame-the-kb-3115322-3115262-security-updates.html).
 
@@ -33,6 +33,15 @@ Please, see the example with advanced color syntax [in jsFiddle](https://jsfiddl
 You can pass the object as a Blob:
 
     alasql('SELECT * FROM XLS(?,{headers:true}',[myblob]);
+
+
+To read `.xls` files, please include xls.js
+
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xls/0.7.5/xls.core.min.js"></script>
+```
+
+
 ----
 
 If you need Excel 2007 files please check out [[XLSX]]
