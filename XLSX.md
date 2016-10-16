@@ -1,8 +1,12 @@
 # `.XLSX` - Excel 2007 
 
-AlaSQL can export data to Excel 2007 and LibreOffice format with colors and other Excel formatting functions. This also works in IE9. 
+To work with `.xlsx` files, please invlude xlsx.js
 
-Please note that when interacting with files AlaSQL [will run async](async). We strongly recommend you to [use the promise notation](promise) instead of the simple notation: [`alasql(sql, params, function(data) { console.log(data) })`](async)
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.7.12/xlsx.core.min.js"></script>
+```
+
+Please note that when interacting with files AlaSQL [will run async](async). We strongly recommend you to [use the promise notation](promise).
 
 
 ### Read from XLSX
