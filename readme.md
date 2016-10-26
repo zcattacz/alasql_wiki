@@ -436,17 +436,17 @@ AlaSQL extends "good old" SQL to make it closer to JavaScript. The "sugar" inclu
 
 
 
-### localStorage and DOM-storage
+### localStorage and DOM-storage (experimental)
 You can use browser localStorage and [DOM-storage](https://github.com/node-browser-compat/dom-storage) as a data storage. Here is a sample:
 
-```
-    alasql('CREATE localStorage DATABASE IF NOT EXISTS Atlas');
-    alasql('ATTACH localStorage DATABASE Atlas AS MyAtlas');
-    alasql('CREATE TABLE IF NOT EXISTS MyAtlas.City (city string, population number)');
-    alasql('SELECT * INTO MyAtlas.City FROM ?',[[{city:'Vienna', population:1731000},
+```js
+alasql('CREATE localStorage DATABASE IF NOT EXISTS Atlas');
+alasql('ATTACH localStorage DATABASE Atlas AS MyAtlas');
+alasql('CREATE TABLE IF NOT EXISTS MyAtlas.City (city string, population number)');
+alasql('SELECT * INTO MyAtlas.City FROM ?',[[{city:'Vienna', population:1731000},
         {city:'Budapest', population:1728000}]]);
-    var res = alasql('SELECT * FROM MyAtlas.City');
-    console.log(res);
+var res = alasql('SELECT * FROM MyAtlas.City');
+console.log(res);
 ```
 
 Try this sample in [jsFiddle](http://jsfiddle.net/agershun/x1gq3wf2/). Run this sample
@@ -457,20 +457,21 @@ You can use localStorage in two modes: SET AUTOCOMMIT ON to immediate save data
 to localStorage after each statement or SET AUTOCOMMIT OFF. In this case you need
 to use COMMIT statement to save all data from in-memory mirror to localStorage.
 
-### Work with CSV, TAB, TXT, and JSON files
-You can use files in these formats directly from AlaSQL (in sync and async modes):
+### CSV, TAB, TXT, and JSON files
+You can import from and export to CSV, TAB, TXT, and JSON files directly from AlaSQL. Calls to files will always be [[async]] so the approach is to chain the queries if you have more than one:
 
 ```js
-    var res1 = alasq("select * from txt('mytext.txt') where [0] like 'M%'");
-    var res2 = alasq("select * from tab('mydata.tab') order by [1]");
-    var res3 = alasq("select [3] as city,[4] as population from csv('cities.csv')");
+var tabFile = 'mydata.tab'
 
-    alasq("select * from json('array.json')",[],function(res4){
-        console.log(res4)
-    });
+alasql.promise([
+		"select * from txt('mytext.txt') where [0] like 'M%'",
+		["select * from tab(?) order by [1]", [tabFile]],	// note how to pass parameter when promises are chained
+		"select [3] as city,[4] as population from csv('cities.csv')",
+		"select * from json('array.json')"
+	]).then(function(results){
+		console.log(results)
+	}).catch(console.error)
 ```
-
-See [test157.js](test/test157.js) as an example.
 
 ### JSON-object
 
