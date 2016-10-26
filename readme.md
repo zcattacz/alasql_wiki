@@ -646,7 +646,7 @@ MIT - see [MIT licence information](LICENSE)
 * [Mathias Rangel Wulff](https://twitter.com/rangelwulff)
 * [Aubert Grégoire](https://github.com/gregaubert)
 
-[![Throughput Graph](https://graphs.waffle.io/agershun/alasql/throughput.svg)](https://waffle.io/agershun/alasql/metrics/throughput)
+<!--[![Throughput Graph](https://graphs.waffle.io/agershun/alasql/throughput.svg)](https://waffle.io/agershun/alasql/metrics/throughput)-->
 
 
 
