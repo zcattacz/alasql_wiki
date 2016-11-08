@@ -3,7 +3,7 @@
 To work with `.xlsx` files, please invlude xlsx.js
 
 ```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.7.12/xlsx.core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.core.min.js"></script>
 ```
 
 Please note that when interacting with files AlaSQL [will run async](async). We strongly recommend you to [use the promise notation](promise).
