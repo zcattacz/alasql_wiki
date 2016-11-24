@@ -25,3 +25,5 @@ If you want to upload data from desktop you can use the following code:
      </script>
 ```
 See [this jsfiddle](http://jsfiddle.net/3ve90afo/) for a live example
+
+See also [[How to upload form for txt and xlsx in javascript]]
