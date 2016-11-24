@@ -35,4 +35,4 @@ If you are reading data from the browser:
 
 AlaSQL automatically recognize file type by file extension.
 
-You can try the working example of uploading data [here](http://alasql.org/demo/008file/).
+See [this jsfiddle](http://jsfiddle.net/3ve90afo/) for a live example
