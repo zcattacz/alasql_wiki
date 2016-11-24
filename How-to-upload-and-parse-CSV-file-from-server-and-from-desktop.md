@@ -24,4 +24,4 @@ If you want to upload data from desktop you can use the following code:
          }
      </script>
 ```
-The working example how to upload file [is here](http://alasql.org/demo/008file/).
+See [this jsfiddle](http://jsfiddle.net/3ve90afo/) for a live example
