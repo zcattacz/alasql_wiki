@@ -57,9 +57,9 @@ Example on how to change the seperator only
 
 ## Options
 
-For CVS you can set the following options
+For CSV you can set the following options
 
-- **header** is default `true`. If set to `false` the first row in the CVS file will contain data instead of the column names
+- **header** is default `true`. If set to `false` the first row in the CSV file will contain data instead of the column names
 - **utf8Bom** default depends on header. If headers will be included it will be default `true`. If headers not included it will be default `false`. If `true` BOM will be added to the CSV file (useful in some cases with excel)
 - **separator** is default `;` and can be set to any string used as a seperator
 - **quote** is default `"` and can be set to any string used to quote strings
