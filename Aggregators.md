@@ -20,7 +20,7 @@ Examples:
 ## Non-standard 
 * AGGR() – operations on aggregated values
 * ARRAY() – create array of values
-* User-defined aggregators
+* [User-defined aggregators](https://github.com/agershun/alasql/wiki/User-Defined-Functions)
 
 Example of AGGR() aggregator (here avg1 = avg2)
 ```sql
