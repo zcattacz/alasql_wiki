@@ -554,6 +554,8 @@ var b = browserify("./main.js").bundle();
 ["fs","path","xlsx",  ... , "xls"].map(ignore => b.ignore(ignore));
 ```
 
+#### jQuery
+Please remember to send the original event, and not the jQuery event, for elements. (use `event.originalEvent` instead of `myEvent`)
 
 
 ### Miss a feature?
