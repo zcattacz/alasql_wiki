@@ -64,4 +64,4 @@ Play with this example: http://jsfiddle.net/vxjgnmxa/ (only chrome)
 
 For firefox support, please check out https://github.com/agershun/alasql/tree/develop/examples/angular/import-export-excel
 
-For Angular cli,: have a look at https://github.com/agershun/alasql/issues/738#issuecomment-277266095
+For Angular cli: have a look at https://github.com/agershun/alasql/issues/738#issuecomment-277266095
