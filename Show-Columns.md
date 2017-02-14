@@ -2,7 +2,7 @@
 
 Syntax:
 ```sql
-    SHOW COLUMNS tableid
+    SHOW COLUMNS FROM tableid
 ```
 
 See also: [SHOW](Show)
