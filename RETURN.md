@@ -1,8 +1,6 @@
 # Keyword `RETURN`
 
-Used with the `[[SEARCH]]` keywords. 
-
-Defines what to return. 
+Used with the [[SEARCH]] keyword. Defines what to return. 
 
 Example: 
 
@@ -14,4 +12,8 @@ var res =   alasql("SEARCH / AS @user Members / AS @member \
 	FROM $0 ",[users]);
 ```
 
-See https://github.com/agershun/alasql/issues/826
+See https://github.com/agershun/alasql/issues/826 for more details
+
+----
+
+See also: [[SEARCH]]
