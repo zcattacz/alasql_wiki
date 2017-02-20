@@ -1,27 +1,32 @@
 # `Promise` notation
 
-We strongly recommend using the promise notation for all [[async]] interaction with AlaSQL:
+We strongly recommend using the promise notation for all [[async]] interaction with AlaSQL. This includes everytime a filename or URL is part of the SQL.
 
 ```js
 alasql.promise(sql(s) [, params])
       .then(function(data){
-           console.log(data);
-      }).catch(function(err){
-           console.log('Error:', err);
+           // Display data
+      }).catch(function(error){
+           // Log the error
       });
 ```
 
-Example: 
+The `.promise` part can be omitted if the SQL is given as an array (format documented in "Chain of promises"). Example of the lazy promise notation: 
+
 ```js
-alasql.promise('SELECT * FROM XLS("mydata.xls") GROUP BY name WHERE lastname LIKE "A%" and city = "London"')
-      .then(function(res){
-           console.log(res);
-      }).catch(function(err){
-           console.log('error:', err);
+alasql(['SELECT * FROM XLS("mydata.xls") GROUP BY name WHERE lastname LIKE "A%" and city = "London"'])
+      .then(function(data){
+           // Display data
+      }).catch(function(error){
+           // Display error
       });
 ```
 
 AlaSQL uses ES6 promises which are available in most modern browsers. AlaSQL brings a [polyfill](https://github.com/jakearchibald/es6-promise/blob/master/dist/es6-promise.min.js) if `Promise` is not supported. 
+
+
+
+
 
 
 ## Chain of promises
@@ -47,7 +52,8 @@ alasql.promise([
 
 Please note that to be able to combine a query with parameters instead of a string one must pass an array with the query string at index 0 and the array of parameters at index 1.
 
-## More about proimse
+
+## More about promise
 
 If you are not used to work with promises have a look at http://www.2ality.com/2014/10/es6-promises-api.html where the concepts are explained very well. Central to the usage is the consept of 
 
