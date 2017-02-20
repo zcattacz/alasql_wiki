@@ -613,6 +613,10 @@ Please be aware that AlaSQL ~~may~~ have [bugs](https://github.com/agershun/alas
 0. At the moment Alasql does not work with jszip 3.0.0 - please use version 2.x 
 
 
+0. JOINing a sub-SELECT does not work. Please store your sub-select in a temporary table (or fetch the sub-select and pass it as an argument)
+
+
+
 Probably, there are many of others. Please, help us to fix them by [submitting it as an issue](https://github.com/agershun/alasql/issues). Thank you!
 
 
