@@ -49,7 +49,21 @@ alasql.promise([
 
 Please note that to be able to combine a query with parameters instead of a string one must pass an array with the query string at index 0 and the array of parameters at index 1.
 
+## Lazy promise notation
 
+When you chain promises you can omit the `.promise` part of the notation.
+
+```js
+alasql(['SELECT * FROM XLS("mydata.xls") GROUP BY name WHERE lastname LIKE "A%" and city = "London"'])
+      .then(function(data){
+           // Display data
+      }).catch(function(error){
+           // Display error
+      });
+```
+
+
+ 
 ## Simple notation
 Another way to execute code async is the simple notation
 ```js
@@ -85,4 +99,8 @@ alasql('ATTACH INDEXEDDB DATABASE NN'.[].function(data){
 });
 ```
 
-Please note that the `.promise` notation is recommended.
+Please note that the simple notation is not recommended as error handling is cumbersome.
+
+
+----
+See also: [[Promise]]
