@@ -2,7 +2,7 @@
 
 _Experimental_
 
-AlaSQL supports fluent like LINW interface:
+AlaSQL supports fluent like LINQ interface:
 
 ```js
     var res = alasql()
