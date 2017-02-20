@@ -3,10 +3,10 @@
 AlaSQL supports fluent like LINW interface:
 
 ```js
-    var res = alasql(data)
+    var res = alasql()
               .Where(function(x){x.Population>1000000})
               .OrderBy("Name")
-              .exec();
+              .exec(params);
 ```
 
 ## Supported functions
