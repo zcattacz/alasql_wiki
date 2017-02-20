@@ -1,5 +1,7 @@
 # Fluent Interface
 
+_Experimental_
+
 AlaSQL supports fluent like LINW interface:
 
 ```js
