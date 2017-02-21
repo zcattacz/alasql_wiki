@@ -114,6 +114,8 @@ JSON object
     [{a:1},{a:1,b:2}]
 ```
 
+Please note that you can avoid letting AlaSQL try to add extension to filenames by setting `autoExt:false` in the options given. 
+
 
 See also
 
