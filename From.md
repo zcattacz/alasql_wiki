@@ -37,12 +37,14 @@ From SELECT statement
 ```
 
 ## From functions
-* TXT()
-* JSON()
-* CSV()
-* TSV() / TAB()
-* XLSX() / XLS()
-* HTML()
+* [[TXT]]()
+* [[JSON]]()
+* [[CSV]]()
+* [[TSV]]()
+* [[TAB]]()
+* [[XLSX]]() 
+* [[XLS]]()
+* [[HTML]]()
 
 ## From parameters (? and [?])
 
@@ -106,5 +108,7 @@ number of lines in incoming text file:
 ```js
     alasql('SELECT COUNT(*) FROM TXT()');
 ``` 
+
+Please note that you can avoid letting AlaSQL try to add extension to filenames by setting `autoExt:false` in the options given. 
 
 See also: [SELECT](Select), [SEARCH](Search)
