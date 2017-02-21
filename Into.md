@@ -6,6 +6,14 @@ Syntax:
     INSERT INTO table VALUES value1, value2, ...;
 ```
 
+## INTO-functions
+* [[TXT]]()
+* [[JSON]]()
+* [[CSV]]()
+* [[TSV]]()
+* [[TAB]]()
+* [[XLSX]]()
+* [[HTML]]()
 
 Into table
 ```js
@@ -28,23 +36,19 @@ You can save data into parametes array. In this case AlaSQL append records to ex
 ```js
     var data = [{a:1},{a:2}]; // Source array
     var resdata = [{a:0}];    // Destination array
-    var res = alasql('SELECT * INTO ? FROM ?',[resdata,data]); 
+    var res = alasql('SELECT * INTO ? FROM ? WHERE a<1',[resdata,data]); 
 ```
-AlaSQL returns in ```res``` == 2 - number or records and ```resdata``` equals to ```[ { a: 0 }, { a: 1 }, { a: 2 } ]```
+AlaSQL returns in ```res``` == 1 - number or records and ```resdata``` equals to ```[ { a: 0 }, { a: 2 } ]```
 
-
-## INTO-functions
-* TXT()
-* JSON()
-* CSV()
-* TSV() / TAB()
-* XLSX()
-* HTML()
 
 Example of data format conversion from XLSX to CSV:
 ```js
     alasql('SELECT * INTO CSV("parts.csv") FROM XLSX("parts.xlsx") WHERE Qty > 10');
     alasql('SELECT * INTO TXT("cities.txt") FROM cities');
 ```
+
+
+
+
 
 See also: [FROM](From)
