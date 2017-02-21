@@ -95,6 +95,8 @@ By default AlaSQL headers are set to `true`
 ```
 See the working example in [jsFiddle](http://jsfiddle.net/95j0txwx/7/)
 
+Please note that you can avoid letting AlaSQL try to add extension to filenames by setting `autoExt:false` in the option. 
+
 You can also pass the file as a Blob:
 
     alasql('SELECT * FROM XLSX(?)',[myblobData]);		
