@@ -8,4 +8,6 @@ Syntax:
     SELECT column FROM TXT(filename) ;
 ```
 
+Please note that you can avoid letting AlaSQL try to add extension to filenames by setting `autoExt:false` in the options given. 
+
 See also: [CSV](Csv), [TAB](Tab), [TSV](Tsv), [XLSX](Xlsx), [JSON](Json)
