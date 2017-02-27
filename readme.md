@@ -19,7 +19,7 @@ _Got a question? Ask on [Stack Overflow](http://stackoverflow.com/questions/ask?
 <div align="center"><a href="http://alasql.org"><img src="https://cloud.githubusercontent.com/assets/1063454/19309516/94f8007e-9085-11e6-810f-62fd60b42185.png" alt="AlaSQL logo" styl="max-width:80%"/></a>
 </div>
 
-_( [à la](http://en.wiktionary.org/wiki/%C3%A0_la) [SQL](http://en.wikipedia.org/wiki/SQL) ) [ælæ ɛskju:ɛl]_ - AlaSQL is a free and open source SQL database for Javascript with a strong focus on query speed and datasource flexibility for relational data, schemaless data, and graph data. It works in your browser, Node.js, IO.js and Cordova.
+_( [à la](http://en.wiktionary.org/wiki/%C3%A0_la) [SQL](http://en.wikipedia.org/wiki/SQL) ) [ælæ ɛskju:ɛl]_ - AlaSQL is a free and open source SQL database for Javascript with a strong focus on query speed and data source flexibility for relational data, schemaless data, and graph data. It works in your browser, Node.js, IO.js and Cordova.
 
 The library is designed for:
 
@@ -29,10 +29,10 @@ The library is designed for:
 
 
 
-We focus on [speed](https://github.com/agershun/alasql/wiki/Speed) by taking advantage of the dynamic nature of javascript when building up queries. Real world solutions demands flexibility regarding where data comes from and where it is to be stored. We focus on flexibility by making sure you can [import/export](https://github.com/agershun/alasql/wiki/Import-export) and query directly on data stored in Excel (both `xls` and `.xlsx`), CSV, JSON, TAB, IndexedDB, LocalStorage, and SQLite files.
+We focus on [speed](https://github.com/agershun/alasql/wiki/Speed) by taking advantage of the dynamic nature of javascript when building up queries. Real world solutions demand flexibility regarding where data comes from and where it is to be stored. We focus on flexibility by making sure you can [import/export](https://github.com/agershun/alasql/wiki/Import-export) and query directly on data stored in Excel (both `xls` and `.xlsx`), CSV, JSON, TAB, IndexedDB, LocalStorage, and SQLite files.
 
 
-The library brings you the comfort of a full database engine to your javascript app. No, really - its working towards a full database engine complying with [most of SQL-99](https://github.com/agershun/alasql/wiki/Supported-SQL-statements) spiced up with additional syntax for handling noSQL (schema less) data and graph networks.
+The library brings you the comfort of a full database engine to your javascript app. No, really - its working towards a full database engine complying with [most of the SQL-99](https://github.com/agershun/alasql/wiki/Supported-SQL-statements) spiced up with additional syntax for handling NoSQL (schema-less) data and graph networks.
 
 
 ```js
@@ -104,6 +104,8 @@ console.log(res); // [{a:2,b:6},{a:1,b:5},{a:3,b:4}]
 
 jsFiddle with [example A)](http://jsfiddle.net/hguw3LLk/) and [example B)](http://jsfiddle.net/c1hbytf1/)
 
+If you are familiar with SQL it should come as no surprise that **proper usage of indexes on your tables is essential** to get good performance. 
+
 ## Install
 
 
@@ -125,7 +127,7 @@ For the browser: include [alasql.min.js](http://cdn.jsdelivr.net/alasql/latest/a
 
 The wiki has a great section on [how to get started](https://github.com/agershun/alasql/wiki/Getting%20started)
 
-When you feel you got the grip you can check out the wiki section about [data manipulation](https://github.com/agershun/alasql/wiki/Data-manipulation) or getting inspired by the [list of Q&As](http://stackoverflow.com/questions/tagged/alasql)
+When you feel you got the grip, you can check out the wiki section about [data manipulation](https://github.com/agershun/alasql/wiki/Data-manipulation) or get inspired by the [list of Q&As](http://stackoverflow.com/questions/tagged/alasql)
 
 
 
@@ -162,7 +164,7 @@ AlaSQL uses [Semantic Versioning](http://semver.org/) so please note that major 
 
 
 ## Performance
-AlaSQL is very focused on speed and we make sure to use all the tricks we can find to make javascript spit out your results as quick as possible. For example:
+AlaSQL is very focused on speed, and we make sure to use all the tricks we can find to make javascript spit out your results as quick as possible. For example:
 
 * Queries are cached as compiled functions.
 * Joined tables are pre-indexed
@@ -176,6 +178,7 @@ The results are good. Check out AlaSQL vs. other javaScript SQL databases:
 
 * **2x speed** [compared to Linq](http://jsperf.com/alasql-vs-linq-on-groupby/3) for `GROUP BY` on 1,048,576 rows
 
+**Please remember to use indexes to speed up your selects**. [Have a look here](https://www.tutorialspoint.com/sql/sql-indexes.htm) if you are unsure what this is.
 
 See more [speed related info on the wiki](https://github.com/agershun/alasql/wiki/Speed)
 
@@ -267,6 +270,27 @@ alasql.promise([
 ```
 
 
+
+### Read SQLite database files
+
+AlaSQL can read (not write) SQLite data files if you include the [SQL.js](https://github.com/kripken/sql.js) library:
+```html
+    <script src="alasql.js"></script>
+    <script src="sql.js"></script>
+    <script>
+        alasql('ATTACH SQLITE DATABASE Chinook("Chinook_Sqlite.sqlite");\
+            USE Chinook; \
+            SELECT * FROM Genre',[],function(res){
+                console.log("Genres:",res.pop());
+        });
+    </script>
+```
+
+sql.js calls will always be async. 
+
+
+## Features you might love
+
 ### AlaSQL ♥ D3.js
 
 AlaSQL plays nice with d3.js and gives you a convenient way to integrate a specific subset of your data vis the visual powers of d3. See more about [D3.js and AlaSQL in the wiki](https://github.com/agershun/alasql/wiki/d3.js)
@@ -303,43 +327,10 @@ AlaSQL can query data directly from a google spreadsheet. A good "partnership" f
 
 
 
-### Read SQLite database files
-
-AlaSQL can read (not write) SQLite data files if you include [SQL.js](https://github.com/kripken/sql.js) library:
-```html
-    <script src="alasql.js"></script>
-    <script src="sql.js"></script>
-    <script>
-        alasql('ATTACH SQLITE DATABASE Chinook("Chinook_Sqlite.sqlite");\
-            USE Chinook; \
-            SELECT * FROM Genre',[],function(res){
-                console.log("Genres:",res.pop());
-        });
-    </script>
-```
-
-See more detailed [the example](http://alasql.org/demo/004sqlite/).
 
 
 
 
-### ETL sample: CSV and IndexedDB database
-
-Upload CSV file with headers to IndexedDB database, and then save only asian countries
-to Excel file:
-```js
-    alasql('ATTACH INDEXEDDB DATABASE geo; \
-            CREATE TABLE IF NOT EXISTS geo.country; \
-            SELECT * INTO geo.country FROM CSV("country.csv",{headers:true}); \
-            SELECT * INTO XLSX("asia.xlsx") FROM geo.country WHERE continent_name = "Asia"');
-```
-See [the example](http://alasql.org/demo/001csv/).
-
-
-
-
-
-Most of SQL-99. Please [see the wiki](https://github.com/agershun/alasql/wiki/Supported-SQL-statements) for more info
 
 
 
@@ -367,7 +358,7 @@ two or three times, and AlaSQL store more and more data in localStorage. Here, "
 the name of localStorage database, where "MyAtlas" is a memory AlaSQL database.
 
 You can use localStorage in two modes: SET AUTOCOMMIT ON to immediate save data
-to localStorage after each statement or SET AUTOCOMMIT OFF. In this case you need
+to localStorage after each statement or SET AUTOCOMMIT OFF. In this case, you need
 to use COMMIT statement to save all data from in-memory mirror to localStorage.
 
 
@@ -430,7 +421,19 @@ Probably, there are many of others. Please, help us to fix them by [submitting i
 
 
 
-## HowTo
+## How To
+
+
+
+### Use AlaSQL to convert data from CSV to Excel
+
+ETL example:
+```js
+    alasql('CREATE TABLE IF NOT EXISTS geo.country; \
+            SELECT * INTO geo.country FROM CSV("country.csv",{headers:true}); \
+            SELECT * INTO XLSX("asia.xlsx") FROM geo.country WHERE continent_name = "Asia"');
+```
+
 
 
 ### Use AlaSQL as a WebWorker
@@ -465,7 +468,7 @@ Another option is to include the normal file but call alasql.worker() as the fir
 
 Try this example [in jsFiddle](http://jsfiddle.net/agershun/rjwp8u48/3/).
 
-If using AlaSQL from a webworker you can importing it traditionally as a script:
+If using AlaSQL from a webworker, you can importing it traditionally as a script:
 
 ```js
     importScripts('alasql.min.js');
@@ -711,4 +714,4 @@ and other people for useful tools, which make our work much easier.
 
 ----
 <a href="http://alasql.org"><img src="https://cloud.githubusercontent.com/assets/1063454/14003946/d6e5c076-f156-11e5-8238-e62d2a8d20dc.png" align="right" alt="AlaSQL logo"/></a>
-© 2014-2017, Andrey Gershun (agershun@gmail.com) & M. Rangel Wulff (m@rawu.dk)
+© 2014-2017, Andrey Gershun (agershun@gmail.com) & Mathias Rangel Wulff (m@rawu.dk)
