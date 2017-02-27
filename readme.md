@@ -1,4 +1,4 @@
-	_AlaSQL is an open source project and we appreciate any and all contributions we can get. Please help out._
+_AlaSQL is an open source project and we appreciate any and all contributions we can get. Please help out._
 
 _Got a question? Ask on [Stack Overflow](http://stackoverflow.com/questions/ask?tags=AlaSQL) and tag with "alasql"._
 
