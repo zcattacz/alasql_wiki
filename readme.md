@@ -104,7 +104,9 @@ console.log(res); // [{a:2,b:6},{a:1,b:5},{a:3,b:4}]
 
 jsFiddle with [example A)](http://jsfiddle.net/hguw3LLk/) and [example B)](http://jsfiddle.net/c1hbytf1/)
 
-If you are familiar with SQL it should come as no surprise that **proper usage of indexes on your tables is essential** to get good performance. 
+__If you are familiar with SQL it should come as no surprise that proper usage of indexes on your tables is essential to get good performance.__
+
+
 
 ## Install
 
@@ -178,10 +180,10 @@ The results are good. Check out AlaSQL vs. other javaScript SQL databases:
 
 * **2x speed** [compared to Linq](http://jsperf.com/alasql-vs-linq-on-groupby/3) for `GROUP BY` on 1,048,576 rows
 
-**Please remember to use indexes to speed up your selects**. [Have a look here](https://www.tutorialspoint.com/sql/sql-indexes.htm) if you are unsure what this is.
+Please remember to set indexes on your tables to speed up your queries. [Have a look here](https://www.tutorialspoint.com/sql/sql-indexes.htm) if you are not familiar with this consept.
+
 
 See more [speed related info on the wiki](https://github.com/agershun/alasql/wiki/Speed)
-
 
 
 
@@ -206,7 +208,7 @@ alasql.fn.myfn = function(a,b) {
 var res = alasql('SELECT myfn(a,b) FROM one');
 ```
 
-See more [in the wiki](https://github.com/agershun/alasql/wiki/User-Defined-Functions)
+You can also make user defined aggregator functions (like your own `SUM(...)`). See more [in the wiki](https://github.com/agershun/alasql/wiki/User-Defined-Functions)
 
 
 ### Compiled statements and functions
