@@ -7,13 +7,14 @@ Syntax:
 ```
 
 ## INTO-functions
-* [[TXT]]()
-* [[JSON]]()
-* [[CSV]]()
-* [[TSV]]()
-* [[TAB]]()
-* [[XLSX]]()
-* [[HTML]]()
+* [[TXT]]
+* [[JSON]]
+* [[CSV]]
+* [[TSV]]
+* [[TAB]]
+* [[XLS]]
+* [[XLSX]]
+* [[HTML]]
 
 Into table
 ```js
